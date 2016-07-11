@@ -29,6 +29,16 @@ Projeto contendo a criação e evolução do banco de dados do GSAN
       username=[USUARIO]
       password=[SENHA]
 
+## Criação do database e tablespaces
+
+    createdb gsan_comercial
+    createdb gsan_gerencial
+    
+    CREATE TABLESPACE indices LOCATION [caminho no sistema]
+    Exemplo:
+        CREATE TABLESPACE indices LOCATION '/opt/pgsql/indices'
+        
+
 ## Executar as migrações para o banco de dados gsan_comercial
     migrate status
 
