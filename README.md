@@ -31,8 +31,8 @@ Projeto contendo a criação e evolução do banco de dados do GSAN
 
 ## Criação do database e tablespaces
 
-    createdb gsan_comercial
-    createdb gsan_gerencial
+    createdb gsan_comercial -E LATIN1
+    createdb gsan_gerencial -E LATIN1
     
     CREATE TABLESPACE indices LOCATION [caminho no sistema]
     Exemplo:
