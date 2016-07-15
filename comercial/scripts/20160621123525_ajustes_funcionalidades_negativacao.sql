@@ -27,32 +27,9 @@ UPDATE seguranca.funcionalidade SET fncd_icpontoentrada=2 WHERE fncd_id = 891;
 DELETE FROM seguranca.grupo_func_operacao WHERE fncd_id in (888,903,904);
 
 INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (1, 1144,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (11, 1144,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (34, 1144,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (41, 1144,888,now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (50, 1144,888,now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (58, 1144,888,now());
-
 INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (1, 1175,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (11, 1175,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (34, 1175,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (41, 1175,888,now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (50, 1175,888,now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (58, 1175,888,now());
-
 INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (1, 1176,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (11, 1176,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (34, 1176,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (41, 1176,888,now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (50, 1176,888,now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (58, 1176,888,now());
-
 INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (1, 1184,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (11, 1184,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (34, 1184,888, now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (41, 1184,888,now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (50, 1184,888,now());
-INSERT INTO seguranca.grupo_func_operacao(grup_id, oper_id, fncd_id, gfop_tmultimaalteracao) VALUES (58, 1184,888,now());
 
 UPDATE seguranca.operacao SET oper_dscaminhourl = 'informarDadosConsultaNegativacaoAction.do' WHERE oper_id = 1144;
 DELETE FROM seguranca.operacao WHERE oper_id in (1185,1187);
