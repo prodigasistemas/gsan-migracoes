@@ -15,12 +15,12 @@ WITH (
   OIDS=FALSE
 );
 
-COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_id IS 'id único para identificar o registro'
-COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_referencia_minima IS 'mês e ano de referência mínima para a faixa'
-COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_referencia_maxima IS 'mês e ano de referência máxima para a faixa'
-COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_percentual_desconto IS 'valor de desconto para referências dentro da faixa'
-COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_tmcriacao IS 'data e hora de criação do registro'
-COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_percentual_desconto IS 'data e hora de atualização do registro'
+COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_id IS 'id único para identificar o registro';
+COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_referencia_minima IS 'mês e ano de referência mínima para a faixa';
+COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_referencia_maxima IS 'mês e ano de referência máxima para a faixa';
+COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_percentual_desconto IS 'valor de desconto para referências dentro da faixa';
+COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_tmcriacao IS 'data e hora de criação do registro';
+COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_percentual_desconto IS 'data e hora de atualização do registro';
 
 ALTER TABLE                                   cobranca.parcelamento_faixa_desconto OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            cobranca.parcelamento_faixa_desconto TO gsan_admin;
