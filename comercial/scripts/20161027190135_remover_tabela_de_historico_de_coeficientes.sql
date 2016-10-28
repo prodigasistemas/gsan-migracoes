@@ -2,7 +2,7 @@
 -- Migration SQL that makes the change goes here.
 
 DROP TABLE    desempenho.contrato_medicao_coeficiente_historico;
-DROP SEQUENCE cadastro.seq_contrato_medicao_coeficiente_historico;
+DROP SEQUENCE desempenho.seq_contrato_medicao_coeficiente_historico;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

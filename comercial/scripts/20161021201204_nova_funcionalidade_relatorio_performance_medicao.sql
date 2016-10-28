@@ -6,7 +6,7 @@ INSERT INTO seguranca.funcionalidade(
             fncd_dscaminhomenu, fncd_dscaminhourl, fncd_icpontoentrada, fncd_dsabreviado, 
             fncd_nnordemmenu, fncd_icnovajanela, fncd_icolap, fncg_id, url)
     VALUES (16038,13,'Relatorio de Performance',now(),null,'http://hdesempenho.cosanpa.pa.gov.br/performance_relatorios/new',1,'RelPer',
-    	    0,2,2,146,'http://hdesempenho.cosanpa.pa.gov.br/performance_relatorios/new');
+    	    0,2,2,146,'http://hdesempenho.cosanpa.pa.gov.br/medicao_performances/new');
 
 
 
