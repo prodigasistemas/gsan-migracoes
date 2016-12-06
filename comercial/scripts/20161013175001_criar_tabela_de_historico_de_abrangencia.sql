@@ -44,12 +44,11 @@ CREATE SEQUENCE desempenho.seq_contrato_medicao_abrangencia_historico
   MAXVALUE 9223372036854775807
   START 6
   CACHE 1;
+
 ALTER TABLE                   desempenho.seq_contrato_medicao_abrangencia_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE            desempenho.seq_contrato_medicao_abrangencia_historico TO gsan_admin;
 GRANT SELECT, UPDATE ON TABLE desempenho.seq_contrato_medicao_abrangencia_historico TO pg_aplic;
 GRANT SELECT ON TABLE         desempenho.seq_contrato_medicao_abrangencia_historico TO pg_users;
-
-
 
 -- //@UNDO
 -- SQL to undo the change goes here.
