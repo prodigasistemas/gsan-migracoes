@@ -1,1 +1,1 @@
-ALTER TABLESPACE indices OWNER TO gsan_admin;
+CREATE TABLESPACE indices OWNER gsan_admin LOCATION '/opt/pgsql/indices';
