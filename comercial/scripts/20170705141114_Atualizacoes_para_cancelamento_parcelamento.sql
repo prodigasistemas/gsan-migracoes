@@ -12,8 +12,8 @@ insert into financeiro.lancamento_item_contabil values
 insert into financeiro.lancamento_item_contabil values 
   (15, 'CANCELAMENTO DESC FAIXA PARCEL', 'CDFP', 170, now(), 88, 1) ;
 
-insert into financeiro.financiamento_tipo values
-  (11, 'CANCELAMENTO PARCELAMENTO', 'CANCPARC', 1, now(), 2);
+--insert into financeiro.financiamento_tipo values
+  --(11, 'CANCELAMENTO PARCELAMENTO', 'CANCPARC', 1, now(), 2);
 
 insert into faturamento.debito_tipo values 
   (2442,15,'CANCEL PARC DESCONTO FAIXA','',1,now(),11,999999.99,2,2,null,null,null,2,null,2);
