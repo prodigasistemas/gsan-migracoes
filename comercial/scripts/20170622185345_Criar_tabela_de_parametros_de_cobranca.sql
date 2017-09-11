@@ -16,6 +16,10 @@ CREATE TABLE cobranca.parametro
   CONSTRAINT cobranca_parametro_pkey PRIMARY KEY (id)
 )
 
+ALTER TABLE cobranca.parametro OWNER TO gsan_admin;
+GRANT ALL ON TABLE cobranca.parametro TO gsan_admin;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.parametro TO pg_aplic;
+GRANT SELECT ON TABLE cobranca.parametro TO pg_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.
