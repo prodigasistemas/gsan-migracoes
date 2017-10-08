@@ -3,9 +3,9 @@
 
 INSERT INTO seguranca.funcionalidade VALUES (16040, 3, 'Cancelar Parcelamentos', now(), 'Gsan/', 'sem url', 2, 'CANCPARC', 2, 2, 2, null, null);
 
-INSERT INTO batch.processo_funcionalidade VALUES (2001, 58, now(), 5, 2, 16040, 1, null);
+--INSERT INTO batch.processo_funcionalidade VALUES (2001, 58, now(), 5, 2, 16040, 1, null);
 
-UPDATE batch.processo SET proc_dsprocesso = 'DESFAZER E CANCELAR PARCELAMENTOS' WHERE proc_id = 58;
+--UPDATE batch.processo SET proc_dsprocesso = 'DESFAZER E CANCELAR PARCELAMENTOS' WHERE proc_id = 58;
 
 INSERT INTO financeiro.lancamento_tipo VALUES (107, 107, 'DEBITO COBRADO CANCEL CRED CONCEDIDO PARCELAMENTO', 'CANCREDPAR', 1, 0, now(), 2, 2);
 
