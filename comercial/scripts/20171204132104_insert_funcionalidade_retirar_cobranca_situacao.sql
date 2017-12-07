@@ -2,7 +2,7 @@
 -- Migration SQL that makes the change goes here.
 
 INSERT INTO seguranca.funcionalidade
-VALUES (16043, 3, 'Retirar Situacao de Cobranca por Empresa', now(), 'Gsan/Cobranca/Cobranca por Resultado', 'exibirRetirarSituacaoCobrancaAction.do', 1, 'ExRetSitCob', 4, 2, 2, 141, null);
+VALUES (16043, 3, 'Retirar Situacao de Cobranca por Empresa', now(), 'Gsan/Cobranca/Cobranca por Resultado', 'exibirRetirarSituacaoCobrancaAction.do', 1, 'ExRetStCb', 4, 2, 2, 141, null);
 
 INSERT INTO seguranca.operacao 
 VALUES (16039, 16043, 'Retirar Situacao de Cobranca por Empresa', 'RetSitCob', 'retirarSituacaoCobrancaAction.do', now(), null, null, 10, null, 2);
