@@ -12,9 +12,8 @@ INSERT INTO seguranca.grupo_func_operacao VALUES (1, 16039, 16043, now());
 -- //@UNDO
 -- SQL to undo the change goes here.
 
-DELETE FROM seguranca.funcionalidade WHERE fncd_id = 16043;
+DELETE FROM seguranca.grupo_func_operacao WHERE fncd_id = 16043 AND oper_id = 16039;
 
 DELETE FROM seguranca.operacao WHERE oper_id = 16039;
 
-
-DELETE FROM seguranca.grupo_func_operacao WHERE fncd_id = 16043 AND oper_id = 16039;
+DELETE FROM seguranca.funcionalidade WHERE fncd_id = 16043;
