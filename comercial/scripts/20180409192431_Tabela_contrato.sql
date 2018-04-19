@@ -30,7 +30,7 @@ CREATE TABLE cadastro.contrato
   cntt_id integer NOT NULL, -- id do contrato
   imov_id integer NOT NULL, -- id do imovel
   cntt_dtcontratoinicio date NOT NULL, -- da inicio do contrato
-  cntt_dtcontratofim date NOT NULL, -- data contrato fim
+  cntt_dtcontratofim date, -- data contrato fim
   cntt_nncontrato character(20) NOT NULL, -- numero do contrato
   cntt_tmultimaalteracao timestamp without time zone NOT NULL DEFAULT now(), -- timestamp da inclusao/ultima alteracao
   cntt_dtcontratoencerramento date, -- data do encerramento do contrato
@@ -214,8 +214,10 @@ insert into arrecadacao.contrato_demanda (
         ctcn_id  
   from cadastro.contrato);
 
+drop table cadastro.contrato_adesao;
 drop table cadastro.contrato;
 drop table cadastro.contrato_tipo;
 
+drop sequence cadastro.seq_contrato_adesao;
 drop sequence cadastro.seq_contrato;
 
