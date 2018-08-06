@@ -147,7 +147,6 @@ drop sequence arrecadacao.seq_contrato_demanda;
 -- //@UNDO
 -- SQL to undo the change goes here.
 
-
 CREATE TABLE arrecadacao.contrato_demanda
 (
   ctdm_id integer NOT NULL, -- id do contrato de demanda
@@ -212,7 +211,7 @@ insert into arrecadacao.contrato_demanda (
         cntt_tmultimaalteracao, 
         cntt_dtcontratoencerramento, 
         ctcn_id  
-  from cadastro.contrato);
+  from cadastro.contrato where cttp_id = 2);
 
 drop table cadastro.contrato_adesao;
 drop table cadastro.contrato;
