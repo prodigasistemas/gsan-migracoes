@@ -37,8 +37,10 @@ COMMENT ON COLUMN atualizacaocadastral.visita.icac_id IS 'id do imovel controle'
 COMMENT ON COLUMN atualizacaocadastral.visita.cocr_id IS 'id da ocorrencia';
 COMMENT ON COLUMN atualizacaocadastral.visita.vist_tmultimaalteracao IS 'timestamp da inclusao/ultima alteracao';
 
+insert into seguranca.operacao values (nextval('seguranca.seq_operacao'), 1194, 'Retornar Arquivos Imoveis A Revisitar Atlz Cad', 
+    'RtArqImRvs', 'retornarArquivosImoveisARevisitarAtualizacaoCadastralAction.do', now(), null, null, 6, null, 2);
 
-
+insert into seguranca.grupo_func_operacao (select 1, oper_id, 1194 from seguranca.operacao where oper_dscaminhourl like '%retornarArquivosImoveisARevisitarAtualizacaoCadastralAction%' );
 -- //@UNDO
 -- SQL to undo the change goes here.
 
