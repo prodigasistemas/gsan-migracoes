@@ -6,7 +6,7 @@ select ctrl.imov_id, tatc.tatc_cdimovel, tatc.tatc_id as tatc_tatc_id, tcac.tatc
 	from atualizacaocadastral.imovel_controle_atlz_cad ctrl
 	inner join seguranca.tab_atlz_cadastral tatc on ctrl.imov_id = tatc.tatc_cdimovel
 	inner join seguranca.tab_col_atlz_cadastral tcac on  tatc.tatc_id = tcac.tatc_id
-	where ctrl.siac_id in (7,9)
+	where ctrl.siac_id in (5,7,9)
 	and tcac.tcac_cnvalorpreaprovado is null
 	order by 1,2,3
 )
