@@ -6,3 +6,5 @@ comercial/environments/local.properties
 comercial/environments/test.properties
 .DS_Store
 comercial/environments/jenkins.properties
+gerencial/environments/production.properties
+gerencial/environments/stage.properties
