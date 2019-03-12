@@ -1,6 +1,7 @@
 -- // Add botao de fiscalizacao - recadastramento
 -- Migration SQL that makes the change goes here.
 
+/*
 insert into seguranca.operacao values (nextval('seguranca.seq_operacao'), 1194, 'Retornar Arquivos Imoveis A Fiscalizar Atlz Cad', 
     'RtArqImFsc', 'retornarArquivosImoveisAFiscalizarAtualizacaoCadastralAction.do', now(), null, null, 6, null, 2);
 
@@ -14,7 +15,7 @@ COMMENT ON COLUMN atualizacaocadastral.imovel_controle_atlz_cad.icac_tmgeracaolo
 
 ALTER TABLE atualizacaocadastral.imovel_controle_atlz_cad ADD COLUMN icac_tmaprovacaolote timestamp without time zone;
 COMMENT ON COLUMN atualizacaocadastral.imovel_controle_atlz_cad.icac_tmaprovacaolote IS 'timestamp de quando foi aprovado o lote';
-
+&*/
 
 -- //@UNDO
 -- SQL to undo the change goes here.
