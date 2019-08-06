@@ -11,7 +11,7 @@ INSERT INTO seguranca.tabela_coluna (tbco_id,
                                       atrb_id,
                                       tbco_icpoderetificarconta,
                                       tbco_icatucadastral)
-    VALUES (nextval('seguranca.seq_tab_atlz_cadastral'), 
+    VALUES (nextval('seguranca.seq_tabela_coluna'), 
             (select tabe_id from seguranca.tabela where lower(tabe_nmtabela) = 'cadastro.imovel_atlz_cadastral'), 
             now(), 
             'imac_dsobservacaotegoria', 
