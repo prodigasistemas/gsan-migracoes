@@ -39,6 +39,18 @@ VALUES (
     now()
 );
 
+INSERT INTO seguranca.grupo_func_operacao (
+    grup_id,
+    oper_id,
+    fncd_id,
+    gfop_tmultimaalteracao)
+VALUES (
+    (SELECT grup_id FROM seguranca.grupo WHERE grup_dsgrupo = 'CADASTRO PERFORMANCE'),
+    (SELECT oper_id FROM seguranca.operacao WHERE oper_dscaminhourl = 'retornarArquivosImoveisTodasSituacoesAtualizacaoCadastralAction.do'),
+    (SELECT fncd_id FROM seguranca.funcionalidade WHERE fncd_dscaminhourl = 'exibirConsultarArquivoTextoAtualizacaoCadastralAction.do'),
+    now()
+);
+
 -- //@UNDO
 -- SQL to undo the change goes here.
 
