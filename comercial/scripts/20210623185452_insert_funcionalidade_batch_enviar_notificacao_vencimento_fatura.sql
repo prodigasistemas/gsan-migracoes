@@ -7,7 +7,7 @@ VALUES (16078, 7, 'Enviar notificação de vencimento por email', now(),
 
 insert into batch.processo
 values
-(nextval('batch.seq_processo'),'ENVIAR NOTIFICAÇÃO DE VENCIMENTO','ENNOVE',1,now(),7,null,2,0,null,0);
+(511,'ENVIAR NOTIFICAÇÃO DE VENCIMENTO','ENNOVE',1,now(),7,null,2,0,null,0);
 
 insert into batch.processo_funcionalidade values 
 (nextval('batch.seq_processo_funcionalidade'), 
