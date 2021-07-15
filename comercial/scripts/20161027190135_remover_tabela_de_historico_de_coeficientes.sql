@@ -32,8 +32,8 @@ WITH (
 
 ALTER TABLE                                   desempenho.contrato_medicao_coeficiente_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            desempenho.contrato_medicao_coeficiente_historico TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE desempenho.contrato_medicao_coeficiente_historico TO pg_aplic;
-GRANT SELECT ON TABLE                         desempenho.contrato_medicao_coeficiente_historico TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE desempenho.contrato_medicao_coeficiente_historico TO role_aplic;
+GRANT SELECT ON TABLE                         desempenho.contrato_medicao_coeficiente_historico TO role_users;
 
 CREATE SEQUENCE desempenho.seq_contrato_medicao_coeficiente_historico
   INCREMENT 1
@@ -43,5 +43,5 @@ CREATE SEQUENCE desempenho.seq_contrato_medicao_coeficiente_historico
   CACHE 1;
 ALTER TABLE                   desempenho.seq_contrato_medicao_coeficiente_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE            desempenho.seq_contrato_medicao_coeficiente_historico TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE desempenho.seq_contrato_medicao_coeficiente_historico TO pg_aplic;
-GRANT SELECT ON TABLE         desempenho.seq_contrato_medicao_coeficiente_historico TO pg_users;
+GRANT SELECT, UPDATE ON TABLE desempenho.seq_contrato_medicao_coeficiente_historico TO role_aplic;
+GRANT SELECT ON TABLE         desempenho.seq_contrato_medicao_coeficiente_historico TO role_users;

@@ -15,8 +15,8 @@ WITH (
 ALTER TABLE faturamento.conta_mensagem_tipo
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE faturamento.conta_mensagem_tipo TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE faturamento.conta_mensagem_tipo TO pg_aplic;
-GRANT SELECT ON TABLE faturamento.conta_mensagem_tipo TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE faturamento.conta_mensagem_tipo TO role_aplic;
+GRANT SELECT ON TABLE faturamento.conta_mensagem_tipo TO role_users;
 
 
 insert into faturamento.conta_mensagem_tipo values (1, 'DEBITO', 1, now());

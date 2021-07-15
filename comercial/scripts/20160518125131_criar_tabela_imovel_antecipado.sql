@@ -20,8 +20,8 @@ WITH (
 
 ALTER TABLE faturamento.imovel_antecipacao OWNER TO gsan_admin;
 GRANT ALL ON TABLE faturamento.imovel_antecipacao TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE faturamento.imovel_antecipacao TO pg_aplic;
-GRANT SELECT ON TABLE faturamento.imovel_antecipacao TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE faturamento.imovel_antecipacao TO role_aplic;
+GRANT SELECT ON TABLE faturamento.imovel_antecipacao TO role_users;
 
 
 CREATE SEQUENCE faturamento.seq_imovel_antecipacao
@@ -32,8 +32,8 @@ CREATE SEQUENCE faturamento.seq_imovel_antecipacao
   CACHE 1;
 ALTER TABLE faturamento.seq_imovel_antecipacao OWNER TO gsan_admin;
 GRANT ALL ON TABLE faturamento.seq_imovel_antecipacao TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE faturamento.seq_imovel_antecipacao TO pg_aplic;
-GRANT SELECT ON TABLE faturamento.seq_imovel_antecipacao TO pg_users;
+GRANT SELECT, UPDATE ON TABLE faturamento.seq_imovel_antecipacao TO role_aplic;
+GRANT SELECT ON TABLE faturamento.seq_imovel_antecipacao TO role_users;
 
 
 

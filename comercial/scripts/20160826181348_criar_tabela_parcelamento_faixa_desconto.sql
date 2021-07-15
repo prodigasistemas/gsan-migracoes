@@ -24,8 +24,8 @@ COMMENT ON COLUMN cobranca.parcelamento_faixa_desconto.pfds_percentual_desconto 
 
 ALTER TABLE                                   cobranca.parcelamento_faixa_desconto OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            cobranca.parcelamento_faixa_desconto TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.parcelamento_faixa_desconto TO pg_aplic;
-GRANT SELECT ON TABLE                         cobranca.parcelamento_faixa_desconto TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.parcelamento_faixa_desconto TO role_aplic;
+GRANT SELECT ON TABLE                         cobranca.parcelamento_faixa_desconto TO role_users;
 
 
 CREATE SEQUENCE cobranca.seq_parcelamento_faixa_desconto
@@ -36,8 +36,8 @@ CREATE SEQUENCE cobranca.seq_parcelamento_faixa_desconto
   CACHE 1;
 ALTER TABLE                   cobranca.seq_parcelamento_faixa_desconto OWNER TO gsan_admin;
 GRANT ALL ON TABLE            cobranca.seq_parcelamento_faixa_desconto TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cobranca.seq_parcelamento_faixa_desconto TO pg_aplic;
-GRANT SELECT ON TABLE         cobranca.seq_parcelamento_faixa_desconto TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cobranca.seq_parcelamento_faixa_desconto TO role_aplic;
+GRANT SELECT ON TABLE         cobranca.seq_parcelamento_faixa_desconto TO role_users;
 
 
 

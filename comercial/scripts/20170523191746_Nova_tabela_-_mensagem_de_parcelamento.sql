@@ -16,8 +16,8 @@ WITH (
 ALTER TABLE cobranca.msg_parcelamento_boleto
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cobranca.msg_parcelamento_boleto TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.msg_parcelamento_boleto TO pg_aplic;
-GRANT SELECT ON TABLE cobranca.msg_parcelamento_boleto TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.msg_parcelamento_boleto TO role_aplic;
+GRANT SELECT ON TABLE cobranca.msg_parcelamento_boleto TO role_users;
 
 
 CREATE SEQUENCE cobranca.seg_msg_parcelamento_boleto
@@ -29,8 +29,8 @@ CREATE SEQUENCE cobranca.seg_msg_parcelamento_boleto
 ALTER TABLE cobranca.seg_msg_parcelamento_boleto
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cobranca.seg_msg_parcelamento_boleto TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cobranca.seg_msg_parcelamento_boleto TO pg_aplic;
-GRANT SELECT ON TABLE cobranca.seg_msg_parcelamento_boleto TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cobranca.seg_msg_parcelamento_boleto TO role_aplic;
+GRANT SELECT ON TABLE cobranca.seg_msg_parcelamento_boleto TO role_users;
 
 insert into cobranca.msg_parcelamento_boleto values (
 nextval('cobranca.seg_msg_parcelamento_boleto'), now(), null, 

@@ -4,8 +4,8 @@
 CREATE SCHEMA desempenho AUTHORIZATION gsan_admin;
 
 GRANT ALL   ON SCHEMA desempenho TO gsan_admin;
-GRANT USAGE ON SCHEMA desempenho TO pg_aplic;
-GRANT USAGE ON SCHEMA desempenho TO pg_users;
+GRANT USAGE ON SCHEMA desempenho TO role_aplic;
+GRANT USAGE ON SCHEMA desempenho TO role_users;
 
 CREATE TABLE desempenho.contrato_medicao_abrangencia_historico
 (
@@ -29,8 +29,8 @@ WITH (
 
 ALTER TABLE                                   desempenho.contrato_medicao_abrangencia_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            desempenho.contrato_medicao_abrangencia_historico TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE desempenho.contrato_medicao_abrangencia_historico TO pg_aplic;
-GRANT SELECT ON TABLE                         desempenho.contrato_medicao_abrangencia_historico TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE desempenho.contrato_medicao_abrangencia_historico TO role_aplic;
+GRANT SELECT ON TABLE                         desempenho.contrato_medicao_abrangencia_historico TO role_users;
 
 COMMENT ON COLUMN desempenho.contrato_medicao_abrangencia_historico.hcmab_id       IS 'Id do historico da abrangencia do contrato de medicao';
 COMMENT ON COLUMN desempenho.contrato_medicao_abrangencia_historico.cmab_tmcriacao IS 'Data da insercao do imovel na abrangencia do contrato de medicao';
@@ -47,8 +47,8 @@ CREATE SEQUENCE desempenho.seq_contrato_medicao_abrangencia_historico
 
 ALTER TABLE                   desempenho.seq_contrato_medicao_abrangencia_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE            desempenho.seq_contrato_medicao_abrangencia_historico TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE desempenho.seq_contrato_medicao_abrangencia_historico TO pg_aplic;
-GRANT SELECT ON TABLE         desempenho.seq_contrato_medicao_abrangencia_historico TO pg_users;
+GRANT SELECT, UPDATE ON TABLE desempenho.seq_contrato_medicao_abrangencia_historico TO role_aplic;
+GRANT SELECT ON TABLE         desempenho.seq_contrato_medicao_abrangencia_historico TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

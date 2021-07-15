@@ -254,8 +254,8 @@ WITH (
 ALTER TABLE cadastro.imovel_historico  OWNER TO gsan_admin;
 
 GRANT ALL ON                                 TABLE cadastro.imovel_historico TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON      TABLE cadastro.imovel_historico TO pg_aplic;
-GRANT SELECT ON                              TABLE cadastro.imovel_historico TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON      TABLE cadastro.imovel_historico TO role_aplic;
+GRANT SELECT ON                              TABLE cadastro.imovel_historico TO role_users;
 
 COMMENT ON TABLE cadastro.imovel_historico  IS 'Historico de alteracoes na tabela de imovel';
 
@@ -374,8 +374,8 @@ CREATE SEQUENCE cadastro.seq_imovel_historico
   CACHE 1;
 ALTER TABLE                   cadastro.seq_imovel_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE            cadastro.seq_imovel_historico TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_imovel_historico TO pg_aplic;
-GRANT SELECT ON TABLE         cadastro.seq_imovel_historico TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_imovel_historico TO role_aplic;
+GRANT SELECT ON TABLE         cadastro.seq_imovel_historico TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

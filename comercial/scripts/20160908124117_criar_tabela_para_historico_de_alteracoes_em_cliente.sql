@@ -67,8 +67,8 @@ WITH (
 );
 ALTER TABLE                                   cadastro.cliente_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            cadastro.cliente_historico TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.cliente_historico TO pg_aplic;
-GRANT SELECT ON TABLE                         cadastro.cliente_historico TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.cliente_historico TO role_aplic;
+GRANT SELECT ON TABLE                         cadastro.cliente_historico TO role_users;
 
 COMMENT ON TABLE cadastro.cliente_historico                               IS 'Qualquer pessoa de natureza fisica ou juridica, que tenha ou possa vir a ter alguma relacao com um ou mais imovel';
 COMMENT ON COLUMN cadastro.cliente_historico.clhi_id                      IS 'Id do cliente historico';
@@ -111,8 +111,8 @@ CREATE SEQUENCE cadastro.seq_cliente_historico
   CACHE 1;
 ALTER TABLE                   cadastro.seq_cliente_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE            cadastro.seq_cliente_historico TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_cliente_historico TO pg_aplic;
-GRANT SELECT ON TABLE         cadastro.seq_cliente_historico TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_cliente_historico TO role_aplic;
+GRANT SELECT ON TABLE         cadastro.seq_cliente_historico TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

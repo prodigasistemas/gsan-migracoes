@@ -24,8 +24,8 @@ WITH (
 
 ALTER TABLE                                   atualizacaocadastral.historico_arquivo_retorno OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            atualizacaocadastral.historico_arquivo_retorno TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atualizacaocadastral.historico_arquivo_retorno TO pg_aplic;
-GRANT SELECT ON TABLE                         atualizacaocadastral.historico_arquivo_retorno TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atualizacaocadastral.historico_arquivo_retorno TO role_aplic;
+GRANT SELECT ON TABLE                         atualizacaocadastral.historico_arquivo_retorno TO role_users;
 
 COMMENT ON COLUMN atualizacaocadastral.historico_arquivo_retorno.hiar_id                 IS 'Identificacao';
 COMMENT ON COLUMN atualizacaocadastral.historico_arquivo_retorno.usur_id                 IS 'Id do usuario que gerou o arquivo';
@@ -42,8 +42,8 @@ CREATE SEQUENCE atualizacaocadastral.seq_historico_arquivo_retorno
   CACHE 1;
 ALTER TABLE                   atualizacaocadastral.seq_historico_arquivo_retorno OWNER TO gsan_admin;
 GRANT ALL ON TABLE            atualizacaocadastral.seq_historico_arquivo_retorno TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE atualizacaocadastral.seq_historico_arquivo_retorno TO pg_aplic;
-GRANT SELECT ON TABLE         atualizacaocadastral.seq_historico_arquivo_retorno TO pg_users;
+GRANT SELECT, UPDATE ON TABLE atualizacaocadastral.seq_historico_arquivo_retorno TO role_aplic;
+GRANT SELECT ON TABLE         atualizacaocadastral.seq_historico_arquivo_retorno TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

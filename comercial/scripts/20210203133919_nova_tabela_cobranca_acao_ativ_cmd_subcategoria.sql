@@ -26,9 +26,9 @@ ALTER TABLE cobranca.cobranca_acao_ativ_cmd_subcategoria OWNER to gsan_admin;
 
 GRANT ALL ON TABLE cobranca.cobranca_acao_ativ_cmd_subcategoria TO gsan_admin;
 
-GRANT DELETE, INSERT, SELECT, UPDATE ON TABLE cobranca.cobranca_acao_ativ_cmd_subcategoria TO pg_aplic;
+GRANT DELETE, INSERT, SELECT, UPDATE ON TABLE cobranca.cobranca_acao_ativ_cmd_subcategoria TO role_aplic;
 
-GRANT SELECT ON TABLE cobranca.cobranca_acao_ativ_cmd_subcategoria TO pg_users;
+GRANT SELECT ON TABLE cobranca.cobranca_acao_ativ_cmd_subcategoria TO role_users;
 
 COMMENT ON COLUMN cobranca.cobranca_acao_ativ_cmd_subcategoria.cacs_id IS 'Id da Tabela';
 COMMENT ON COLUMN cobranca.cobranca_acao_ativ_cmd_subcategoria.cacm_id IS 'Id do Comando Eventual';
@@ -46,9 +46,9 @@ ALTER SEQUENCE cobranca.seq_cobranca_acao_ativ_cmd_subcategoria OWNER TO gsan_ad
 
 GRANT SELECT, UPDATE ON SEQUENCE cobranca.seq_cobranca_acao_ativ_cmd_subcategoria TO gsan_admin;
 
-GRANT SELECT, UPDATE ON SEQUENCE cobranca.seq_cobranca_acao_ativ_cmd_subcategoria TO pg_aplic;
+GRANT SELECT, UPDATE ON SEQUENCE cobranca.seq_cobranca_acao_ativ_cmd_subcategoria TO role_aplic;
 
-GRANT SELECT ON SEQUENCE cobranca.seq_cobranca_acao_ativ_cmd_subcategoria TO pg_users;
+GRANT SELECT ON SEQUENCE cobranca.seq_cobranca_acao_ativ_cmd_subcategoria TO role_users;
 
 INSERT INTO cobranca.motivo_nao_ger_doc_cobr VALUES (28, 'SUBCATEGORIA NAO ATENDE CRITERIO', 1, now());
 

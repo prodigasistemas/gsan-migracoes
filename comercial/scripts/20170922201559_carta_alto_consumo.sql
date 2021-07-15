@@ -24,14 +24,14 @@ CREATE TABLE micromedicao.comunicado_alto_consumo
 
 ALTER TABLE micromedicao.comunicado_alto_consumo OWNER TO gsan_admin;
 GRANT ALL ON TABLE micromedicao.comunicado_alto_consumo TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE micromedicao.comunicado_alto_consumo TO pg_aplic;
-GRANT SELECT ON TABLE micromedicao.comunicado_alto_consumo TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE micromedicao.comunicado_alto_consumo TO role_aplic;
+GRANT SELECT ON TABLE micromedicao.comunicado_alto_consumo TO role_users;
 
 ALTER TABLE micromedicao.seq_comunicado_alto_consumo OWNER TO gsan_admin;
 
 GRANT ALL ON SEQUENCE micromedicao.seq_comunicado_alto_consumo TO gsan_admin;
-GRANT SELECT, UPDATE ON SEQUENCE micromedicao.seq_comunicado_alto_consumo TO pg_aplic;
-GRANT SELECT ON SEQUENCE micromedicao.seq_comunicado_alto_consumo TO pg_users;
+GRANT SELECT, UPDATE ON SEQUENCE micromedicao.seq_comunicado_alto_consumo TO role_aplic;
+GRANT SELECT ON SEQUENCE micromedicao.seq_comunicado_alto_consumo TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

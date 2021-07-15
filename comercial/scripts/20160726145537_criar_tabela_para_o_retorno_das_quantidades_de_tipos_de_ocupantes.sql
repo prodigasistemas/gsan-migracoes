@@ -27,8 +27,8 @@ WITH (
 
 ALTER TABLE                                   atualizacaocadastral.imovel_tipo_ocupante_quantidade_retorno OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            atualizacaocadastral.imovel_tipo_ocupante_quantidade_retorno TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atualizacaocadastral.imovel_tipo_ocupante_quantidade_retorno TO pg_aplic;
-GRANT SELECT ON TABLE                         atualizacaocadastral.imovel_tipo_ocupante_quantidade_retorno TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atualizacaocadastral.imovel_tipo_ocupante_quantidade_retorno TO role_aplic;
+GRANT SELECT ON TABLE                         atualizacaocadastral.imovel_tipo_ocupante_quantidade_retorno TO role_users;
 
 COMMENT ON COLUMN atualizacaocadastral.imovel_tipo_ocupante_quantidade_retorno.itqr_id                 IS 'Identificacao';
 COMMENT ON COLUMN atualizacaocadastral.imovel_tipo_ocupante_quantidade_retorno.itqr_quantidade         IS 'Quantidade de ocupantes';
@@ -45,8 +45,8 @@ CREATE SEQUENCE atualizacaocadastral.seq_imovel_tipo_ocupante_quantidade_retorno
   CACHE 1;
 ALTER TABLE                   atualizacaocadastral.seq_imovel_tipo_ocupante_quantidade_retorno OWNER TO gsan_admin;
 GRANT ALL ON TABLE            atualizacaocadastral.seq_imovel_tipo_ocupante_quantidade_retorno TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE atualizacaocadastral.seq_imovel_tipo_ocupante_quantidade_retorno TO pg_aplic;
-GRANT SELECT ON TABLE         atualizacaocadastral.seq_imovel_tipo_ocupante_quantidade_retorno TO pg_users;
+GRANT SELECT, UPDATE ON TABLE atualizacaocadastral.seq_imovel_tipo_ocupante_quantidade_retorno TO role_aplic;
+GRANT SELECT ON TABLE         atualizacaocadastral.seq_imovel_tipo_ocupante_quantidade_retorno TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

@@ -12,8 +12,8 @@ CREATE SEQUENCE atualizacaocadastral.seq_visita
 ALTER TABLE atualizacaocadastral.seq_visita
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON TABLE atualizacaocadastral.seq_visita TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE atualizacaocadastral.seq_visita TO pg_aplic;
-GRANT SELECT ON TABLE atualizacaocadastral.seq_visita TO pg_users;
+GRANT SELECT, UPDATE ON TABLE atualizacaocadastral.seq_visita TO role_aplic;
+GRANT SELECT ON TABLE atualizacaocadastral.seq_visita TO role_users;
 
 
 CREATE TABLE atualizacaocadastral.visita
@@ -30,8 +30,8 @@ WITH (
 ALTER TABLE atualizacaocadastral.visita
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE atualizacaocadastral.visita TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atualizacaocadastral.visita TO pg_aplic;
-GRANT SELECT ON TABLE atualizacaocadastral.visita TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atualizacaocadastral.visita TO role_aplic;
+GRANT SELECT ON TABLE atualizacaocadastral.visita TO role_users;
 COMMENT ON COLUMN atualizacaocadastral.visita.vist_id IS 'id da visita';
 COMMENT ON COLUMN atualizacaocadastral.visita.icac_id IS 'id do imovel controle';
 COMMENT ON COLUMN atualizacaocadastral.visita.cocr_id IS 'id da ocorrencia';

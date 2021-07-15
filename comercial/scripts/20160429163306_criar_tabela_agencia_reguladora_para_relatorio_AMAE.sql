@@ -18,8 +18,8 @@ WITH (
 
 ALTER TABLE atendimentopublico.agencia_reguladora OWNER TO gsan_admin;
 GRANT ALL ON TABLE atendimentopublico.agencia_reguladora TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atendimentopublico.agencia_reguladora TO pg_aplic;
-GRANT SELECT ON TABLE atendimentopublico.agencia_reguladora TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atendimentopublico.agencia_reguladora TO role_aplic;
+GRANT SELECT ON TABLE atendimentopublico.agencia_reguladora TO role_users;
 
 
 CREATE SEQUENCE atendimentopublico.seq_agencia_reguladora
@@ -30,8 +30,8 @@ CREATE SEQUENCE atendimentopublico.seq_agencia_reguladora
   CACHE 1;
 ALTER TABLE atendimentopublico.seq_agencia_reguladora OWNER TO gsan_admin;
 GRANT ALL ON TABLE atendimentopublico.seq_agencia_reguladora TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE atendimentopublico.seq_agencia_reguladora TO pg_aplic;
-GRANT SELECT ON TABLE atendimentopublico.seq_agencia_reguladora TO pg_users;
+GRANT SELECT, UPDATE ON TABLE atendimentopublico.seq_agencia_reguladora TO role_aplic;
+GRANT SELECT ON TABLE atendimentopublico.seq_agencia_reguladora TO role_users;
 
 
 CREATE TABLE atendimentopublico.agencia_regul_municipio
@@ -47,8 +47,8 @@ WITH (
 
 ALTER TABLE atendimentopublico.agencia_regul_municipio OWNER TO gsan_admin;
 GRANT ALL ON TABLE atendimentopublico.agencia_regul_municipio TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atendimentopublico.agencia_regul_municipio TO pg_aplic;
-GRANT SELECT ON TABLE atendimentopublico.agencia_regul_municipio TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE atendimentopublico.agencia_regul_municipio TO role_aplic;
+GRANT SELECT ON TABLE atendimentopublico.agencia_regul_municipio TO role_users;
 
 INSERT INTO atendimentopublico.agencia_reguladora VALUES (nextval('atendimentopublico.seq_agencia_reguladora'), 'AMAE', 201511, 2, '2016-01-01', null, now());
 INSERT INTO atendimentopublico.agencia_regul_municipio VALUES (6, 33, now());

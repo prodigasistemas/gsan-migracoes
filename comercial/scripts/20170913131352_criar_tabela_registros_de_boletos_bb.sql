@@ -35,8 +35,8 @@ CREATE TABLE arrecadacao.boleto_info
 
 ALTER TABLE arrecadacao.boleto_info OWNER TO gsan_admin;
 GRANT ALL ON TABLE arrecadacao.boleto_info TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.boleto_info TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao.boleto_info TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.boleto_info TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao.boleto_info TO role_users;
 
 
 -- //@UNDO

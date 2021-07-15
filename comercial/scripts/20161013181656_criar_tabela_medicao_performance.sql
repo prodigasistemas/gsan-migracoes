@@ -32,8 +32,8 @@ WITH (
 
 ALTER TABLE                                   desempenho.medicao_performance OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            desempenho.medicao_performance TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE desempenho.medicao_performance TO pg_aplic;
-GRANT SELECT ON TABLE                         desempenho.medicao_performance TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE desempenho.medicao_performance TO role_aplic;
+GRANT SELECT ON TABLE                         desempenho.medicao_performance TO role_users;
 
 COMMENT ON COLUMN desempenho.medicao_performance.medp_id                 IS 'Id da medicao de performance';
 COMMENT ON COLUMN desempenho.medicao_performance.medp_tmcriacao          IS 'Data de criacao da medicao de performance';
@@ -55,8 +55,8 @@ CREATE SEQUENCE desempenho.seq_medicao_performance
 
 ALTER TABLE                   desempenho.seq_medicao_performance OWNER TO gsan_admin;
 GRANT ALL ON TABLE            desempenho.seq_medicao_performance TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE desempenho.seq_medicao_performance TO pg_aplic;
-GRANT SELECT ON TABLE         desempenho.seq_medicao_performance TO pg_users;
+GRANT SELECT, UPDATE ON TABLE desempenho.seq_medicao_performance TO role_aplic;
+GRANT SELECT ON TABLE         desempenho.seq_medicao_performance TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

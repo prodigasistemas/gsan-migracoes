@@ -21,8 +21,8 @@ WITH (
 
 ALTER TABLE                                   desempenho.imovel_subcategoria_abrangencia OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            desempenho.imovel_subcategoria_abrangencia TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE desempenho.imovel_subcategoria_abrangencia TO pg_aplic;
-GRANT SELECT ON TABLE                         desempenho.imovel_subcategoria_abrangencia TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE desempenho.imovel_subcategoria_abrangencia TO role_aplic;
+GRANT SELECT ON TABLE                         desempenho.imovel_subcategoria_abrangencia TO role_users;
 
 COMMENT ON COLUMN desempenho.imovel_subcategoria_abrangencia.imsa_id                 IS 'Id';
 COMMENT ON COLUMN desempenho.imovel_subcategoria_abrangencia.imsa_tmcriacao          IS 'Data de criacao';
@@ -39,8 +39,8 @@ CREATE SEQUENCE desempenho.seq_imovel_subcategoria_abrangencia
   CACHE 1;
 ALTER TABLE                   desempenho.seq_imovel_subcategoria_abrangencia OWNER TO gsan_admin;
 GRANT ALL ON TABLE            desempenho.seq_imovel_subcategoria_abrangencia TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE desempenho.seq_imovel_subcategoria_abrangencia TO pg_aplic;
-GRANT SELECT ON TABLE         desempenho.seq_imovel_subcategoria_abrangencia TO pg_users;
+GRANT SELECT, UPDATE ON TABLE desempenho.seq_imovel_subcategoria_abrangencia TO role_aplic;
+GRANT SELECT ON TABLE         desempenho.seq_imovel_subcategoria_abrangencia TO role_users;
 
 
 

@@ -22,8 +22,8 @@ TABLESPACE pg_default;
 ALTER TABLE financeiro.faixa_valor_consumo OWNER to gsan_admin;
 
 GRANT ALL ON TABLE financeiro.faixa_valor_consumo TO gsan_admin;
-GRANT DELETE, INSERT, SELECT, UPDATE ON TABLE financeiro.faixa_valor_consumo TO pg_aplic;
-GRANT SELECT ON TABLE financeiro.faixa_valor_consumo TO pg_users;
+GRANT DELETE, INSERT, SELECT, UPDATE ON TABLE financeiro.faixa_valor_consumo TO role_aplic;
+GRANT SELECT ON TABLE financeiro.faixa_valor_consumo TO role_users;
 
 COMMENT ON TABLE financeiro.faixa_valor_consumo IS 'Tabela com as faixas dos valor total da fatura do cliente';
 COMMENT ON COLUMN financeiro.faixa_valor_consumo.fvc_id IS 'Id da tabela de faixas';
@@ -41,8 +41,8 @@ CREATE SEQUENCE financeiro.seq_faixa_valor_consumo
 
 ALTER SEQUENCE financeiro.seq_faixa_valor_consumo OWNER TO gsan_admin;
 GRANT ALL ON SEQUENCE financeiro.seq_faixa_valor_consumo TO gsan_admin;
-GRANT SELECT, UPDATE ON SEQUENCE financeiro.seq_faixa_valor_consumo TO pg_aplic;
-GRANT SELECT ON SEQUENCE financeiro.seq_faixa_valor_consumo TO pg_users;
+GRANT SELECT, UPDATE ON SEQUENCE financeiro.seq_faixa_valor_consumo TO role_aplic;
+GRANT SELECT ON SEQUENCE financeiro.seq_faixa_valor_consumo TO role_users;
 
 INSERT INTO financeiro.faixa_valor_consumo(fvc_id, catg_id, fvc_vlfaixainicial, fvc_vlfaixafinal, fvc_tmultimaalteracao) VALUES (nextval('financeiro.seq_faixa_valor_consumo'), 1,0.00,50.00,'2020-11-25');
 INSERT INTO financeiro.faixa_valor_consumo(fvc_id, catg_id, fvc_vlfaixainicial, fvc_vlfaixafinal, fvc_tmultimaalteracao) VALUES (nextval('financeiro.seq_faixa_valor_consumo'), 1,50.01,100.00,'2020-11-25');
