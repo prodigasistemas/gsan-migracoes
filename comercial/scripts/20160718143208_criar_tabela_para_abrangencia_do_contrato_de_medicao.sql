@@ -24,8 +24,8 @@ WITH (
 
 ALTER TABLE                                   cadastro.contrato_medicao_abrangencia OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            cadastro.contrato_medicao_abrangencia TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_medicao_abrangencia TO pg_aplic;
-GRANT SELECT ON TABLE                         cadastro.contrato_medicao_abrangencia TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_medicao_abrangencia TO role_aplic;
+GRANT SELECT ON TABLE                         cadastro.contrato_medicao_abrangencia TO role_users;
 
 
 CREATE SEQUENCE cadastro.seq_contrato_medicao_abrangencia
@@ -36,8 +36,8 @@ CREATE SEQUENCE cadastro.seq_contrato_medicao_abrangencia
   CACHE 1;
 ALTER TABLE                   cadastro.seq_contrato_medicao_abrangencia OWNER TO gsan_admin;
 GRANT ALL ON TABLE            cadastro.seq_contrato_medicao_abrangencia TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_medicao_abrangencia TO pg_aplic;
-GRANT SELECT ON TABLE         cadastro.seq_contrato_medicao_abrangencia TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_medicao_abrangencia TO role_aplic;
+GRANT SELECT ON TABLE         cadastro.seq_contrato_medicao_abrangencia TO role_users;
 
 
 

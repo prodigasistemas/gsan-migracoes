@@ -8,8 +8,8 @@ CREATE SEQUENCE atendimentopublico.seq_agencia_regul_municipio
   CACHE 1;
 ALTER TABLE                   atendimentopublico.seq_agencia_regul_municipio OWNER TO gsan_admin;
 GRANT ALL ON TABLE            atendimentopublico.seq_agencia_regul_municipio TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE atendimentopublico.seq_agencia_regul_municipio TO pg_aplic;
-GRANT SELECT ON TABLE         atendimentopublico.seq_agencia_regul_municipio TO pg_users;
+GRANT SELECT, UPDATE ON TABLE atendimentopublico.seq_agencia_regul_municipio TO role_aplic;
+GRANT SELECT ON TABLE         atendimentopublico.seq_agencia_regul_municipio TO role_users;
 
 DELETE from atendimentopublico.agencia_regul_municipio;
 

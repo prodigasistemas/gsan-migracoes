@@ -52,8 +52,8 @@ WITH (
 );
 ALTER TABLE arrecadacao.dados_pag_nao_class OWNER TO gsan_admin;
 GRANT ALL ON TABLE arrecadacao.dados_pag_nao_class TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.dados_pag_nao_class TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao.dados_pag_nao_class TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.dados_pag_nao_class TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao.dados_pag_nao_class TO role_users;
 
 
 CREATE SEQUENCE arrecadacao.seq_dados_pag_nao_class
@@ -65,8 +65,8 @@ CREATE SEQUENCE arrecadacao.seq_dados_pag_nao_class
 ALTER TABLE arrecadacao.seq_dados_pag_nao_class
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_dados_pag_nao_class TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_dados_pag_nao_class TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao.seq_dados_pag_nao_class TO pg_users;
+GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_dados_pag_nao_class TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao.seq_dados_pag_nao_class TO role_users;
 
 
 insert into batch.unidade_processamento values (22, 'REFERENCIA', now(), 1, 'REF');

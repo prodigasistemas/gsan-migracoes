@@ -10,8 +10,8 @@ CREATE SEQUENCE arrecadacao.seq_boleto_info
 ALTER TABLE arrecadacao.seq_boleto_info
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON SEQUENCE arrecadacao.seq_boleto_info TO gsan_admin;
-GRANT SELECT, UPDATE ON SEQUENCE arrecadacao.seq_boleto_info TO pg_aplic;
-GRANT SELECT ON SEQUENCE arrecadacao.seq_boleto_info TO pg_users;
+GRANT SELECT, UPDATE ON SEQUENCE arrecadacao.seq_boleto_info TO role_aplic;
+GRANT SELECT ON SEQUENCE arrecadacao.seq_boleto_info TO role_users;
 
 ALTER TABLE arrecadacao.boleto_info DROP CONSTRAINT boleto_info_pkey;
 ALTER TABLE arrecadacao.boleto_info DROP CONSTRAINT fk1_parcelamento;

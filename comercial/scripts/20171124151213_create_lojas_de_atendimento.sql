@@ -21,8 +21,8 @@ WITH (
 );
 ALTER TABLE cadastro.loja_atendimento OWNER TO gsan_admin;
 GRANT ALL ON TABLE cadastro.loja_atendimento TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.loja_atendimento TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.loja_atendimento TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.loja_atendimento TO role_aplic;
+GRANT SELECT ON TABLE cadastro.loja_atendimento TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.
@@ -65,5 +65,5 @@ WITH (
 ALTER TABLE cadastro.loja_atendimento
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cadastro.loja_atendimento TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.loja_atendimento TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.loja_atendimento TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.loja_atendimento TO role_aplic;
+GRANT SELECT ON TABLE cadastro.loja_atendimento TO role_users;

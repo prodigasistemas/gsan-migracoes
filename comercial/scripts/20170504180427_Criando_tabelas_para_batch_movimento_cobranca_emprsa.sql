@@ -30,8 +30,8 @@ WITH (
 ALTER TABLE cobranca.negociacao_cobranca_empresa
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cobranca.negociacao_cobranca_empresa TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.negociacao_cobranca_empresa TO pg_aplic;
-GRANT SELECT ON TABLE cobranca.negociacao_cobranca_empresa TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.negociacao_cobranca_empresa TO role_aplic;
+GRANT SELECT ON TABLE cobranca.negociacao_cobranca_empresa TO role_users;
 GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.negociacao_cobranca_empresa TO gsan_operacional;
 COMMENT ON COLUMN cobranca.negociacao_cobranca_empresa.parc_id IS 'id do parcelamento';
 COMMENT ON COLUMN cobranca.negociacao_cobranca_empresa.cbdo_id IS 'id do documento de cobranca';
@@ -49,7 +49,7 @@ CREATE SEQUENCE cobranca.seq_negociacao_cobranca_empresa
 ALTER TABLE cobranca.seq_negociacao_cobranca_empresa
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cobranca.seq_negociacao_cobranca_empresa TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cobranca.seq_negociacao_cobranca_empresa TO pg_aplic;
+GRANT SELECT, UPDATE ON TABLE cobranca.seq_negociacao_cobranca_empresa TO role_aplic;
 
 
 
@@ -73,8 +73,8 @@ WITH (
 ALTER TABLE cobranca.neg_conta_cobranca_empresa
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cobranca.neg_conta_cobranca_empresa TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.neg_conta_cobranca_empresa TO pg_aplic;
-GRANT SELECT ON TABLE cobranca.neg_conta_cobranca_empresa TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.neg_conta_cobranca_empresa TO role_aplic;
+GRANT SELECT ON TABLE cobranca.neg_conta_cobranca_empresa TO role_users;
 GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.neg_conta_cobranca_empresa TO gsan_operacional;
 COMMENT ON COLUMN cobranca.neg_conta_cobranca_empresa.ncem_id IS 'id da negociacao';
 COMMENT ON COLUMN cobranca.neg_conta_cobranca_empresa.cnta_id IS 'id da conta negociada';
@@ -90,7 +90,7 @@ CREATE SEQUENCE cobranca.seq_neg_conta_cobranca_empresa
 ALTER TABLE cobranca.seq_neg_conta_cobranca_empresa
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cobranca.seq_neg_conta_cobranca_empresa TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cobranca.seq_neg_conta_cobranca_empresa TO pg_aplic;
+GRANT SELECT, UPDATE ON TABLE cobranca.seq_neg_conta_cobranca_empresa TO role_aplic;
 
 
 -- //@UNDO

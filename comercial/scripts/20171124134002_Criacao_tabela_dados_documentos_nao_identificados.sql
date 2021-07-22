@@ -24,8 +24,8 @@ WITH (
 );
 ALTER TABLE arrecadacao.dados_docs_nao_ident OWNER TO gsan_admin;
 GRANT ALL ON TABLE arrecadacao.dados_docs_nao_ident TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.dados_docs_nao_ident TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao.dados_docs_nao_ident TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.dados_docs_nao_ident TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao.dados_docs_nao_ident TO role_users;
 
 
 CREATE SEQUENCE arrecadacao.seq_dados_docs_nao_ident
@@ -37,8 +37,8 @@ CREATE SEQUENCE arrecadacao.seq_dados_docs_nao_ident
 ALTER TABLE arrecadacao.seq_dados_docs_nao_ident
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_dados_docs_nao_ident TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_dados_docs_nao_ident TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao.seq_dados_docs_nao_ident TO pg_users;
+GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_dados_docs_nao_ident TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao.seq_dados_docs_nao_ident TO role_users;
 
 
 insert into seguranca.funcionalidade values (16042, 8, 'Gerar dados de documentos não identificados', now(), 'Gsan/Batch', null, 2 , 'DdDcNIdent', 0, 2, 2, null, null);

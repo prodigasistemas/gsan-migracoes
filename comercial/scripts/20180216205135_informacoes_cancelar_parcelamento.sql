@@ -16,8 +16,8 @@ ALTER TABLE cobranca.parcel_motivo_cancelamento
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cobranca.parcel_motivo_cancelamento TO gsan_admin;
 GRANT ALL ON TABLE cobranca.parcel_motivo_cancelamento TO postgres WITH GRANT OPTION;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.parcel_motivo_cancelamento TO pg_aplic;
-GRANT SELECT ON TABLE cobranca.parcel_motivo_cancelamento TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cobranca.parcel_motivo_cancelamento TO role_aplic;
+GRANT SELECT ON TABLE cobranca.parcel_motivo_cancelamento TO role_users;
 COMMENT ON COLUMN cobranca.parcel_motivo_cancelamento.pmca_id IS 'id do motivo de cancelamento do parcelamento';
 COMMENT ON COLUMN cobranca.parcel_motivo_cancelamento.pmca_descricao IS 'descricao do motivo cancelamento do parcelamento';
 COMMENT ON COLUMN cobranca.parcel_motivo_cancelamento.pmca_icuso IS 'indicador de uso (1-ativo 2-inativo)';
@@ -32,8 +32,8 @@ CREATE SEQUENCE cobranca.seq_parcel_motivo_cancelamento
 ALTER TABLE cobranca.seq_parcel_motivo_cancelamento
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON SEQUENCE cobranca.seq_parcel_motivo_cancelamento TO gsan_admin;
-GRANT SELECT, UPDATE ON SEQUENCE cobranca.seq_parcel_motivo_cancelamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE cobranca.seq_parcel_motivo_cancelamento TO pg_users;
+GRANT SELECT, UPDATE ON SEQUENCE cobranca.seq_parcel_motivo_cancelamento TO role_aplic;
+GRANT SELECT ON SEQUENCE cobranca.seq_parcel_motivo_cancelamento TO role_users;
 
 ALTER TABLE cobranca.parcelamento ADD COLUMN parc_tmcancelamento timestamp without time zone;
 ALTER TABLE cobranca.parcelamento ADD COLUMN usur_idcancelamento integer;

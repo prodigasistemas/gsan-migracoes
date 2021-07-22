@@ -15,8 +15,8 @@ WITH (
 ALTER TABLE cadastro.contrato_tipo
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cadastro.contrato_tipo TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_tipo TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.contrato_tipo TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_tipo TO role_aplic;
+GRANT SELECT ON TABLE cadastro.contrato_tipo TO role_users;
 COMMENT ON COLUMN cadastro.contrato_tipo.cttp_id IS 'id do tipo de contrato';
 COMMENT ON COLUMN cadastro.contrato_tipo.cttp_dscontratotipo IS 'descricao do tipo de contrato';
 COMMENT ON COLUMN cadastro.contrato_tipo.cttp_icuso IS 'indicador de uso (1-ativo 2-inativo)';
@@ -53,8 +53,8 @@ WITH (
 ALTER TABLE cadastro.contrato
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cadastro.contrato TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.contrato TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato TO role_aplic;
+GRANT SELECT ON TABLE cadastro.contrato TO role_users;
 COMMENT ON COLUMN cadastro.contrato.cntt_id IS 'id do contrato';
 COMMENT ON COLUMN cadastro.contrato.imov_id IS 'id do imovel';
 COMMENT ON COLUMN cadastro.contrato.cntt_dtcontratoinicio IS 'da inicio do contrato';
@@ -80,8 +80,8 @@ CREATE SEQUENCE cadastro.seq_contrato
 ALTER TABLE cadastro.seq_contrato
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.seq_contrato TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato TO role_aplic;
+GRANT SELECT ON TABLE cadastro.seq_contrato TO role_users;
 
 
 insert into cadastro.contrato (
@@ -115,8 +115,8 @@ WITH (
 ALTER TABLE cadastro.contrato_adesao
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cadastro.contrato_adesao TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_adesao TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.contrato_adesao TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_adesao TO role_aplic;
+GRANT SELECT ON TABLE cadastro.contrato_adesao TO role_users;
 COMMENT ON COLUMN cadastro.contrato_adesao.ctad_id IS 'id do contrato_adesao';
 COMMENT ON COLUMN cadastro.contrato_adesao.cntt_id IS 'id do contrato';
 COMMENT ON COLUMN cadastro.contrato_adesao.clim_id IS 'id do cliente imovel';
@@ -136,8 +136,8 @@ CREATE SEQUENCE cadastro.seq_contrato_adesao
 ALTER TABLE cadastro.seq_contrato_adesao
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_adesao TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_adesao TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.seq_contrato_adesao TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_adesao TO role_aplic;
+GRANT SELECT ON TABLE cadastro.seq_contrato_adesao TO role_users;
 
 
 drop table arrecadacao.contrato_demanda;
@@ -171,8 +171,8 @@ WITH (
 ALTER TABLE arrecadacao.contrato_demanda
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE arrecadacao.contrato_demanda TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.contrato_demanda TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao.contrato_demanda TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.contrato_demanda TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao.contrato_demanda TO role_users;
 COMMENT ON COLUMN arrecadacao.contrato_demanda.ctdm_id IS 'id do contrato de demanda';
 COMMENT ON COLUMN arrecadacao.contrato_demanda.imov_id IS 'id do imovel';
 COMMENT ON COLUMN arrecadacao.contrato_demanda.ctdm_dtcontratoinicio IS 'da inicio do contrato';
@@ -198,8 +198,8 @@ CREATE SEQUENCE arrecadacao.seq_contrato_demanda
 ALTER TABLE arrecadacao.seq_contrato_demanda
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_contrato_demanda TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_contrato_demanda TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao.seq_contrato_demanda TO pg_users;
+GRANT SELECT, UPDATE ON TABLE arrecadacao.seq_contrato_demanda TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao.seq_contrato_demanda TO role_users;
 
 
 insert into arrecadacao.contrato_demanda (

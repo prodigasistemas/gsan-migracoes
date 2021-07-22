@@ -21,8 +21,8 @@ WITH (
 
 ALTER TABLE faturamento.comunicado_emitir_conta OWNER TO gsan_admin;
 GRANT ALL ON TABLE faturamento.comunicado_emitir_conta TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE faturamento.comunicado_emitir_conta TO pg_aplic;
-GRANT SELECT ON TABLE faturamento.comunicado_emitir_conta TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE faturamento.comunicado_emitir_conta TO role_aplic;
+GRANT SELECT ON TABLE faturamento.comunicado_emitir_conta TO role_users;
 
 CREATE SEQUENCE faturamento.seq_comunicado_emitir_conta
   INCREMENT 1
@@ -33,8 +33,8 @@ CREATE SEQUENCE faturamento.seq_comunicado_emitir_conta
 
 ALTER TABLE faturamento.seq_comunicado_emitir_conta OWNER TO gsan_admin;
 GRANT ALL ON TABLE faturamento.seq_comunicado_emitir_conta TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE faturamento.seq_comunicado_emitir_conta TO pg_aplic;
-GRANT SELECT ON TABLE faturamento.seq_comunicado_emitir_conta TO pg_users;
+GRANT SELECT, UPDATE ON TABLE faturamento.seq_comunicado_emitir_conta TO role_aplic;
+GRANT SELECT ON TABLE faturamento.seq_comunicado_emitir_conta TO role_users;
 
 insert into faturamento.comunicado_emitir_conta (
     select nextval('faturamento.seq_comunicado_emitir_conta'), ctac_amreferencia, imov_id, 0, 1, ctac_tmultimaalteracao from micromedicao.comunicado_alto_consumo);
@@ -71,8 +71,8 @@ WITH (
 ALTER TABLE micromedicao.comunicado_alto_consumo
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE micromedicao.comunicado_alto_consumo TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE micromedicao.comunicado_alto_consumo TO pg_aplic;
-GRANT SELECT ON TABLE micromedicao.comunicado_alto_consumo TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE micromedicao.comunicado_alto_consumo TO role_aplic;
+GRANT SELECT ON TABLE micromedicao.comunicado_alto_consumo TO role_users;
 
 
 
@@ -85,8 +85,8 @@ CREATE SEQUENCE micromedicao.seq_comunicado_alto_consumo
 ALTER TABLE micromedicao.seq_comunicado_alto_consumo
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE micromedicao.seq_comunicado_alto_consumo TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE micromedicao.seq_comunicado_alto_consumo TO pg_aplic;
-GRANT SELECT ON TABLE micromedicao.seq_comunicado_alto_consumo TO pg_users;
+GRANT SELECT, UPDATE ON TABLE micromedicao.seq_comunicado_alto_consumo TO role_aplic;
+GRANT SELECT ON TABLE micromedicao.seq_comunicado_alto_consumo TO role_users;
 
 
 insert into micromedicao.comunicado_alto_consumo (

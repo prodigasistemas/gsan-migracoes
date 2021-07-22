@@ -23,8 +23,8 @@ WITH (
 ALTER TABLE cadastro.contrato_instalacao_reservacao
   OWNER TO gsan_admin;
 GRANT ALL ON TABLE cadastro.contrato_instalacao_reservacao TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_instalacao_reservacao TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.contrato_instalacao_reservacao TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_instalacao_reservacao TO role_aplic;
+GRANT SELECT ON TABLE cadastro.contrato_instalacao_reservacao TO role_users;
 COMMENT ON COLUMN cadastro.contrato_instalacao_reservacao.ctir_id IS 'id do Contrato Instalacao Reservacao';
 COMMENT ON COLUMN cadastro.contrato_instalacao_reservacao.cntt_id IS 'id do Contrato';
 COMMENT ON COLUMN cadastro.contrato_instalacao_reservacao.clim_id IS 'id do cliente Imovel';
@@ -44,8 +44,8 @@ CREATE SEQUENCE cadastro.seq_contrato_instalacao_reservacao
 ALTER TABLE cadastro.seq_contrato_instalacao_reservacao
   OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_instalacao_reservacao TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_instalacao_reservacao TO pg_aplic;
-GRANT SELECT ON TABLE cadastro.seq_contrato_instalacao_reservacao TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_instalacao_reservacao TO role_aplic;
+GRANT SELECT ON TABLE cadastro.seq_contrato_instalacao_reservacao TO role_users;
 
 UPDATE seguranca.parametro SET nome = 'URL_CONTRATO', valor = 'http://api.cosanpa.pa.gov.br/contratos/' WHERE nome = 'URL_CONTRATO_ADESAO';
 

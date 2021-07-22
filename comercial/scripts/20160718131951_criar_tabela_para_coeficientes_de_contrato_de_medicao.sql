@@ -24,8 +24,8 @@ WITH (
 
 ALTER TABLE                                   cadastro.contrato_medicao_coeficiente OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            cadastro.contrato_medicao_coeficiente TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_medicao_coeficiente TO pg_aplic;
-GRANT SELECT ON TABLE                         cadastro.contrato_medicao_coeficiente TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_medicao_coeficiente TO role_aplic;
+GRANT SELECT ON TABLE                         cadastro.contrato_medicao_coeficiente TO role_users;
 
 
 CREATE SEQUENCE cadastro.seq_contrato_medicao_coeficiente
@@ -36,8 +36,8 @@ CREATE SEQUENCE cadastro.seq_contrato_medicao_coeficiente
   CACHE 1;
 ALTER TABLE                   cadastro.seq_contrato_medicao_coeficiente OWNER TO gsan_admin;
 GRANT ALL ON TABLE            cadastro.seq_contrato_medicao_coeficiente TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_medicao_coeficiente TO pg_aplic;
-GRANT SELECT ON TABLE         cadastro.seq_contrato_medicao_coeficiente TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_medicao_coeficiente TO role_aplic;
+GRANT SELECT ON TABLE         cadastro.seq_contrato_medicao_coeficiente TO role_users;
 
 
 

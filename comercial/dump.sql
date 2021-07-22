@@ -68751,7 +68751,7 @@ CREATE TABLE consumoeta (
 ALTER TABLE consumoeta OWNER TO postgres;
 
 --
--- Name: consumoeta_produto; Type: TABLE; Schema: operacao; Owner: pg_aplic
+-- Name: consumoeta_produto; Type: TABLE; Schema: operacao; Owner: role_aplic
 --
 
 CREATE TABLE consumoeta_produto (
@@ -68761,7 +68761,7 @@ CREATE TABLE consumoeta_produto (
 );
 
 
-ALTER TABLE consumoeta_produto OWNER TO pg_aplic;
+ALTER TABLE consumoeta_produto OWNER TO role_aplic;
 
 --
 -- Name: contrato_energia; Type: TABLE; Schema: operacao; Owner: postgres
@@ -77089,8 +77089,8 @@ SET search_path = admindb, pg_catalog;
 REVOKE ALL ON SEQUENCE seq_db_backup FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_db_backup FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_db_backup TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_db_backup TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_db_backup TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_db_backup TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_db_backup TO role_users;
 
 
 --
@@ -77100,8 +77100,8 @@ GRANT SELECT ON SEQUENCE seq_db_backup TO pg_users;
 REVOKE ALL ON TABLE db_backup FROM PUBLIC;
 REVOKE ALL ON TABLE db_backup FROM gsan_admin;
 GRANT ALL ON TABLE db_backup TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_backup TO pg_aplic;
-GRANT SELECT ON TABLE db_backup TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_backup TO role_aplic;
+GRANT SELECT ON TABLE db_backup TO role_users;
 
 
 --
@@ -77111,8 +77111,8 @@ GRANT SELECT ON TABLE db_backup TO pg_users;
 REVOKE ALL ON TABLE db_empresa FROM PUBLIC;
 REVOKE ALL ON TABLE db_empresa FROM gsan_admin;
 GRANT ALL ON TABLE db_empresa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_empresa TO pg_aplic;
-GRANT SELECT ON TABLE db_empresa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_empresa TO role_aplic;
+GRANT SELECT ON TABLE db_empresa TO role_users;
 
 
 --
@@ -77122,8 +77122,8 @@ GRANT SELECT ON TABLE db_empresa TO pg_users;
 REVOKE ALL ON TABLE db_index_20151201 FROM PUBLIC;
 REVOKE ALL ON TABLE db_index_20151201 FROM gsan_admin;
 GRANT ALL ON TABLE db_index_20151201 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_index_20151201 TO pg_aplic;
-GRANT SELECT ON TABLE db_index_20151201 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_index_20151201 TO role_aplic;
+GRANT SELECT ON TABLE db_index_20151201 TO role_users;
 
 
 --
@@ -77133,8 +77133,8 @@ GRANT SELECT ON TABLE db_index_20151201 TO pg_users;
 REVOKE ALL ON TABLE db_index_coletado_20150316 FROM PUBLIC;
 REVOKE ALL ON TABLE db_index_coletado_20150316 FROM gsan_admin;
 GRANT ALL ON TABLE db_index_coletado_20150316 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_index_coletado_20150316 TO pg_aplic;
-GRANT SELECT ON TABLE db_index_coletado_20150316 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_index_coletado_20150316 TO role_aplic;
+GRANT SELECT ON TABLE db_index_coletado_20150316 TO role_users;
 
 
 --
@@ -77144,8 +77144,8 @@ GRANT SELECT ON TABLE db_index_coletado_20150316 TO pg_users;
 REVOKE ALL ON TABLE db_index_tabelas FROM PUBLIC;
 REVOKE ALL ON TABLE db_index_tabelas FROM gsan_admin;
 GRANT ALL ON TABLE db_index_tabelas TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_index_tabelas TO pg_aplic;
-GRANT SELECT ON TABLE db_index_tabelas TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_index_tabelas TO role_aplic;
+GRANT SELECT ON TABLE db_index_tabelas TO role_users;
 
 
 --
@@ -77155,8 +77155,8 @@ GRANT SELECT ON TABLE db_index_tabelas TO pg_users;
 REVOKE ALL ON TABLE db_index_tabelas_20151201 FROM PUBLIC;
 REVOKE ALL ON TABLE db_index_tabelas_20151201 FROM gsan_admin;
 GRANT ALL ON TABLE db_index_tabelas_20151201 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_index_tabelas_20151201 TO pg_aplic;
-GRANT SELECT ON TABLE db_index_tabelas_20151201 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_index_tabelas_20151201 TO role_aplic;
+GRANT SELECT ON TABLE db_index_tabelas_20151201 TO role_users;
 
 
 --
@@ -77166,8 +77166,8 @@ GRANT SELECT ON TABLE db_index_tabelas_20151201 TO pg_users;
 REVOKE ALL ON SEQUENCE seq_db_query_start FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_db_query_start FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_db_query_start TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_db_query_start TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_db_query_start TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_db_query_start TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_db_query_start TO role_users;
 
 
 --
@@ -77177,8 +77177,8 @@ GRANT SELECT ON SEQUENCE seq_db_query_start TO pg_users;
 REVOKE ALL ON TABLE db_query_start FROM PUBLIC;
 REVOKE ALL ON TABLE db_query_start FROM gsan_admin;
 GRANT ALL ON TABLE db_query_start TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_query_start TO pg_aplic;
-GRANT SELECT ON TABLE db_query_start TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_query_start TO role_aplic;
+GRANT SELECT ON TABLE db_query_start TO role_users;
 
 
 --
@@ -77188,8 +77188,8 @@ GRANT SELECT ON TABLE db_query_start TO pg_users;
 REVOKE ALL ON TABLE db_table FROM PUBLIC;
 REVOKE ALL ON TABLE db_table FROM gsan_admin;
 GRANT ALL ON TABLE db_table TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_table TO pg_aplic;
-GRANT SELECT ON TABLE db_table TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_table TO role_aplic;
+GRANT SELECT ON TABLE db_table TO role_users;
 
 
 --
@@ -77199,8 +77199,8 @@ GRANT SELECT ON TABLE db_table TO pg_users;
 REVOKE ALL ON SEQUENCE seq_db_vacuum FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_db_vacuum FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_db_vacuum TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_db_vacuum TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_db_vacuum TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_db_vacuum TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_db_vacuum TO role_users;
 
 
 --
@@ -77210,8 +77210,8 @@ GRANT SELECT ON SEQUENCE seq_db_vacuum TO pg_users;
 REVOKE ALL ON TABLE db_vacuum FROM PUBLIC;
 REVOKE ALL ON TABLE db_vacuum FROM gsan_admin;
 GRANT ALL ON TABLE db_vacuum TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_vacuum TO pg_aplic;
-GRANT SELECT ON TABLE db_vacuum TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_vacuum TO role_aplic;
+GRANT SELECT ON TABLE db_vacuum TO role_users;
 
 
 --
@@ -77221,8 +77221,8 @@ GRANT SELECT ON TABLE db_vacuum TO pg_users;
 REVOKE ALL ON SEQUENCE seq_db_versao_base FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_db_versao_base FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_db_versao_base TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_db_versao_base TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_db_versao_base TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_db_versao_base TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_db_versao_base TO role_users;
 
 
 --
@@ -77232,8 +77232,8 @@ GRANT SELECT ON SEQUENCE seq_db_versao_base TO pg_users;
 REVOKE ALL ON TABLE db_versao_base FROM PUBLIC;
 REVOKE ALL ON TABLE db_versao_base FROM gsan_admin;
 GRANT ALL ON TABLE db_versao_base TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_versao_base TO pg_aplic;
-GRANT SELECT ON TABLE db_versao_base TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_versao_base TO role_aplic;
+GRANT SELECT ON TABLE db_versao_base TO role_users;
 
 
 --
@@ -77243,8 +77243,8 @@ GRANT SELECT ON TABLE db_versao_base TO pg_users;
 REVOKE ALL ON SEQUENCE seq_db_versao_sincronismo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_db_versao_sincronismo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_db_versao_sincronismo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_db_versao_sincronismo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_db_versao_sincronismo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_db_versao_sincronismo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_db_versao_sincronismo TO role_users;
 
 
 --
@@ -77254,8 +77254,8 @@ GRANT SELECT ON SEQUENCE seq_db_versao_sincronismo TO pg_users;
 REVOKE ALL ON TABLE db_versao_sincronismo FROM PUBLIC;
 REVOKE ALL ON TABLE db_versao_sincronismo FROM gsan_admin;
 GRANT ALL ON TABLE db_versao_sincronismo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_versao_sincronismo TO pg_aplic;
-GRANT SELECT ON TABLE db_versao_sincronismo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE db_versao_sincronismo TO role_aplic;
+GRANT SELECT ON TABLE db_versao_sincronismo TO role_users;
 
 
 --
@@ -77265,8 +77265,8 @@ GRANT SELECT ON TABLE db_versao_sincronismo TO pg_users;
 REVOKE ALL ON TABLE pct_index_0 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_0 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_0 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_0 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_0 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_0 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_0 TO role_users;
 
 
 --
@@ -77276,8 +77276,8 @@ GRANT SELECT ON TABLE pct_index_0 TO pg_users;
 REVOKE ALL ON TABLE pct_index_00 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_00 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_00 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_00 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_00 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_00 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_00 TO role_users;
 
 
 --
@@ -77287,8 +77287,8 @@ GRANT SELECT ON TABLE pct_index_00 TO pg_users;
 REVOKE ALL ON TABLE pct_index_01 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_01 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_01 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_01 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_01 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_01 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_01 TO role_users;
 
 
 --
@@ -77298,8 +77298,8 @@ GRANT SELECT ON TABLE pct_index_01 TO pg_users;
 REVOKE ALL ON TABLE pct_index_02 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_02 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_02 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_02 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_02 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_02 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_02 TO role_users;
 
 
 --
@@ -77309,8 +77309,8 @@ GRANT SELECT ON TABLE pct_index_02 TO pg_users;
 REVOKE ALL ON TABLE pct_index_03 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_03 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_03 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_03 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_03 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_03 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_03 TO role_users;
 
 
 --
@@ -77320,8 +77320,8 @@ GRANT SELECT ON TABLE pct_index_03 TO pg_users;
 REVOKE ALL ON TABLE pct_index_04 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_04 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_04 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_04 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_04 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_04 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_04 TO role_users;
 
 
 --
@@ -77331,8 +77331,8 @@ GRANT SELECT ON TABLE pct_index_04 TO pg_users;
 REVOKE ALL ON TABLE pct_index_1 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_1 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_1 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_1 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_1 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_1 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_1 TO role_users;
 
 
 --
@@ -77342,8 +77342,8 @@ GRANT SELECT ON TABLE pct_index_1 TO pg_users;
 REVOKE ALL ON TABLE pct_index_2 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_2 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_2 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_2 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_2 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_2 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_2 TO role_users;
 
 
 --
@@ -77353,8 +77353,8 @@ GRANT SELECT ON TABLE pct_index_2 TO pg_users;
 REVOKE ALL ON TABLE pct_index_98 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_98 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_98 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_98 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_98 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_98 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_98 TO role_users;
 
 
 --
@@ -77364,8 +77364,8 @@ GRANT SELECT ON TABLE pct_index_98 TO pg_users;
 REVOKE ALL ON TABLE pct_index_99 FROM PUBLIC;
 REVOKE ALL ON TABLE pct_index_99 FROM gsan_admin;
 GRANT ALL ON TABLE pct_index_99 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_99 TO pg_aplic;
-GRANT SELECT ON TABLE pct_index_99 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pct_index_99 TO role_aplic;
+GRANT SELECT ON TABLE pct_index_99 TO role_users;
 
 
 --
@@ -77375,8 +77375,8 @@ GRANT SELECT ON TABLE pct_index_99 TO pg_users;
 REVOKE ALL ON TABLE tabela_indice_kb_20151201 FROM PUBLIC;
 REVOKE ALL ON TABLE tabela_indice_kb_20151201 FROM gsan_admin;
 GRANT ALL ON TABLE tabela_indice_kb_20151201 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_indice_kb_20151201 TO pg_aplic;
-GRANT SELECT ON TABLE tabela_indice_kb_20151201 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_indice_kb_20151201 TO role_aplic;
+GRANT SELECT ON TABLE tabela_indice_kb_20151201 TO role_users;
 
 
 --
@@ -77386,8 +77386,8 @@ GRANT SELECT ON TABLE tabela_indice_kb_20151201 TO pg_users;
 REVOKE ALL ON TABLE tabela_indice_pk_20151201 FROM PUBLIC;
 REVOKE ALL ON TABLE tabela_indice_pk_20151201 FROM gsan_admin;
 GRANT ALL ON TABLE tabela_indice_pk_20151201 TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_indice_pk_20151201 TO pg_aplic;
-GRANT SELECT ON TABLE tabela_indice_pk_20151201 TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_indice_pk_20151201 TO role_aplic;
+GRANT SELECT ON TABLE tabela_indice_pk_20151201 TO role_users;
 
 
 --
@@ -77397,8 +77397,8 @@ GRANT SELECT ON TABLE tabela_indice_pk_20151201 TO pg_users;
 REVOKE ALL ON TABLE vw_db_backup FROM PUBLIC;
 REVOKE ALL ON TABLE vw_db_backup FROM gsan_admin;
 GRANT ALL ON TABLE vw_db_backup TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_backup TO pg_aplic;
-GRANT SELECT ON TABLE vw_db_backup TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_backup TO role_aplic;
+GRANT SELECT ON TABLE vw_db_backup TO role_users;
 
 
 --
@@ -77408,8 +77408,8 @@ GRANT SELECT ON TABLE vw_db_backup TO pg_users;
 REVOKE ALL ON TABLE vw_db_vacuum FROM PUBLIC;
 REVOKE ALL ON TABLE vw_db_vacuum FROM gsan_admin;
 GRANT ALL ON TABLE vw_db_vacuum TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_vacuum TO pg_aplic;
-GRANT SELECT ON TABLE vw_db_vacuum TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_vacuum TO role_aplic;
+GRANT SELECT ON TABLE vw_db_vacuum TO role_users;
 
 
 --
@@ -77419,8 +77419,8 @@ GRANT SELECT ON TABLE vw_db_vacuum TO pg_users;
 REVOKE ALL ON TABLE vw_db_versao_base FROM PUBLIC;
 REVOKE ALL ON TABLE vw_db_versao_base FROM gsan_admin;
 GRANT ALL ON TABLE vw_db_versao_base TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_versao_base TO pg_aplic;
-GRANT SELECT ON TABLE vw_db_versao_base TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_versao_base TO role_aplic;
+GRANT SELECT ON TABLE vw_db_versao_base TO role_users;
 
 
 --
@@ -77430,8 +77430,8 @@ GRANT SELECT ON TABLE vw_db_versao_base TO pg_users;
 REVOKE ALL ON TABLE vw_db_versao_base_publicada FROM PUBLIC;
 REVOKE ALL ON TABLE vw_db_versao_base_publicada FROM gsan_admin;
 GRANT ALL ON TABLE vw_db_versao_base_publicada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_versao_base_publicada TO pg_aplic;
-GRANT SELECT ON TABLE vw_db_versao_base_publicada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_versao_base_publicada TO role_aplic;
+GRANT SELECT ON TABLE vw_db_versao_base_publicada TO role_users;
 
 
 --
@@ -77441,8 +77441,8 @@ GRANT SELECT ON TABLE vw_db_versao_base_publicada TO pg_users;
 REVOKE ALL ON TABLE vw_db_versao_sincronismo FROM PUBLIC;
 REVOKE ALL ON TABLE vw_db_versao_sincronismo FROM gsan_admin;
 GRANT ALL ON TABLE vw_db_versao_sincronismo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_versao_sincronismo TO pg_aplic;
-GRANT SELECT ON TABLE vw_db_versao_sincronismo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_versao_sincronismo TO role_aplic;
+GRANT SELECT ON TABLE vw_db_versao_sincronismo TO role_users;
 
 
 --
@@ -77452,8 +77452,8 @@ GRANT SELECT ON TABLE vw_db_versao_sincronismo TO pg_users;
 REVOKE ALL ON TABLE vw_db_versao_sincronismo_publicada FROM PUBLIC;
 REVOKE ALL ON TABLE vw_db_versao_sincronismo_publicada FROM gsan_admin;
 GRANT ALL ON TABLE vw_db_versao_sincronismo_publicada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_versao_sincronismo_publicada TO pg_aplic;
-GRANT SELECT ON TABLE vw_db_versao_sincronismo_publicada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_db_versao_sincronismo_publicada TO role_aplic;
+GRANT SELECT ON TABLE vw_db_versao_sincronismo_publicada TO role_users;
 
 
 SET search_path = arrecadacao, pg_catalog;
@@ -77465,8 +77465,8 @@ SET search_path = arrecadacao, pg_catalog;
 REVOKE ALL ON TABLE agencia FROM PUBLIC;
 REVOKE ALL ON TABLE agencia FROM gsan_admin;
 GRANT ALL ON TABLE agencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agencia TO pg_aplic;
-GRANT SELECT ON TABLE agencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agencia TO role_aplic;
+GRANT SELECT ON TABLE agencia TO role_users;
 
 
 --
@@ -77476,8 +77476,8 @@ GRANT SELECT ON TABLE agencia TO pg_users;
 REVOKE ALL ON TABLE arrec_contb_parametros FROM PUBLIC;
 REVOKE ALL ON TABLE arrec_contb_parametros FROM gsan_admin;
 GRANT ALL ON TABLE arrec_contb_parametros TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrec_contb_parametros TO pg_aplic;
-GRANT SELECT ON TABLE arrec_contb_parametros TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrec_contb_parametros TO role_aplic;
+GRANT SELECT ON TABLE arrec_contb_parametros TO role_users;
 
 
 --
@@ -77487,8 +77487,8 @@ GRANT SELECT ON TABLE arrec_contb_parametros TO pg_users;
 REVOKE ALL ON TABLE arrec_dados_diarios FROM PUBLIC;
 REVOKE ALL ON TABLE arrec_dados_diarios FROM gsan_admin;
 GRANT ALL ON TABLE arrec_dados_diarios TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrec_dados_diarios TO pg_aplic;
-GRANT SELECT ON TABLE arrec_dados_diarios TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrec_dados_diarios TO role_aplic;
+GRANT SELECT ON TABLE arrec_dados_diarios TO role_users;
 
 
 --
@@ -77498,8 +77498,8 @@ GRANT SELECT ON TABLE arrec_dados_diarios TO pg_users;
 REVOKE ALL ON TABLE arrecadacao_dados_diarios_auxiliar FROM PUBLIC;
 REVOKE ALL ON TABLE arrecadacao_dados_diarios_auxiliar FROM gsan_admin;
 GRANT ALL ON TABLE arrecadacao_dados_diarios_auxiliar TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadacao_dados_diarios_auxiliar TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao_dados_diarios_auxiliar TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadacao_dados_diarios_auxiliar TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao_dados_diarios_auxiliar TO role_users;
 
 
 --
@@ -77509,8 +77509,8 @@ GRANT SELECT ON TABLE arrecadacao_dados_diarios_auxiliar TO pg_users;
 REVOKE ALL ON TABLE arrecadacao_forma FROM PUBLIC;
 REVOKE ALL ON TABLE arrecadacao_forma FROM gsan_admin;
 GRANT ALL ON TABLE arrecadacao_forma TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadacao_forma TO pg_aplic;
-GRANT SELECT ON TABLE arrecadacao_forma TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadacao_forma TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao_forma TO role_users;
 
 
 --
@@ -77520,8 +77520,8 @@ GRANT SELECT ON TABLE arrecadacao_forma TO pg_users;
 REVOKE ALL ON TABLE arrecadador FROM PUBLIC;
 REVOKE ALL ON TABLE arrecadador FROM gsan_admin;
 GRANT ALL ON TABLE arrecadador TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador TO pg_aplic;
-GRANT SELECT ON TABLE arrecadador TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador TO role_aplic;
+GRANT SELECT ON TABLE arrecadador TO role_users;
 
 
 --
@@ -77531,8 +77531,8 @@ GRANT SELECT ON TABLE arrecadador TO pg_users;
 REVOKE ALL ON TABLE arrecadador_contrato FROM PUBLIC;
 REVOKE ALL ON TABLE arrecadador_contrato FROM gsan_admin;
 GRANT ALL ON TABLE arrecadador_contrato TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador_contrato TO pg_aplic;
-GRANT SELECT ON TABLE arrecadador_contrato TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador_contrato TO role_aplic;
+GRANT SELECT ON TABLE arrecadador_contrato TO role_users;
 
 
 --
@@ -77542,8 +77542,8 @@ GRANT SELECT ON TABLE arrecadador_contrato TO pg_users;
 REVOKE ALL ON TABLE arrecadador_contrato_tar FROM PUBLIC;
 REVOKE ALL ON TABLE arrecadador_contrato_tar FROM gsan_admin;
 GRANT ALL ON TABLE arrecadador_contrato_tar TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador_contrato_tar TO pg_aplic;
-GRANT SELECT ON TABLE arrecadador_contrato_tar TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador_contrato_tar TO role_aplic;
+GRANT SELECT ON TABLE arrecadador_contrato_tar TO role_users;
 
 
 --
@@ -77553,8 +77553,8 @@ GRANT SELECT ON TABLE arrecadador_contrato_tar TO pg_users;
 REVOKE ALL ON TABLE arrecadador_mov_item FROM PUBLIC;
 REVOKE ALL ON TABLE arrecadador_mov_item FROM gsan_admin;
 GRANT ALL ON TABLE arrecadador_mov_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador_mov_item TO pg_aplic;
-GRANT SELECT ON TABLE arrecadador_mov_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador_mov_item TO role_aplic;
+GRANT SELECT ON TABLE arrecadador_mov_item TO role_users;
 
 
 --
@@ -77564,8 +77564,8 @@ GRANT SELECT ON TABLE arrecadador_mov_item TO pg_users;
 REVOKE ALL ON TABLE arrecadador_movimento FROM PUBLIC;
 REVOKE ALL ON TABLE arrecadador_movimento FROM gsan_admin;
 GRANT ALL ON TABLE arrecadador_movimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador_movimento TO pg_aplic;
-GRANT SELECT ON TABLE arrecadador_movimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arrecadador_movimento TO role_aplic;
+GRANT SELECT ON TABLE arrecadador_movimento TO role_users;
 
 
 --
@@ -77575,8 +77575,8 @@ GRANT SELECT ON TABLE arrecadador_movimento TO pg_users;
 REVOKE ALL ON TABLE aviso_acertos FROM PUBLIC;
 REVOKE ALL ON TABLE aviso_acertos FROM gsan_admin;
 GRANT ALL ON TABLE aviso_acertos TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE aviso_acertos TO pg_aplic;
-GRANT SELECT ON TABLE aviso_acertos TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE aviso_acertos TO role_aplic;
+GRANT SELECT ON TABLE aviso_acertos TO role_users;
 
 
 --
@@ -77586,8 +77586,8 @@ GRANT SELECT ON TABLE aviso_acertos TO pg_users;
 REVOKE ALL ON TABLE aviso_bancario FROM PUBLIC;
 REVOKE ALL ON TABLE aviso_bancario FROM gsan_admin;
 GRANT ALL ON TABLE aviso_bancario TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE aviso_bancario TO pg_aplic;
-GRANT SELECT ON TABLE aviso_bancario TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE aviso_bancario TO role_aplic;
+GRANT SELECT ON TABLE aviso_bancario TO role_users;
 
 
 --
@@ -77597,8 +77597,8 @@ GRANT SELECT ON TABLE aviso_bancario TO pg_users;
 REVOKE ALL ON TABLE aviso_deducoes FROM PUBLIC;
 REVOKE ALL ON TABLE aviso_deducoes FROM gsan_admin;
 GRANT ALL ON TABLE aviso_deducoes TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE aviso_deducoes TO pg_aplic;
-GRANT SELECT ON TABLE aviso_deducoes TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE aviso_deducoes TO role_aplic;
+GRANT SELECT ON TABLE aviso_deducoes TO role_users;
 
 
 --
@@ -77608,8 +77608,8 @@ GRANT SELECT ON TABLE aviso_deducoes TO pg_users;
 REVOKE ALL ON TABLE banco FROM PUBLIC;
 REVOKE ALL ON TABLE banco FROM gsan_admin;
 GRANT ALL ON TABLE banco TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE banco TO pg_aplic;
-GRANT SELECT ON TABLE banco TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE banco TO role_aplic;
+GRANT SELECT ON TABLE banco TO role_users;
 
 
 --
@@ -77619,8 +77619,8 @@ GRANT SELECT ON TABLE banco TO pg_users;
 REVOKE ALL ON TABLE boletim_informacoes_gerenciais FROM PUBLIC;
 REVOKE ALL ON TABLE boletim_informacoes_gerenciais FROM gsan_admin;
 GRANT ALL ON TABLE boletim_informacoes_gerenciais TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE boletim_informacoes_gerenciais TO pg_aplic;
-GRANT SELECT ON TABLE boletim_informacoes_gerenciais TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE boletim_informacoes_gerenciais TO role_aplic;
+GRANT SELECT ON TABLE boletim_informacoes_gerenciais TO role_users;
 
 
 --
@@ -77630,8 +77630,8 @@ GRANT SELECT ON TABLE boletim_informacoes_gerenciais TO pg_users;
 REVOKE ALL ON TABLE conta_bancaria FROM PUBLIC;
 REVOKE ALL ON TABLE conta_bancaria FROM gsan_admin;
 GRANT ALL ON TABLE conta_bancaria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_bancaria TO pg_aplic;
-GRANT SELECT ON TABLE conta_bancaria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_bancaria TO role_aplic;
+GRANT SELECT ON TABLE conta_bancaria TO role_users;
 
 
 --
@@ -77641,8 +77641,8 @@ GRANT SELECT ON TABLE conta_bancaria TO pg_users;
 REVOKE ALL ON TABLE contrato_demanda FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_demanda FROM gsan_admin;
 GRANT ALL ON TABLE contrato_demanda TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda TO pg_aplic;
-GRANT SELECT ON TABLE contrato_demanda TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda TO role_aplic;
+GRANT SELECT ON TABLE contrato_demanda TO role_users;
 
 
 --
@@ -77652,8 +77652,8 @@ GRANT SELECT ON TABLE contrato_demanda TO pg_users;
 REVOKE ALL ON TABLE contrato_motivo_cancel FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_motivo_cancel FROM gsan_admin;
 GRANT ALL ON TABLE contrato_motivo_cancel TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_motivo_cancel TO pg_aplic;
-GRANT SELECT ON TABLE contrato_motivo_cancel TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_motivo_cancel TO role_aplic;
+GRANT SELECT ON TABLE contrato_motivo_cancel TO role_users;
 
 
 --
@@ -77663,8 +77663,8 @@ GRANT SELECT ON TABLE contrato_motivo_cancel TO pg_users;
 REVOKE ALL ON TABLE debito_auto_movimento FROM PUBLIC;
 REVOKE ALL ON TABLE debito_auto_movimento FROM gsan_admin;
 GRANT ALL ON TABLE debito_auto_movimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_auto_movimento TO pg_aplic;
-GRANT SELECT ON TABLE debito_auto_movimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_auto_movimento TO role_aplic;
+GRANT SELECT ON TABLE debito_auto_movimento TO role_users;
 
 
 --
@@ -77674,8 +77674,8 @@ GRANT SELECT ON TABLE debito_auto_movimento TO pg_users;
 REVOKE ALL ON TABLE debito_auto_retorno_cod FROM PUBLIC;
 REVOKE ALL ON TABLE debito_auto_retorno_cod FROM gsan_admin;
 GRANT ALL ON TABLE debito_auto_retorno_cod TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_auto_retorno_cod TO pg_aplic;
-GRANT SELECT ON TABLE debito_auto_retorno_cod TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_auto_retorno_cod TO role_aplic;
+GRANT SELECT ON TABLE debito_auto_retorno_cod TO role_users;
 
 
 --
@@ -77685,8 +77685,8 @@ GRANT SELECT ON TABLE debito_auto_retorno_cod TO pg_users;
 REVOKE ALL ON TABLE debito_automatico FROM PUBLIC;
 REVOKE ALL ON TABLE debito_automatico FROM gsan_admin;
 GRANT ALL ON TABLE debito_automatico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_automatico TO pg_aplic;
-GRANT SELECT ON TABLE debito_automatico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_automatico TO role_aplic;
+GRANT SELECT ON TABLE debito_automatico TO role_users;
 
 
 --
@@ -77696,8 +77696,8 @@ GRANT SELECT ON TABLE debito_automatico TO pg_users;
 REVOKE ALL ON TABLE deducao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE deducao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE deducao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deducao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE deducao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deducao_tipo TO role_aplic;
+GRANT SELECT ON TABLE deducao_tipo TO role_users;
 
 
 --
@@ -77707,8 +77707,8 @@ GRANT SELECT ON TABLE deducao_tipo TO pg_users;
 REVOKE ALL ON TABLE devolucao FROM PUBLIC;
 REVOKE ALL ON TABLE devolucao FROM gsan_admin;
 GRANT ALL ON TABLE devolucao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao TO pg_aplic;
-GRANT SELECT ON TABLE devolucao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao TO role_aplic;
+GRANT SELECT ON TABLE devolucao TO role_users;
 
 
 --
@@ -77718,8 +77718,8 @@ GRANT SELECT ON TABLE devolucao TO pg_users;
 REVOKE ALL ON TABLE devolucao_dados_diarios FROM PUBLIC;
 REVOKE ALL ON TABLE devolucao_dados_diarios FROM gsan_admin;
 GRANT ALL ON TABLE devolucao_dados_diarios TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao_dados_diarios TO pg_aplic;
-GRANT SELECT ON TABLE devolucao_dados_diarios TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao_dados_diarios TO role_aplic;
+GRANT SELECT ON TABLE devolucao_dados_diarios TO role_users;
 
 
 --
@@ -77729,8 +77729,8 @@ GRANT SELECT ON TABLE devolucao_dados_diarios TO pg_users;
 REVOKE ALL ON TABLE devolucao_dados_diarios_auxiliar FROM PUBLIC;
 REVOKE ALL ON TABLE devolucao_dados_diarios_auxiliar FROM gsan_admin;
 GRANT ALL ON TABLE devolucao_dados_diarios_auxiliar TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao_dados_diarios_auxiliar TO pg_aplic;
-GRANT SELECT ON TABLE devolucao_dados_diarios_auxiliar TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao_dados_diarios_auxiliar TO role_aplic;
+GRANT SELECT ON TABLE devolucao_dados_diarios_auxiliar TO role_users;
 
 
 --
@@ -77740,8 +77740,8 @@ GRANT SELECT ON TABLE devolucao_dados_diarios_auxiliar TO pg_users;
 REVOKE ALL ON TABLE devolucao_historico FROM PUBLIC;
 REVOKE ALL ON TABLE devolucao_historico FROM gsan_admin;
 GRANT ALL ON TABLE devolucao_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao_historico TO pg_aplic;
-GRANT SELECT ON TABLE devolucao_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao_historico TO role_aplic;
+GRANT SELECT ON TABLE devolucao_historico TO role_users;
 
 
 --
@@ -77751,8 +77751,8 @@ GRANT SELECT ON TABLE devolucao_historico TO pg_users;
 REVOKE ALL ON TABLE devolucao_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE devolucao_situacao FROM gsan_admin;
 GRANT ALL ON TABLE devolucao_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao_situacao TO pg_aplic;
-GRANT SELECT ON TABLE devolucao_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE devolucao_situacao TO role_aplic;
+GRANT SELECT ON TABLE devolucao_situacao TO role_users;
 
 
 --
@@ -77762,8 +77762,8 @@ GRANT SELECT ON TABLE devolucao_situacao TO pg_users;
 REVOKE ALL ON TABLE diferenca_acumulada FROM PUBLIC;
 REVOKE ALL ON TABLE diferenca_acumulada FROM gsan_admin;
 GRANT ALL ON TABLE diferenca_acumulada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE diferenca_acumulada TO pg_aplic;
-GRANT SELECT ON TABLE diferenca_acumulada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE diferenca_acumulada TO role_aplic;
+GRANT SELECT ON TABLE diferenca_acumulada TO role_users;
 
 
 --
@@ -77773,8 +77773,8 @@ GRANT SELECT ON TABLE diferenca_acumulada TO pg_users;
 REVOKE ALL ON TABLE guia_devolucao FROM PUBLIC;
 REVOKE ALL ON TABLE guia_devolucao FROM gsan_admin;
 GRANT ALL ON TABLE guia_devolucao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_devolucao TO pg_aplic;
-GRANT SELECT ON TABLE guia_devolucao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_devolucao TO role_aplic;
+GRANT SELECT ON TABLE guia_devolucao TO role_users;
 
 
 --
@@ -77784,8 +77784,8 @@ GRANT SELECT ON TABLE guia_devolucao TO pg_users;
 REVOKE ALL ON TABLE metas_arrecadacao FROM PUBLIC;
 REVOKE ALL ON TABLE metas_arrecadacao FROM gsan_admin;
 GRANT ALL ON TABLE metas_arrecadacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE metas_arrecadacao TO pg_aplic;
-GRANT SELECT ON TABLE metas_arrecadacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE metas_arrecadacao TO role_aplic;
+GRANT SELECT ON TABLE metas_arrecadacao TO role_users;
 
 
 --
@@ -77795,8 +77795,8 @@ GRANT SELECT ON TABLE metas_arrecadacao TO pg_users;
 REVOKE ALL ON TABLE movimento_cartao_rejeita FROM PUBLIC;
 REVOKE ALL ON TABLE movimento_cartao_rejeita FROM gsan_admin;
 GRANT ALL ON TABLE movimento_cartao_rejeita TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE movimento_cartao_rejeita TO pg_aplic;
-GRANT SELECT ON TABLE movimento_cartao_rejeita TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE movimento_cartao_rejeita TO role_aplic;
+GRANT SELECT ON TABLE movimento_cartao_rejeita TO role_users;
 
 
 --
@@ -77806,8 +77806,8 @@ GRANT SELECT ON TABLE movimento_cartao_rejeita TO pg_users;
 REVOKE ALL ON TABLE pagamento FROM PUBLIC;
 REVOKE ALL ON TABLE pagamento FROM gsan_admin;
 GRANT ALL ON TABLE pagamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamento TO pg_aplic;
-GRANT SELECT ON TABLE pagamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamento TO role_aplic;
+GRANT SELECT ON TABLE pagamento TO role_users;
 
 
 --
@@ -77817,8 +77817,8 @@ GRANT SELECT ON TABLE pagamento TO pg_users;
 REVOKE ALL ON TABLE pagamento_cartao_debito FROM PUBLIC;
 REVOKE ALL ON TABLE pagamento_cartao_debito FROM gsan_admin;
 GRANT ALL ON TABLE pagamento_cartao_debito TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamento_cartao_debito TO pg_aplic;
-GRANT SELECT ON TABLE pagamento_cartao_debito TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamento_cartao_debito TO role_aplic;
+GRANT SELECT ON TABLE pagamento_cartao_debito TO role_users;
 
 
 --
@@ -77828,8 +77828,8 @@ GRANT SELECT ON TABLE pagamento_cartao_debito TO pg_users;
 REVOKE ALL ON TABLE pagamento_historico FROM PUBLIC;
 REVOKE ALL ON TABLE pagamento_historico FROM gsan_admin;
 GRANT ALL ON TABLE pagamento_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamento_historico TO pg_aplic;
-GRANT SELECT ON TABLE pagamento_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamento_historico TO role_aplic;
+GRANT SELECT ON TABLE pagamento_historico TO role_users;
 
 
 --
@@ -77839,8 +77839,8 @@ GRANT SELECT ON TABLE pagamento_historico TO pg_users;
 REVOKE ALL ON TABLE pagamento_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE pagamento_situacao FROM gsan_admin;
 GRANT ALL ON TABLE pagamento_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamento_situacao TO pg_aplic;
-GRANT SELECT ON TABLE pagamento_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamento_situacao TO role_aplic;
+GRANT SELECT ON TABLE pagamento_situacao TO role_users;
 
 
 --
@@ -77850,8 +77850,8 @@ GRANT SELECT ON TABLE pagamento_situacao TO pg_users;
 REVOKE ALL ON TABLE pagamentos_rejeitados_debito_auto FROM PUBLIC;
 REVOKE ALL ON TABLE pagamentos_rejeitados_debito_auto FROM gsan_admin;
 GRANT ALL ON TABLE pagamentos_rejeitados_debito_auto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamentos_rejeitados_debito_auto TO pg_aplic;
-GRANT SELECT ON TABLE pagamentos_rejeitados_debito_auto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamentos_rejeitados_debito_auto TO role_aplic;
+GRANT SELECT ON TABLE pagamentos_rejeitados_debito_auto TO role_users;
 
 
 --
@@ -77861,8 +77861,8 @@ GRANT SELECT ON TABLE pagamentos_rejeitados_debito_auto TO pg_users;
 REVOKE ALL ON TABLE pagto_cartao_debito_item FROM PUBLIC;
 REVOKE ALL ON TABLE pagto_cartao_debito_item FROM gsan_admin;
 GRANT ALL ON TABLE pagto_cartao_debito_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagto_cartao_debito_item TO pg_aplic;
-GRANT SELECT ON TABLE pagto_cartao_debito_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagto_cartao_debito_item TO role_aplic;
+GRANT SELECT ON TABLE pagto_cartao_debito_item TO role_users;
 
 
 --
@@ -77872,8 +77872,8 @@ GRANT SELECT ON TABLE pagto_cartao_debito_item TO pg_users;
 REVOKE ALL ON TABLE recebimento_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE recebimento_tipo FROM gsan_admin;
 GRANT ALL ON TABLE recebimento_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE recebimento_tipo TO pg_aplic;
-GRANT SELECT ON TABLE recebimento_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE recebimento_tipo TO role_aplic;
+GRANT SELECT ON TABLE recebimento_tipo TO role_users;
 
 
 --
@@ -77883,8 +77883,8 @@ GRANT SELECT ON TABLE recebimento_tipo TO pg_users;
 REVOKE ALL ON TABLE registro_codigo FROM PUBLIC;
 REVOKE ALL ON TABLE registro_codigo FROM gsan_admin;
 GRANT ALL ON TABLE registro_codigo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE registro_codigo TO pg_aplic;
-GRANT SELECT ON TABLE registro_codigo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE registro_codigo TO role_aplic;
+GRANT SELECT ON TABLE registro_codigo TO role_users;
 
 
 --
@@ -77894,8 +77894,8 @@ GRANT SELECT ON TABLE registro_codigo TO pg_users;
 REVOKE ALL ON TABLE resumo_arrecadacao FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_arrecadacao FROM gsan_admin;
 GRANT ALL ON TABLE resumo_arrecadacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_arrecadacao TO pg_aplic;
-GRANT SELECT ON TABLE resumo_arrecadacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_arrecadacao TO role_aplic;
+GRANT SELECT ON TABLE resumo_arrecadacao TO role_users;
 
 
 --
@@ -77905,8 +77905,8 @@ GRANT SELECT ON TABLE resumo_arrecadacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_agencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_agencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_agencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_agencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_agencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_agencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_agencia TO role_users;
 
 
 --
@@ -77916,8 +77916,8 @@ GRANT SELECT ON SEQUENCE seq_agencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arrec_contb_parametros FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arrec_contb_parametros FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arrec_contb_parametros TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arrec_contb_parametros TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arrec_contb_parametros TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arrec_contb_parametros TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arrec_contb_parametros TO role_users;
 
 
 --
@@ -77927,8 +77927,8 @@ GRANT SELECT ON SEQUENCE seq_arrec_contb_parametros TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arrec_dados_diarios FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arrec_dados_diarios FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arrec_dados_diarios TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arrec_dados_diarios TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arrec_dados_diarios TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arrec_dados_diarios TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arrec_dados_diarios TO role_users;
 
 
 --
@@ -77938,8 +77938,8 @@ GRANT SELECT ON SEQUENCE seq_arrec_dados_diarios TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arrecadacao_forma FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arrecadacao_forma FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arrecadacao_forma TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadacao_forma TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arrecadacao_forma TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadacao_forma TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arrecadacao_forma TO role_users;
 
 
 --
@@ -77949,8 +77949,8 @@ GRANT SELECT ON SEQUENCE seq_arrecadacao_forma TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arrecadador FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arrecadador FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arrecadador TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadador TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arrecadador TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadador TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arrecadador TO role_users;
 
 
 --
@@ -77960,8 +77960,8 @@ GRANT SELECT ON SEQUENCE seq_arrecadador TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arrecadador_contrato FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arrecadador_contrato FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arrecadador_contrato TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadador_contrato TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arrecadador_contrato TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadador_contrato TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arrecadador_contrato TO role_users;
 
 
 --
@@ -77971,8 +77971,8 @@ GRANT SELECT ON SEQUENCE seq_arrecadador_contrato TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arrecadador_mov_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arrecadador_mov_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arrecadador_mov_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadador_mov_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arrecadador_mov_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadador_mov_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arrecadador_mov_item TO role_users;
 
 
 --
@@ -77982,8 +77982,8 @@ GRANT SELECT ON SEQUENCE seq_arrecadador_mov_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arrecadador_movimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arrecadador_movimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arrecadador_movimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadador_movimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arrecadador_movimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arrecadador_movimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arrecadador_movimento TO role_users;
 
 
 --
@@ -77993,8 +77993,8 @@ GRANT SELECT ON SEQUENCE seq_arrecadador_movimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_aviso_acertos FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_aviso_acertos FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_aviso_acertos TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_aviso_acertos TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_aviso_acertos TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_aviso_acertos TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_aviso_acertos TO role_users;
 
 
 --
@@ -78004,8 +78004,8 @@ GRANT SELECT ON SEQUENCE seq_aviso_acertos TO pg_users;
 REVOKE ALL ON SEQUENCE seq_aviso_bancario FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_aviso_bancario FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_aviso_bancario TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_aviso_bancario TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_aviso_bancario TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_aviso_bancario TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_aviso_bancario TO role_users;
 
 
 --
@@ -78015,8 +78015,8 @@ GRANT SELECT ON SEQUENCE seq_aviso_bancario TO pg_users;
 REVOKE ALL ON SEQUENCE seq_banco FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_banco FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_banco TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_banco TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_banco TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_banco TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_banco TO role_users;
 
 
 --
@@ -78026,8 +78026,8 @@ GRANT SELECT ON SEQUENCE seq_banco TO pg_users;
 REVOKE ALL ON SEQUENCE seq_boletim_informacoes_gerenciais FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_boletim_informacoes_gerenciais FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_boletim_informacoes_gerenciais TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_boletim_informacoes_gerenciais TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_boletim_informacoes_gerenciais TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_boletim_informacoes_gerenciais TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_boletim_informacoes_gerenciais TO role_users;
 
 
 --
@@ -78037,8 +78037,8 @@ GRANT SELECT ON SEQUENCE seq_boletim_informacoes_gerenciais TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_bancaria FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_bancaria FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_bancaria TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_bancaria TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_bancaria TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_bancaria TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_bancaria TO role_users;
 
 
 --
@@ -78048,8 +78048,8 @@ GRANT SELECT ON SEQUENCE seq_conta_bancaria TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_demanda TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_contrato_demanda TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_contrato_demanda TO role_users;
 
 
 --
@@ -78059,8 +78059,8 @@ GRANT SELECT ON SEQUENCE seq_contrato_demanda TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_motivo_cancel FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_motivo_cancel FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_motivo_cancel TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_motivo_cancel TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_contrato_motivo_cancel TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_motivo_cancel TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_contrato_motivo_cancel TO role_users;
 
 
 --
@@ -78070,8 +78070,8 @@ GRANT SELECT ON SEQUENCE seq_contrato_motivo_cancel TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_auto_movimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_auto_movimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_auto_movimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_auto_movimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_auto_movimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_auto_movimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_auto_movimento TO role_users;
 
 
 --
@@ -78081,8 +78081,8 @@ GRANT SELECT ON SEQUENCE seq_debito_auto_movimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_auto_retorno_cod FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_auto_retorno_cod FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_auto_retorno_cod TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_auto_retorno_cod TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_auto_retorno_cod TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_auto_retorno_cod TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_auto_retorno_cod TO role_users;
 
 
 --
@@ -78092,8 +78092,8 @@ GRANT SELECT ON SEQUENCE seq_debito_auto_retorno_cod TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_automatico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_automatico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_automatico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_automatico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_automatico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_automatico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_automatico TO role_users;
 
 
 --
@@ -78103,8 +78103,8 @@ GRANT SELECT ON SEQUENCE seq_debito_automatico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_deducao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_deducao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_deducao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_deducao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_deducao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_deducao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_deducao_tipo TO role_users;
 
 
 --
@@ -78114,8 +78114,8 @@ GRANT SELECT ON SEQUENCE seq_deducao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_devolucao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_devolucao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_devolucao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_devolucao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_devolucao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_devolucao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_devolucao TO role_users;
 
 
 --
@@ -78125,8 +78125,8 @@ GRANT SELECT ON SEQUENCE seq_devolucao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_devolucao_dados_diarios FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_devolucao_dados_diarios FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_devolucao_dados_diarios TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_devolucao_dados_diarios TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_devolucao_dados_diarios TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_devolucao_dados_diarios TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_devolucao_dados_diarios TO role_users;
 
 
 --
@@ -78136,8 +78136,8 @@ GRANT SELECT ON SEQUENCE seq_devolucao_dados_diarios TO pg_users;
 REVOKE ALL ON SEQUENCE seq_devolucao_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_devolucao_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_devolucao_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_devolucao_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_devolucao_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_devolucao_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_devolucao_historico TO role_users;
 
 
 --
@@ -78147,8 +78147,8 @@ GRANT SELECT ON SEQUENCE seq_devolucao_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_devolucao_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_devolucao_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_devolucao_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_devolucao_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_devolucao_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_devolucao_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_devolucao_situacao TO role_users;
 
 
 --
@@ -78158,8 +78158,8 @@ GRANT SELECT ON SEQUENCE seq_devolucao_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_diferenca_acumulada FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_diferenca_acumulada FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_diferenca_acumulada TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_diferenca_acumulada TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_diferenca_acumulada TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_diferenca_acumulada TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_diferenca_acumulada TO role_users;
 
 
 --
@@ -78169,8 +78169,8 @@ GRANT SELECT ON SEQUENCE seq_diferenca_acumulada TO pg_users;
 REVOKE ALL ON SEQUENCE seq_guia_devolucao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_guia_devolucao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_guia_devolucao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_guia_devolucao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_guia_devolucao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_guia_devolucao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_guia_devolucao TO role_users;
 
 
 --
@@ -78180,8 +78180,8 @@ GRANT SELECT ON SEQUENCE seq_guia_devolucao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_metas_arrecadacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_metas_arrecadacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_metas_arrecadacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_metas_arrecadacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_metas_arrecadacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_metas_arrecadacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_metas_arrecadacao TO role_users;
 
 
 --
@@ -78191,7 +78191,7 @@ GRANT SELECT ON SEQUENCE seq_metas_arrecadacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_movimento_cartao_rejeita FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_movimento_cartao_rejeita FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_movimento_cartao_rejeita TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_movimento_cartao_rejeita TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_movimento_cartao_rejeita TO role_aplic;
 
 
 --
@@ -78201,8 +78201,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_movimento_cartao_rejeita TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_pagamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pagamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pagamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pagamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_pagamento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pagamento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_pagamento TO role_users;
 
 
 --
@@ -78212,8 +78212,8 @@ GRANT SELECT ON SEQUENCE seq_pagamento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_pagamento_cartao_debito FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pagamento_cartao_debito FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pagamento_cartao_debito TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pagamento_cartao_debito TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_pagamento_cartao_debito TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pagamento_cartao_debito TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_pagamento_cartao_debito TO role_users;
 
 
 --
@@ -78223,8 +78223,8 @@ GRANT SELECT ON SEQUENCE seq_pagamento_cartao_debito TO pg_users;
 REVOKE ALL ON SEQUENCE seq_pagamento_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pagamento_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pagamento_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pagamento_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_pagamento_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pagamento_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_pagamento_historico TO role_users;
 
 
 --
@@ -78234,8 +78234,8 @@ GRANT SELECT ON SEQUENCE seq_pagamento_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_pagamento_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pagamento_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pagamento_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pagamento_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_pagamento_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pagamento_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_pagamento_situacao TO role_users;
 
 
 --
@@ -78245,8 +78245,8 @@ GRANT SELECT ON SEQUENCE seq_pagamento_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_pagto_cartao_debito_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pagto_cartao_debito_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pagto_cartao_debito_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pagto_cartao_debito_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_pagto_cartao_debito_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pagto_cartao_debito_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_pagto_cartao_debito_item TO role_users;
 
 
 --
@@ -78256,8 +78256,8 @@ GRANT SELECT ON SEQUENCE seq_pagto_cartao_debito_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_recebimento_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_recebimento_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_recebimento_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_recebimento_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_recebimento_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_recebimento_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_recebimento_tipo TO role_users;
 
 
 --
@@ -78267,8 +78267,8 @@ GRANT SELECT ON SEQUENCE seq_recebimento_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_registro_codigo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_registro_codigo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_registro_codigo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_registro_codigo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_registro_codigo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_registro_codigo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_registro_codigo TO role_users;
 
 
 --
@@ -78278,8 +78278,8 @@ GRANT SELECT ON SEQUENCE seq_registro_codigo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_arrecadacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_arrecadacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_arrecadacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_arrecadacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_arrecadacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_arrecadacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_arrecadacao TO role_users;
 
 
 --
@@ -78289,8 +78289,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_arrecadacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_sequencia_cartao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sequencia_cartao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sequencia_cartao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sequencia_cartao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_sequencia_cartao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sequencia_cartao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_sequencia_cartao TO role_users;
 
 
 --
@@ -78300,8 +78300,8 @@ GRANT SELECT ON SEQUENCE seq_sequencia_cartao TO pg_users;
 REVOKE ALL ON SEQUENCE sequence_arrecadacao_dados_diarios_auxiliar FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_arrecadacao_dados_diarios_auxiliar FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_arrecadacao_dados_diarios_auxiliar TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_arrecadacao_dados_diarios_auxiliar TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_arrecadacao_dados_diarios_auxiliar TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_arrecadacao_dados_diarios_auxiliar TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_arrecadacao_dados_diarios_auxiliar TO role_users;
 
 
 --
@@ -78311,8 +78311,8 @@ GRANT SELECT ON SEQUENCE sequence_arrecadacao_dados_diarios_auxiliar TO pg_users
 REVOKE ALL ON SEQUENCE sequence_devolucao_dados_diarios_auxiliar FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_devolucao_dados_diarios_auxiliar FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_devolucao_dados_diarios_auxiliar TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_devolucao_dados_diarios_auxiliar TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_devolucao_dados_diarios_auxiliar TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_devolucao_dados_diarios_auxiliar TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_devolucao_dados_diarios_auxiliar TO role_users;
 
 
 --
@@ -78322,8 +78322,8 @@ GRANT SELECT ON SEQUENCE sequence_devolucao_dados_diarios_auxiliar TO pg_users;
 REVOKE ALL ON TABLE sequencia_cartao FROM PUBLIC;
 REVOKE ALL ON TABLE sequencia_cartao FROM gsan_admin;
 GRANT ALL ON TABLE sequencia_cartao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sequencia_cartao TO pg_aplic;
-GRANT SELECT ON TABLE sequencia_cartao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sequencia_cartao TO role_aplic;
+GRANT SELECT ON TABLE sequencia_cartao TO role_users;
 
 
 SET search_path = atendimentopublico, pg_catalog;
@@ -78335,8 +78335,8 @@ SET search_path = atendimentopublico, pg_catalog;
 REVOKE ALL ON TABLE agen_reg_mot_reclam FROM PUBLIC;
 REVOKE ALL ON TABLE agen_reg_mot_reclam FROM gsan_admin;
 GRANT ALL ON TABLE agen_reg_mot_reclam TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agen_reg_mot_reclam TO pg_aplic;
-GRANT SELECT ON TABLE agen_reg_mot_reclam TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agen_reg_mot_reclam TO role_aplic;
+GRANT SELECT ON TABLE agen_reg_mot_reclam TO role_users;
 
 
 --
@@ -78346,8 +78346,8 @@ GRANT SELECT ON TABLE agen_reg_mot_reclam TO pg_users;
 REVOKE ALL ON TABLE agen_reg_mot_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE agen_reg_mot_retorno FROM gsan_admin;
 GRANT ALL ON TABLE agen_reg_mot_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agen_reg_mot_retorno TO pg_aplic;
-GRANT SELECT ON TABLE agen_reg_mot_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agen_reg_mot_retorno TO role_aplic;
+GRANT SELECT ON TABLE agen_reg_mot_retorno TO role_users;
 
 
 --
@@ -78357,8 +78357,8 @@ GRANT SELECT ON TABLE agen_reg_mot_retorno TO pg_users;
 REVOKE ALL ON TABLE agencia_regul_municipio FROM PUBLIC;
 REVOKE ALL ON TABLE agencia_regul_municipio FROM gsan_admin;
 GRANT ALL ON TABLE agencia_regul_municipio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agencia_regul_municipio TO pg_aplic;
-GRANT SELECT ON TABLE agencia_regul_municipio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agencia_regul_municipio TO role_aplic;
+GRANT SELECT ON TABLE agencia_regul_municipio TO role_users;
 
 
 --
@@ -78368,8 +78368,8 @@ GRANT SELECT ON TABLE agencia_regul_municipio TO pg_users;
 REVOKE ALL ON TABLE agencia_reguladora FROM PUBLIC;
 REVOKE ALL ON TABLE agencia_reguladora FROM gsan_admin;
 GRANT ALL ON TABLE agencia_reguladora TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agencia_reguladora TO pg_aplic;
-GRANT SELECT ON TABLE agencia_reguladora TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE agencia_reguladora TO role_aplic;
+GRANT SELECT ON TABLE agencia_reguladora TO role_users;
 
 
 --
@@ -78379,8 +78379,8 @@ GRANT SELECT ON TABLE agencia_reguladora TO pg_users;
 REVOKE ALL ON TABLE anormalidade_comando_oss FROM PUBLIC;
 REVOKE ALL ON TABLE anormalidade_comando_oss FROM gsan_admin;
 GRANT ALL ON TABLE anormalidade_comando_oss TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE anormalidade_comando_oss TO pg_aplic;
-GRANT SELECT ON TABLE anormalidade_comando_oss TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE anormalidade_comando_oss TO role_aplic;
+GRANT SELECT ON TABLE anormalidade_comando_oss TO role_users;
 
 
 --
@@ -78390,8 +78390,8 @@ GRANT SELECT ON TABLE anormalidade_comando_oss TO pg_users;
 REVOKE ALL ON TABLE arq_txt_acomp_servico FROM PUBLIC;
 REVOKE ALL ON TABLE arq_txt_acomp_servico FROM gsan_admin;
 GRANT ALL ON TABLE arq_txt_acomp_servico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_acomp_servico TO pg_aplic;
-GRANT SELECT ON TABLE arq_txt_acomp_servico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_acomp_servico TO role_aplic;
+GRANT SELECT ON TABLE arq_txt_acomp_servico TO role_users;
 
 
 --
@@ -78401,8 +78401,8 @@ GRANT SELECT ON TABLE arq_txt_acomp_servico TO pg_users;
 REVOKE ALL ON TABLE arq_txt_ret_acao_viscam FROM PUBLIC;
 REVOKE ALL ON TABLE arq_txt_ret_acao_viscam FROM gsan_admin;
 GRANT ALL ON TABLE arq_txt_ret_acao_viscam TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_ret_acao_viscam TO pg_aplic;
-GRANT SELECT ON TABLE arq_txt_ret_acao_viscam TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_ret_acao_viscam TO role_aplic;
+GRANT SELECT ON TABLE arq_txt_ret_acao_viscam TO role_users;
 
 
 --
@@ -78412,8 +78412,8 @@ GRANT SELECT ON TABLE arq_txt_ret_acao_viscam TO pg_users;
 REVOKE ALL ON TABLE arq_txt_ret_clie_viscamp FROM PUBLIC;
 REVOKE ALL ON TABLE arq_txt_ret_clie_viscamp FROM gsan_admin;
 GRANT ALL ON TABLE arq_txt_ret_clie_viscamp TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_ret_clie_viscamp TO pg_aplic;
-GRANT SELECT ON TABLE arq_txt_ret_clie_viscamp TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_ret_clie_viscamp TO role_aplic;
+GRANT SELECT ON TABLE arq_txt_ret_clie_viscamp TO role_users;
 
 
 --
@@ -78423,8 +78423,8 @@ GRANT SELECT ON TABLE arq_txt_ret_clie_viscamp TO pg_users;
 REVOKE ALL ON TABLE arq_txt_ret_fone_viscamp FROM PUBLIC;
 REVOKE ALL ON TABLE arq_txt_ret_fone_viscamp FROM gsan_admin;
 GRANT ALL ON TABLE arq_txt_ret_fone_viscamp TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_ret_fone_viscamp TO pg_aplic;
-GRANT SELECT ON TABLE arq_txt_ret_fone_viscamp TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_ret_fone_viscamp TO role_aplic;
+GRANT SELECT ON TABLE arq_txt_ret_fone_viscamp TO role_users;
 
 
 --
@@ -78434,8 +78434,8 @@ GRANT SELECT ON TABLE arq_txt_ret_fone_viscamp TO pg_users;
 REVOKE ALL ON TABLE arq_txt_ret_visita_campo FROM PUBLIC;
 REVOKE ALL ON TABLE arq_txt_ret_visita_campo FROM gsan_admin;
 GRANT ALL ON TABLE arq_txt_ret_visita_campo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_ret_visita_campo TO pg_aplic;
-GRANT SELECT ON TABLE arq_txt_ret_visita_campo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_ret_visita_campo TO role_aplic;
+GRANT SELECT ON TABLE arq_txt_ret_visita_campo TO role_users;
 
 
 --
@@ -78445,8 +78445,8 @@ GRANT SELECT ON TABLE arq_txt_ret_visita_campo TO pg_users;
 REVOKE ALL ON TABLE arq_txt_visita_campo FROM PUBLIC;
 REVOKE ALL ON TABLE arq_txt_visita_campo FROM gsan_admin;
 GRANT ALL ON TABLE arq_txt_visita_campo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_visita_campo TO pg_aplic;
-GRANT SELECT ON TABLE arq_txt_visita_campo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_visita_campo TO role_aplic;
+GRANT SELECT ON TABLE arq_txt_visita_campo TO role_users;
 
 
 --
@@ -78456,8 +78456,8 @@ GRANT SELECT ON TABLE arq_txt_visita_campo TO pg_users;
 REVOKE ALL ON TABLE atend_mot_enc_acao_cobr FROM PUBLIC;
 REVOKE ALL ON TABLE atend_mot_enc_acao_cobr FROM gsan_admin;
 GRANT ALL ON TABLE atend_mot_enc_acao_cobr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atend_mot_enc_acao_cobr TO pg_aplic;
-GRANT SELECT ON TABLE atend_mot_enc_acao_cobr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atend_mot_enc_acao_cobr TO role_aplic;
+GRANT SELECT ON TABLE atend_mot_enc_acao_cobr TO role_users;
 
 
 --
@@ -78467,8 +78467,8 @@ GRANT SELECT ON TABLE atend_mot_enc_acao_cobr TO pg_users;
 REVOKE ALL ON TABLE atend_motivo_encmt FROM PUBLIC;
 REVOKE ALL ON TABLE atend_motivo_encmt FROM gsan_admin;
 GRANT ALL ON TABLE atend_motivo_encmt TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atend_motivo_encmt TO pg_aplic;
-GRANT SELECT ON TABLE atend_motivo_encmt TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atend_motivo_encmt TO role_aplic;
+GRANT SELECT ON TABLE atend_motivo_encmt TO role_users;
 
 
 --
@@ -78478,8 +78478,8 @@ GRANT SELECT ON TABLE atend_motivo_encmt TO pg_users;
 REVOKE ALL ON TABLE atendimento_relacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE atendimento_relacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE atendimento_relacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atendimento_relacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE atendimento_relacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atendimento_relacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE atendimento_relacao_tipo TO role_users;
 
 
 --
@@ -78489,8 +78489,8 @@ GRANT SELECT ON TABLE atendimento_relacao_tipo TO pg_users;
 REVOKE ALL ON TABLE atividade FROM PUBLIC;
 REVOKE ALL ON TABLE atividade FROM gsan_admin;
 GRANT ALL ON TABLE atividade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atividade TO pg_aplic;
-GRANT SELECT ON TABLE atividade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atividade TO role_aplic;
+GRANT SELECT ON TABLE atividade TO role_users;
 
 
 --
@@ -78500,8 +78500,8 @@ GRANT SELECT ON TABLE atividade TO pg_users;
 REVOKE ALL ON TABLE boletim_os_concluida FROM PUBLIC;
 REVOKE ALL ON TABLE boletim_os_concluida FROM gsan_admin;
 GRANT ALL ON TABLE boletim_os_concluida TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE boletim_os_concluida TO pg_aplic;
-GRANT SELECT ON TABLE boletim_os_concluida TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE boletim_os_concluida TO role_aplic;
+GRANT SELECT ON TABLE boletim_os_concluida TO role_users;
 
 
 --
@@ -78511,8 +78511,8 @@ GRANT SELECT ON TABLE boletim_os_concluida TO pg_users;
 REVOKE ALL ON TABLE cad_msg_acompanh_servico FROM PUBLIC;
 REVOKE ALL ON TABLE cad_msg_acompanh_servico FROM gsan_admin;
 GRANT ALL ON TABLE cad_msg_acompanh_servico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cad_msg_acompanh_servico TO pg_aplic;
-GRANT SELECT ON TABLE cad_msg_acompanh_servico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cad_msg_acompanh_servico TO role_aplic;
+GRANT SELECT ON TABLE cad_msg_acompanh_servico TO role_users;
 
 
 --
@@ -78522,8 +78522,8 @@ GRANT SELECT ON TABLE cad_msg_acompanh_servico TO pg_users;
 REVOKE ALL ON TABLE capacid_hidr_comando_oss FROM PUBLIC;
 REVOKE ALL ON TABLE capacid_hidr_comando_oss FROM gsan_admin;
 GRANT ALL ON TABLE capacid_hidr_comando_oss TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE capacid_hidr_comando_oss TO pg_aplic;
-GRANT SELECT ON TABLE capacid_hidr_comando_oss TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE capacid_hidr_comando_oss TO role_aplic;
+GRANT SELECT ON TABLE capacid_hidr_comando_oss TO role_users;
 
 
 --
@@ -78533,8 +78533,8 @@ GRANT SELECT ON TABLE capacid_hidr_comando_oss TO pg_users;
 REVOKE ALL ON TABLE clie_fone_visita_camp FROM PUBLIC;
 REVOKE ALL ON TABLE clie_fone_visita_camp FROM gsan_admin;
 GRANT ALL ON TABLE clie_fone_visita_camp TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE clie_fone_visita_camp TO pg_aplic;
-GRANT SELECT ON TABLE clie_fone_visita_camp TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE clie_fone_visita_camp TO role_aplic;
+GRANT SELECT ON TABLE clie_fone_visita_camp TO role_users;
 
 
 --
@@ -78544,8 +78544,8 @@ GRANT SELECT ON TABLE clie_fone_visita_camp TO pg_users;
 REVOKE ALL ON TABLE clie_os_visita_campo FROM PUBLIC;
 REVOKE ALL ON TABLE clie_os_visita_campo FROM gsan_admin;
 GRANT ALL ON TABLE clie_os_visita_campo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE clie_os_visita_campo TO pg_aplic;
-GRANT SELECT ON TABLE clie_os_visita_campo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE clie_os_visita_campo TO role_aplic;
+GRANT SELECT ON TABLE clie_os_visita_campo TO role_users;
 
 
 --
@@ -78555,8 +78555,8 @@ GRANT SELECT ON TABLE clie_os_visita_campo TO pg_users;
 REVOKE ALL ON TABLE comando_ordem_seletiva FROM PUBLIC;
 REVOKE ALL ON TABLE comando_ordem_seletiva FROM gsan_admin;
 GRANT ALL ON TABLE comando_ordem_seletiva TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE comando_ordem_seletiva TO pg_aplic;
-GRANT SELECT ON TABLE comando_ordem_seletiva TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE comando_ordem_seletiva TO role_aplic;
+GRANT SELECT ON TABLE comando_ordem_seletiva TO role_users;
 
 
 --
@@ -78566,8 +78566,8 @@ GRANT SELECT ON TABLE comando_ordem_seletiva TO pg_users;
 REVOKE ALL ON TABLE conta_braile FROM PUBLIC;
 REVOKE ALL ON TABLE conta_braile FROM gsan_admin;
 GRANT ALL ON TABLE conta_braile TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_braile TO pg_aplic;
-GRANT SELECT ON TABLE conta_braile TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_braile TO role_aplic;
+GRANT SELECT ON TABLE conta_braile TO role_users;
 
 
 --
@@ -78577,8 +78577,8 @@ GRANT SELECT ON TABLE conta_braile TO pg_users;
 REVOKE ALL ON TABLE coordenada_percurso_eqpe FROM PUBLIC;
 REVOKE ALL ON TABLE coordenada_percurso_eqpe FROM gsan_admin;
 GRANT ALL ON TABLE coordenada_percurso_eqpe TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE coordenada_percurso_eqpe TO pg_aplic;
-GRANT SELECT ON TABLE coordenada_percurso_eqpe TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE coordenada_percurso_eqpe TO role_aplic;
+GRANT SELECT ON TABLE coordenada_percurso_eqpe TO role_users;
 
 
 --
@@ -78588,8 +78588,8 @@ GRANT SELECT ON TABLE coordenada_percurso_eqpe TO pg_users;
 REVOKE ALL ON TABLE corte_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE corte_tipo FROM gsan_admin;
 GRANT ALL ON TABLE corte_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE corte_tipo TO pg_aplic;
-GRANT SELECT ON TABLE corte_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE corte_tipo TO role_aplic;
+GRANT SELECT ON TABLE corte_tipo TO role_users;
 
 
 --
@@ -78599,8 +78599,8 @@ GRANT SELECT ON TABLE corte_tipo TO pg_users;
 REVOKE ALL ON TABLE data_fiscaliz_os_selet FROM PUBLIC;
 REVOKE ALL ON TABLE data_fiscaliz_os_selet FROM gsan_admin;
 GRANT ALL ON TABLE data_fiscaliz_os_selet TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE data_fiscaliz_os_selet TO pg_aplic;
-GRANT SELECT ON TABLE data_fiscaliz_os_selet TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE data_fiscaliz_os_selet TO role_aplic;
+GRANT SELECT ON TABLE data_fiscaliz_os_selet TO role_users;
 
 
 --
@@ -78610,8 +78610,8 @@ GRANT SELECT ON TABLE data_fiscaliz_os_selet TO pg_users;
 REVOKE ALL ON TABLE emissao_ordem_cobr_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE emissao_ordem_cobr_tipo FROM gsan_admin;
 GRANT ALL ON TABLE emissao_ordem_cobr_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE emissao_ordem_cobr_tipo TO pg_aplic;
-GRANT SELECT ON TABLE emissao_ordem_cobr_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE emissao_ordem_cobr_tipo TO role_aplic;
+GRANT SELECT ON TABLE emissao_ordem_cobr_tipo TO role_users;
 
 
 --
@@ -78621,8 +78621,8 @@ GRANT SELECT ON TABLE emissao_ordem_cobr_tipo TO pg_users;
 REVOKE ALL ON TABLE equipamentos_especiais FROM PUBLIC;
 REVOKE ALL ON TABLE equipamentos_especiais FROM gsan_admin;
 GRANT ALL ON TABLE equipamentos_especiais TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE equipamentos_especiais TO pg_aplic;
-GRANT SELECT ON TABLE equipamentos_especiais TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE equipamentos_especiais TO role_aplic;
+GRANT SELECT ON TABLE equipamentos_especiais TO role_users;
 
 
 --
@@ -78632,8 +78632,8 @@ GRANT SELECT ON TABLE equipamentos_especiais TO pg_users;
 REVOKE ALL ON TABLE equipe FROM PUBLIC;
 REVOKE ALL ON TABLE equipe FROM gsan_admin;
 GRANT ALL ON TABLE equipe TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE equipe TO pg_aplic;
-GRANT SELECT ON TABLE equipe TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE equipe TO role_aplic;
+GRANT SELECT ON TABLE equipe TO role_users;
 
 
 --
@@ -78643,8 +78643,8 @@ GRANT SELECT ON TABLE equipe TO pg_users;
 REVOKE ALL ON TABLE equipe_componentes FROM PUBLIC;
 REVOKE ALL ON TABLE equipe_componentes FROM gsan_admin;
 GRANT ALL ON TABLE equipe_componentes TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE equipe_componentes TO pg_aplic;
-GRANT SELECT ON TABLE equipe_componentes TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE equipe_componentes TO role_aplic;
+GRANT SELECT ON TABLE equipe_componentes TO role_users;
 
 
 --
@@ -78654,8 +78654,8 @@ GRANT SELECT ON TABLE equipe_componentes TO pg_users;
 REVOKE ALL ON TABLE equipe_equip_espec FROM PUBLIC;
 REVOKE ALL ON TABLE equipe_equip_espec FROM gsan_admin;
 GRANT ALL ON TABLE equipe_equip_espec TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE equipe_equip_espec TO pg_aplic;
-GRANT SELECT ON TABLE equipe_equip_espec TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE equipe_equip_espec TO role_aplic;
+GRANT SELECT ON TABLE equipe_equip_espec TO role_users;
 
 
 --
@@ -78665,8 +78665,8 @@ GRANT SELECT ON TABLE equipe_equip_espec TO pg_users;
 REVOKE ALL ON TABLE espec_imovel_sit_crit FROM PUBLIC;
 REVOKE ALL ON TABLE espec_imovel_sit_crit FROM gsan_admin;
 GRANT ALL ON TABLE espec_imovel_sit_crit TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_imovel_sit_crit TO pg_aplic;
-GRANT SELECT ON TABLE espec_imovel_sit_crit TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_imovel_sit_crit TO role_aplic;
+GRANT SELECT ON TABLE espec_imovel_sit_crit TO role_users;
 
 
 --
@@ -78676,8 +78676,8 @@ GRANT SELECT ON TABLE espec_imovel_sit_crit TO pg_users;
 REVOKE ALL ON TABLE espec_imovel_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE espec_imovel_situacao FROM gsan_admin;
 GRANT ALL ON TABLE espec_imovel_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_imovel_situacao TO pg_aplic;
-GRANT SELECT ON TABLE espec_imovel_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_imovel_situacao TO role_aplic;
+GRANT SELECT ON TABLE espec_imovel_situacao TO role_users;
 
 
 --
@@ -78687,8 +78687,8 @@ GRANT SELECT ON TABLE espec_imovel_situacao TO pg_users;
 REVOKE ALL ON TABLE espec_pavi_servico_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE espec_pavi_servico_tipo FROM gsan_admin;
 GRANT ALL ON TABLE espec_pavi_servico_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_pavi_servico_tipo TO pg_aplic;
-GRANT SELECT ON TABLE espec_pavi_servico_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_pavi_servico_tipo TO role_aplic;
+GRANT SELECT ON TABLE espec_pavi_servico_tipo TO role_users;
 
 
 --
@@ -78698,8 +78698,8 @@ GRANT SELECT ON TABLE espec_pavi_servico_tipo TO pg_users;
 REVOKE ALL ON TABLE espec_servico_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE espec_servico_tipo FROM gsan_admin;
 GRANT ALL ON TABLE espec_servico_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_servico_tipo TO pg_aplic;
-GRANT SELECT ON TABLE espec_servico_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_servico_tipo TO role_aplic;
+GRANT SELECT ON TABLE espec_servico_tipo TO role_users;
 
 
 --
@@ -78709,8 +78709,8 @@ GRANT SELECT ON TABLE espec_servico_tipo TO pg_users;
 REVOKE ALL ON TABLE espec_tipo_validacao FROM PUBLIC;
 REVOKE ALL ON TABLE espec_tipo_validacao FROM gsan_admin;
 GRANT ALL ON TABLE espec_tipo_validacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_tipo_validacao TO pg_aplic;
-GRANT SELECT ON TABLE espec_tipo_validacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_tipo_validacao TO role_aplic;
+GRANT SELECT ON TABLE espec_tipo_validacao TO role_users;
 
 
 --
@@ -78720,8 +78720,8 @@ GRANT SELECT ON TABLE espec_tipo_validacao TO pg_users;
 REVOKE ALL ON TABLE espec_unid_cobr FROM PUBLIC;
 REVOKE ALL ON TABLE espec_unid_cobr FROM gsan_admin;
 GRANT ALL ON TABLE espec_unid_cobr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_unid_cobr TO pg_aplic;
-GRANT SELECT ON TABLE espec_unid_cobr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE espec_unid_cobr TO role_aplic;
+GRANT SELECT ON TABLE espec_unid_cobr TO role_users;
 
 
 --
@@ -78731,8 +78731,8 @@ GRANT SELECT ON TABLE espec_unid_cobr TO pg_users;
 REVOKE ALL ON TABLE fiscaliz_param_calc_deb FROM PUBLIC;
 REVOKE ALL ON TABLE fiscaliz_param_calc_deb FROM gsan_admin;
 GRANT ALL ON TABLE fiscaliz_param_calc_deb TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_param_calc_deb TO pg_aplic;
-GRANT SELECT ON TABLE fiscaliz_param_calc_deb TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_param_calc_deb TO role_aplic;
+GRANT SELECT ON TABLE fiscaliz_param_calc_deb TO role_users;
 
 
 --
@@ -78742,8 +78742,8 @@ GRANT SELECT ON TABLE fiscaliz_param_calc_deb TO pg_users;
 REVOKE ALL ON TABLE fiscaliz_sit_hidr_capac FROM PUBLIC;
 REVOKE ALL ON TABLE fiscaliz_sit_hidr_capac FROM gsan_admin;
 GRANT ALL ON TABLE fiscaliz_sit_hidr_capac TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_sit_hidr_capac TO pg_aplic;
-GRANT SELECT ON TABLE fiscaliz_sit_hidr_capac TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_sit_hidr_capac TO role_aplic;
+GRANT SELECT ON TABLE fiscaliz_sit_hidr_capac TO role_users;
 
 
 --
@@ -78753,8 +78753,8 @@ GRANT SELECT ON TABLE fiscaliz_sit_hidr_capac TO pg_users;
 REVOKE ALL ON TABLE fiscaliz_sit_serv_a_cob FROM PUBLIC;
 REVOKE ALL ON TABLE fiscaliz_sit_serv_a_cob FROM gsan_admin;
 GRANT ALL ON TABLE fiscaliz_sit_serv_a_cob TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_sit_serv_a_cob TO pg_aplic;
-GRANT SELECT ON TABLE fiscaliz_sit_serv_a_cob TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_sit_serv_a_cob TO role_aplic;
+GRANT SELECT ON TABLE fiscaliz_sit_serv_a_cob TO role_users;
 
 
 --
@@ -78764,8 +78764,8 @@ GRANT SELECT ON TABLE fiscaliz_sit_serv_a_cob TO pg_users;
 REVOKE ALL ON TABLE fiscaliz_situacao_agua FROM PUBLIC;
 REVOKE ALL ON TABLE fiscaliz_situacao_agua FROM gsan_admin;
 GRANT ALL ON TABLE fiscaliz_situacao_agua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_situacao_agua TO pg_aplic;
-GRANT SELECT ON TABLE fiscaliz_situacao_agua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_situacao_agua TO role_aplic;
+GRANT SELECT ON TABLE fiscaliz_situacao_agua TO role_users;
 
 
 --
@@ -78775,8 +78775,8 @@ GRANT SELECT ON TABLE fiscaliz_situacao_agua TO pg_users;
 REVOKE ALL ON TABLE fiscaliz_situacao_esgoto FROM PUBLIC;
 REVOKE ALL ON TABLE fiscaliz_situacao_esgoto FROM gsan_admin;
 GRANT ALL ON TABLE fiscaliz_situacao_esgoto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_situacao_esgoto TO pg_aplic;
-GRANT SELECT ON TABLE fiscaliz_situacao_esgoto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscaliz_situacao_esgoto TO role_aplic;
+GRANT SELECT ON TABLE fiscaliz_situacao_esgoto TO role_users;
 
 
 --
@@ -78786,8 +78786,8 @@ GRANT SELECT ON TABLE fiscaliz_situacao_esgoto TO pg_users;
 REVOKE ALL ON TABLE fiscalizacao_coletiva FROM PUBLIC;
 REVOKE ALL ON TABLE fiscalizacao_coletiva FROM gsan_admin;
 GRANT ALL ON TABLE fiscalizacao_coletiva TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscalizacao_coletiva TO pg_aplic;
-GRANT SELECT ON TABLE fiscalizacao_coletiva TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscalizacao_coletiva TO role_aplic;
+GRANT SELECT ON TABLE fiscalizacao_coletiva TO role_users;
 
 
 --
@@ -78797,8 +78797,8 @@ GRANT SELECT ON TABLE fiscalizacao_coletiva TO pg_users;
 REVOKE ALL ON TABLE fiscalizacao_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE fiscalizacao_situacao FROM gsan_admin;
 GRANT ALL ON TABLE fiscalizacao_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscalizacao_situacao TO pg_aplic;
-GRANT SELECT ON TABLE fiscalizacao_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fiscalizacao_situacao TO role_aplic;
+GRANT SELECT ON TABLE fiscalizacao_situacao TO role_users;
 
 
 --
@@ -78808,8 +78808,8 @@ GRANT SELECT ON TABLE fiscalizacao_situacao TO pg_users;
 REVOKE ALL ON TABLE foto_situacao_os FROM PUBLIC;
 REVOKE ALL ON TABLE foto_situacao_os FROM gsan_admin;
 GRANT ALL ON TABLE foto_situacao_os TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE foto_situacao_os TO pg_aplic;
-GRANT SELECT ON TABLE foto_situacao_os TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE foto_situacao_os TO role_aplic;
+GRANT SELECT ON TABLE foto_situacao_os TO role_users;
 
 
 --
@@ -78819,8 +78819,8 @@ GRANT SELECT ON TABLE foto_situacao_os TO pg_users;
 REVOKE ALL ON TABLE gis_retorno_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE gis_retorno_motivo FROM gsan_admin;
 GRANT ALL ON TABLE gis_retorno_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE gis_retorno_motivo TO pg_aplic;
-GRANT SELECT ON TABLE gis_retorno_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE gis_retorno_motivo TO role_aplic;
+GRANT SELECT ON TABLE gis_retorno_motivo TO role_users;
 
 
 --
@@ -78830,8 +78830,8 @@ GRANT SELECT ON TABLE gis_retorno_motivo TO pg_users;
 REVOKE ALL ON TABLE lig_agua_sit_cons_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE lig_agua_sit_cons_tipo FROM gsan_admin;
 GRANT ALL ON TABLE lig_agua_sit_cons_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_agua_sit_cons_tipo TO pg_aplic;
-GRANT SELECT ON TABLE lig_agua_sit_cons_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_agua_sit_cons_tipo TO role_aplic;
+GRANT SELECT ON TABLE lig_agua_sit_cons_tipo TO role_users;
 
 
 --
@@ -78841,8 +78841,8 @@ GRANT SELECT ON TABLE lig_agua_sit_cons_tipo TO pg_users;
 REVOKE ALL ON TABLE lig_esgoto_caixa_inspec FROM PUBLIC;
 REVOKE ALL ON TABLE lig_esgoto_caixa_inspec FROM gsan_admin;
 GRANT ALL ON TABLE lig_esgoto_caixa_inspec TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_caixa_inspec TO pg_aplic;
-GRANT SELECT ON TABLE lig_esgoto_caixa_inspec TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_caixa_inspec TO role_aplic;
+GRANT SELECT ON TABLE lig_esgoto_caixa_inspec TO role_users;
 
 
 --
@@ -78852,8 +78852,8 @@ GRANT SELECT ON TABLE lig_esgoto_caixa_inspec TO pg_users;
 REVOKE ALL ON TABLE lig_esgoto_dest_agplv FROM PUBLIC;
 REVOKE ALL ON TABLE lig_esgoto_dest_agplv FROM gsan_admin;
 GRANT ALL ON TABLE lig_esgoto_dest_agplv TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_dest_agplv TO pg_aplic;
-GRANT SELECT ON TABLE lig_esgoto_dest_agplv TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_dest_agplv TO role_aplic;
+GRANT SELECT ON TABLE lig_esgoto_dest_agplv TO role_users;
 
 
 --
@@ -78863,8 +78863,8 @@ GRANT SELECT ON TABLE lig_esgoto_dest_agplv TO pg_users;
 REVOKE ALL ON TABLE lig_esgoto_dest_dejetos FROM PUBLIC;
 REVOKE ALL ON TABLE lig_esgoto_dest_dejetos FROM gsan_admin;
 GRANT ALL ON TABLE lig_esgoto_dest_dejetos TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_dest_dejetos TO pg_aplic;
-GRANT SELECT ON TABLE lig_esgoto_dest_dejetos TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_dest_dejetos TO role_aplic;
+GRANT SELECT ON TABLE lig_esgoto_dest_dejetos TO role_users;
 
 
 --
@@ -78874,8 +78874,8 @@ GRANT SELECT ON TABLE lig_esgoto_dest_dejetos TO pg_users;
 REVOKE ALL ON TABLE lig_esgoto_esgotamento FROM PUBLIC;
 REVOKE ALL ON TABLE lig_esgoto_esgotamento FROM gsan_admin;
 GRANT ALL ON TABLE lig_esgoto_esgotamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_esgotamento TO pg_aplic;
-GRANT SELECT ON TABLE lig_esgoto_esgotamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_esgotamento TO role_aplic;
+GRANT SELECT ON TABLE lig_esgoto_esgotamento TO role_users;
 
 
 --
@@ -78885,8 +78885,8 @@ GRANT SELECT ON TABLE lig_esgoto_esgotamento TO pg_users;
 REVOKE ALL ON TABLE lig_esgoto_sit_cons_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE lig_esgoto_sit_cons_tipo FROM gsan_admin;
 GRANT ALL ON TABLE lig_esgoto_sit_cons_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_sit_cons_tipo TO pg_aplic;
-GRANT SELECT ON TABLE lig_esgoto_sit_cons_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lig_esgoto_sit_cons_tipo TO role_aplic;
+GRANT SELECT ON TABLE lig_esgoto_sit_cons_tipo TO role_users;
 
 
 --
@@ -78896,8 +78896,8 @@ GRANT SELECT ON TABLE lig_esgoto_sit_cons_tipo TO pg_users;
 REVOKE ALL ON TABLE ligacao_agua FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_agua FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_agua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_agua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua TO role_aplic;
+GRANT SELECT ON TABLE ligacao_agua TO role_users;
 
 
 --
@@ -78907,8 +78907,8 @@ GRANT SELECT ON TABLE ligacao_agua TO pg_users;
 REVOKE ALL ON TABLE ligacao_agua_diametro FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_agua_diametro FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_agua_diametro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua_diametro TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_agua_diametro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua_diametro TO role_aplic;
+GRANT SELECT ON TABLE ligacao_agua_diametro TO role_users;
 
 
 --
@@ -78918,8 +78918,8 @@ GRANT SELECT ON TABLE ligacao_agua_diametro TO pg_users;
 REVOKE ALL ON TABLE ligacao_agua_material FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_agua_material FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_agua_material TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua_material TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_agua_material TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua_material TO role_aplic;
+GRANT SELECT ON TABLE ligacao_agua_material TO role_users;
 
 
 --
@@ -78929,8 +78929,8 @@ GRANT SELECT ON TABLE ligacao_agua_material TO pg_users;
 REVOKE ALL ON TABLE ligacao_agua_perfil FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_agua_perfil FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_agua_perfil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua_perfil TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_agua_perfil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua_perfil TO role_aplic;
+GRANT SELECT ON TABLE ligacao_agua_perfil TO role_users;
 
 
 --
@@ -78940,8 +78940,8 @@ GRANT SELECT ON TABLE ligacao_agua_perfil TO pg_users;
 REVOKE ALL ON TABLE ligacao_agua_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_agua_situacao FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_agua_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua_situacao TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_agua_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_agua_situacao TO role_aplic;
+GRANT SELECT ON TABLE ligacao_agua_situacao TO role_users;
 
 
 --
@@ -78951,8 +78951,8 @@ GRANT SELECT ON TABLE ligacao_agua_situacao TO pg_users;
 REVOKE ALL ON TABLE ligacao_esgoto FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_esgoto FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_esgoto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_esgoto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto TO role_aplic;
+GRANT SELECT ON TABLE ligacao_esgoto TO role_users;
 
 
 --
@@ -78962,8 +78962,8 @@ GRANT SELECT ON TABLE ligacao_esgoto TO pg_users;
 REVOKE ALL ON TABLE ligacao_esgoto_diametro FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_esgoto_diametro FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_esgoto_diametro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto_diametro TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_esgoto_diametro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto_diametro TO role_aplic;
+GRANT SELECT ON TABLE ligacao_esgoto_diametro TO role_users;
 
 
 --
@@ -78973,8 +78973,8 @@ GRANT SELECT ON TABLE ligacao_esgoto_diametro TO pg_users;
 REVOKE ALL ON TABLE ligacao_esgoto_material FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_esgoto_material FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_esgoto_material TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto_material TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_esgoto_material TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto_material TO role_aplic;
+GRANT SELECT ON TABLE ligacao_esgoto_material TO role_users;
 
 
 --
@@ -78984,8 +78984,8 @@ GRANT SELECT ON TABLE ligacao_esgoto_material TO pg_users;
 REVOKE ALL ON TABLE ligacao_esgoto_perfil FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_esgoto_perfil FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_esgoto_perfil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto_perfil TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_esgoto_perfil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto_perfil TO role_aplic;
+GRANT SELECT ON TABLE ligacao_esgoto_perfil TO role_users;
 
 
 --
@@ -78995,8 +78995,8 @@ GRANT SELECT ON TABLE ligacao_esgoto_perfil TO pg_users;
 REVOKE ALL ON TABLE ligacao_esgoto_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_esgoto_situacao FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_esgoto_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto_situacao TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_esgoto_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_esgoto_situacao TO role_aplic;
+GRANT SELECT ON TABLE ligacao_esgoto_situacao TO role_users;
 
 
 --
@@ -79006,8 +79006,8 @@ GRANT SELECT ON TABLE ligacao_esgoto_situacao TO pg_users;
 REVOKE ALL ON TABLE ligacao_origem FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_origem FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_origem TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_origem TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_origem TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_origem TO role_aplic;
+GRANT SELECT ON TABLE ligacao_origem TO role_users;
 
 
 --
@@ -79017,8 +79017,8 @@ GRANT SELECT ON TABLE ligacao_origem TO pg_users;
 REVOKE ALL ON TABLE ligacao_sit_comando_oss FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_sit_comando_oss FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_sit_comando_oss TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_sit_comando_oss TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_sit_comando_oss TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_sit_comando_oss TO role_aplic;
+GRANT SELECT ON TABLE ligacao_sit_comando_oss TO role_users;
 
 
 --
@@ -79028,8 +79028,8 @@ GRANT SELECT ON TABLE ligacao_sit_comando_oss TO pg_users;
 REVOKE ALL ON TABLE local_espec_unidade FROM PUBLIC;
 REVOKE ALL ON TABLE local_espec_unidade FROM gsan_admin;
 GRANT ALL ON TABLE local_espec_unidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE local_espec_unidade TO pg_aplic;
-GRANT SELECT ON TABLE local_espec_unidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE local_espec_unidade TO role_aplic;
+GRANT SELECT ON TABLE local_espec_unidade TO role_users;
 
 
 --
@@ -79039,8 +79039,8 @@ GRANT SELECT ON TABLE local_espec_unidade TO pg_users;
 REVOKE ALL ON TABLE local_ocorrencia FROM PUBLIC;
 REVOKE ALL ON TABLE local_ocorrencia FROM gsan_admin;
 GRANT ALL ON TABLE local_ocorrencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE local_ocorrencia TO pg_aplic;
-GRANT SELECT ON TABLE local_ocorrencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE local_ocorrencia TO role_aplic;
+GRANT SELECT ON TABLE local_ocorrencia TO role_users;
 
 
 --
@@ -79050,8 +79050,8 @@ GRANT SELECT ON TABLE local_ocorrencia TO pg_users;
 REVOKE ALL ON TABLE localid_solic_tipo_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE localid_solic_tipo_grupo FROM gsan_admin;
 GRANT ALL ON TABLE localid_solic_tipo_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localid_solic_tipo_grupo TO pg_aplic;
-GRANT SELECT ON TABLE localid_solic_tipo_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localid_solic_tipo_grupo TO role_aplic;
+GRANT SELECT ON TABLE localid_solic_tipo_grupo TO role_users;
 
 
 --
@@ -79061,8 +79061,8 @@ GRANT SELECT ON TABLE localid_solic_tipo_grupo TO pg_users;
 REVOKE ALL ON TABLE material FROM PUBLIC;
 REVOKE ALL ON TABLE material FROM gsan_admin;
 GRANT ALL ON TABLE material TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE material TO pg_aplic;
-GRANT SELECT ON TABLE material TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE material TO role_aplic;
+GRANT SELECT ON TABLE material TO role_users;
 
 
 --
@@ -79072,8 +79072,8 @@ GRANT SELECT ON TABLE material TO pg_users;
 REVOKE ALL ON TABLE material_unidade FROM PUBLIC;
 REVOKE ALL ON TABLE material_unidade FROM gsan_admin;
 GRANT ALL ON TABLE material_unidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE material_unidade TO pg_aplic;
-GRANT SELECT ON TABLE material_unidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE material_unidade TO role_aplic;
+GRANT SELECT ON TABLE material_unidade TO role_users;
 
 
 --
@@ -79083,8 +79083,8 @@ GRANT SELECT ON TABLE material_unidade TO pg_users;
 REVOKE ALL ON TABLE meio_solicitacao FROM PUBLIC;
 REVOKE ALL ON TABLE meio_solicitacao FROM gsan_admin;
 GRANT ALL ON TABLE meio_solicitacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE meio_solicitacao TO pg_aplic;
-GRANT SELECT ON TABLE meio_solicitacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE meio_solicitacao TO role_aplic;
+GRANT SELECT ON TABLE meio_solicitacao TO role_users;
 
 
 --
@@ -79094,8 +79094,8 @@ GRANT SELECT ON TABLE meio_solicitacao TO pg_users;
 REVOKE ALL ON TABLE motivo_corte FROM PUBLIC;
 REVOKE ALL ON TABLE motivo_corte FROM gsan_admin;
 GRANT ALL ON TABLE motivo_corte TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_corte TO pg_aplic;
-GRANT SELECT ON TABLE motivo_corte TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_corte TO role_aplic;
+GRANT SELECT ON TABLE motivo_corte TO role_users;
 
 
 --
@@ -79105,8 +79105,8 @@ GRANT SELECT ON TABLE motivo_corte TO pg_users;
 REVOKE ALL ON TABLE ordem_servico FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico TO role_users;
 
 
 --
@@ -79116,8 +79116,8 @@ GRANT SELECT ON TABLE ordem_servico TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_atividade FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_atividade FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_atividade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_atividade TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_atividade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_atividade TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_atividade TO role_users;
 
 
 --
@@ -79127,8 +79127,8 @@ GRANT SELECT ON TABLE ordem_servico_atividade TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_boletim FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_boletim FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_boletim TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_boletim TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_boletim TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_boletim TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_boletim TO role_users;
 
 
 --
@@ -79138,8 +79138,8 @@ GRANT SELECT ON TABLE ordem_servico_boletim TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_fisc_sit FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_fisc_sit FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_fisc_sit TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_fisc_sit TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_fisc_sit TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_fisc_sit TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_fisc_sit TO role_users;
 
 
 --
@@ -79149,8 +79149,8 @@ GRANT SELECT ON TABLE ordem_servico_fisc_sit TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_foto FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_foto FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_foto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_foto TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_foto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_foto TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_foto TO role_users;
 
 
 --
@@ -79160,8 +79160,8 @@ GRANT SELECT ON TABLE ordem_servico_foto TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_historico FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_historico FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_historico TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_historico TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_historico TO role_users;
 
 
 --
@@ -79171,8 +79171,8 @@ GRANT SELECT ON TABLE ordem_servico_historico TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_movimento FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_movimento FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_movimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_movimento TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_movimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_movimento TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_movimento TO role_users;
 
 
 --
@@ -79182,8 +79182,8 @@ GRANT SELECT ON TABLE ordem_servico_movimento TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_pavimento FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_pavimento FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_pavimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_pavimento TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_pavimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_pavimento TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_pavimento TO role_users;
 
 
 --
@@ -79193,8 +79193,8 @@ GRANT SELECT ON TABLE ordem_servico_pavimento TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_situacao FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_situacao TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_situacao TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_situacao TO role_users;
 
 
 --
@@ -79204,8 +79204,8 @@ GRANT SELECT ON TABLE ordem_servico_situacao TO pg_users;
 REVOKE ALL ON TABLE ordem_servico_unidade FROM PUBLIC;
 REVOKE ALL ON TABLE ordem_servico_unidade FROM gsan_admin;
 GRANT ALL ON TABLE ordem_servico_unidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_unidade TO pg_aplic;
-GRANT SELECT ON TABLE ordem_servico_unidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ordem_servico_unidade TO role_aplic;
+GRANT SELECT ON TABLE ordem_servico_unidade TO role_users;
 
 
 --
@@ -79215,8 +79215,8 @@ GRANT SELECT ON TABLE ordem_servico_unidade TO pg_users;
 REVOKE ALL ON TABLE os_at_exec_acomp_servico FROM PUBLIC;
 REVOKE ALL ON TABLE os_at_exec_acomp_servico FROM gsan_admin;
 GRANT ALL ON TABLE os_at_exec_acomp_servico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_at_exec_acomp_servico TO pg_aplic;
-GRANT SELECT ON TABLE os_at_exec_acomp_servico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_at_exec_acomp_servico TO role_aplic;
+GRANT SELECT ON TABLE os_at_exec_acomp_servico TO role_users;
 
 
 --
@@ -79226,8 +79226,8 @@ GRANT SELECT ON TABLE os_at_exec_acomp_servico TO pg_users;
 REVOKE ALL ON TABLE os_at_mat_prg_acomp_serv FROM PUBLIC;
 REVOKE ALL ON TABLE os_at_mat_prg_acomp_serv FROM gsan_admin;
 GRANT ALL ON TABLE os_at_mat_prg_acomp_serv TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_at_mat_prg_acomp_serv TO pg_aplic;
-GRANT SELECT ON TABLE os_at_mat_prg_acomp_serv TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_at_mat_prg_acomp_serv TO role_aplic;
+GRANT SELECT ON TABLE os_at_mat_prg_acomp_serv TO role_users;
 
 
 --
@@ -79237,8 +79237,8 @@ GRANT SELECT ON TABLE os_at_mat_prg_acomp_serv TO pg_users;
 REVOKE ALL ON TABLE os_at_prg_acomp_servico FROM PUBLIC;
 REVOKE ALL ON TABLE os_at_prg_acomp_servico FROM gsan_admin;
 GRANT ALL ON TABLE os_at_prg_acomp_servico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_at_prg_acomp_servico TO pg_aplic;
-GRANT SELECT ON TABLE os_at_prg_acomp_servico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_at_prg_acomp_servico TO role_aplic;
+GRANT SELECT ON TABLE os_at_prg_acomp_servico TO role_users;
 
 
 --
@@ -79248,8 +79248,8 @@ GRANT SELECT ON TABLE os_at_prg_acomp_servico TO pg_users;
 REVOKE ALL ON TABLE os_ativ_mat_execucao FROM PUBLIC;
 REVOKE ALL ON TABLE os_ativ_mat_execucao FROM gsan_admin;
 GRANT ALL ON TABLE os_ativ_mat_execucao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_ativ_mat_execucao TO pg_aplic;
-GRANT SELECT ON TABLE os_ativ_mat_execucao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_ativ_mat_execucao TO role_aplic;
+GRANT SELECT ON TABLE os_ativ_mat_execucao TO role_users;
 
 
 --
@@ -79259,8 +79259,8 @@ GRANT SELECT ON TABLE os_ativ_mat_execucao TO pg_users;
 REVOKE ALL ON TABLE os_ativ_periodo_execucao FROM PUBLIC;
 REVOKE ALL ON TABLE os_ativ_periodo_execucao FROM gsan_admin;
 GRANT ALL ON TABLE os_ativ_periodo_execucao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_ativ_periodo_execucao TO pg_aplic;
-GRANT SELECT ON TABLE os_ativ_periodo_execucao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_ativ_periodo_execucao TO role_aplic;
+GRANT SELECT ON TABLE os_ativ_periodo_execucao TO role_users;
 
 
 --
@@ -79270,8 +79270,8 @@ GRANT SELECT ON TABLE os_ativ_periodo_execucao TO pg_users;
 REVOKE ALL ON TABLE os_exec_eq_componentes FROM PUBLIC;
 REVOKE ALL ON TABLE os_exec_eq_componentes FROM gsan_admin;
 GRANT ALL ON TABLE os_exec_eq_componentes TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_exec_eq_componentes TO pg_aplic;
-GRANT SELECT ON TABLE os_exec_eq_componentes TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_exec_eq_componentes TO role_aplic;
+GRANT SELECT ON TABLE os_exec_eq_componentes TO role_users;
 
 
 --
@@ -79281,8 +79281,8 @@ GRANT SELECT ON TABLE os_exec_eq_componentes TO pg_users;
 REVOKE ALL ON TABLE os_execucao_equipe FROM PUBLIC;
 REVOKE ALL ON TABLE os_execucao_equipe FROM gsan_admin;
 GRANT ALL ON TABLE os_execucao_equipe TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_execucao_equipe TO pg_aplic;
-GRANT SELECT ON TABLE os_execucao_equipe TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_execucao_equipe TO role_aplic;
+GRANT SELECT ON TABLE os_execucao_equipe TO role_users;
 
 
 --
@@ -79292,8 +79292,8 @@ GRANT SELECT ON TABLE os_execucao_equipe TO pg_users;
 REVOKE ALL ON TABLE os_movimento_hist FROM PUBLIC;
 REVOKE ALL ON TABLE os_movimento_hist FROM gsan_admin;
 GRANT ALL ON TABLE os_movimento_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_movimento_hist TO pg_aplic;
-GRANT SELECT ON TABLE os_movimento_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_movimento_hist TO role_aplic;
+GRANT SELECT ON TABLE os_movimento_hist TO role_users;
 
 
 --
@@ -79303,8 +79303,8 @@ GRANT SELECT ON TABLE os_movimento_hist TO pg_users;
 REVOKE ALL ON TABLE os_prg_acomp_servico FROM PUBLIC;
 REVOKE ALL ON TABLE os_prg_acomp_servico FROM gsan_admin;
 GRANT ALL ON TABLE os_prg_acomp_servico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_prg_acomp_servico TO pg_aplic;
-GRANT SELECT ON TABLE os_prg_acomp_servico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_prg_acomp_servico TO role_aplic;
+GRANT SELECT ON TABLE os_prg_acomp_servico TO role_users;
 
 
 --
@@ -79314,8 +79314,8 @@ GRANT SELECT ON TABLE os_prg_acomp_servico TO pg_users;
 REVOKE ALL ON TABLE os_prog_nao_encer_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE os_prog_nao_encer_motivo FROM gsan_admin;
 GRANT ALL ON TABLE os_prog_nao_encer_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_prog_nao_encer_motivo TO pg_aplic;
-GRANT SELECT ON TABLE os_prog_nao_encer_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_prog_nao_encer_motivo TO role_aplic;
+GRANT SELECT ON TABLE os_prog_nao_encer_motivo TO role_users;
 
 
 --
@@ -79325,8 +79325,8 @@ GRANT SELECT ON TABLE os_prog_nao_encer_motivo TO pg_users;
 REVOKE ALL ON TABLE os_programa_calibragem FROM PUBLIC;
 REVOKE ALL ON TABLE os_programa_calibragem FROM gsan_admin;
 GRANT ALL ON TABLE os_programa_calibragem TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_programa_calibragem TO pg_aplic;
-GRANT SELECT ON TABLE os_programa_calibragem TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_programa_calibragem TO role_aplic;
+GRANT SELECT ON TABLE os_programa_calibragem TO role_users;
 
 
 --
@@ -79336,8 +79336,8 @@ GRANT SELECT ON TABLE os_programa_calibragem TO pg_users;
 REVOKE ALL ON TABLE os_programacao FROM PUBLIC;
 REVOKE ALL ON TABLE os_programacao FROM gsan_admin;
 GRANT ALL ON TABLE os_programacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_programacao TO pg_aplic;
-GRANT SELECT ON TABLE os_programacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_programacao TO role_aplic;
+GRANT SELECT ON TABLE os_programacao TO role_users;
 
 
 --
@@ -79347,8 +79347,8 @@ GRANT SELECT ON TABLE os_programacao TO pg_users;
 REVOKE ALL ON TABLE os_referida_retorno_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE os_referida_retorno_tipo FROM gsan_admin;
 GRANT ALL ON TABLE os_referida_retorno_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_referida_retorno_tipo TO pg_aplic;
-GRANT SELECT ON TABLE os_referida_retorno_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_referida_retorno_tipo TO role_aplic;
+GRANT SELECT ON TABLE os_referida_retorno_tipo TO role_users;
 
 
 --
@@ -79358,8 +79358,8 @@ GRANT SELECT ON TABLE os_referida_retorno_tipo TO pg_users;
 REVOKE ALL ON TABLE os_seletiva_comando FROM PUBLIC;
 REVOKE ALL ON TABLE os_seletiva_comando FROM gsan_admin;
 GRANT ALL ON TABLE os_seletiva_comando TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_seletiva_comando TO pg_aplic;
-GRANT SELECT ON TABLE os_seletiva_comando TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_seletiva_comando TO role_aplic;
+GRANT SELECT ON TABLE os_seletiva_comando TO role_users;
 
 
 --
@@ -79369,8 +79369,8 @@ GRANT SELECT ON TABLE os_seletiva_comando TO pg_users;
 REVOKE ALL ON TABLE os_seletiva_visita_campo FROM PUBLIC;
 REVOKE ALL ON TABLE os_seletiva_visita_campo FROM gsan_admin;
 GRANT ALL ON TABLE os_seletiva_visita_campo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_seletiva_visita_campo TO pg_aplic;
-GRANT SELECT ON TABLE os_seletiva_visita_campo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_seletiva_visita_campo TO role_aplic;
+GRANT SELECT ON TABLE os_seletiva_visita_campo TO role_users;
 
 
 --
@@ -79380,8 +79380,8 @@ GRANT SELECT ON TABLE os_seletiva_visita_campo TO pg_users;
 REVOKE ALL ON TABLE os_unidade_hist FROM PUBLIC;
 REVOKE ALL ON TABLE os_unidade_hist FROM gsan_admin;
 GRANT ALL ON TABLE os_unidade_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_unidade_hist TO pg_aplic;
-GRANT SELECT ON TABLE os_unidade_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE os_unidade_hist TO role_aplic;
+GRANT SELECT ON TABLE os_unidade_hist TO role_users;
 
 
 --
@@ -79391,8 +79391,8 @@ GRANT SELECT ON TABLE os_unidade_hist TO pg_users;
 REVOKE ALL ON TABLE pesquisa_satisfacao FROM PUBLIC;
 REVOKE ALL ON TABLE pesquisa_satisfacao FROM gsan_admin;
 GRANT ALL ON TABLE pesquisa_satisfacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pesquisa_satisfacao TO pg_aplic;
-GRANT SELECT ON TABLE pesquisa_satisfacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pesquisa_satisfacao TO role_aplic;
+GRANT SELECT ON TABLE pesquisa_satisfacao TO role_users;
 
 
 --
@@ -79402,8 +79402,8 @@ GRANT SELECT ON TABLE pesquisa_satisfacao TO pg_users;
 REVOKE ALL ON TABLE priorizacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE priorizacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE priorizacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE priorizacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE priorizacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE priorizacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE priorizacao_tipo TO role_users;
 
 
 --
@@ -79413,8 +79413,8 @@ GRANT SELECT ON TABLE priorizacao_tipo TO pg_users;
 REVOKE ALL ON TABLE programacao_roteiro FROM PUBLIC;
 REVOKE ALL ON TABLE programacao_roteiro FROM gsan_admin;
 GRANT ALL ON TABLE programacao_roteiro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE programacao_roteiro TO pg_aplic;
-GRANT SELECT ON TABLE programacao_roteiro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE programacao_roteiro TO role_aplic;
+GRANT SELECT ON TABLE programacao_roteiro TO role_users;
 
 
 --
@@ -79424,8 +79424,8 @@ GRANT SELECT ON TABLE programacao_roteiro TO pg_users;
 REVOKE ALL ON TABLE ra_anexo FROM PUBLIC;
 REVOKE ALL ON TABLE ra_anexo FROM gsan_admin;
 GRANT ALL ON TABLE ra_anexo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_anexo TO pg_aplic;
-GRANT SELECT ON TABLE ra_anexo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_anexo TO role_aplic;
+GRANT SELECT ON TABLE ra_anexo TO role_users;
 
 
 --
@@ -79435,8 +79435,8 @@ GRANT SELECT ON TABLE ra_anexo TO pg_users;
 REVOKE ALL ON TABLE ra_conta FROM PUBLIC;
 REVOKE ALL ON TABLE ra_conta FROM gsan_admin;
 GRANT ALL ON TABLE ra_conta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_conta TO pg_aplic;
-GRANT SELECT ON TABLE ra_conta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_conta TO role_aplic;
+GRANT SELECT ON TABLE ra_conta TO role_users;
 
 
 --
@@ -79446,8 +79446,8 @@ GRANT SELECT ON TABLE ra_conta TO pg_users;
 REVOKE ALL ON TABLE ra_dados_agen_reg_fone FROM PUBLIC;
 REVOKE ALL ON TABLE ra_dados_agen_reg_fone FROM gsan_admin;
 GRANT ALL ON TABLE ra_dados_agen_reg_fone TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_dados_agen_reg_fone TO pg_aplic;
-GRANT SELECT ON TABLE ra_dados_agen_reg_fone TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_dados_agen_reg_fone TO role_aplic;
+GRANT SELECT ON TABLE ra_dados_agen_reg_fone TO role_users;
 
 
 --
@@ -79457,8 +79457,8 @@ GRANT SELECT ON TABLE ra_dados_agen_reg_fone TO pg_users;
 REVOKE ALL ON TABLE ra_dados_agen_reguladora FROM PUBLIC;
 REVOKE ALL ON TABLE ra_dados_agen_reguladora FROM gsan_admin;
 GRANT ALL ON TABLE ra_dados_agen_reguladora TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_dados_agen_reguladora TO pg_aplic;
-GRANT SELECT ON TABLE ra_dados_agen_reguladora TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_dados_agen_reguladora TO role_aplic;
+GRANT SELECT ON TABLE ra_dados_agen_reguladora TO role_users;
 
 
 --
@@ -79468,8 +79468,8 @@ GRANT SELECT ON TABLE ra_dados_agen_reguladora TO pg_users;
 REVOKE ALL ON TABLE ra_encerramento_comando FROM PUBLIC;
 REVOKE ALL ON TABLE ra_encerramento_comando FROM gsan_admin;
 GRANT ALL ON TABLE ra_encerramento_comando TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_encerramento_comando TO pg_aplic;
-GRANT SELECT ON TABLE ra_encerramento_comando TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_encerramento_comando TO role_aplic;
+GRANT SELECT ON TABLE ra_encerramento_comando TO role_users;
 
 
 --
@@ -79479,8 +79479,8 @@ GRANT SELECT ON TABLE ra_encerramento_comando TO pg_users;
 REVOKE ALL ON TABLE ra_encmt_comando_espec FROM PUBLIC;
 REVOKE ALL ON TABLE ra_encmt_comando_espec FROM gsan_admin;
 GRANT ALL ON TABLE ra_encmt_comando_espec TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_encmt_comando_espec TO pg_aplic;
-GRANT SELECT ON TABLE ra_encmt_comando_espec TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_encmt_comando_espec TO role_aplic;
+GRANT SELECT ON TABLE ra_encmt_comando_espec TO role_users;
 
 
 --
@@ -79490,8 +79490,8 @@ GRANT SELECT ON TABLE ra_encmt_comando_espec TO pg_users;
 REVOKE ALL ON TABLE ra_endereco_descritivo FROM PUBLIC;
 REVOKE ALL ON TABLE ra_endereco_descritivo FROM gsan_admin;
 GRANT ALL ON TABLE ra_endereco_descritivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_endereco_descritivo TO pg_aplic;
-GRANT SELECT ON TABLE ra_endereco_descritivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_endereco_descritivo TO role_aplic;
+GRANT SELECT ON TABLE ra_endereco_descritivo TO role_users;
 
 
 --
@@ -79501,8 +79501,8 @@ GRANT SELECT ON TABLE ra_endereco_descritivo TO pg_users;
 REVOKE ALL ON TABLE ra_motivo_reativacao FROM PUBLIC;
 REVOKE ALL ON TABLE ra_motivo_reativacao FROM gsan_admin;
 GRANT ALL ON TABLE ra_motivo_reativacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_motivo_reativacao TO pg_aplic;
-GRANT SELECT ON TABLE ra_motivo_reativacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_motivo_reativacao TO role_aplic;
+GRANT SELECT ON TABLE ra_motivo_reativacao TO role_users;
 
 
 --
@@ -79512,8 +79512,8 @@ GRANT SELECT ON TABLE ra_motivo_reativacao TO pg_users;
 REVOKE ALL ON TABLE ra_pagto_duplicidade FROM PUBLIC;
 REVOKE ALL ON TABLE ra_pagto_duplicidade FROM gsan_admin;
 GRANT ALL ON TABLE ra_pagto_duplicidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_pagto_duplicidade TO pg_aplic;
-GRANT SELECT ON TABLE ra_pagto_duplicidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_pagto_duplicidade TO role_aplic;
+GRANT SELECT ON TABLE ra_pagto_duplicidade TO role_users;
 
 
 --
@@ -79523,8 +79523,8 @@ GRANT SELECT ON TABLE ra_pagto_duplicidade TO pg_users;
 REVOKE ALL ON TABLE ra_reiteracao FROM PUBLIC;
 REVOKE ALL ON TABLE ra_reiteracao FROM gsan_admin;
 GRANT ALL ON TABLE ra_reiteracao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_reiteracao TO pg_aplic;
-GRANT SELECT ON TABLE ra_reiteracao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_reiteracao TO role_aplic;
+GRANT SELECT ON TABLE ra_reiteracao TO role_users;
 
 
 --
@@ -79534,8 +79534,8 @@ GRANT SELECT ON TABLE ra_reiteracao TO pg_users;
 REVOKE ALL ON TABLE ra_reiteracao_fone FROM PUBLIC;
 REVOKE ALL ON TABLE ra_reiteracao_fone FROM gsan_admin;
 GRANT ALL ON TABLE ra_reiteracao_fone TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_reiteracao_fone TO pg_aplic;
-GRANT SELECT ON TABLE ra_reiteracao_fone TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_reiteracao_fone TO role_aplic;
+GRANT SELECT ON TABLE ra_reiteracao_fone TO role_users;
 
 
 --
@@ -79545,8 +79545,8 @@ GRANT SELECT ON TABLE ra_reiteracao_fone TO pg_users;
 REVOKE ALL ON TABLE ra_solicitante FROM PUBLIC;
 REVOKE ALL ON TABLE ra_solicitante FROM gsan_admin;
 GRANT ALL ON TABLE ra_solicitante TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_solicitante TO pg_aplic;
-GRANT SELECT ON TABLE ra_solicitante TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_solicitante TO role_aplic;
+GRANT SELECT ON TABLE ra_solicitante TO role_users;
 
 
 --
@@ -79556,8 +79556,8 @@ GRANT SELECT ON TABLE ra_solicitante TO pg_users;
 REVOKE ALL ON TABLE ra_unidade FROM PUBLIC;
 REVOKE ALL ON TABLE ra_unidade FROM gsan_admin;
 GRANT ALL ON TABLE ra_unidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_unidade TO pg_aplic;
-GRANT SELECT ON TABLE ra_unidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ra_unidade TO role_aplic;
+GRANT SELECT ON TABLE ra_unidade TO role_users;
 
 
 --
@@ -79567,8 +79567,8 @@ GRANT SELECT ON TABLE ra_unidade TO pg_users;
 REVOKE ALL ON TABLE ramal_local_instalacao FROM PUBLIC;
 REVOKE ALL ON TABLE ramal_local_instalacao FROM gsan_admin;
 GRANT ALL ON TABLE ramal_local_instalacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ramal_local_instalacao TO pg_aplic;
-GRANT SELECT ON TABLE ramal_local_instalacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ramal_local_instalacao TO role_aplic;
+GRANT SELECT ON TABLE ramal_local_instalacao TO role_users;
 
 
 --
@@ -79578,8 +79578,8 @@ GRANT SELECT ON TABLE ramal_local_instalacao TO pg_users;
 REVOKE ALL ON TABLE registro_atendimento FROM PUBLIC;
 REVOKE ALL ON TABLE registro_atendimento FROM gsan_admin;
 GRANT ALL ON TABLE registro_atendimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE registro_atendimento TO pg_aplic;
-GRANT SELECT ON TABLE registro_atendimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE registro_atendimento TO role_aplic;
+GRANT SELECT ON TABLE registro_atendimento TO role_users;
 
 
 --
@@ -79589,8 +79589,8 @@ GRANT SELECT ON TABLE registro_atendimento TO pg_users;
 REVOKE ALL ON TABLE repavimento_mot_rejeicao FROM PUBLIC;
 REVOKE ALL ON TABLE repavimento_mot_rejeicao FROM gsan_admin;
 GRANT ALL ON TABLE repavimento_mot_rejeicao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE repavimento_mot_rejeicao TO pg_aplic;
-GRANT SELECT ON TABLE repavimento_mot_rejeicao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE repavimento_mot_rejeicao TO role_aplic;
+GRANT SELECT ON TABLE repavimento_mot_rejeicao TO role_users;
 
 
 --
@@ -79600,8 +79600,8 @@ GRANT SELECT ON TABLE repavimento_mot_rejeicao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_agen_reg_mot_reclam FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_agen_reg_mot_reclam FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_agen_reg_mot_reclam TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_agen_reg_mot_reclam TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_agen_reg_mot_reclam TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_agen_reg_mot_reclam TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_agen_reg_mot_reclam TO role_users;
 
 
 --
@@ -79611,8 +79611,8 @@ GRANT SELECT ON SEQUENCE seq_agen_reg_mot_reclam TO pg_users;
 REVOKE ALL ON SEQUENCE seq_agen_reg_mot_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_agen_reg_mot_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_agen_reg_mot_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_agen_reg_mot_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_agen_reg_mot_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_agen_reg_mot_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_agen_reg_mot_retorno TO role_users;
 
 
 --
@@ -79622,8 +79622,8 @@ GRANT SELECT ON SEQUENCE seq_agen_reg_mot_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE seq_agencia_reguladora FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_agencia_reguladora FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_agencia_reguladora TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_agencia_reguladora TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_agencia_reguladora TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_agencia_reguladora TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_agencia_reguladora TO role_users;
 
 
 --
@@ -79633,7 +79633,7 @@ GRANT SELECT ON SEQUENCE seq_agencia_reguladora TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arq_txt_acomp_servico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arq_txt_acomp_servico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arq_txt_acomp_servico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_acomp_servico TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_acomp_servico TO role_aplic;
 
 
 --
@@ -79643,7 +79643,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_acomp_servico TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_arq_txt_ret_acao_viscam FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arq_txt_ret_acao_viscam FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arq_txt_ret_acao_viscam TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_acao_viscam TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_acao_viscam TO role_aplic;
 
 
 --
@@ -79653,7 +79653,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_acao_viscam TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_arq_txt_ret_clie_viscamp FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arq_txt_ret_clie_viscamp FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arq_txt_ret_clie_viscamp TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_clie_viscamp TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_clie_viscamp TO role_aplic;
 
 
 --
@@ -79663,7 +79663,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_clie_viscamp TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_arq_txt_ret_fone_viscamp FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arq_txt_ret_fone_viscamp FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arq_txt_ret_fone_viscamp TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_fone_viscamp TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_fone_viscamp TO role_aplic;
 
 
 --
@@ -79673,7 +79673,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_fone_viscamp TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_arq_txt_ret_visita_campo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arq_txt_ret_visita_campo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arq_txt_ret_visita_campo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_visita_campo TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_visita_campo TO role_aplic;
 
 
 --
@@ -79683,7 +79683,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_ret_visita_campo TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_arq_txt_visita_campo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arq_txt_visita_campo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arq_txt_visita_campo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_visita_campo TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_visita_campo TO role_aplic;
 
 
 --
@@ -79693,8 +79693,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_visita_campo TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_atend_motivo_encmt FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atend_motivo_encmt FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atend_motivo_encmt TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atend_motivo_encmt TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atend_motivo_encmt TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atend_motivo_encmt TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atend_motivo_encmt TO role_users;
 
 
 --
@@ -79704,8 +79704,8 @@ GRANT SELECT ON SEQUENCE seq_atend_motivo_encmt TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atendimento_relacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atendimento_relacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atendimento_relacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atendimento_relacao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atendimento_relacao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atendimento_relacao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atendimento_relacao_tipo TO role_users;
 
 
 --
@@ -79715,8 +79715,8 @@ GRANT SELECT ON SEQUENCE seq_atendimento_relacao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atividade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atividade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atividade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atividade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atividade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atividade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atividade TO role_users;
 
 
 --
@@ -79726,7 +79726,7 @@ GRANT SELECT ON SEQUENCE seq_atividade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cad_msg_acompanh_servico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cad_msg_acompanh_servico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cad_msg_acompanh_servico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cad_msg_acompanh_servico TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cad_msg_acompanh_servico TO role_aplic;
 
 
 --
@@ -79736,7 +79736,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_cad_msg_acompanh_servico TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_clie_fone_visita_camp FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_clie_fone_visita_camp FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_clie_fone_visita_camp TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_clie_fone_visita_camp TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_clie_fone_visita_camp TO role_aplic;
 
 
 --
@@ -79746,7 +79746,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_clie_fone_visita_camp TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_clie_os_visita_campo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_clie_os_visita_campo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_clie_os_visita_campo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_clie_os_visita_campo TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_clie_os_visita_campo TO role_aplic;
 
 
 --
@@ -79756,7 +79756,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_clie_os_visita_campo TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_comando_ordem_seletiva FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_comando_ordem_seletiva FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_comando_ordem_seletiva TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_comando_ordem_seletiva TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_comando_ordem_seletiva TO role_aplic;
 
 
 --
@@ -79766,8 +79766,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_comando_ordem_seletiva TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_conta_braile FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_braile FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_braile TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_braile TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_braile TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_braile TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_braile TO role_users;
 
 
 --
@@ -79777,7 +79777,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_conta_braile TO pg_users;
 REVOKE ALL ON SEQUENCE seq_coordenada_percurso_eqpe FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_coordenada_percurso_eqpe FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_coordenada_percurso_eqpe TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_coordenada_percurso_eqpe TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_coordenada_percurso_eqpe TO role_aplic;
 
 
 --
@@ -79787,8 +79787,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_coordenada_percurso_eqpe TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_corte_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_corte_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_corte_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_corte_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_corte_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_corte_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_corte_tipo TO role_users;
 
 
 --
@@ -79798,8 +79798,8 @@ GRANT SELECT ON SEQUENCE seq_corte_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_emissao_ordem_cobr_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_emissao_ordem_cobr_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_emissao_ordem_cobr_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_emissao_ordem_cobr_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_emissao_ordem_cobr_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_emissao_ordem_cobr_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_emissao_ordem_cobr_tipo TO role_users;
 
 
 --
@@ -79809,8 +79809,8 @@ GRANT SELECT ON SEQUENCE seq_emissao_ordem_cobr_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_equipamentos_especiais FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_equipamentos_especiais FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_equipamentos_especiais TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_equipamentos_especiais TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_equipamentos_especiais TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_equipamentos_especiais TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_equipamentos_especiais TO role_users;
 
 
 --
@@ -79820,8 +79820,8 @@ GRANT SELECT ON SEQUENCE seq_equipamentos_especiais TO pg_users;
 REVOKE ALL ON SEQUENCE seq_equipe FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_equipe FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_equipe TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_equipe TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_equipe TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_equipe TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_equipe TO role_users;
 
 
 --
@@ -79831,8 +79831,8 @@ GRANT SELECT ON SEQUENCE seq_equipe TO pg_users;
 REVOKE ALL ON SEQUENCE seq_equipe_componentes FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_equipe_componentes FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_equipe_componentes TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_equipe_componentes TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_equipe_componentes TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_equipe_componentes TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_equipe_componentes TO role_users;
 
 
 --
@@ -79842,7 +79842,7 @@ GRANT SELECT ON SEQUENCE seq_equipe_componentes TO pg_users;
 REVOKE ALL ON SEQUENCE seq_equipe_equip_espec FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_equipe_equip_espec FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_equipe_equip_espec TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_equipe_equip_espec TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_equipe_equip_espec TO role_aplic;
 
 
 --
@@ -79852,8 +79852,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_equipe_equip_espec TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_espec_imovel_sit_crit FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_espec_imovel_sit_crit FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_espec_imovel_sit_crit TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_espec_imovel_sit_crit TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_espec_imovel_sit_crit TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_espec_imovel_sit_crit TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_espec_imovel_sit_crit TO role_users;
 
 
 --
@@ -79863,8 +79863,8 @@ GRANT SELECT ON SEQUENCE seq_espec_imovel_sit_crit TO pg_users;
 REVOKE ALL ON SEQUENCE seq_espec_imovel_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_espec_imovel_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_espec_imovel_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_espec_imovel_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_espec_imovel_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_espec_imovel_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_espec_imovel_situacao TO role_users;
 
 
 --
@@ -79874,8 +79874,8 @@ GRANT SELECT ON SEQUENCE seq_espec_imovel_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_espec_pavi_servico_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_espec_pavi_servico_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_espec_pavi_servico_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_espec_pavi_servico_tipo TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_espec_pavi_servico_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_espec_pavi_servico_tipo TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_espec_pavi_servico_tipo TO role_users;
 
 
 --
@@ -79885,8 +79885,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_espec_pavi_servico_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_espec_tipo_validacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_espec_tipo_validacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_espec_tipo_validacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_espec_tipo_validacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_espec_tipo_validacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_espec_tipo_validacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_espec_tipo_validacao TO role_users;
 
 
 --
@@ -79896,7 +79896,7 @@ GRANT SELECT ON SEQUENCE seq_espec_tipo_validacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fiscaliz_param_calc_deb FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fiscaliz_param_calc_deb FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fiscaliz_param_calc_deb TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fiscaliz_param_calc_deb TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fiscaliz_param_calc_deb TO role_aplic;
 
 
 --
@@ -79906,8 +79906,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_fiscaliz_param_calc_deb TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_fiscalizacao_coletiva FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fiscalizacao_coletiva FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fiscalizacao_coletiva TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fiscalizacao_coletiva TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fiscalizacao_coletiva TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fiscalizacao_coletiva TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fiscalizacao_coletiva TO role_users;
 
 
 --
@@ -79917,8 +79917,8 @@ GRANT SELECT ON SEQUENCE seq_fiscalizacao_coletiva TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fiscalizacao_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fiscalizacao_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fiscalizacao_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fiscalizacao_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fiscalizacao_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fiscalizacao_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fiscalizacao_situacao TO role_users;
 
 
 --
@@ -79928,7 +79928,7 @@ GRANT SELECT ON SEQUENCE seq_fiscalizacao_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_foto_situacao_os FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_foto_situacao_os FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_foto_situacao_os TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_foto_situacao_os TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_foto_situacao_os TO role_aplic;
 
 
 --
@@ -79938,8 +79938,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_foto_situacao_os TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_gis_retorno_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_gis_retorno_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_gis_retorno_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_gis_retorno_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_gis_retorno_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_gis_retorno_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_gis_retorno_motivo TO role_users;
 
 
 --
@@ -79949,8 +79949,8 @@ GRANT SELECT ON SEQUENCE seq_gis_retorno_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lig_agua_sit_cons_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lig_agua_sit_cons_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lig_agua_sit_cons_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lig_agua_sit_cons_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lig_agua_sit_cons_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lig_agua_sit_cons_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lig_agua_sit_cons_tipo TO role_users;
 
 
 --
@@ -79960,8 +79960,8 @@ GRANT SELECT ON SEQUENCE seq_lig_agua_sit_cons_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_caixa_inspec FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_caixa_inspec FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lig_esgoto_caixa_inspec TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_caixa_inspec TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lig_esgoto_caixa_inspec TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_caixa_inspec TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lig_esgoto_caixa_inspec TO role_users;
 
 
 --
@@ -79971,8 +79971,8 @@ GRANT SELECT ON SEQUENCE seq_lig_esgoto_caixa_inspec TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_dest_agplv FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_dest_agplv FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lig_esgoto_dest_agplv TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_dest_agplv TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lig_esgoto_dest_agplv TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_dest_agplv TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lig_esgoto_dest_agplv TO role_users;
 
 
 --
@@ -79982,8 +79982,8 @@ GRANT SELECT ON SEQUENCE seq_lig_esgoto_dest_agplv TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_dest_dejetos FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_dest_dejetos FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lig_esgoto_dest_dejetos TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_dest_dejetos TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lig_esgoto_dest_dejetos TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_dest_dejetos TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lig_esgoto_dest_dejetos TO role_users;
 
 
 --
@@ -79993,8 +79993,8 @@ GRANT SELECT ON SEQUENCE seq_lig_esgoto_dest_dejetos TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_esgotamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_esgotamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lig_esgoto_esgotamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_esgotamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lig_esgoto_esgotamento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_esgotamento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lig_esgoto_esgotamento TO role_users;
 
 
 --
@@ -80004,8 +80004,8 @@ GRANT SELECT ON SEQUENCE seq_lig_esgoto_esgotamento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_sit_cons_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lig_esgoto_sit_cons_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lig_esgoto_sit_cons_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_sit_cons_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lig_esgoto_sit_cons_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lig_esgoto_sit_cons_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lig_esgoto_sit_cons_tipo TO role_users;
 
 
 --
@@ -80015,8 +80015,8 @@ GRANT SELECT ON SEQUENCE seq_lig_esgoto_sit_cons_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_agua TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_agua TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_agua TO role_users;
 
 
 --
@@ -80026,8 +80026,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_agua TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua_diametro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua_diametro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_agua_diametro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua_diametro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_agua_diametro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua_diametro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_agua_diametro TO role_users;
 
 
 --
@@ -80037,8 +80037,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_agua_diametro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua_material FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua_material FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_agua_material TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua_material TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_agua_material TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua_material TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_agua_material TO role_users;
 
 
 --
@@ -80048,8 +80048,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_agua_material TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua_perfil FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua_perfil FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_agua_perfil TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua_perfil TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_agua_perfil TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua_perfil TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_agua_perfil TO role_users;
 
 
 --
@@ -80059,8 +80059,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_agua_perfil TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_agua_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_agua_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_agua_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_agua_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_agua_situacao TO role_users;
 
 
 --
@@ -80070,8 +80070,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_agua_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_esgoto TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_esgoto TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_esgoto TO role_users;
 
 
 --
@@ -80081,8 +80081,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_esgoto TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto_diametro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto_diametro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_esgoto_diametro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto_diametro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_diametro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto_diametro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_diametro TO role_users;
 
 
 --
@@ -80092,8 +80092,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_diametro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto_material FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto_material FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_esgoto_material TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto_material TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_material TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto_material TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_material TO role_users;
 
 
 --
@@ -80103,8 +80103,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_material TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto_perfil FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto_perfil FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_esgoto_perfil TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto_perfil TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_perfil TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto_perfil TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_perfil TO role_users;
 
 
 --
@@ -80114,8 +80114,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_perfil TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_esgoto_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_esgoto_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_esgoto_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_situacao TO role_users;
 
 
 --
@@ -80125,8 +80125,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_esgoto_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_origem FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_origem FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_origem TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_origem TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_origem TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_origem TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_origem TO role_users;
 
 
 --
@@ -80136,8 +80136,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_origem TO pg_users;
 REVOKE ALL ON SEQUENCE seq_local_ocorrencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_local_ocorrencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_local_ocorrencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_local_ocorrencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_local_ocorrencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_local_ocorrencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_local_ocorrencia TO role_users;
 
 
 --
@@ -80147,8 +80147,8 @@ GRANT SELECT ON SEQUENCE seq_local_ocorrencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_material FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_material FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_material TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_material TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_material TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_material TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_material TO role_users;
 
 
 --
@@ -80158,8 +80158,8 @@ GRANT SELECT ON SEQUENCE seq_material TO pg_users;
 REVOKE ALL ON SEQUENCE seq_material_unidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_material_unidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_material_unidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_material_unidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_material_unidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_material_unidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_material_unidade TO role_users;
 
 
 --
@@ -80169,8 +80169,8 @@ GRANT SELECT ON SEQUENCE seq_material_unidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_meio_solicitacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_meio_solicitacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_meio_solicitacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_meio_solicitacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_meio_solicitacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_meio_solicitacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_meio_solicitacao TO role_users;
 
 
 --
@@ -80180,8 +80180,8 @@ GRANT SELECT ON SEQUENCE seq_meio_solicitacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_motivo_corte FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_motivo_corte FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_motivo_corte TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_corte TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_motivo_corte TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_corte TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_motivo_corte TO role_users;
 
 
 --
@@ -80191,8 +80191,8 @@ GRANT SELECT ON SEQUENCE seq_motivo_corte TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ordem_servico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ordem_servico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ordem_servico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ordem_servico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ordem_servico TO role_users;
 
 
 --
@@ -80202,8 +80202,8 @@ GRANT SELECT ON SEQUENCE seq_ordem_servico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_atividade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_atividade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ordem_servico_atividade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_atividade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ordem_servico_atividade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_atividade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ordem_servico_atividade TO role_users;
 
 
 --
@@ -80213,7 +80213,7 @@ GRANT SELECT ON SEQUENCE seq_ordem_servico_atividade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_fisc_sit FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_fisc_sit FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ordem_servico_fisc_sit TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_fisc_sit TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_fisc_sit TO role_aplic;
 
 
 --
@@ -80223,7 +80223,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_fisc_sit TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_foto FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_foto FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ordem_servico_foto TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_foto TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_foto TO role_aplic;
 
 
 --
@@ -80233,8 +80233,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_foto TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_pavimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_pavimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ordem_servico_pavimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_pavimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ordem_servico_pavimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_pavimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ordem_servico_pavimento TO role_users;
 
 
 --
@@ -80244,7 +80244,7 @@ GRANT SELECT ON SEQUENCE seq_ordem_servico_pavimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ordem_servico_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_situacao TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_situacao TO role_aplic;
 
 
 --
@@ -80254,8 +80254,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_situacao TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_unidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ordem_servico_unidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ordem_servico_unidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_unidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ordem_servico_unidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ordem_servico_unidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ordem_servico_unidade TO role_users;
 
 
 --
@@ -80265,7 +80265,7 @@ GRANT SELECT ON SEQUENCE seq_ordem_servico_unidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_os_at_exec_acomp_servico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_at_exec_acomp_servico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_at_exec_acomp_servico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_exec_acomp_servico TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_exec_acomp_servico TO role_aplic;
 
 
 --
@@ -80275,7 +80275,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_exec_acomp_servico TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_os_at_mat_prg_acomp_serv FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_at_mat_prg_acomp_serv FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_at_mat_prg_acomp_serv TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_mat_prg_acomp_serv TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_mat_prg_acomp_serv TO role_aplic;
 
 
 --
@@ -80285,7 +80285,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_mat_prg_acomp_serv TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_os_at_prg_acomp_servico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_at_prg_acomp_servico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_at_prg_acomp_servico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_prg_acomp_servico TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_prg_acomp_servico TO role_aplic;
 
 
 --
@@ -80295,8 +80295,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_os_at_prg_acomp_servico TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_os_ativ_mat_execucao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_ativ_mat_execucao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_ativ_mat_execucao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_ativ_mat_execucao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_os_ativ_mat_execucao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_ativ_mat_execucao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_os_ativ_mat_execucao TO role_users;
 
 
 --
@@ -80306,8 +80306,8 @@ GRANT SELECT ON SEQUENCE seq_os_ativ_mat_execucao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_os_ativ_periodo_execucao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_ativ_periodo_execucao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_ativ_periodo_execucao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_ativ_periodo_execucao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_os_ativ_periodo_execucao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_ativ_periodo_execucao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_os_ativ_periodo_execucao TO role_users;
 
 
 --
@@ -80317,8 +80317,8 @@ GRANT SELECT ON SEQUENCE seq_os_ativ_periodo_execucao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_os_exec_eq_componentes FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_exec_eq_componentes FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_exec_eq_componentes TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_exec_eq_componentes TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_os_exec_eq_componentes TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_exec_eq_componentes TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_os_exec_eq_componentes TO role_users;
 
 
 --
@@ -80328,7 +80328,7 @@ GRANT SELECT ON SEQUENCE seq_os_exec_eq_componentes TO pg_users;
 REVOKE ALL ON SEQUENCE seq_os_prg_acomp_servico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_prg_acomp_servico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_prg_acomp_servico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_prg_acomp_servico TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_prg_acomp_servico TO role_aplic;
 
 
 --
@@ -80338,8 +80338,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_os_prg_acomp_servico TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_os_prog_nao_encer_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_prog_nao_encer_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_prog_nao_encer_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_prog_nao_encer_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_os_prog_nao_encer_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_prog_nao_encer_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_os_prog_nao_encer_motivo TO role_users;
 
 
 --
@@ -80349,7 +80349,7 @@ GRANT SELECT ON SEQUENCE seq_os_prog_nao_encer_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_os_programa_calibragem FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_programa_calibragem FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_programa_calibragem TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_programa_calibragem TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_programa_calibragem TO role_aplic;
 
 
 --
@@ -80359,8 +80359,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_os_programa_calibragem TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_os_programacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_programacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_programacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_programacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_os_programacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_programacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_os_programacao TO role_users;
 
 
 --
@@ -80370,8 +80370,8 @@ GRANT SELECT ON SEQUENCE seq_os_programacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_os_referida_retorno_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_referida_retorno_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_referida_retorno_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_referida_retorno_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_os_referida_retorno_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_referida_retorno_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_os_referida_retorno_tipo TO role_users;
 
 
 --
@@ -80381,8 +80381,8 @@ GRANT SELECT ON SEQUENCE seq_os_referida_retorno_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_os_seletiva_comando FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_seletiva_comando FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_seletiva_comando TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_seletiva_comando TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_os_seletiva_comando TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_seletiva_comando TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_os_seletiva_comando TO role_users;
 
 
 --
@@ -80392,7 +80392,7 @@ GRANT SELECT ON SEQUENCE seq_os_seletiva_comando TO pg_users;
 REVOKE ALL ON SEQUENCE seq_os_seletiva_visita_campo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_os_seletiva_visita_campo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_os_seletiva_visita_campo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_os_seletiva_visita_campo TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_os_seletiva_visita_campo TO role_aplic;
 
 
 --
@@ -80402,7 +80402,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_os_seletiva_visita_campo TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_pesquisa_satisfacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pesquisa_satisfacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pesquisa_satisfacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pesquisa_satisfacao TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pesquisa_satisfacao TO role_aplic;
 
 
 --
@@ -80412,7 +80412,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_pesquisa_satisfacao TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_priorizacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_priorizacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_priorizacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_priorizacao_tipo TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_priorizacao_tipo TO role_aplic;
 
 
 --
@@ -80422,8 +80422,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_priorizacao_tipo TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_programacao_roteiro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_programacao_roteiro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_programacao_roteiro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_programacao_roteiro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_programacao_roteiro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_programacao_roteiro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_programacao_roteiro TO role_users;
 
 
 --
@@ -80433,8 +80433,8 @@ GRANT SELECT ON SEQUENCE seq_programacao_roteiro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_anexo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_anexo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_anexo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_anexo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_anexo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_anexo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_anexo TO role_users;
 
 
 --
@@ -80444,8 +80444,8 @@ GRANT SELECT ON SEQUENCE seq_ra_anexo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_dados_agen_reg_fone FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_dados_agen_reg_fone FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_dados_agen_reg_fone TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_dados_agen_reg_fone TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_dados_agen_reg_fone TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_dados_agen_reg_fone TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_dados_agen_reg_fone TO role_users;
 
 
 --
@@ -80455,8 +80455,8 @@ GRANT SELECT ON SEQUENCE seq_ra_dados_agen_reg_fone TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_dados_agen_reguladora FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_dados_agen_reguladora FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_dados_agen_reguladora TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_dados_agen_reguladora TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_dados_agen_reguladora TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_dados_agen_reguladora TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_dados_agen_reguladora TO role_users;
 
 
 --
@@ -80466,8 +80466,8 @@ GRANT SELECT ON SEQUENCE seq_ra_dados_agen_reguladora TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_encerramento_comando FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_encerramento_comando FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_encerramento_comando TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_encerramento_comando TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_encerramento_comando TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_encerramento_comando TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_encerramento_comando TO role_users;
 
 
 --
@@ -80477,8 +80477,8 @@ GRANT SELECT ON SEQUENCE seq_ra_encerramento_comando TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_encmt_comando_espec FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_encmt_comando_espec FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_encmt_comando_espec TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_encmt_comando_espec TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_encmt_comando_espec TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_encmt_comando_espec TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_encmt_comando_espec TO role_users;
 
 
 --
@@ -80488,8 +80488,8 @@ GRANT SELECT ON SEQUENCE seq_ra_encmt_comando_espec TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_endereco_descritivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_endereco_descritivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_endereco_descritivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_endereco_descritivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_endereco_descritivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_endereco_descritivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_endereco_descritivo TO role_users;
 
 
 --
@@ -80499,8 +80499,8 @@ GRANT SELECT ON SEQUENCE seq_ra_endereco_descritivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_motivo_reativacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_motivo_reativacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_motivo_reativacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_motivo_reativacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_motivo_reativacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_motivo_reativacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_motivo_reativacao TO role_users;
 
 
 --
@@ -80510,8 +80510,8 @@ GRANT SELECT ON SEQUENCE seq_ra_motivo_reativacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_protocolo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_protocolo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_protocolo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_protocolo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_protocolo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_protocolo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_protocolo TO role_users;
 
 
 --
@@ -80521,7 +80521,7 @@ GRANT SELECT ON SEQUENCE seq_ra_protocolo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_reiteracao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_reiteracao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_reiteracao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_reiteracao TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_reiteracao TO role_aplic;
 
 
 --
@@ -80531,7 +80531,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_ra_reiteracao TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_ra_reiteracao_fone FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_reiteracao_fone FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_reiteracao_fone TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_reiteracao_fone TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_reiteracao_fone TO role_aplic;
 
 
 --
@@ -80541,8 +80541,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_ra_reiteracao_fone TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_ra_solicitante FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_solicitante FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_solicitante TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_solicitante TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_solicitante TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_solicitante TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_solicitante TO role_users;
 
 
 --
@@ -80552,8 +80552,8 @@ GRANT SELECT ON SEQUENCE seq_ra_solicitante TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ra_unidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ra_unidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ra_unidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ra_unidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ra_unidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ra_unidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ra_unidade TO role_users;
 
 
 --
@@ -80563,8 +80563,8 @@ GRANT SELECT ON SEQUENCE seq_ra_unidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ramal_local_instalacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ramal_local_instalacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ramal_local_instalacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ramal_local_instalacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ramal_local_instalacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ramal_local_instalacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ramal_local_instalacao TO role_users;
 
 
 --
@@ -80574,8 +80574,8 @@ GRANT SELECT ON SEQUENCE seq_ramal_local_instalacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_registro_atendimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_registro_atendimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_registro_atendimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_registro_atendimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_registro_atendimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_registro_atendimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_registro_atendimento TO role_users;
 
 
 --
@@ -80585,8 +80585,8 @@ GRANT SELECT ON SEQUENCE seq_registro_atendimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_repavimento_mot_rejeicao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_repavimento_mot_rejeicao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_repavimento_mot_rejeicao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_repavimento_mot_rejeicao TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_repavimento_mot_rejeicao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_repavimento_mot_rejeicao TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_repavimento_mot_rejeicao TO role_users;
 
 
 --
@@ -80596,7 +80596,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_repavimento_mot_rejeicao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_serv_tipo_mot_encem FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_serv_tipo_mot_encem FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_serv_tipo_mot_encem TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_serv_tipo_mot_encem TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_serv_tipo_mot_encem TO role_aplic;
 
 
 --
@@ -80606,8 +80606,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_serv_tipo_mot_encem TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_servico_cobranca_valor FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_cobranca_valor FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_cobranca_valor TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_cobranca_valor TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_cobranca_valor TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_cobranca_valor TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_cobranca_valor TO role_users;
 
 
 --
@@ -80617,8 +80617,8 @@ GRANT SELECT ON SEQUENCE seq_servico_cobranca_valor TO pg_users;
 REVOKE ALL ON SEQUENCE seq_servico_nao_cobr_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_nao_cobr_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_nao_cobr_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_nao_cobr_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_nao_cobr_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_nao_cobr_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_nao_cobr_motivo TO role_users;
 
 
 --
@@ -80628,8 +80628,8 @@ GRANT SELECT ON SEQUENCE seq_servico_nao_cobr_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_servico_perfil_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_perfil_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_perfil_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_perfil_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_perfil_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_perfil_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_perfil_tipo TO role_users;
 
 
 --
@@ -80639,8 +80639,8 @@ GRANT SELECT ON SEQUENCE seq_servico_perfil_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_servico_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_tipo TO role_users;
 
 
 --
@@ -80650,8 +80650,8 @@ GRANT SELECT ON SEQUENCE seq_servico_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_tipo_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_grupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_tipo_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_grupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_tipo_grupo TO role_users;
 
 
 --
@@ -80661,8 +80661,8 @@ GRANT SELECT ON SEQUENCE seq_servico_tipo_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_prioridade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_prioridade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_tipo_prioridade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_prioridade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_tipo_prioridade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_prioridade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_tipo_prioridade TO role_users;
 
 
 --
@@ -80672,8 +80672,8 @@ GRANT SELECT ON SEQUENCE seq_servico_tipo_prioridade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_referencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_referencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_tipo_referencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_referencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_tipo_referencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_referencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_tipo_referencia TO role_users;
 
 
 --
@@ -80683,8 +80683,8 @@ GRANT SELECT ON SEQUENCE seq_servico_tipo_referencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_subgrupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_subgrupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_tipo_subgrupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_subgrupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_tipo_subgrupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_subgrupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_tipo_subgrupo TO role_users;
 
 
 --
@@ -80694,7 +80694,7 @@ GRANT SELECT ON SEQUENCE seq_servico_tipo_subgrupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_sol_espec_doc_obrig_meio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sol_espec_doc_obrig_meio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sol_espec_doc_obrig_meio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sol_espec_doc_obrig_meio TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sol_espec_doc_obrig_meio TO role_aplic;
 
 
 --
@@ -80704,7 +80704,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_sol_espec_doc_obrig_meio TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_sol_tipo_espec_arqui_pop FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sol_tipo_espec_arqui_pop FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sol_tipo_espec_arqui_pop TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sol_tipo_espec_arqui_pop TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sol_tipo_espec_arqui_pop TO role_aplic;
 
 
 --
@@ -80714,8 +80714,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_sol_tipo_espec_arqui_pop TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_solicitacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_solicitacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_solicitacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_solicitacao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_solicitacao_tipo TO role_users;
 
 
 --
@@ -80725,8 +80725,8 @@ GRANT SELECT ON SEQUENCE seq_solicitacao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_solicitacao_tipo_espec FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_solicitacao_tipo_espec FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_solicitacao_tipo_espec TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_tipo_espec TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_solicitacao_tipo_espec TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_tipo_espec TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_solicitacao_tipo_espec TO role_users;
 
 
 --
@@ -80736,8 +80736,8 @@ GRANT SELECT ON SEQUENCE seq_solicitacao_tipo_espec TO pg_users;
 REVOKE ALL ON SEQUENCE seq_solicitacao_tipo_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_solicitacao_tipo_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_solicitacao_tipo_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_tipo_grupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_solicitacao_tipo_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_tipo_grupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_solicitacao_tipo_grupo TO role_users;
 
 
 --
@@ -80747,8 +80747,8 @@ GRANT SELECT ON SEQUENCE seq_solicitacao_tipo_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_solicitante_fone FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_solicitante_fone FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_solicitante_fone TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_solicitante_fone TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_solicitante_fone TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_solicitante_fone TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_solicitante_fone TO role_users;
 
 
 --
@@ -80758,8 +80758,8 @@ GRANT SELECT ON SEQUENCE seq_solicitante_fone TO pg_users;
 REVOKE ALL ON SEQUENCE seq_supressao_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_supressao_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_supressao_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_supressao_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_supressao_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_supressao_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_supressao_motivo TO role_users;
 
 
 --
@@ -80769,8 +80769,8 @@ GRANT SELECT ON SEQUENCE seq_supressao_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_supressao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_supressao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_supressao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_supressao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_supressao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_supressao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_supressao_tipo TO role_users;
 
 
 --
@@ -80780,8 +80780,8 @@ GRANT SELECT ON SEQUENCE seq_supressao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tramite FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tramite FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tramite TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tramite TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tramite TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tramite TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tramite TO role_users;
 
 
 --
@@ -80791,8 +80791,8 @@ GRANT SELECT ON SEQUENCE seq_tramite TO pg_users;
 REVOKE ALL ON SEQUENCE seq_visualizacao_ra_urgencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_visualizacao_ra_urgencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_visualizacao_ra_urgencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_visualizacao_ra_urgencia TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_visualizacao_ra_urgencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_visualizacao_ra_urgencia TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_visualizacao_ra_urgencia TO role_users;
 
 
 --
@@ -80802,8 +80802,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_visualizacao_ra_urgencia TO pg_users;
 REVOKE ALL ON TABLE serv_tipo_mot_encem FROM PUBLIC;
 REVOKE ALL ON TABLE serv_tipo_mot_encem FROM gsan_admin;
 GRANT ALL ON TABLE serv_tipo_mot_encem TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE serv_tipo_mot_encem TO pg_aplic;
-GRANT SELECT ON TABLE serv_tipo_mot_encem TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE serv_tipo_mot_encem TO role_aplic;
+GRANT SELECT ON TABLE serv_tipo_mot_encem TO role_users;
 
 
 --
@@ -80813,8 +80813,8 @@ GRANT SELECT ON TABLE serv_tipo_mot_encem TO pg_users;
 REVOKE ALL ON TABLE servico_cobranca_valor FROM PUBLIC;
 REVOKE ALL ON TABLE servico_cobranca_valor FROM gsan_admin;
 GRANT ALL ON TABLE servico_cobranca_valor TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_cobranca_valor TO pg_aplic;
-GRANT SELECT ON TABLE servico_cobranca_valor TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_cobranca_valor TO role_aplic;
+GRANT SELECT ON TABLE servico_cobranca_valor TO role_users;
 
 
 --
@@ -80824,8 +80824,8 @@ GRANT SELECT ON TABLE servico_cobranca_valor TO pg_users;
 REVOKE ALL ON TABLE servico_nao_cobr_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE servico_nao_cobr_motivo FROM gsan_admin;
 GRANT ALL ON TABLE servico_nao_cobr_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_nao_cobr_motivo TO pg_aplic;
-GRANT SELECT ON TABLE servico_nao_cobr_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_nao_cobr_motivo TO role_aplic;
+GRANT SELECT ON TABLE servico_nao_cobr_motivo TO role_users;
 
 
 --
@@ -80835,8 +80835,8 @@ GRANT SELECT ON TABLE servico_nao_cobr_motivo TO pg_users;
 REVOKE ALL ON TABLE servico_perfil_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE servico_perfil_tipo FROM gsan_admin;
 GRANT ALL ON TABLE servico_perfil_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_perfil_tipo TO pg_aplic;
-GRANT SELECT ON TABLE servico_perfil_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_perfil_tipo TO role_aplic;
+GRANT SELECT ON TABLE servico_perfil_tipo TO role_users;
 
 
 --
@@ -80846,8 +80846,8 @@ GRANT SELECT ON TABLE servico_perfil_tipo TO pg_users;
 REVOKE ALL ON TABLE servico_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo TO role_users;
 
 
 --
@@ -80857,8 +80857,8 @@ GRANT SELECT ON TABLE servico_tipo TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_atividade FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_atividade FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_atividade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_atividade TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_atividade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_atividade TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_atividade TO role_users;
 
 
 --
@@ -80868,8 +80868,8 @@ GRANT SELECT ON TABLE servico_tipo_atividade TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_boletim FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_boletim FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_boletim TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_boletim TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_boletim TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_boletim TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_boletim TO role_users;
 
 
 --
@@ -80879,8 +80879,8 @@ GRANT SELECT ON TABLE servico_tipo_boletim TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_grupo FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_grupo TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_grupo TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_grupo TO role_users;
 
 
 --
@@ -80890,8 +80890,8 @@ GRANT SELECT ON TABLE servico_tipo_grupo TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_material FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_material FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_material TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_material TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_material TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_material TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_material TO role_users;
 
 
 --
@@ -80901,8 +80901,8 @@ GRANT SELECT ON TABLE servico_tipo_material TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_operacao FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_operacao FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_operacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_operacao TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_operacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_operacao TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_operacao TO role_users;
 
 
 --
@@ -80912,8 +80912,8 @@ GRANT SELECT ON TABLE servico_tipo_operacao TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_prioridade FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_prioridade FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_prioridade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_prioridade TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_prioridade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_prioridade TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_prioridade TO role_users;
 
 
 --
@@ -80923,8 +80923,8 @@ GRANT SELECT ON TABLE servico_tipo_prioridade TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_referencia FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_referencia FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_referencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_referencia TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_referencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_referencia TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_referencia TO role_users;
 
 
 --
@@ -80934,8 +80934,8 @@ GRANT SELECT ON TABLE servico_tipo_referencia TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_seletiva FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_seletiva FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_seletiva TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_seletiva TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_seletiva TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_seletiva TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_seletiva TO role_users;
 
 
 --
@@ -80945,8 +80945,8 @@ GRANT SELECT ON TABLE servico_tipo_seletiva TO pg_users;
 REVOKE ALL ON TABLE servico_tipo_subgrupo FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_subgrupo FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_subgrupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_subgrupo TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_subgrupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_subgrupo TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_subgrupo TO role_users;
 
 
 --
@@ -80956,8 +80956,8 @@ GRANT SELECT ON TABLE servico_tipo_subgrupo TO pg_users;
 REVOKE ALL ON TABLE sol_espec_doc_obrig_meio FROM PUBLIC;
 REVOKE ALL ON TABLE sol_espec_doc_obrig_meio FROM gsan_admin;
 GRANT ALL ON TABLE sol_espec_doc_obrig_meio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sol_espec_doc_obrig_meio TO pg_aplic;
-GRANT SELECT ON TABLE sol_espec_doc_obrig_meio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sol_espec_doc_obrig_meio TO role_aplic;
+GRANT SELECT ON TABLE sol_espec_doc_obrig_meio TO role_users;
 
 
 --
@@ -80967,8 +80967,8 @@ GRANT SELECT ON TABLE sol_espec_doc_obrig_meio TO pg_users;
 REVOKE ALL ON TABLE sol_tipo_espec_arqui_pop FROM PUBLIC;
 REVOKE ALL ON TABLE sol_tipo_espec_arqui_pop FROM gsan_admin;
 GRANT ALL ON TABLE sol_tipo_espec_arqui_pop TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sol_tipo_espec_arqui_pop TO pg_aplic;
-GRANT SELECT ON TABLE sol_tipo_espec_arqui_pop TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sol_tipo_espec_arqui_pop TO role_aplic;
+GRANT SELECT ON TABLE sol_tipo_espec_arqui_pop TO role_users;
 
 
 --
@@ -80978,8 +80978,8 @@ GRANT SELECT ON TABLE sol_tipo_espec_arqui_pop TO pg_users;
 REVOKE ALL ON TABLE solicitacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE solicitacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE solicitacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE solicitacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE solicitacao_tipo TO role_users;
 
 
 --
@@ -80989,8 +80989,8 @@ GRANT SELECT ON TABLE solicitacao_tipo TO pg_users;
 REVOKE ALL ON TABLE solicitacao_tipo_espec FROM PUBLIC;
 REVOKE ALL ON TABLE solicitacao_tipo_espec FROM gsan_admin;
 GRANT ALL ON TABLE solicitacao_tipo_espec TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_tipo_espec TO pg_aplic;
-GRANT SELECT ON TABLE solicitacao_tipo_espec TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_tipo_espec TO role_aplic;
+GRANT SELECT ON TABLE solicitacao_tipo_espec TO role_users;
 
 
 --
@@ -81000,8 +81000,8 @@ GRANT SELECT ON TABLE solicitacao_tipo_espec TO pg_users;
 REVOKE ALL ON TABLE solicitacao_tipo_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE solicitacao_tipo_grupo FROM gsan_admin;
 GRANT ALL ON TABLE solicitacao_tipo_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_tipo_grupo TO pg_aplic;
-GRANT SELECT ON TABLE solicitacao_tipo_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_tipo_grupo TO role_aplic;
+GRANT SELECT ON TABLE solicitacao_tipo_grupo TO role_users;
 
 
 --
@@ -81011,8 +81011,8 @@ GRANT SELECT ON TABLE solicitacao_tipo_grupo TO pg_users;
 REVOKE ALL ON TABLE solicitante_fone FROM PUBLIC;
 REVOKE ALL ON TABLE solicitante_fone FROM gsan_admin;
 GRANT ALL ON TABLE solicitante_fone TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitante_fone TO pg_aplic;
-GRANT SELECT ON TABLE solicitante_fone TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitante_fone TO role_aplic;
+GRANT SELECT ON TABLE solicitante_fone TO role_users;
 
 
 --
@@ -81022,8 +81022,8 @@ GRANT SELECT ON TABLE solicitante_fone TO pg_users;
 REVOKE ALL ON TABLE supressao_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE supressao_motivo FROM gsan_admin;
 GRANT ALL ON TABLE supressao_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE supressao_motivo TO pg_aplic;
-GRANT SELECT ON TABLE supressao_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE supressao_motivo TO role_aplic;
+GRANT SELECT ON TABLE supressao_motivo TO role_users;
 
 
 --
@@ -81033,8 +81033,8 @@ GRANT SELECT ON TABLE supressao_motivo TO pg_users;
 REVOKE ALL ON TABLE supressao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE supressao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE supressao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE supressao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE supressao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE supressao_tipo TO role_aplic;
+GRANT SELECT ON TABLE supressao_tipo TO role_users;
 
 
 --
@@ -81044,8 +81044,8 @@ GRANT SELECT ON TABLE supressao_tipo TO pg_users;
 REVOKE ALL ON TABLE tramite FROM PUBLIC;
 REVOKE ALL ON TABLE tramite FROM gsan_admin;
 GRANT ALL ON TABLE tramite TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tramite TO pg_aplic;
-GRANT SELECT ON TABLE tramite TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tramite TO role_aplic;
+GRANT SELECT ON TABLE tramite TO role_users;
 
 
 --
@@ -81055,8 +81055,8 @@ GRANT SELECT ON TABLE tramite TO pg_users;
 REVOKE ALL ON TABLE visualizacao_ra_urgencia FROM PUBLIC;
 REVOKE ALL ON TABLE visualizacao_ra_urgencia FROM gsan_admin;
 GRANT ALL ON TABLE visualizacao_ra_urgencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE visualizacao_ra_urgencia TO pg_aplic;
-GRANT SELECT ON TABLE visualizacao_ra_urgencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE visualizacao_ra_urgencia TO role_aplic;
+GRANT SELECT ON TABLE visualizacao_ra_urgencia TO role_users;
 
 
 SET search_path = atualizacaocadastral, pg_catalog;
@@ -81068,8 +81068,8 @@ SET search_path = atualizacaocadastral, pg_catalog;
 REVOKE ALL ON TABLE cliente_endereco_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_endereco_retorno FROM gsan_admin;
 GRANT ALL ON TABLE cliente_endereco_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_endereco_retorno TO pg_aplic;
-GRANT SELECT ON TABLE cliente_endereco_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_endereco_retorno TO role_aplic;
+GRANT SELECT ON TABLE cliente_endereco_retorno TO role_users;
 
 
 --
@@ -81079,8 +81079,8 @@ GRANT SELECT ON TABLE cliente_endereco_retorno TO pg_users;
 REVOKE ALL ON TABLE cliente_fone_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_fone_retorno FROM gsan_admin;
 GRANT ALL ON TABLE cliente_fone_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_fone_retorno TO pg_aplic;
-GRANT SELECT ON TABLE cliente_fone_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_fone_retorno TO role_aplic;
+GRANT SELECT ON TABLE cliente_fone_retorno TO role_users;
 
 
 --
@@ -81090,8 +81090,8 @@ GRANT SELECT ON TABLE cliente_fone_retorno TO pg_users;
 REVOKE ALL ON TABLE cliente_imovel_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_imovel_retorno FROM gsan_admin;
 GRANT ALL ON TABLE cliente_imovel_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_imovel_retorno TO pg_aplic;
-GRANT SELECT ON TABLE cliente_imovel_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_imovel_retorno TO role_aplic;
+GRANT SELECT ON TABLE cliente_imovel_retorno TO role_users;
 
 
 --
@@ -81101,8 +81101,8 @@ GRANT SELECT ON TABLE cliente_imovel_retorno TO pg_users;
 REVOKE ALL ON TABLE cliente_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_retorno FROM gsan_admin;
 GRANT ALL ON TABLE cliente_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_retorno TO pg_aplic;
-GRANT SELECT ON TABLE cliente_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_retorno TO role_aplic;
+GRANT SELECT ON TABLE cliente_retorno TO role_users;
 
 
 --
@@ -81112,8 +81112,8 @@ GRANT SELECT ON TABLE cliente_retorno TO pg_users;
 REVOKE ALL ON TABLE imagem_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE imagem_retorno FROM gsan_admin;
 GRANT ALL ON TABLE imagem_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imagem_retorno TO pg_aplic;
-GRANT SELECT ON TABLE imagem_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imagem_retorno TO role_aplic;
+GRANT SELECT ON TABLE imagem_retorno TO role_users;
 
 
 --
@@ -81123,8 +81123,8 @@ GRANT SELECT ON TABLE imagem_retorno TO pg_users;
 REVOKE ALL ON TABLE imovel_controle_atlz_cad FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_controle_atlz_cad FROM gsan_admin;
 GRANT ALL ON TABLE imovel_controle_atlz_cad TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_controle_atlz_cad TO pg_aplic;
-GRANT SELECT ON TABLE imovel_controle_atlz_cad TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_controle_atlz_cad TO role_aplic;
+GRANT SELECT ON TABLE imovel_controle_atlz_cad TO role_users;
 
 
 --
@@ -81134,8 +81134,8 @@ GRANT SELECT ON TABLE imovel_controle_atlz_cad TO pg_users;
 REVOKE ALL ON TABLE imovel_ramo_atividade_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_ramo_atividade_retorno FROM gsan_admin;
 GRANT ALL ON TABLE imovel_ramo_atividade_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_ramo_atividade_retorno TO pg_aplic;
-GRANT SELECT ON TABLE imovel_ramo_atividade_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_ramo_atividade_retorno TO role_aplic;
+GRANT SELECT ON TABLE imovel_ramo_atividade_retorno TO role_users;
 
 
 --
@@ -81145,8 +81145,8 @@ GRANT SELECT ON TABLE imovel_ramo_atividade_retorno TO pg_users;
 REVOKE ALL ON TABLE imovel_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_retorno FROM gsan_admin;
 GRANT ALL ON TABLE imovel_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_retorno TO pg_aplic;
-GRANT SELECT ON TABLE imovel_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_retorno TO role_aplic;
+GRANT SELECT ON TABLE imovel_retorno TO role_users;
 
 
 --
@@ -81156,8 +81156,8 @@ GRANT SELECT ON TABLE imovel_retorno TO pg_users;
 REVOKE ALL ON TABLE imovel_subcategoria_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_subcategoria_retorno FROM gsan_admin;
 GRANT ALL ON TABLE imovel_subcategoria_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_subcategoria_retorno TO pg_aplic;
-GRANT SELECT ON TABLE imovel_subcategoria_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_subcategoria_retorno TO role_aplic;
+GRANT SELECT ON TABLE imovel_subcategoria_retorno TO role_users;
 
 
 --
@@ -81167,8 +81167,8 @@ GRANT SELECT ON TABLE imovel_subcategoria_retorno TO pg_users;
 REVOKE ALL ON TABLE imovel_tipo_ocupante_quantidade_retorno FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_tipo_ocupante_quantidade_retorno FROM gsan_admin;
 GRANT ALL ON TABLE imovel_tipo_ocupante_quantidade_retorno TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_ocupante_quantidade_retorno TO pg_aplic;
-GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade_retorno TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_ocupante_quantidade_retorno TO role_aplic;
+GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade_retorno TO role_users;
 
 
 --
@@ -81178,8 +81178,8 @@ GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_endereco_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_endereco_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_endereco_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_endereco_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_endereco_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_endereco_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_endereco_retorno TO role_users;
 
 
 --
@@ -81189,8 +81189,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_endereco_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_imovel_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_imovel_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_imovel_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_imovel_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_imovel_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_imovel_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_imovel_retorno TO role_users;
 
 
 --
@@ -81200,8 +81200,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_imovel_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_retorno TO role_users;
 
 
 --
@@ -81211,8 +81211,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imagem_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imagem_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imagem_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imagem_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imagem_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imagem_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imagem_retorno TO role_users;
 
 
 --
@@ -81222,8 +81222,8 @@ GRANT SELECT ON SEQUENCE seq_imagem_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_controle_atlz_cad FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_controle_atlz_cad FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_controle_atlz_cad TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_controle_atlz_cad TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_controle_atlz_cad TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_controle_atlz_cad TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_controle_atlz_cad TO role_users;
 
 
 --
@@ -81233,8 +81233,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_controle_atlz_cad TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_retorno TO role_users;
 
 
 --
@@ -81244,8 +81244,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_retorno TO pg_users
 REVOKE ALL ON SEQUENCE sequence_cliente_fone_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_cliente_fone_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_cliente_fone_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_cliente_fone_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_cliente_fone_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_cliente_fone_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_cliente_fone_retorno TO role_users;
 
 
 --
@@ -81255,8 +81255,8 @@ GRANT SELECT ON SEQUENCE sequence_cliente_fone_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE sequence_imovel_ramo_atividade_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_imovel_ramo_atividade_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_imovel_ramo_atividade_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_imovel_ramo_atividade_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_imovel_ramo_atividade_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_imovel_ramo_atividade_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_imovel_ramo_atividade_retorno TO role_users;
 
 
 --
@@ -81266,8 +81266,8 @@ GRANT SELECT ON SEQUENCE sequence_imovel_ramo_atividade_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE sequence_imovel_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_imovel_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_imovel_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_imovel_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_imovel_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_imovel_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_imovel_retorno TO role_users;
 
 
 --
@@ -81277,8 +81277,8 @@ GRANT SELECT ON SEQUENCE sequence_imovel_retorno TO pg_users;
 REVOKE ALL ON SEQUENCE sequence_imovel_subcategoria_retorno FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_imovel_subcategoria_retorno FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_imovel_subcategoria_retorno TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_imovel_subcategoria_retorno TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_imovel_subcategoria_retorno TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_imovel_subcategoria_retorno TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_imovel_subcategoria_retorno TO role_users;
 
 
 SET search_path = auxiliarbatch, pg_catalog;
@@ -81290,8 +81290,8 @@ SET search_path = auxiliarbatch, pg_catalog;
 REVOKE ALL ON TABLE cobranca_doc_contr_ger FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_doc_contr_ger FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_doc_contr_ger TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_doc_contr_ger TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_doc_contr_ger TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_doc_contr_ger TO role_aplic;
+GRANT SELECT ON TABLE cobranca_doc_contr_ger TO role_users;
 
 
 --
@@ -81301,8 +81301,8 @@ GRANT SELECT ON TABLE cobranca_doc_contr_ger TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_doc_contr_ger FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_doc_contr_ger FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_doc_contr_ger TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_doc_contr_ger TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_doc_contr_ger TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_doc_contr_ger TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_doc_contr_ger TO role_users;
 
 
 SET search_path = batch, pg_catalog;
@@ -81314,8 +81314,8 @@ SET search_path = batch, pg_catalog;
 REVOKE ALL ON TABLE funcionalidade_iniciada FROM PUBLIC;
 REVOKE ALL ON TABLE funcionalidade_iniciada FROM gsan_admin;
 GRANT ALL ON TABLE funcionalidade_iniciada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_iniciada TO pg_aplic;
-GRANT SELECT ON TABLE funcionalidade_iniciada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_iniciada TO role_aplic;
+GRANT SELECT ON TABLE funcionalidade_iniciada TO role_users;
 
 
 --
@@ -81325,8 +81325,8 @@ GRANT SELECT ON TABLE funcionalidade_iniciada TO pg_users;
 REVOKE ALL ON TABLE funcionalidade_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE funcionalidade_situacao FROM gsan_admin;
 GRANT ALL ON TABLE funcionalidade_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_situacao TO pg_aplic;
-GRANT SELECT ON TABLE funcionalidade_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_situacao TO role_aplic;
+GRANT SELECT ON TABLE funcionalidade_situacao TO role_users;
 
 
 --
@@ -81336,8 +81336,8 @@ GRANT SELECT ON TABLE funcionalidade_situacao TO pg_users;
 REVOKE ALL ON TABLE processo FROM PUBLIC;
 REVOKE ALL ON TABLE processo FROM gsan_admin;
 GRANT ALL ON TABLE processo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo TO pg_aplic;
-GRANT SELECT ON TABLE processo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo TO role_aplic;
+GRANT SELECT ON TABLE processo TO role_users;
 
 
 --
@@ -81347,8 +81347,8 @@ GRANT SELECT ON TABLE processo TO pg_users;
 REVOKE ALL ON TABLE processo_funcionalidade FROM PUBLIC;
 REVOKE ALL ON TABLE processo_funcionalidade FROM gsan_admin;
 GRANT ALL ON TABLE processo_funcionalidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo_funcionalidade TO pg_aplic;
-GRANT SELECT ON TABLE processo_funcionalidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo_funcionalidade TO role_aplic;
+GRANT SELECT ON TABLE processo_funcionalidade TO role_users;
 
 
 --
@@ -81358,8 +81358,8 @@ GRANT SELECT ON TABLE processo_funcionalidade TO pg_users;
 REVOKE ALL ON TABLE processo_iniciado FROM PUBLIC;
 REVOKE ALL ON TABLE processo_iniciado FROM gsan_admin;
 GRANT ALL ON TABLE processo_iniciado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo_iniciado TO pg_aplic;
-GRANT SELECT ON TABLE processo_iniciado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo_iniciado TO role_aplic;
+GRANT SELECT ON TABLE processo_iniciado TO role_users;
 
 
 --
@@ -81369,8 +81369,8 @@ GRANT SELECT ON TABLE processo_iniciado TO pg_users;
 REVOKE ALL ON TABLE processo_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE processo_situacao FROM gsan_admin;
 GRANT ALL ON TABLE processo_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo_situacao TO pg_aplic;
-GRANT SELECT ON TABLE processo_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo_situacao TO role_aplic;
+GRANT SELECT ON TABLE processo_situacao TO role_users;
 
 
 --
@@ -81380,8 +81380,8 @@ GRANT SELECT ON TABLE processo_situacao TO pg_users;
 REVOKE ALL ON TABLE processo_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE processo_tipo FROM gsan_admin;
 GRANT ALL ON TABLE processo_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo_tipo TO pg_aplic;
-GRANT SELECT ON TABLE processo_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE processo_tipo TO role_aplic;
+GRANT SELECT ON TABLE processo_tipo TO role_users;
 
 
 --
@@ -81391,8 +81391,8 @@ GRANT SELECT ON TABLE processo_tipo TO pg_users;
 REVOKE ALL ON TABLE relatorio FROM PUBLIC;
 REVOKE ALL ON TABLE relatorio FROM gsan_admin;
 GRANT ALL ON TABLE relatorio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE relatorio TO pg_aplic;
-GRANT SELECT ON TABLE relatorio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE relatorio TO role_aplic;
+GRANT SELECT ON TABLE relatorio TO role_users;
 
 
 --
@@ -81402,8 +81402,8 @@ GRANT SELECT ON TABLE relatorio TO pg_users;
 REVOKE ALL ON TABLE relatorio_gerado FROM PUBLIC;
 REVOKE ALL ON TABLE relatorio_gerado FROM gsan_admin;
 GRANT ALL ON TABLE relatorio_gerado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE relatorio_gerado TO pg_aplic;
-GRANT SELECT ON TABLE relatorio_gerado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE relatorio_gerado TO role_aplic;
+GRANT SELECT ON TABLE relatorio_gerado TO role_users;
 
 
 --
@@ -81413,8 +81413,8 @@ GRANT SELECT ON TABLE relatorio_gerado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_funcionalidade_iniciada FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_funcionalidade_iniciada FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_funcionalidade_iniciada TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade_iniciada TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_funcionalidade_iniciada TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade_iniciada TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_funcionalidade_iniciada TO role_users;
 
 
 --
@@ -81424,8 +81424,8 @@ GRANT SELECT ON SEQUENCE seq_funcionalidade_iniciada TO pg_users;
 REVOKE ALL ON SEQUENCE seq_funcionalidade_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_funcionalidade_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_funcionalidade_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_funcionalidade_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_funcionalidade_situacao TO role_users;
 
 
 --
@@ -81435,8 +81435,8 @@ GRANT SELECT ON SEQUENCE seq_funcionalidade_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_processo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_processo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_processo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_processo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_processo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_processo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_processo TO role_users;
 
 
 --
@@ -81446,8 +81446,8 @@ GRANT SELECT ON SEQUENCE seq_processo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_processo_funcionalidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_processo_funcionalidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_processo_funcionalidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_processo_funcionalidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_processo_funcionalidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_processo_funcionalidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_processo_funcionalidade TO role_users;
 
 
 --
@@ -81457,8 +81457,8 @@ GRANT SELECT ON SEQUENCE seq_processo_funcionalidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_processo_iniciado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_processo_iniciado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_processo_iniciado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_processo_iniciado TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_processo_iniciado TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_processo_iniciado TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_processo_iniciado TO role_users;
 
 
 --
@@ -81468,8 +81468,8 @@ GRANT SELECT ON SEQUENCE seq_processo_iniciado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_processo_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_processo_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_processo_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_processo_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_processo_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_processo_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_processo_situacao TO role_users;
 
 
 --
@@ -81479,8 +81479,8 @@ GRANT SELECT ON SEQUENCE seq_processo_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_processo_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_processo_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_processo_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_processo_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_processo_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_processo_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_processo_tipo TO role_users;
 
 
 --
@@ -81490,8 +81490,8 @@ GRANT SELECT ON SEQUENCE seq_processo_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_relatorio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_relatorio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_relatorio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_relatorio TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_relatorio TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_relatorio TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_relatorio TO role_users;
 
 
 --
@@ -81501,8 +81501,8 @@ GRANT SELECT ON SEQUENCE seq_relatorio TO pg_users;
 REVOKE ALL ON SEQUENCE seq_relatorio_gerado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_relatorio_gerado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_relatorio_gerado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_relatorio_gerado TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_relatorio_gerado TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_relatorio_gerado TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_relatorio_gerado TO role_users;
 
 
 --
@@ -81512,8 +81512,8 @@ GRANT SELECT ON SEQUENCE seq_relatorio_gerado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_iniciada FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_iniciada FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_iniciada TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_iniciada TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_iniciada TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_iniciada TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_iniciada TO role_users;
 
 
 --
@@ -81523,8 +81523,8 @@ GRANT SELECT ON SEQUENCE seq_unidade_iniciada TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_processamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_processamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_processamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_processamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_processamento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_processamento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_processamento TO role_users;
 
 
 --
@@ -81534,8 +81534,8 @@ GRANT SELECT ON SEQUENCE seq_unidade_processamento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_situacao TO role_users;
 
 
 --
@@ -81545,8 +81545,8 @@ GRANT SELECT ON SEQUENCE seq_unidade_situacao TO pg_users;
 REVOKE ALL ON TABLE unidade_iniciada FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_iniciada FROM gsan_admin;
 GRANT ALL ON TABLE unidade_iniciada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_iniciada TO pg_aplic;
-GRANT SELECT ON TABLE unidade_iniciada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_iniciada TO role_aplic;
+GRANT SELECT ON TABLE unidade_iniciada TO role_users;
 
 
 --
@@ -81556,8 +81556,8 @@ GRANT SELECT ON TABLE unidade_iniciada TO pg_users;
 REVOKE ALL ON TABLE unidade_processamento FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_processamento FROM gsan_admin;
 GRANT ALL ON TABLE unidade_processamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_processamento TO pg_aplic;
-GRANT SELECT ON TABLE unidade_processamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_processamento TO role_aplic;
+GRANT SELECT ON TABLE unidade_processamento TO role_users;
 
 
 --
@@ -81567,8 +81567,8 @@ GRANT SELECT ON TABLE unidade_processamento TO pg_users;
 REVOKE ALL ON TABLE unidade_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_situacao FROM gsan_admin;
 GRANT ALL ON TABLE unidade_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_situacao TO pg_aplic;
-GRANT SELECT ON TABLE unidade_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_situacao TO role_aplic;
+GRANT SELECT ON TABLE unidade_situacao TO role_users;
 
 
 SET search_path = cadastro, pg_catalog;
@@ -81580,8 +81580,8 @@ SET search_path = cadastro, pg_catalog;
 REVOKE ALL ON TABLE area_construida_faixa FROM PUBLIC;
 REVOKE ALL ON TABLE area_construida_faixa FROM gsan_admin;
 GRANT ALL ON TABLE area_construida_faixa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE area_construida_faixa TO pg_aplic;
-GRANT SELECT ON TABLE area_construida_faixa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE area_construida_faixa TO role_aplic;
+GRANT SELECT ON TABLE area_construida_faixa TO role_users;
 
 
 --
@@ -81591,8 +81591,8 @@ GRANT SELECT ON TABLE area_construida_faixa TO pg_users;
 REVOKE ALL ON TABLE area_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE area_tipo FROM gsan_admin;
 GRANT ALL ON TABLE area_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE area_tipo TO pg_aplic;
-GRANT SELECT ON TABLE area_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE area_tipo TO role_aplic;
+GRANT SELECT ON TABLE area_tipo TO role_users;
 
 
 --
@@ -81602,8 +81602,8 @@ GRANT SELECT ON TABLE area_tipo TO pg_users;
 REVOKE ALL ON TABLE arquivo_texto_atlz_cad FROM PUBLIC;
 REVOKE ALL ON TABLE arquivo_texto_atlz_cad FROM gsan_admin;
 GRANT ALL ON TABLE arquivo_texto_atlz_cad TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arquivo_texto_atlz_cad TO pg_aplic;
-GRANT SELECT ON TABLE arquivo_texto_atlz_cad TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arquivo_texto_atlz_cad TO role_aplic;
+GRANT SELECT ON TABLE arquivo_texto_atlz_cad TO role_users;
 
 
 --
@@ -81613,8 +81613,8 @@ GRANT SELECT ON TABLE arquivo_texto_atlz_cad TO pg_users;
 REVOKE ALL ON TABLE atlz_cad_simp_binario FROM PUBLIC;
 REVOKE ALL ON TABLE atlz_cad_simp_binario FROM gsan_admin;
 GRANT ALL ON TABLE atlz_cad_simp_binario TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_binario TO pg_aplic;
-GRANT SELECT ON TABLE atlz_cad_simp_binario TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_binario TO role_aplic;
+GRANT SELECT ON TABLE atlz_cad_simp_binario TO role_users;
 
 
 --
@@ -81624,8 +81624,8 @@ GRANT SELECT ON TABLE atlz_cad_simp_binario TO pg_users;
 REVOKE ALL ON TABLE atlz_cad_simp_crit_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE atlz_cad_simp_crit_tipo FROM gsan_admin;
 GRANT ALL ON TABLE atlz_cad_simp_crit_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_crit_tipo TO pg_aplic;
-GRANT SELECT ON TABLE atlz_cad_simp_crit_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_crit_tipo TO role_aplic;
+GRANT SELECT ON TABLE atlz_cad_simp_crit_tipo TO role_users;
 
 
 --
@@ -81635,8 +81635,8 @@ GRANT SELECT ON TABLE atlz_cad_simp_crit_tipo TO pg_users;
 REVOKE ALL ON TABLE atlz_cad_simp_critica FROM PUBLIC;
 REVOKE ALL ON TABLE atlz_cad_simp_critica FROM gsan_admin;
 GRANT ALL ON TABLE atlz_cad_simp_critica TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_critica TO pg_aplic;
-GRANT SELECT ON TABLE atlz_cad_simp_critica TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_critica TO role_aplic;
+GRANT SELECT ON TABLE atlz_cad_simp_critica TO role_users;
 
 
 --
@@ -81646,8 +81646,8 @@ GRANT SELECT ON TABLE atlz_cad_simp_critica TO pg_users;
 REVOKE ALL ON TABLE atlz_cad_simp_linha FROM PUBLIC;
 REVOKE ALL ON TABLE atlz_cad_simp_linha FROM gsan_admin;
 GRANT ALL ON TABLE atlz_cad_simp_linha TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_linha TO pg_aplic;
-GRANT SELECT ON TABLE atlz_cad_simp_linha TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_linha TO role_aplic;
+GRANT SELECT ON TABLE atlz_cad_simp_linha TO role_users;
 
 
 --
@@ -81657,8 +81657,8 @@ GRANT SELECT ON TABLE atlz_cad_simp_linha TO pg_users;
 REVOKE ALL ON TABLE atlz_cad_simp_linha_crit FROM PUBLIC;
 REVOKE ALL ON TABLE atlz_cad_simp_linha_crit FROM gsan_admin;
 GRANT ALL ON TABLE atlz_cad_simp_linha_crit TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_linha_crit TO pg_aplic;
-GRANT SELECT ON TABLE atlz_cad_simp_linha_crit TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simp_linha_crit TO role_aplic;
+GRANT SELECT ON TABLE atlz_cad_simp_linha_crit TO role_users;
 
 
 --
@@ -81668,8 +81668,8 @@ GRANT SELECT ON TABLE atlz_cad_simp_linha_crit TO pg_users;
 REVOKE ALL ON TABLE atlz_cad_simplificado FROM PUBLIC;
 REVOKE ALL ON TABLE atlz_cad_simplificado FROM gsan_admin;
 GRANT ALL ON TABLE atlz_cad_simplificado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simplificado TO pg_aplic;
-GRANT SELECT ON TABLE atlz_cad_simplificado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atlz_cad_simplificado TO role_aplic;
+GRANT SELECT ON TABLE atlz_cad_simplificado TO role_users;
 
 
 --
@@ -81679,8 +81679,8 @@ GRANT SELECT ON TABLE atlz_cad_simplificado TO pg_users;
 REVOKE ALL ON TABLE bairro FROM PUBLIC;
 REVOKE ALL ON TABLE bairro FROM gsan_admin;
 GRANT ALL ON TABLE bairro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE bairro TO pg_aplic;
-GRANT SELECT ON TABLE bairro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE bairro TO role_aplic;
+GRANT SELECT ON TABLE bairro TO role_users;
 
 
 --
@@ -81690,8 +81690,8 @@ GRANT SELECT ON TABLE bairro TO pg_users;
 REVOKE ALL ON TABLE bairro_area FROM PUBLIC;
 REVOKE ALL ON TABLE bairro_area FROM gsan_admin;
 GRANT ALL ON TABLE bairro_area TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE bairro_area TO pg_aplic;
-GRANT SELECT ON TABLE bairro_area TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE bairro_area TO role_aplic;
+GRANT SELECT ON TABLE bairro_area TO role_users;
 
 
 --
@@ -81701,8 +81701,8 @@ GRANT SELECT ON TABLE bairro_area TO pg_users;
 REVOKE ALL ON TABLE cadastro_ocorrencia FROM PUBLIC;
 REVOKE ALL ON TABLE cadastro_ocorrencia FROM gsan_admin;
 GRANT ALL ON TABLE cadastro_ocorrencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cadastro_ocorrencia TO pg_aplic;
-GRANT SELECT ON TABLE cadastro_ocorrencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cadastro_ocorrencia TO role_aplic;
+GRANT SELECT ON TABLE cadastro_ocorrencia TO role_users;
 
 
 --
@@ -81712,8 +81712,8 @@ GRANT SELECT ON TABLE cadastro_ocorrencia TO pg_users;
 REVOKE ALL ON TABLE categoria FROM PUBLIC;
 REVOKE ALL ON TABLE categoria FROM gsan_admin;
 GRANT ALL ON TABLE categoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE categoria TO pg_aplic;
-GRANT SELECT ON TABLE categoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE categoria TO role_aplic;
+GRANT SELECT ON TABLE categoria TO role_users;
 
 
 --
@@ -81723,8 +81723,8 @@ GRANT SELECT ON TABLE categoria TO pg_users;
 REVOKE ALL ON TABLE categoria_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE categoria_tipo FROM gsan_admin;
 GRANT ALL ON TABLE categoria_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE categoria_tipo TO pg_aplic;
-GRANT SELECT ON TABLE categoria_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE categoria_tipo TO role_aplic;
+GRANT SELECT ON TABLE categoria_tipo TO role_users;
 
 
 --
@@ -81734,8 +81734,8 @@ GRANT SELECT ON TABLE categoria_tipo TO pg_users;
 REVOKE ALL ON TABLE cep FROM PUBLIC;
 REVOKE ALL ON TABLE cep FROM gsan_admin;
 GRANT ALL ON TABLE cep TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cep TO pg_aplic;
-GRANT SELECT ON TABLE cep TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cep TO role_aplic;
+GRANT SELECT ON TABLE cep TO role_users;
 
 
 --
@@ -81745,8 +81745,8 @@ GRANT SELECT ON TABLE cep TO pg_users;
 REVOKE ALL ON TABLE cep_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE cep_tipo FROM gsan_admin;
 GRANT ALL ON TABLE cep_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cep_tipo TO pg_aplic;
-GRANT SELECT ON TABLE cep_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cep_tipo TO role_aplic;
+GRANT SELECT ON TABLE cep_tipo TO role_users;
 
 
 --
@@ -81756,8 +81756,8 @@ GRANT SELECT ON TABLE cep_tipo TO pg_users;
 REVOKE ALL ON TABLE cliente FROM PUBLIC;
 REVOKE ALL ON TABLE cliente FROM gsan_admin;
 GRANT ALL ON TABLE cliente TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente TO pg_aplic;
-GRANT SELECT ON TABLE cliente TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente TO role_aplic;
+GRANT SELECT ON TABLE cliente TO role_users;
 
 
 --
@@ -81767,8 +81767,8 @@ GRANT SELECT ON TABLE cliente TO pg_users;
 REVOKE ALL ON TABLE cliente_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON TABLE cliente_atlz_cadastral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON TABLE cliente_atlz_cadastral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_atlz_cadastral TO role_aplic;
+GRANT SELECT ON TABLE cliente_atlz_cadastral TO role_users;
 
 
 --
@@ -81778,8 +81778,8 @@ GRANT SELECT ON TABLE cliente_atlz_cadastral TO pg_users;
 REVOKE ALL ON TABLE cliente_conta FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_conta FROM gsan_admin;
 GRANT ALL ON TABLE cliente_conta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_conta TO pg_aplic;
-GRANT SELECT ON TABLE cliente_conta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_conta TO role_aplic;
+GRANT SELECT ON TABLE cliente_conta TO role_users;
 
 
 --
@@ -81789,8 +81789,8 @@ GRANT SELECT ON TABLE cliente_conta TO pg_users;
 REVOKE ALL ON TABLE cliente_conta_historico FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_conta_historico FROM gsan_admin;
 GRANT ALL ON TABLE cliente_conta_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_conta_historico TO pg_aplic;
-GRANT SELECT ON TABLE cliente_conta_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_conta_historico TO role_aplic;
+GRANT SELECT ON TABLE cliente_conta_historico TO role_users;
 
 
 --
@@ -81800,8 +81800,8 @@ GRANT SELECT ON TABLE cliente_conta_historico TO pg_users;
 REVOKE ALL ON TABLE cliente_endereco FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_endereco FROM gsan_admin;
 GRANT ALL ON TABLE cliente_endereco TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_endereco TO pg_aplic;
-GRANT SELECT ON TABLE cliente_endereco TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_endereco TO role_aplic;
+GRANT SELECT ON TABLE cliente_endereco TO role_users;
 
 
 --
@@ -81811,8 +81811,8 @@ GRANT SELECT ON TABLE cliente_endereco TO pg_users;
 REVOKE ALL ON TABLE cliente_fone FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_fone FROM gsan_admin;
 GRANT ALL ON TABLE cliente_fone TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_fone TO pg_aplic;
-GRANT SELECT ON TABLE cliente_fone TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_fone TO role_aplic;
+GRANT SELECT ON TABLE cliente_fone TO role_users;
 
 
 --
@@ -81822,8 +81822,8 @@ GRANT SELECT ON TABLE cliente_fone TO pg_users;
 REVOKE ALL ON TABLE cliente_fone_atlz_cad FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_fone_atlz_cad FROM gsan_admin;
 GRANT ALL ON TABLE cliente_fone_atlz_cad TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_fone_atlz_cad TO pg_aplic;
-GRANT SELECT ON TABLE cliente_fone_atlz_cad TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_fone_atlz_cad TO role_aplic;
+GRANT SELECT ON TABLE cliente_fone_atlz_cad TO role_users;
 
 
 --
@@ -81833,8 +81833,8 @@ GRANT SELECT ON TABLE cliente_fone_atlz_cad TO pg_users;
 REVOKE ALL ON TABLE cliente_guia_pagamento FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_guia_pagamento FROM gsan_admin;
 GRANT ALL ON TABLE cliente_guia_pagamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_guia_pagamento TO pg_aplic;
-GRANT SELECT ON TABLE cliente_guia_pagamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_guia_pagamento TO role_aplic;
+GRANT SELECT ON TABLE cliente_guia_pagamento TO role_users;
 
 
 --
@@ -81844,8 +81844,8 @@ GRANT SELECT ON TABLE cliente_guia_pagamento TO pg_users;
 REVOKE ALL ON TABLE cliente_guia_pagto_hist FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_guia_pagto_hist FROM gsan_admin;
 GRANT ALL ON TABLE cliente_guia_pagto_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_guia_pagto_hist TO pg_aplic;
-GRANT SELECT ON TABLE cliente_guia_pagto_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_guia_pagto_hist TO role_aplic;
+GRANT SELECT ON TABLE cliente_guia_pagto_hist TO role_users;
 
 
 --
@@ -81855,8 +81855,8 @@ GRANT SELECT ON TABLE cliente_guia_pagto_hist TO pg_users;
 REVOKE ALL ON TABLE cliente_imovel FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_imovel FROM gsan_admin;
 GRANT ALL ON TABLE cliente_imovel TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_imovel TO pg_aplic;
-GRANT SELECT ON TABLE cliente_imovel TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_imovel TO role_aplic;
+GRANT SELECT ON TABLE cliente_imovel TO role_users;
 
 
 --
@@ -81866,8 +81866,8 @@ GRANT SELECT ON TABLE cliente_imovel TO pg_users;
 REVOKE ALL ON TABLE cliente_imovel_economia FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_imovel_economia FROM gsan_admin;
 GRANT ALL ON TABLE cliente_imovel_economia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_imovel_economia TO pg_aplic;
-GRANT SELECT ON TABLE cliente_imovel_economia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_imovel_economia TO role_aplic;
+GRANT SELECT ON TABLE cliente_imovel_economia TO role_users;
 
 
 --
@@ -81877,8 +81877,8 @@ GRANT SELECT ON TABLE cliente_imovel_economia TO pg_users;
 REVOKE ALL ON TABLE cliente_relacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_relacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE cliente_relacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_relacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE cliente_relacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_relacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE cliente_relacao_tipo TO role_users;
 
 
 --
@@ -81888,8 +81888,8 @@ GRANT SELECT ON TABLE cliente_relacao_tipo TO pg_users;
 REVOKE ALL ON TABLE cliente_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_tipo FROM gsan_admin;
 GRANT ALL ON TABLE cliente_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_tipo TO pg_aplic;
-GRANT SELECT ON TABLE cliente_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_tipo TO role_aplic;
+GRANT SELECT ON TABLE cliente_tipo TO role_users;
 
 
 --
@@ -81899,8 +81899,8 @@ GRANT SELECT ON TABLE cliente_tipo TO pg_users;
 REVOKE ALL ON TABLE cliente_virtual FROM PUBLIC;
 REVOKE ALL ON TABLE cliente_virtual FROM gsan_admin;
 GRANT ALL ON TABLE cliente_virtual TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_virtual TO pg_aplic;
-GRANT SELECT ON TABLE cliente_virtual TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cliente_virtual TO role_aplic;
+GRANT SELECT ON TABLE cliente_virtual TO role_users;
 
 
 --
@@ -81910,8 +81910,8 @@ GRANT SELECT ON TABLE cliente_virtual TO pg_users;
 REVOKE ALL ON TABLE clim_fim_relacao_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE clim_fim_relacao_motivo FROM gsan_admin;
 GRANT ALL ON TABLE clim_fim_relacao_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE clim_fim_relacao_motivo TO pg_aplic;
-GRANT SELECT ON TABLE clim_fim_relacao_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE clim_fim_relacao_motivo TO role_aplic;
+GRANT SELECT ON TABLE clim_fim_relacao_motivo TO role_users;
 
 
 --
@@ -81921,8 +81921,8 @@ GRANT SELECT ON TABLE clim_fim_relacao_motivo TO pg_users;
 REVOKE ALL ON TABLE condicao_abast_agua FROM PUBLIC;
 REVOKE ALL ON TABLE condicao_abast_agua FROM gsan_admin;
 GRANT ALL ON TABLE condicao_abast_agua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE condicao_abast_agua TO pg_aplic;
-GRANT SELECT ON TABLE condicao_abast_agua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE condicao_abast_agua TO role_aplic;
+GRANT SELECT ON TABLE condicao_abast_agua TO role_users;
 
 
 --
@@ -81932,8 +81932,8 @@ GRANT SELECT ON TABLE condicao_abast_agua TO pg_users;
 REVOKE ALL ON TABLE contrato_medicao FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_medicao FROM gsan_admin;
 GRANT ALL ON TABLE contrato_medicao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_medicao TO pg_aplic;
-GRANT SELECT ON TABLE contrato_medicao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_medicao TO role_aplic;
+GRANT SELECT ON TABLE contrato_medicao TO role_users;
 
 
 --
@@ -81943,8 +81943,8 @@ GRANT SELECT ON TABLE contrato_medicao TO pg_users;
 REVOKE ALL ON TABLE contrato_medicao_abrangencia FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_medicao_abrangencia FROM gsan_admin;
 GRANT ALL ON TABLE contrato_medicao_abrangencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_medicao_abrangencia TO pg_aplic;
-GRANT SELECT ON TABLE contrato_medicao_abrangencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_medicao_abrangencia TO role_aplic;
+GRANT SELECT ON TABLE contrato_medicao_abrangencia TO role_users;
 
 
 --
@@ -81954,8 +81954,8 @@ GRANT SELECT ON TABLE contrato_medicao_abrangencia TO pg_users;
 REVOKE ALL ON TABLE contrato_medicao_coeficiente FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_medicao_coeficiente FROM gsan_admin;
 GRANT ALL ON TABLE contrato_medicao_coeficiente TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_medicao_coeficiente TO pg_aplic;
-GRANT SELECT ON TABLE contrato_medicao_coeficiente TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_medicao_coeficiente TO role_aplic;
+GRANT SELECT ON TABLE contrato_medicao_coeficiente TO role_users;
 
 
 --
@@ -81965,8 +81965,8 @@ GRANT SELECT ON TABLE contrato_medicao_coeficiente TO pg_users;
 REVOKE ALL ON TABLE contrato_medicao_coeficiente_historico FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_medicao_coeficiente_historico FROM gsan_admin;
 GRANT ALL ON TABLE contrato_medicao_coeficiente_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_medicao_coeficiente_historico TO pg_aplic;
-GRANT SELECT ON TABLE contrato_medicao_coeficiente_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_medicao_coeficiente_historico TO role_aplic;
+GRANT SELECT ON TABLE contrato_medicao_coeficiente_historico TO role_users;
 
 
 --
@@ -81976,8 +81976,8 @@ GRANT SELECT ON TABLE contrato_medicao_coeficiente_historico TO pg_users;
 REVOKE ALL ON TABLE cpf_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE cpf_tipo FROM gsan_admin;
 GRANT ALL ON TABLE cpf_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cpf_tipo TO pg_aplic;
-GRANT SELECT ON TABLE cpf_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cpf_tipo TO role_aplic;
+GRANT SELECT ON TABLE cpf_tipo TO role_users;
 
 
 --
@@ -81987,8 +81987,8 @@ GRANT SELECT ON TABLE cpf_tipo TO pg_users;
 REVOKE ALL ON TABLE descricao_generica FROM PUBLIC;
 REVOKE ALL ON TABLE descricao_generica FROM gsan_admin;
 GRANT ALL ON TABLE descricao_generica TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE descricao_generica TO pg_aplic;
-GRANT SELECT ON TABLE descricao_generica TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE descricao_generica TO role_aplic;
+GRANT SELECT ON TABLE descricao_generica TO role_users;
 
 
 --
@@ -81998,8 +81998,8 @@ GRANT SELECT ON TABLE descricao_generica TO pg_users;
 REVOKE ALL ON TABLE despejo FROM PUBLIC;
 REVOKE ALL ON TABLE despejo FROM gsan_admin;
 GRANT ALL ON TABLE despejo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE despejo TO pg_aplic;
-GRANT SELECT ON TABLE despejo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE despejo TO role_aplic;
+GRANT SELECT ON TABLE despejo TO role_users;
 
 
 --
@@ -82009,8 +82009,8 @@ GRANT SELECT ON TABLE despejo TO pg_users;
 REVOKE ALL ON TABLE economia_subcategoria FROM PUBLIC;
 REVOKE ALL ON TABLE economia_subcategoria FROM gsan_admin;
 GRANT ALL ON TABLE economia_subcategoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE economia_subcategoria TO pg_aplic;
-GRANT SELECT ON TABLE economia_subcategoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE economia_subcategoria TO role_aplic;
+GRANT SELECT ON TABLE economia_subcategoria TO role_users;
 
 
 --
@@ -82020,8 +82020,8 @@ GRANT SELECT ON TABLE economia_subcategoria TO pg_users;
 REVOKE ALL ON TABLE elo_anormalidade FROM PUBLIC;
 REVOKE ALL ON TABLE elo_anormalidade FROM gsan_admin;
 GRANT ALL ON TABLE elo_anormalidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE elo_anormalidade TO pg_aplic;
-GRANT SELECT ON TABLE elo_anormalidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE elo_anormalidade TO role_aplic;
+GRANT SELECT ON TABLE elo_anormalidade TO role_users;
 
 
 --
@@ -82031,8 +82031,8 @@ GRANT SELECT ON TABLE elo_anormalidade TO pg_users;
 REVOKE ALL ON TABLE email_client_alterado FROM PUBLIC;
 REVOKE ALL ON TABLE email_client_alterado FROM gsan_admin;
 GRANT ALL ON TABLE email_client_alterado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE email_client_alterado TO pg_aplic;
-GRANT SELECT ON TABLE email_client_alterado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE email_client_alterado TO role_aplic;
+GRANT SELECT ON TABLE email_client_alterado TO role_users;
 
 
 --
@@ -82042,8 +82042,8 @@ GRANT SELECT ON TABLE email_client_alterado TO pg_users;
 REVOKE ALL ON TABLE empr_cobr_faixa FROM PUBLIC;
 REVOKE ALL ON TABLE empr_cobr_faixa FROM gsan_admin;
 GRANT ALL ON TABLE empr_cobr_faixa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_cobr_faixa TO pg_aplic;
-GRANT SELECT ON TABLE empr_cobr_faixa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_cobr_faixa TO role_aplic;
+GRANT SELECT ON TABLE empr_cobr_faixa TO role_users;
 
 
 --
@@ -82053,8 +82053,8 @@ GRANT SELECT ON TABLE empr_cobr_faixa TO pg_users;
 REVOKE ALL ON TABLE empr_contrato_cad_atrib FROM PUBLIC;
 REVOKE ALL ON TABLE empr_contrato_cad_atrib FROM gsan_admin;
 GRANT ALL ON TABLE empr_contrato_cad_atrib TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_contrato_cad_atrib TO pg_aplic;
-GRANT SELECT ON TABLE empr_contrato_cad_atrib TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_contrato_cad_atrib TO role_aplic;
+GRANT SELECT ON TABLE empr_contrato_cad_atrib TO role_users;
 
 
 --
@@ -82064,8 +82064,8 @@ GRANT SELECT ON TABLE empr_contrato_cad_atrib TO pg_users;
 REVOKE ALL ON TABLE empr_contrato_cadastro FROM PUBLIC;
 REVOKE ALL ON TABLE empr_contrato_cadastro FROM gsan_admin;
 GRANT ALL ON TABLE empr_contrato_cadastro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_contrato_cadastro TO pg_aplic;
-GRANT SELECT ON TABLE empr_contrato_cadastro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_contrato_cadastro TO role_aplic;
+GRANT SELECT ON TABLE empr_contrato_cadastro TO role_users;
 
 
 --
@@ -82075,8 +82075,8 @@ GRANT SELECT ON TABLE empr_contrato_cadastro TO pg_users;
 REVOKE ALL ON TABLE empr_contrato_cobranca FROM PUBLIC;
 REVOKE ALL ON TABLE empr_contrato_cobranca FROM gsan_admin;
 GRANT ALL ON TABLE empr_contrato_cobranca TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_contrato_cobranca TO pg_aplic;
-GRANT SELECT ON TABLE empr_contrato_cobranca TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_contrato_cobranca TO role_aplic;
+GRANT SELECT ON TABLE empr_contrato_cobranca TO role_users;
 
 
 --
@@ -82086,8 +82086,8 @@ GRANT SELECT ON TABLE empr_contrato_cobranca TO pg_users;
 REVOKE ALL ON TABLE empresa FROM PUBLIC;
 REVOKE ALL ON TABLE empresa FROM gsan_admin;
 GRANT ALL ON TABLE empresa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empresa TO pg_aplic;
-GRANT SELECT ON TABLE empresa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empresa TO role_aplic;
+GRANT SELECT ON TABLE empresa TO role_users;
 
 
 --
@@ -82097,8 +82097,8 @@ GRANT SELECT ON TABLE empresa TO pg_users;
 REVOKE ALL ON TABLE endereco_referencia FROM PUBLIC;
 REVOKE ALL ON TABLE endereco_referencia FROM gsan_admin;
 GRANT ALL ON TABLE endereco_referencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE endereco_referencia TO pg_aplic;
-GRANT SELECT ON TABLE endereco_referencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE endereco_referencia TO role_aplic;
+GRANT SELECT ON TABLE endereco_referencia TO role_users;
 
 
 --
@@ -82108,8 +82108,8 @@ GRANT SELECT ON TABLE endereco_referencia TO pg_users;
 REVOKE ALL ON TABLE endereco_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE endereco_tipo FROM gsan_admin;
 GRANT ALL ON TABLE endereco_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE endereco_tipo TO pg_aplic;
-GRANT SELECT ON TABLE endereco_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE endereco_tipo TO role_aplic;
+GRANT SELECT ON TABLE endereco_tipo TO role_users;
 
 
 --
@@ -82119,8 +82119,8 @@ GRANT SELECT ON TABLE endereco_tipo TO pg_users;
 REVOKE ALL ON TABLE entidade_beneficente FROM PUBLIC;
 REVOKE ALL ON TABLE entidade_beneficente FROM gsan_admin;
 GRANT ALL ON TABLE entidade_beneficente TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE entidade_beneficente TO pg_aplic;
-GRANT SELECT ON TABLE entidade_beneficente TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE entidade_beneficente TO role_aplic;
+GRANT SELECT ON TABLE entidade_beneficente TO role_users;
 
 
 --
@@ -82130,8 +82130,8 @@ GRANT SELECT ON TABLE entidade_beneficente TO pg_users;
 REVOKE ALL ON TABLE envio_email FROM PUBLIC;
 REVOKE ALL ON TABLE envio_email FROM gsan_admin;
 GRANT ALL ON TABLE envio_email TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE envio_email TO pg_aplic;
-GRANT SELECT ON TABLE envio_email TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE envio_email TO role_aplic;
+GRANT SELECT ON TABLE envio_email TO role_users;
 
 
 --
@@ -82141,8 +82141,8 @@ GRANT SELECT ON TABLE envio_email TO pg_users;
 REVOKE ALL ON TABLE esfera_poder FROM PUBLIC;
 REVOKE ALL ON TABLE esfera_poder FROM gsan_admin;
 GRANT ALL ON TABLE esfera_poder TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE esfera_poder TO pg_aplic;
-GRANT SELECT ON TABLE esfera_poder TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE esfera_poder TO role_aplic;
+GRANT SELECT ON TABLE esfera_poder TO role_users;
 
 
 --
@@ -82152,8 +82152,8 @@ GRANT SELECT ON TABLE esfera_poder TO pg_users;
 REVOKE ALL ON TABLE fone_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE fone_tipo FROM gsan_admin;
 GRANT ALL ON TABLE fone_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fone_tipo TO pg_aplic;
-GRANT SELECT ON TABLE fone_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fone_tipo TO role_aplic;
+GRANT SELECT ON TABLE fone_tipo TO role_users;
 
 
 --
@@ -82163,8 +82163,8 @@ GRANT SELECT ON TABLE fone_tipo TO pg_users;
 REVOKE ALL ON TABLE fonte_abastecimento FROM PUBLIC;
 REVOKE ALL ON TABLE fonte_abastecimento FROM gsan_admin;
 GRANT ALL ON TABLE fonte_abastecimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fonte_abastecimento TO pg_aplic;
-GRANT SELECT ON TABLE fonte_abastecimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fonte_abastecimento TO role_aplic;
+GRANT SELECT ON TABLE fonte_abastecimento TO role_users;
 
 
 --
@@ -82174,8 +82174,8 @@ GRANT SELECT ON TABLE fonte_abastecimento TO pg_users;
 REVOKE ALL ON TABLE fonte_dados_censitarios FROM PUBLIC;
 REVOKE ALL ON TABLE fonte_dados_censitarios FROM gsan_admin;
 GRANT ALL ON TABLE fonte_dados_censitarios TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fonte_dados_censitarios TO pg_aplic;
-GRANT SELECT ON TABLE fonte_dados_censitarios TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fonte_dados_censitarios TO role_aplic;
+GRANT SELECT ON TABLE fonte_dados_censitarios TO role_users;
 
 
 --
@@ -82185,8 +82185,8 @@ GRANT SELECT ON TABLE fonte_dados_censitarios TO pg_users;
 REVOKE ALL ON TABLE funcionario FROM PUBLIC;
 REVOKE ALL ON TABLE funcionario FROM gsan_admin;
 GRANT ALL ON TABLE funcionario TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionario TO pg_aplic;
-GRANT SELECT ON TABLE funcionario TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionario TO role_aplic;
+GRANT SELECT ON TABLE funcionario TO role_users;
 
 
 --
@@ -82196,8 +82196,8 @@ GRANT SELECT ON TABLE funcionario TO pg_users;
 REVOKE ALL ON TABLE funcionario_cargo FROM PUBLIC;
 REVOKE ALL ON TABLE funcionario_cargo FROM gsan_admin;
 GRANT ALL ON TABLE funcionario_cargo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionario_cargo TO pg_aplic;
-GRANT SELECT ON TABLE funcionario_cargo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionario_cargo TO role_aplic;
+GRANT SELECT ON TABLE funcionario_cargo TO role_users;
 
 
 --
@@ -82207,8 +82207,8 @@ GRANT SELECT ON TABLE funcionario_cargo TO pg_users;
 REVOKE ALL ON TABLE gerencia_regional FROM PUBLIC;
 REVOKE ALL ON TABLE gerencia_regional FROM gsan_admin;
 GRANT ALL ON TABLE gerencia_regional TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE gerencia_regional TO pg_aplic;
-GRANT SELECT ON TABLE gerencia_regional TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE gerencia_regional TO role_aplic;
+GRANT SELECT ON TABLE gerencia_regional TO role_users;
 
 
 --
@@ -82218,8 +82218,8 @@ GRANT SELECT ON TABLE gerencia_regional TO pg_users;
 REVOKE ALL ON TABLE grau_dificuldade_exec FROM PUBLIC;
 REVOKE ALL ON TABLE grau_dificuldade_exec FROM gsan_admin;
 GRANT ALL ON TABLE grau_dificuldade_exec TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grau_dificuldade_exec TO pg_aplic;
-GRANT SELECT ON TABLE grau_dificuldade_exec TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grau_dificuldade_exec TO role_aplic;
+GRANT SELECT ON TABLE grau_dificuldade_exec TO role_users;
 
 
 --
@@ -82229,8 +82229,8 @@ GRANT SELECT ON TABLE grau_dificuldade_exec TO pg_users;
 REVOKE ALL ON TABLE grau_intermitencia FROM PUBLIC;
 REVOKE ALL ON TABLE grau_intermitencia FROM gsan_admin;
 GRANT ALL ON TABLE grau_intermitencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grau_intermitencia TO pg_aplic;
-GRANT SELECT ON TABLE grau_intermitencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grau_intermitencia TO role_aplic;
+GRANT SELECT ON TABLE grau_intermitencia TO role_users;
 
 
 --
@@ -82240,8 +82240,8 @@ GRANT SELECT ON TABLE grau_intermitencia TO pg_users;
 REVOKE ALL ON TABLE grau_risco_seg_fisica FROM PUBLIC;
 REVOKE ALL ON TABLE grau_risco_seg_fisica FROM gsan_admin;
 GRANT ALL ON TABLE grau_risco_seg_fisica TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grau_risco_seg_fisica TO pg_aplic;
-GRANT SELECT ON TABLE grau_risco_seg_fisica TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grau_risco_seg_fisica TO role_aplic;
+GRANT SELECT ON TABLE grau_risco_seg_fisica TO role_users;
 
 
 --
@@ -82251,8 +82251,8 @@ GRANT SELECT ON TABLE grau_risco_seg_fisica TO pg_users;
 REVOKE ALL ON TABLE ibge_setor_censit_dados FROM PUBLIC;
 REVOKE ALL ON TABLE ibge_setor_censit_dados FROM gsan_admin;
 GRANT ALL ON TABLE ibge_setor_censit_dados TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ibge_setor_censit_dados TO pg_aplic;
-GRANT SELECT ON TABLE ibge_setor_censit_dados TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ibge_setor_censit_dados TO role_aplic;
+GRANT SELECT ON TABLE ibge_setor_censit_dados TO role_users;
 
 
 --
@@ -82262,8 +82262,8 @@ GRANT SELECT ON TABLE ibge_setor_censit_dados TO pg_users;
 REVOKE ALL ON TABLE ibge_setor_censitario FROM PUBLIC;
 REVOKE ALL ON TABLE ibge_setor_censitario FROM gsan_admin;
 GRANT ALL ON TABLE ibge_setor_censitario TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ibge_setor_censitario TO pg_aplic;
-GRANT SELECT ON TABLE ibge_setor_censitario TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ibge_setor_censitario TO role_aplic;
+GRANT SELECT ON TABLE ibge_setor_censitario TO role_users;
 
 
 --
@@ -82273,8 +82273,8 @@ GRANT SELECT ON TABLE ibge_setor_censitario TO pg_users;
 REVOKE ALL ON TABLE imagem_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON TABLE imagem_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON TABLE imagem_atlz_cadastral TO gsan_admin;
-GRANT SELECT,UPDATE ON TABLE imagem_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON TABLE imagem_atlz_cadastral TO pg_users;
+GRANT SELECT,UPDATE ON TABLE imagem_atlz_cadastral TO role_aplic;
+GRANT SELECT ON TABLE imagem_atlz_cadastral TO role_users;
 
 
 --
@@ -82284,8 +82284,8 @@ GRANT SELECT ON TABLE imagem_atlz_cadastral TO pg_users;
 REVOKE ALL ON TABLE imoveis_suprimidos FROM PUBLIC;
 REVOKE ALL ON TABLE imoveis_suprimidos FROM gsan_admin;
 GRANT ALL ON TABLE imoveis_suprimidos TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imoveis_suprimidos TO pg_aplic;
-GRANT SELECT ON TABLE imoveis_suprimidos TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imoveis_suprimidos TO role_aplic;
+GRANT SELECT ON TABLE imoveis_suprimidos TO role_users;
 
 
 --
@@ -82295,8 +82295,8 @@ GRANT SELECT ON TABLE imoveis_suprimidos TO pg_users;
 REVOKE ALL ON TABLE imovel FROM PUBLIC;
 REVOKE ALL ON TABLE imovel FROM gsan_admin;
 GRANT ALL ON TABLE imovel TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel TO pg_aplic;
-GRANT SELECT ON TABLE imovel TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel TO role_aplic;
+GRANT SELECT ON TABLE imovel TO role_users;
 
 
 --
@@ -82306,8 +82306,8 @@ GRANT SELECT ON TABLE imovel TO pg_users;
 REVOKE ALL ON TABLE imovel_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON TABLE imovel_atlz_cadastral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON TABLE imovel_atlz_cadastral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_atlz_cadastral TO role_aplic;
+GRANT SELECT ON TABLE imovel_atlz_cadastral TO role_users;
 
 
 --
@@ -82317,8 +82317,8 @@ GRANT SELECT ON TABLE imovel_atlz_cadastral TO pg_users;
 REVOKE ALL ON TABLE imovel_cad_ocorrencia FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_cad_ocorrencia FROM gsan_admin;
 GRANT ALL ON TABLE imovel_cad_ocorrencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_cad_ocorrencia TO pg_aplic;
-GRANT SELECT ON TABLE imovel_cad_ocorrencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_cad_ocorrencia TO role_aplic;
+GRANT SELECT ON TABLE imovel_cad_ocorrencia TO role_users;
 
 
 --
@@ -82328,8 +82328,8 @@ GRANT SELECT ON TABLE imovel_cad_ocorrencia TO pg_users;
 REVOKE ALL ON TABLE imovel_cobranca_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_cobranca_situacao FROM gsan_admin;
 GRANT ALL ON TABLE imovel_cobranca_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_cobranca_situacao TO pg_aplic;
-GRANT SELECT ON TABLE imovel_cobranca_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_cobranca_situacao TO role_aplic;
+GRANT SELECT ON TABLE imovel_cobranca_situacao TO role_users;
 
 
 --
@@ -82339,8 +82339,8 @@ GRANT SELECT ON TABLE imovel_cobranca_situacao TO pg_users;
 REVOKE ALL ON TABLE imovel_conta_envio FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_conta_envio FROM gsan_admin;
 GRANT ALL ON TABLE imovel_conta_envio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_conta_envio TO pg_aplic;
-GRANT SELECT ON TABLE imovel_conta_envio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_conta_envio TO role_aplic;
+GRANT SELECT ON TABLE imovel_conta_envio TO role_users;
 
 
 --
@@ -82350,8 +82350,8 @@ GRANT SELECT ON TABLE imovel_conta_envio TO pg_users;
 REVOKE ALL ON TABLE imovel_controle_atlz_cad FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_controle_atlz_cad FROM gsan_admin;
 GRANT ALL ON TABLE imovel_controle_atlz_cad TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_controle_atlz_cad TO pg_aplic;
-GRANT SELECT ON TABLE imovel_controle_atlz_cad TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_controle_atlz_cad TO role_aplic;
+GRANT SELECT ON TABLE imovel_controle_atlz_cad TO role_users;
 
 
 --
@@ -82361,8 +82361,8 @@ GRANT SELECT ON TABLE imovel_controle_atlz_cad TO pg_users;
 REVOKE ALL ON TABLE imovel_doacoes FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_doacoes FROM gsan_admin;
 GRANT ALL ON TABLE imovel_doacoes TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_doacoes TO pg_aplic;
-GRANT SELECT ON TABLE imovel_doacoes TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_doacoes TO role_aplic;
+GRANT SELECT ON TABLE imovel_doacoes TO role_users;
 
 
 --
@@ -82372,8 +82372,8 @@ GRANT SELECT ON TABLE imovel_doacoes TO pg_users;
 REVOKE ALL ON TABLE imovel_economia FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_economia FROM gsan_admin;
 GRANT ALL ON TABLE imovel_economia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_economia TO pg_aplic;
-GRANT SELECT ON TABLE imovel_economia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_economia TO role_aplic;
+GRANT SELECT ON TABLE imovel_economia TO role_users;
 
 
 --
@@ -82383,8 +82383,8 @@ GRANT SELECT ON TABLE imovel_economia TO pg_users;
 REVOKE ALL ON TABLE imovel_elo_anormalidade FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_elo_anormalidade FROM gsan_admin;
 GRANT ALL ON TABLE imovel_elo_anormalidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_elo_anormalidade TO pg_aplic;
-GRANT SELECT ON TABLE imovel_elo_anormalidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_elo_anormalidade TO role_aplic;
+GRANT SELECT ON TABLE imovel_elo_anormalidade TO role_users;
 
 
 --
@@ -82394,8 +82394,8 @@ GRANT SELECT ON TABLE imovel_elo_anormalidade TO pg_users;
 REVOKE ALL ON TABLE imovel_endereco_anterior FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_endereco_anterior FROM gsan_admin;
 GRANT ALL ON TABLE imovel_endereco_anterior TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_endereco_anterior TO pg_aplic;
-GRANT SELECT ON TABLE imovel_endereco_anterior TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_endereco_anterior TO role_aplic;
+GRANT SELECT ON TABLE imovel_endereco_anterior TO role_users;
 
 
 --
@@ -82405,8 +82405,8 @@ GRANT SELECT ON TABLE imovel_endereco_anterior TO pg_users;
 REVOKE ALL ON TABLE imovel_imagem FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_imagem FROM gsan_admin;
 GRANT ALL ON TABLE imovel_imagem TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_imagem TO pg_aplic;
-GRANT SELECT ON TABLE imovel_imagem TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_imagem TO role_aplic;
+GRANT SELECT ON TABLE imovel_imagem TO role_users;
 
 
 --
@@ -82416,8 +82416,8 @@ GRANT SELECT ON TABLE imovel_imagem TO pg_users;
 REVOKE ALL ON TABLE imovel_inscr_alterada FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_inscr_alterada FROM gsan_admin;
 GRANT ALL ON TABLE imovel_inscr_alterada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_inscr_alterada TO pg_aplic;
-GRANT SELECT ON TABLE imovel_inscr_alterada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_inscr_alterada TO role_aplic;
+GRANT SELECT ON TABLE imovel_inscr_alterada TO role_users;
 
 
 --
@@ -82427,8 +82427,8 @@ GRANT SELECT ON TABLE imovel_inscr_alterada TO pg_users;
 REVOKE ALL ON TABLE imovel_perfil FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_perfil FROM gsan_admin;
 GRANT ALL ON TABLE imovel_perfil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_perfil TO pg_aplic;
-GRANT SELECT ON TABLE imovel_perfil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_perfil TO role_aplic;
+GRANT SELECT ON TABLE imovel_perfil TO role_users;
 
 
 --
@@ -82438,8 +82438,8 @@ GRANT SELECT ON TABLE imovel_perfil TO pg_users;
 REVOKE ALL ON TABLE imovel_programa_especial FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_programa_especial FROM gsan_admin;
 GRANT ALL ON TABLE imovel_programa_especial TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_programa_especial TO pg_aplic;
-GRANT SELECT ON TABLE imovel_programa_especial TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_programa_especial TO role_aplic;
+GRANT SELECT ON TABLE imovel_programa_especial TO role_users;
 
 
 --
@@ -82449,8 +82449,8 @@ GRANT SELECT ON TABLE imovel_programa_especial TO pg_users;
 REVOKE ALL ON TABLE imovel_ramo_ativ_atlz_cad FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_ramo_ativ_atlz_cad FROM gsan_admin;
 GRANT ALL ON TABLE imovel_ramo_ativ_atlz_cad TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_ramo_ativ_atlz_cad TO pg_aplic;
-GRANT SELECT ON TABLE imovel_ramo_ativ_atlz_cad TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_ramo_ativ_atlz_cad TO role_aplic;
+GRANT SELECT ON TABLE imovel_ramo_ativ_atlz_cad TO role_users;
 
 
 --
@@ -82460,8 +82460,8 @@ GRANT SELECT ON TABLE imovel_ramo_ativ_atlz_cad TO pg_users;
 REVOKE ALL ON TABLE imovel_ramo_atividade FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_ramo_atividade FROM gsan_admin;
 GRANT ALL ON TABLE imovel_ramo_atividade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_ramo_atividade TO pg_aplic;
-GRANT SELECT ON TABLE imovel_ramo_atividade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_ramo_atividade TO role_aplic;
+GRANT SELECT ON TABLE imovel_ramo_atividade TO role_users;
 
 
 --
@@ -82471,8 +82471,8 @@ GRANT SELECT ON TABLE imovel_ramo_atividade TO pg_users;
 REVOKE ALL ON TABLE imovel_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_situacao FROM gsan_admin;
 GRANT ALL ON TABLE imovel_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_situacao TO pg_aplic;
-GRANT SELECT ON TABLE imovel_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_situacao TO role_aplic;
+GRANT SELECT ON TABLE imovel_situacao TO role_users;
 
 
 --
@@ -82482,8 +82482,8 @@ GRANT SELECT ON TABLE imovel_situacao TO pg_users;
 REVOKE ALL ON TABLE imovel_situacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_situacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE imovel_situacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_situacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE imovel_situacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_situacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE imovel_situacao_tipo TO role_users;
 
 
 --
@@ -82493,8 +82493,8 @@ GRANT SELECT ON TABLE imovel_situacao_tipo TO pg_users;
 REVOKE ALL ON TABLE imovel_subcategoria FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_subcategoria FROM gsan_admin;
 GRANT ALL ON TABLE imovel_subcategoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_subcategoria TO pg_aplic;
-GRANT SELECT ON TABLE imovel_subcategoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_subcategoria TO role_aplic;
+GRANT SELECT ON TABLE imovel_subcategoria TO role_users;
 
 
 --
@@ -82504,8 +82504,8 @@ GRANT SELECT ON TABLE imovel_subcategoria TO pg_users;
 REVOKE ALL ON TABLE imovel_subcatg_atlz_cad FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_subcatg_atlz_cad FROM gsan_admin;
 GRANT ALL ON TABLE imovel_subcatg_atlz_cad TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_subcatg_atlz_cad TO pg_aplic;
-GRANT SELECT ON TABLE imovel_subcatg_atlz_cad TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_subcatg_atlz_cad TO role_aplic;
+GRANT SELECT ON TABLE imovel_subcatg_atlz_cad TO role_users;
 
 
 --
@@ -82515,8 +82515,8 @@ GRANT SELECT ON TABLE imovel_subcatg_atlz_cad TO pg_users;
 REVOKE ALL ON TABLE imovel_tipo_cobertura FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_tipo_cobertura FROM gsan_admin;
 GRANT ALL ON TABLE imovel_tipo_cobertura TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_cobertura TO pg_aplic;
-GRANT SELECT ON TABLE imovel_tipo_cobertura TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_cobertura TO role_aplic;
+GRANT SELECT ON TABLE imovel_tipo_cobertura TO role_users;
 
 
 --
@@ -82526,8 +82526,8 @@ GRANT SELECT ON TABLE imovel_tipo_cobertura TO pg_users;
 REVOKE ALL ON TABLE imovel_tipo_construcao FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_tipo_construcao FROM gsan_admin;
 GRANT ALL ON TABLE imovel_tipo_construcao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_construcao TO pg_aplic;
-GRANT SELECT ON TABLE imovel_tipo_construcao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_construcao TO role_aplic;
+GRANT SELECT ON TABLE imovel_tipo_construcao TO role_users;
 
 
 --
@@ -82537,8 +82537,8 @@ GRANT SELECT ON TABLE imovel_tipo_construcao TO pg_users;
 REVOKE ALL ON TABLE imovel_tipo_habitacao FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_tipo_habitacao FROM gsan_admin;
 GRANT ALL ON TABLE imovel_tipo_habitacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_habitacao TO pg_aplic;
-GRANT SELECT ON TABLE imovel_tipo_habitacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_habitacao TO role_aplic;
+GRANT SELECT ON TABLE imovel_tipo_habitacao TO role_users;
 
 
 --
@@ -82548,8 +82548,8 @@ GRANT SELECT ON TABLE imovel_tipo_habitacao TO pg_users;
 REVOKE ALL ON TABLE imovel_tipo_ocupante FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_tipo_ocupante FROM gsan_admin;
 GRANT ALL ON TABLE imovel_tipo_ocupante TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_ocupante TO pg_aplic;
-GRANT SELECT ON TABLE imovel_tipo_ocupante TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_ocupante TO role_aplic;
+GRANT SELECT ON TABLE imovel_tipo_ocupante TO role_users;
 
 
 --
@@ -82559,8 +82559,8 @@ GRANT SELECT ON TABLE imovel_tipo_ocupante TO pg_users;
 REVOKE ALL ON TABLE imovel_tipo_ocupante_quantidade FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_tipo_ocupante_quantidade FROM gsan_admin;
 GRANT ALL ON TABLE imovel_tipo_ocupante_quantidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_ocupante_quantidade TO pg_aplic;
-GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_ocupante_quantidade TO role_aplic;
+GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade TO role_users;
 
 
 --
@@ -82570,8 +82570,8 @@ GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade TO pg_users;
 REVOKE ALL ON TABLE imovel_tipo_ocupante_quantidade_atualizacao_cadastral FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_tipo_ocupante_quantidade_atualizacao_cadastral FROM gsan_admin;
 GRANT ALL ON TABLE imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO pg_aplic;
-GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO role_aplic;
+GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO role_users;
 
 
 --
@@ -82581,8 +82581,8 @@ GRANT SELECT ON TABLE imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO p
 REVOKE ALL ON TABLE imovel_tipo_propriedade FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_tipo_propriedade FROM gsan_admin;
 GRANT ALL ON TABLE imovel_tipo_propriedade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_propriedade TO pg_aplic;
-GRANT SELECT ON TABLE imovel_tipo_propriedade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_tipo_propriedade TO role_aplic;
+GRANT SELECT ON TABLE imovel_tipo_propriedade TO role_users;
 
 
 --
@@ -82592,8 +82592,8 @@ GRANT SELECT ON TABLE imovel_tipo_propriedade TO pg_users;
 REVOKE ALL ON TABLE localidade FROM PUBLIC;
 REVOKE ALL ON TABLE localidade FROM gsan_admin;
 GRANT ALL ON TABLE localidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localidade TO pg_aplic;
-GRANT SELECT ON TABLE localidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localidade TO role_aplic;
+GRANT SELECT ON TABLE localidade TO role_users;
 
 
 --
@@ -82603,8 +82603,8 @@ GRANT SELECT ON TABLE localidade TO pg_users;
 REVOKE ALL ON TABLE localidade_classe FROM PUBLIC;
 REVOKE ALL ON TABLE localidade_classe FROM gsan_admin;
 GRANT ALL ON TABLE localidade_classe TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localidade_classe TO pg_aplic;
-GRANT SELECT ON TABLE localidade_classe TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localidade_classe TO role_aplic;
+GRANT SELECT ON TABLE localidade_classe TO role_users;
 
 
 --
@@ -82614,8 +82614,8 @@ GRANT SELECT ON TABLE localidade_classe TO pg_users;
 REVOKE ALL ON TABLE localidade_dados_censit FROM PUBLIC;
 REVOKE ALL ON TABLE localidade_dados_censit FROM gsan_admin;
 GRANT ALL ON TABLE localidade_dados_censit TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localidade_dados_censit TO pg_aplic;
-GRANT SELECT ON TABLE localidade_dados_censit TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localidade_dados_censit TO role_aplic;
+GRANT SELECT ON TABLE localidade_dados_censit TO role_users;
 
 
 --
@@ -82625,8 +82625,8 @@ GRANT SELECT ON TABLE localidade_dados_censit TO pg_users;
 REVOKE ALL ON TABLE localidade_porte FROM PUBLIC;
 REVOKE ALL ON TABLE localidade_porte FROM gsan_admin;
 GRANT ALL ON TABLE localidade_porte TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localidade_porte TO pg_aplic;
-GRANT SELECT ON TABLE localidade_porte TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE localidade_porte TO role_aplic;
+GRANT SELECT ON TABLE localidade_porte TO role_users;
 
 
 --
@@ -82636,8 +82636,8 @@ GRANT SELECT ON TABLE localidade_porte TO pg_users;
 REVOKE ALL ON TABLE logradouro FROM PUBLIC;
 REVOKE ALL ON TABLE logradouro FROM gsan_admin;
 GRANT ALL ON TABLE logradouro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro TO pg_aplic;
-GRANT SELECT ON TABLE logradouro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro TO role_aplic;
+GRANT SELECT ON TABLE logradouro TO role_users;
 
 
 --
@@ -82647,8 +82647,8 @@ GRANT SELECT ON TABLE logradouro TO pg_users;
 REVOKE ALL ON TABLE logradouro_bairro FROM PUBLIC;
 REVOKE ALL ON TABLE logradouro_bairro FROM gsan_admin;
 GRANT ALL ON TABLE logradouro_bairro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro_bairro TO pg_aplic;
-GRANT SELECT ON TABLE logradouro_bairro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro_bairro TO role_aplic;
+GRANT SELECT ON TABLE logradouro_bairro TO role_users;
 
 
 --
@@ -82658,8 +82658,8 @@ GRANT SELECT ON TABLE logradouro_bairro TO pg_users;
 REVOKE ALL ON TABLE logradouro_cep FROM PUBLIC;
 REVOKE ALL ON TABLE logradouro_cep FROM gsan_admin;
 GRANT ALL ON TABLE logradouro_cep TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro_cep TO pg_aplic;
-GRANT SELECT ON TABLE logradouro_cep TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro_cep TO role_aplic;
+GRANT SELECT ON TABLE logradouro_cep TO role_users;
 
 
 --
@@ -82669,8 +82669,8 @@ GRANT SELECT ON TABLE logradouro_cep TO pg_users;
 REVOKE ALL ON TABLE logradouro_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE logradouro_tipo FROM gsan_admin;
 GRANT ALL ON TABLE logradouro_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro_tipo TO pg_aplic;
-GRANT SELECT ON TABLE logradouro_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro_tipo TO role_aplic;
+GRANT SELECT ON TABLE logradouro_tipo TO role_users;
 
 
 --
@@ -82680,8 +82680,8 @@ GRANT SELECT ON TABLE logradouro_tipo TO pg_users;
 REVOKE ALL ON TABLE logradouro_titulo FROM PUBLIC;
 REVOKE ALL ON TABLE logradouro_titulo FROM gsan_admin;
 GRANT ALL ON TABLE logradouro_titulo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro_titulo TO pg_aplic;
-GRANT SELECT ON TABLE logradouro_titulo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logradouro_titulo TO role_aplic;
+GRANT SELECT ON TABLE logradouro_titulo TO role_users;
 
 
 --
@@ -82691,8 +82691,8 @@ GRANT SELECT ON TABLE logradouro_titulo TO pg_users;
 REVOKE ALL ON TABLE loja_atendimento FROM PUBLIC;
 REVOKE ALL ON TABLE loja_atendimento FROM gsan_admin;
 GRANT ALL ON TABLE loja_atendimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE loja_atendimento TO pg_aplic;
-GRANT SELECT ON TABLE loja_atendimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE loja_atendimento TO role_aplic;
+GRANT SELECT ON TABLE loja_atendimento TO role_users;
 
 
 --
@@ -82702,8 +82702,8 @@ GRANT SELECT ON TABLE loja_atendimento TO pg_users;
 REVOKE ALL ON TABLE microrregiao FROM PUBLIC;
 REVOKE ALL ON TABLE microrregiao FROM gsan_admin;
 GRANT ALL ON TABLE microrregiao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE microrregiao TO pg_aplic;
-GRANT SELECT ON TABLE microrregiao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE microrregiao TO role_aplic;
+GRANT SELECT ON TABLE microrregiao TO role_users;
 
 
 --
@@ -82713,8 +82713,8 @@ GRANT SELECT ON TABLE microrregiao TO pg_users;
 REVOKE ALL ON TABLE motivo_retirada_cobranca FROM PUBLIC;
 REVOKE ALL ON TABLE motivo_retirada_cobranca FROM gsan_admin;
 GRANT ALL ON TABLE motivo_retirada_cobranca TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_retirada_cobranca TO pg_aplic;
-GRANT SELECT ON TABLE motivo_retirada_cobranca TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_retirada_cobranca TO role_aplic;
+GRANT SELECT ON TABLE motivo_retirada_cobranca TO role_users;
 
 
 --
@@ -82724,8 +82724,8 @@ GRANT SELECT ON TABLE motivo_retirada_cobranca TO pg_users;
 REVOKE ALL ON TABLE msg_ret_receita_federal FROM PUBLIC;
 REVOKE ALL ON TABLE msg_ret_receita_federal FROM gsan_admin;
 GRANT ALL ON TABLE msg_ret_receita_federal TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE msg_ret_receita_federal TO pg_aplic;
-GRANT SELECT ON TABLE msg_ret_receita_federal TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE msg_ret_receita_federal TO role_aplic;
+GRANT SELECT ON TABLE msg_ret_receita_federal TO role_users;
 
 
 --
@@ -82735,8 +82735,8 @@ GRANT SELECT ON TABLE msg_ret_receita_federal TO pg_users;
 REVOKE ALL ON TABLE municipio FROM PUBLIC;
 REVOKE ALL ON TABLE municipio FROM gsan_admin;
 GRANT ALL ON TABLE municipio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE municipio TO pg_aplic;
-GRANT SELECT ON TABLE municipio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE municipio TO role_aplic;
+GRANT SELECT ON TABLE municipio TO role_users;
 
 
 --
@@ -82746,8 +82746,8 @@ GRANT SELECT ON TABLE municipio TO pg_users;
 REVOKE ALL ON TABLE municipio_dados_censit FROM PUBLIC;
 REVOKE ALL ON TABLE municipio_dados_censit FROM gsan_admin;
 GRANT ALL ON TABLE municipio_dados_censit TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE municipio_dados_censit TO pg_aplic;
-GRANT SELECT ON TABLE municipio_dados_censit TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE municipio_dados_censit TO role_aplic;
+GRANT SELECT ON TABLE municipio_dados_censit TO role_users;
 
 
 --
@@ -82757,8 +82757,8 @@ GRANT SELECT ON TABLE municipio_dados_censit TO pg_users;
 REVOKE ALL ON TABLE municipio_feriado FROM PUBLIC;
 REVOKE ALL ON TABLE municipio_feriado FROM gsan_admin;
 GRANT ALL ON TABLE municipio_feriado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE municipio_feriado TO pg_aplic;
-GRANT SELECT ON TABLE municipio_feriado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE municipio_feriado TO role_aplic;
+GRANT SELECT ON TABLE municipio_feriado TO role_users;
 
 
 --
@@ -82768,8 +82768,8 @@ GRANT SELECT ON TABLE municipio_feriado TO pg_users;
 REVOKE ALL ON TABLE nacional_feriado FROM PUBLIC;
 REVOKE ALL ON TABLE nacional_feriado FROM gsan_admin;
 GRANT ALL ON TABLE nacional_feriado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE nacional_feriado TO pg_aplic;
-GRANT SELECT ON TABLE nacional_feriado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE nacional_feriado TO role_aplic;
+GRANT SELECT ON TABLE nacional_feriado TO role_users;
 
 
 --
@@ -82779,8 +82779,8 @@ GRANT SELECT ON TABLE nacional_feriado TO pg_users;
 REVOKE ALL ON TABLE nivel_pressao FROM PUBLIC;
 REVOKE ALL ON TABLE nivel_pressao FROM gsan_admin;
 GRANT ALL ON TABLE nivel_pressao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE nivel_pressao TO pg_aplic;
-GRANT SELECT ON TABLE nivel_pressao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE nivel_pressao TO role_aplic;
+GRANT SELECT ON TABLE nivel_pressao TO role_users;
 
 
 --
@@ -82790,8 +82790,8 @@ GRANT SELECT ON TABLE nivel_pressao TO pg_users;
 REVOKE ALL ON TABLE orgao_expedidor_rg FROM PUBLIC;
 REVOKE ALL ON TABLE orgao_expedidor_rg FROM gsan_admin;
 GRANT ALL ON TABLE orgao_expedidor_rg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE orgao_expedidor_rg TO pg_aplic;
-GRANT SELECT ON TABLE orgao_expedidor_rg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE orgao_expedidor_rg TO role_aplic;
+GRANT SELECT ON TABLE orgao_expedidor_rg TO role_users;
 
 
 --
@@ -82801,8 +82801,8 @@ GRANT SELECT ON TABLE orgao_expedidor_rg TO pg_users;
 REVOKE ALL ON TABLE param_tab_atualiz_cadast FROM PUBLIC;
 REVOKE ALL ON TABLE param_tab_atualiz_cadast FROM gsan_admin;
 GRANT ALL ON TABLE param_tab_atualiz_cadast TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_tab_atualiz_cadast TO pg_aplic;
-GRANT SELECT ON TABLE param_tab_atualiz_cadast TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_tab_atualiz_cadast TO role_aplic;
+GRANT SELECT ON TABLE param_tab_atualiz_cadast TO role_users;
 
 
 --
@@ -82812,8 +82812,8 @@ GRANT SELECT ON TABLE param_tab_atualiz_cadast TO pg_users;
 REVOKE ALL ON TABLE pavimento_calcada FROM PUBLIC;
 REVOKE ALL ON TABLE pavimento_calcada FROM gsan_admin;
 GRANT ALL ON TABLE pavimento_calcada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pavimento_calcada TO pg_aplic;
-GRANT SELECT ON TABLE pavimento_calcada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pavimento_calcada TO role_aplic;
+GRANT SELECT ON TABLE pavimento_calcada TO role_users;
 
 
 --
@@ -82823,8 +82823,8 @@ GRANT SELECT ON TABLE pavimento_calcada TO pg_users;
 REVOKE ALL ON TABLE pavimento_rua FROM PUBLIC;
 REVOKE ALL ON TABLE pavimento_rua FROM gsan_admin;
 GRANT ALL ON TABLE pavimento_rua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pavimento_rua TO pg_aplic;
-GRANT SELECT ON TABLE pavimento_rua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pavimento_rua TO role_aplic;
+GRANT SELECT ON TABLE pavimento_rua TO role_users;
 
 
 --
@@ -82834,8 +82834,8 @@ GRANT SELECT ON TABLE pavimento_rua TO pg_users;
 REVOKE ALL ON TABLE pessoa_sexo FROM PUBLIC;
 REVOKE ALL ON TABLE pessoa_sexo FROM gsan_admin;
 GRANT ALL ON TABLE pessoa_sexo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pessoa_sexo TO pg_aplic;
-GRANT SELECT ON TABLE pessoa_sexo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pessoa_sexo TO role_aplic;
+GRANT SELECT ON TABLE pessoa_sexo TO role_users;
 
 
 --
@@ -82845,8 +82845,8 @@ GRANT SELECT ON TABLE pessoa_sexo TO pg_users;
 REVOKE ALL ON TABLE piscina_volume_faixa FROM PUBLIC;
 REVOKE ALL ON TABLE piscina_volume_faixa FROM gsan_admin;
 GRANT ALL ON TABLE piscina_volume_faixa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE piscina_volume_faixa TO pg_aplic;
-GRANT SELECT ON TABLE piscina_volume_faixa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE piscina_volume_faixa TO role_aplic;
+GRANT SELECT ON TABLE piscina_volume_faixa TO role_users;
 
 
 --
@@ -82856,8 +82856,8 @@ GRANT SELECT ON TABLE piscina_volume_faixa TO pg_users;
 REVOKE ALL ON TABLE poco_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE poco_tipo FROM gsan_admin;
 GRANT ALL ON TABLE poco_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE poco_tipo TO pg_aplic;
-GRANT SELECT ON TABLE poco_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE poco_tipo TO role_aplic;
+GRANT SELECT ON TABLE poco_tipo TO role_users;
 
 
 --
@@ -82867,8 +82867,8 @@ GRANT SELECT ON TABLE poco_tipo TO pg_users;
 REVOKE ALL ON TABLE profissao FROM PUBLIC;
 REVOKE ALL ON TABLE profissao FROM gsan_admin;
 GRANT ALL ON TABLE profissao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE profissao TO pg_aplic;
-GRANT SELECT ON TABLE profissao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE profissao TO role_aplic;
+GRANT SELECT ON TABLE profissao TO role_users;
 
 
 --
@@ -82878,8 +82878,8 @@ GRANT SELECT ON TABLE profissao TO pg_users;
 REVOKE ALL ON TABLE projeto FROM PUBLIC;
 REVOKE ALL ON TABLE projeto FROM gsan_admin;
 GRANT ALL ON TABLE projeto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE projeto TO pg_aplic;
-GRANT SELECT ON TABLE projeto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE projeto TO role_aplic;
+GRANT SELECT ON TABLE projeto TO role_users;
 
 
 --
@@ -82889,8 +82889,8 @@ GRANT SELECT ON TABLE projeto TO pg_users;
 REVOKE ALL ON TABLE quadra FROM PUBLIC;
 REVOKE ALL ON TABLE quadra FROM gsan_admin;
 GRANT ALL ON TABLE quadra TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE quadra TO pg_aplic;
-GRANT SELECT ON TABLE quadra TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE quadra TO role_aplic;
+GRANT SELECT ON TABLE quadra TO role_users;
 
 
 --
@@ -82900,8 +82900,8 @@ GRANT SELECT ON TABLE quadra TO pg_users;
 REVOKE ALL ON TABLE quadra_face FROM PUBLIC;
 REVOKE ALL ON TABLE quadra_face FROM gsan_admin;
 GRANT ALL ON TABLE quadra_face TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE quadra_face TO pg_aplic;
-GRANT SELECT ON TABLE quadra_face TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE quadra_face TO role_aplic;
+GRANT SELECT ON TABLE quadra_face TO role_users;
 
 
 --
@@ -82911,8 +82911,8 @@ GRANT SELECT ON TABLE quadra_face TO pg_users;
 REVOKE ALL ON TABLE quadra_perfil FROM PUBLIC;
 REVOKE ALL ON TABLE quadra_perfil FROM gsan_admin;
 GRANT ALL ON TABLE quadra_perfil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE quadra_perfil TO pg_aplic;
-GRANT SELECT ON TABLE quadra_perfil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE quadra_perfil TO role_aplic;
+GRANT SELECT ON TABLE quadra_perfil TO role_users;
 
 
 --
@@ -82922,8 +82922,8 @@ GRANT SELECT ON TABLE quadra_perfil TO pg_users;
 REVOKE ALL ON TABLE ramo_atividade FROM PUBLIC;
 REVOKE ALL ON TABLE ramo_atividade FROM gsan_admin;
 GRANT ALL ON TABLE ramo_atividade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ramo_atividade TO pg_aplic;
-GRANT SELECT ON TABLE ramo_atividade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ramo_atividade TO role_aplic;
+GRANT SELECT ON TABLE ramo_atividade TO role_users;
 
 
 --
@@ -82933,8 +82933,8 @@ GRANT SELECT ON TABLE ramo_atividade TO pg_users;
 REVOKE ALL ON TABLE regiao FROM PUBLIC;
 REVOKE ALL ON TABLE regiao FROM gsan_admin;
 GRANT ALL ON TABLE regiao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE regiao TO pg_aplic;
-GRANT SELECT ON TABLE regiao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE regiao TO role_aplic;
+GRANT SELECT ON TABLE regiao TO role_users;
 
 
 --
@@ -82944,8 +82944,8 @@ GRANT SELECT ON TABLE regiao TO pg_users;
 REVOKE ALL ON TABLE regiao_desenvolvimento FROM PUBLIC;
 REVOKE ALL ON TABLE regiao_desenvolvimento FROM gsan_admin;
 GRANT ALL ON TABLE regiao_desenvolvimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE regiao_desenvolvimento TO pg_aplic;
-GRANT SELECT ON TABLE regiao_desenvolvimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE regiao_desenvolvimento TO role_aplic;
+GRANT SELECT ON TABLE regiao_desenvolvimento TO role_users;
 
 
 --
@@ -82955,8 +82955,8 @@ GRANT SELECT ON TABLE regiao_desenvolvimento TO pg_users;
 REVOKE ALL ON TABLE renda_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE renda_tipo FROM gsan_admin;
 GRANT ALL ON TABLE renda_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE renda_tipo TO pg_aplic;
-GRANT SELECT ON TABLE renda_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE renda_tipo TO role_aplic;
+GRANT SELECT ON TABLE renda_tipo TO role_users;
 
 
 --
@@ -82966,8 +82966,8 @@ GRANT SELECT ON TABLE renda_tipo TO pg_users;
 REVOKE ALL ON TABLE reservatorio_volume_fx FROM PUBLIC;
 REVOKE ALL ON TABLE reservatorio_volume_fx FROM gsan_admin;
 GRANT ALL ON TABLE reservatorio_volume_fx TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE reservatorio_volume_fx TO pg_aplic;
-GRANT SELECT ON TABLE reservatorio_volume_fx TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE reservatorio_volume_fx TO role_aplic;
+GRANT SELECT ON TABLE reservatorio_volume_fx TO role_users;
 
 
 --
@@ -82977,8 +82977,8 @@ GRANT SELECT ON TABLE reservatorio_volume_fx TO pg_users;
 REVOKE ALL ON TABLE resumo_ligacoes_economia FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_ligacoes_economia FROM gsan_admin;
 GRANT ALL ON TABLE resumo_ligacoes_economia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_ligacoes_economia TO pg_aplic;
-GRANT SELECT ON TABLE resumo_ligacoes_economia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_ligacoes_economia TO role_aplic;
+GRANT SELECT ON TABLE resumo_ligacoes_economia TO role_users;
 
 
 --
@@ -82988,8 +82988,8 @@ GRANT SELECT ON TABLE resumo_ligacoes_economia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_area_construida_faixa FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_area_construida_faixa FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_area_construida_faixa TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_area_construida_faixa TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_area_construida_faixa TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_area_construida_faixa TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_area_construida_faixa TO role_users;
 
 
 --
@@ -82999,8 +82999,8 @@ GRANT SELECT ON SEQUENCE seq_area_construida_faixa TO pg_users;
 REVOKE ALL ON SEQUENCE seq_area_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_area_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_area_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_area_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_area_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_area_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_area_tipo TO role_users;
 
 
 --
@@ -83010,8 +83010,8 @@ GRANT SELECT ON SEQUENCE seq_area_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arquivo_texto_atlz_cad FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arquivo_texto_atlz_cad FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arquivo_texto_atlz_cad TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arquivo_texto_atlz_cad TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arquivo_texto_atlz_cad TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arquivo_texto_atlz_cad TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arquivo_texto_atlz_cad TO role_users;
 
 
 --
@@ -83021,8 +83021,8 @@ GRANT SELECT ON SEQUENCE seq_arquivo_texto_atlz_cad TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simp_binario FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simp_binario FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atlz_cad_simp_binario TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simp_binario TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_binario TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simp_binario TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_binario TO role_users;
 
 
 --
@@ -83032,8 +83032,8 @@ GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_binario TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simp_crit_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simp_crit_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atlz_cad_simp_crit_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simp_crit_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_crit_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simp_crit_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_crit_tipo TO role_users;
 
 
 --
@@ -83043,8 +83043,8 @@ GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_crit_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simp_critica FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simp_critica FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atlz_cad_simp_critica TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simp_critica TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_critica TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simp_critica TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_critica TO role_users;
 
 
 --
@@ -83054,8 +83054,8 @@ GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_critica TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simp_linha FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simp_linha FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atlz_cad_simp_linha TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simp_linha TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_linha TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simp_linha TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_linha TO role_users;
 
 
 --
@@ -83065,8 +83065,8 @@ GRANT SELECT ON SEQUENCE seq_atlz_cad_simp_linha TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simplificado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atlz_cad_simplificado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atlz_cad_simplificado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simplificado TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atlz_cad_simplificado TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atlz_cad_simplificado TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atlz_cad_simplificado TO role_users;
 
 
 --
@@ -83076,8 +83076,8 @@ GRANT SELECT ON SEQUENCE seq_atlz_cad_simplificado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_bairro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_bairro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_bairro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_bairro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_bairro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_bairro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_bairro TO role_users;
 
 
 --
@@ -83087,8 +83087,8 @@ GRANT SELECT ON SEQUENCE seq_bairro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_bairro_area FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_bairro_area FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_bairro_area TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_bairro_area TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_bairro_area TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_bairro_area TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_bairro_area TO role_users;
 
 
 --
@@ -83098,8 +83098,8 @@ GRANT SELECT ON SEQUENCE seq_bairro_area TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cadastro_ocorrencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cadastro_ocorrencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cadastro_ocorrencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cadastro_ocorrencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cadastro_ocorrencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cadastro_ocorrencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cadastro_ocorrencia TO role_users;
 
 
 --
@@ -83109,8 +83109,8 @@ GRANT SELECT ON SEQUENCE seq_cadastro_ocorrencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_categoria FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_categoria FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_categoria TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_categoria TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_categoria TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_categoria TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_categoria TO role_users;
 
 
 --
@@ -83120,8 +83120,8 @@ GRANT SELECT ON SEQUENCE seq_categoria TO pg_users;
 REVOKE ALL ON SEQUENCE seq_categoria_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_categoria_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_categoria_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_categoria_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_categoria_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_categoria_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_categoria_tipo TO role_users;
 
 
 --
@@ -83131,8 +83131,8 @@ GRANT SELECT ON SEQUENCE seq_categoria_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cep FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cep FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cep TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cep TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cep TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cep TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cep TO role_users;
 
 
 --
@@ -83142,8 +83142,8 @@ GRANT SELECT ON SEQUENCE seq_cep TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cep_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cep_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cep_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cep_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cep_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cep_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cep_tipo TO role_users;
 
 
 --
@@ -83153,8 +83153,8 @@ GRANT SELECT ON SEQUENCE seq_cep_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente TO role_users;
 
 
 --
@@ -83164,8 +83164,8 @@ GRANT SELECT ON SEQUENCE seq_cliente TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_atlz_cadastral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_atlz_cadastral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_atlz_cadastral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_atlz_cadastral TO role_users;
 
 
 --
@@ -83175,8 +83175,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_atlz_cadastral TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_conta FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_conta FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_conta TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_conta TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_conta TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_conta TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_conta TO role_users;
 
 
 --
@@ -83186,8 +83186,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_conta TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_conta_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_conta_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_conta_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_conta_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_conta_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_conta_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_conta_historico TO role_users;
 
 
 --
@@ -83197,8 +83197,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_conta_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_endereco FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_endereco FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_endereco TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_endereco TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_endereco TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_endereco TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_endereco TO role_users;
 
 
 --
@@ -83208,8 +83208,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_endereco TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_fone FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_fone FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_fone TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_fone TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_fone TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_fone TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_fone TO role_users;
 
 
 --
@@ -83219,8 +83219,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_fone TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_fone_atlz_cad FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_fone_atlz_cad FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_fone_atlz_cad TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_fone_atlz_cad TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_fone_atlz_cad TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_fone_atlz_cad TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_fone_atlz_cad TO role_users;
 
 
 --
@@ -83230,8 +83230,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_fone_atlz_cad TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_guia_pagamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_guia_pagamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_guia_pagamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_guia_pagamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_guia_pagamento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_guia_pagamento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_guia_pagamento TO role_users;
 
 
 --
@@ -83241,8 +83241,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_guia_pagamento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_guia_pagto_hist FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_guia_pagto_hist FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_guia_pagto_hist TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_guia_pagto_hist TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_guia_pagto_hist TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_guia_pagto_hist TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_guia_pagto_hist TO role_users;
 
 
 --
@@ -83252,8 +83252,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_guia_pagto_hist TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_imovel FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_imovel FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_imovel TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_imovel TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_imovel TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_imovel TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_imovel TO role_users;
 
 
 --
@@ -83263,8 +83263,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_imovel TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_imovel_economia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_imovel_economia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_imovel_economia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_imovel_economia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_imovel_economia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_imovel_economia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_imovel_economia TO role_users;
 
 
 --
@@ -83274,8 +83274,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_imovel_economia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_relacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_relacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_relacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_relacao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_relacao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_relacao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_relacao_tipo TO role_users;
 
 
 --
@@ -83285,8 +83285,8 @@ GRANT SELECT ON SEQUENCE seq_cliente_relacao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cliente_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cliente_tipo TO role_users;
 
 
 --
@@ -83296,7 +83296,7 @@ GRANT SELECT ON SEQUENCE seq_cliente_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cliente_virtual FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cliente_virtual FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cliente_virtual TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_virtual TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_virtual TO role_aplic;
 
 
 --
@@ -83306,8 +83306,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_cliente_virtual TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_clim_fim_relacao_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_clim_fim_relacao_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_clim_fim_relacao_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_clim_fim_relacao_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_clim_fim_relacao_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_clim_fim_relacao_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_clim_fim_relacao_motivo TO role_users;
 
 
 --
@@ -83317,7 +83317,7 @@ GRANT SELECT ON SEQUENCE seq_clim_fim_relacao_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_condicao_abast_agua FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_condicao_abast_agua FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_condicao_abast_agua TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_condicao_abast_agua TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_condicao_abast_agua TO role_aplic;
 
 
 --
@@ -83327,8 +83327,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_condicao_abast_agua TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_medicao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_medicao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_medicao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_medicao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_contrato_medicao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_medicao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_contrato_medicao TO role_users;
 
 
 --
@@ -83338,8 +83338,8 @@ GRANT SELECT ON SEQUENCE seq_contrato_medicao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_medicao_abrangencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_medicao_abrangencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_medicao_abrangencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_medicao_abrangencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_contrato_medicao_abrangencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_medicao_abrangencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_contrato_medicao_abrangencia TO role_users;
 
 
 --
@@ -83349,8 +83349,8 @@ GRANT SELECT ON SEQUENCE seq_contrato_medicao_abrangencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_medicao_coeficiente FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_medicao_coeficiente FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_medicao_coeficiente TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_medicao_coeficiente TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_contrato_medicao_coeficiente TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_medicao_coeficiente TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_contrato_medicao_coeficiente TO role_users;
 
 
 --
@@ -83360,8 +83360,8 @@ GRANT SELECT ON SEQUENCE seq_contrato_medicao_coeficiente TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_medicao_coeficiente_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_medicao_coeficiente_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_medicao_coeficiente_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_medicao_coeficiente_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_contrato_medicao_coeficiente_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_medicao_coeficiente_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_contrato_medicao_coeficiente_historico TO role_users;
 
 
 --
@@ -83371,8 +83371,8 @@ GRANT SELECT ON SEQUENCE seq_contrato_medicao_coeficiente_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_db_versao_implementada FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_db_versao_implementada FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_db_versao_implementada TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_db_versao_implementada TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_db_versao_implementada TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_db_versao_implementada TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_db_versao_implementada TO role_users;
 
 
 --
@@ -83382,8 +83382,8 @@ GRANT SELECT ON SEQUENCE seq_db_versao_implementada TO pg_users;
 REVOKE ALL ON SEQUENCE seq_descricao_generica FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_descricao_generica FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_descricao_generica TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_descricao_generica TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_descricao_generica TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_descricao_generica TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_descricao_generica TO role_users;
 
 
 --
@@ -83393,8 +83393,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_descricao_generica TO pg_users;
 REVOKE ALL ON SEQUENCE seq_despejo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_despejo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_despejo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_despejo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_despejo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_despejo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_despejo TO role_users;
 
 
 --
@@ -83404,8 +83404,8 @@ GRANT SELECT ON SEQUENCE seq_despejo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_elo_anormalidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_elo_anormalidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_elo_anormalidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_elo_anormalidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_elo_anormalidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_elo_anormalidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_elo_anormalidade TO role_users;
 
 
 --
@@ -83415,7 +83415,7 @@ GRANT SELECT ON SEQUENCE seq_elo_anormalidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_email_client_alterado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_email_client_alterado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_email_client_alterado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_email_client_alterado TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_email_client_alterado TO role_aplic;
 
 
 --
@@ -83425,7 +83425,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_email_client_alterado TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_empr_cobr_faixa FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empr_cobr_faixa FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empr_cobr_faixa TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empr_cobr_faixa TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empr_cobr_faixa TO role_aplic;
 
 
 --
@@ -83435,8 +83435,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_empr_cobr_faixa TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_empr_contrato_cad_atrib FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empr_contrato_cad_atrib FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empr_contrato_cad_atrib TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empr_contrato_cad_atrib TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_empr_contrato_cad_atrib TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empr_contrato_cad_atrib TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_empr_contrato_cad_atrib TO role_users;
 
 
 --
@@ -83446,8 +83446,8 @@ GRANT SELECT ON SEQUENCE seq_empr_contrato_cad_atrib TO pg_users;
 REVOKE ALL ON SEQUENCE seq_empr_contrato_cadastro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empr_contrato_cadastro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empr_contrato_cadastro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empr_contrato_cadastro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_empr_contrato_cadastro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empr_contrato_cadastro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_empr_contrato_cadastro TO role_users;
 
 
 --
@@ -83457,8 +83457,8 @@ GRANT SELECT ON SEQUENCE seq_empr_contrato_cadastro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_empr_contrato_cobranca FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empr_contrato_cobranca FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empr_contrato_cobranca TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empr_contrato_cobranca TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_empr_contrato_cobranca TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empr_contrato_cobranca TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_empr_contrato_cobranca TO role_users;
 
 
 --
@@ -83468,8 +83468,8 @@ GRANT SELECT ON SEQUENCE seq_empr_contrato_cobranca TO pg_users;
 REVOKE ALL ON SEQUENCE seq_empresa FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empresa FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empresa TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empresa TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_empresa TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empresa TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_empresa TO role_users;
 
 
 --
@@ -83479,8 +83479,8 @@ GRANT SELECT ON SEQUENCE seq_empresa TO pg_users;
 REVOKE ALL ON SEQUENCE seq_endereco_referencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_endereco_referencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_endereco_referencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_endereco_referencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_endereco_referencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_endereco_referencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_endereco_referencia TO role_users;
 
 
 --
@@ -83490,8 +83490,8 @@ GRANT SELECT ON SEQUENCE seq_endereco_referencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_endereco_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_endereco_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_endereco_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_endereco_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_endereco_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_endereco_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_endereco_tipo TO role_users;
 
 
 --
@@ -83501,8 +83501,8 @@ GRANT SELECT ON SEQUENCE seq_endereco_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_entidade_beneficente FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_entidade_beneficente FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_entidade_beneficente TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_entidade_beneficente TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_entidade_beneficente TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_entidade_beneficente TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_entidade_beneficente TO role_users;
 
 
 --
@@ -83512,8 +83512,8 @@ GRANT SELECT ON SEQUENCE seq_entidade_beneficente TO pg_users;
 REVOKE ALL ON SEQUENCE seq_envio_email FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_envio_email FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_envio_email TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_envio_email TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_envio_email TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_envio_email TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_envio_email TO role_users;
 
 
 --
@@ -83523,8 +83523,8 @@ GRANT SELECT ON SEQUENCE seq_envio_email TO pg_users;
 REVOKE ALL ON SEQUENCE seq_esfera_poder FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_esfera_poder FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_esfera_poder TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_esfera_poder TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_esfera_poder TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_esfera_poder TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_esfera_poder TO role_users;
 
 
 --
@@ -83534,8 +83534,8 @@ GRANT SELECT ON SEQUENCE seq_esfera_poder TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fone_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fone_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fone_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fone_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fone_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fone_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fone_tipo TO role_users;
 
 
 --
@@ -83545,8 +83545,8 @@ GRANT SELECT ON SEQUENCE seq_fone_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fonte_abastecimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fonte_abastecimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fonte_abastecimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fonte_abastecimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fonte_abastecimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fonte_abastecimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fonte_abastecimento TO role_users;
 
 
 --
@@ -83556,8 +83556,8 @@ GRANT SELECT ON SEQUENCE seq_fonte_abastecimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fonte_dados_censitarios FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fonte_dados_censitarios FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fonte_dados_censitarios TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fonte_dados_censitarios TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fonte_dados_censitarios TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fonte_dados_censitarios TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fonte_dados_censitarios TO role_users;
 
 
 --
@@ -83567,8 +83567,8 @@ GRANT SELECT ON SEQUENCE seq_fonte_dados_censitarios TO pg_users;
 REVOKE ALL ON SEQUENCE seq_funcionario FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_funcionario FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_funcionario TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_funcionario TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_funcionario TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_funcionario TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_funcionario TO role_users;
 
 
 --
@@ -83578,8 +83578,8 @@ GRANT SELECT ON SEQUENCE seq_funcionario TO pg_users;
 REVOKE ALL ON SEQUENCE seq_funcionario_cargo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_funcionario_cargo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_funcionario_cargo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_funcionario_cargo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_funcionario_cargo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_funcionario_cargo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_funcionario_cargo TO role_users;
 
 
 --
@@ -83589,8 +83589,8 @@ GRANT SELECT ON SEQUENCE seq_funcionario_cargo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_gerencia_regional FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_gerencia_regional FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_gerencia_regional TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_gerencia_regional TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_gerencia_regional TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_gerencia_regional TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_gerencia_regional TO role_users;
 
 
 --
@@ -83600,7 +83600,7 @@ GRANT SELECT ON SEQUENCE seq_gerencia_regional TO pg_users;
 REVOKE ALL ON SEQUENCE seq_grau_dificuldade_exec FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_grau_dificuldade_exec FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_grau_dificuldade_exec TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_grau_dificuldade_exec TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_grau_dificuldade_exec TO role_aplic;
 
 
 --
@@ -83610,7 +83610,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_grau_dificuldade_exec TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_grau_intermitencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_grau_intermitencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_grau_intermitencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_grau_intermitencia TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_grau_intermitencia TO role_aplic;
 
 
 --
@@ -83620,7 +83620,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_grau_intermitencia TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_grau_risco_seg_fisica FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_grau_risco_seg_fisica FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_grau_risco_seg_fisica TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_grau_risco_seg_fisica TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_grau_risco_seg_fisica TO role_aplic;
 
 
 --
@@ -83630,8 +83630,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_grau_risco_seg_fisica TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_ibge_setor_censit_dados FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ibge_setor_censit_dados FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ibge_setor_censit_dados TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ibge_setor_censit_dados TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ibge_setor_censit_dados TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ibge_setor_censit_dados TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ibge_setor_censit_dados TO role_users;
 
 
 --
@@ -83641,8 +83641,8 @@ GRANT SELECT ON SEQUENCE seq_ibge_setor_censit_dados TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ibge_setor_censitario FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ibge_setor_censitario FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ibge_setor_censitario TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ibge_setor_censitario TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ibge_setor_censitario TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ibge_setor_censitario TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ibge_setor_censitario TO role_users;
 
 
 --
@@ -83652,8 +83652,8 @@ GRANT SELECT ON SEQUENCE seq_ibge_setor_censitario TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imoveis_suprimidos FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imoveis_suprimidos FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imoveis_suprimidos TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imoveis_suprimidos TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imoveis_suprimidos TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imoveis_suprimidos TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imoveis_suprimidos TO role_users;
 
 
 --
@@ -83663,8 +83663,8 @@ GRANT SELECT ON SEQUENCE seq_imoveis_suprimidos TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel TO role_users;
 
 
 --
@@ -83674,7 +83674,7 @@ GRANT SELECT ON SEQUENCE seq_imovel TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_atlz_cadastral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_atlz_cadastral TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_atlz_cadastral TO role_aplic;
 
 
 --
@@ -83684,8 +83684,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_atlz_cadastral TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_imovel_cad_ocorrencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_cad_ocorrencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_cad_ocorrencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_cad_ocorrencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_cad_ocorrencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_cad_ocorrencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_cad_ocorrencia TO role_users;
 
 
 --
@@ -83695,8 +83695,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_cad_ocorrencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_cobranca_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_cobranca_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_cobranca_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_cobranca_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_cobranca_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_cobranca_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_cobranca_situacao TO role_users;
 
 
 --
@@ -83706,8 +83706,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_cobranca_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_conta_envio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_conta_envio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_conta_envio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_conta_envio TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_conta_envio TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_conta_envio TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_conta_envio TO role_users;
 
 
 --
@@ -83717,8 +83717,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_conta_envio TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_controle_atlz_cad FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_controle_atlz_cad FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_controle_atlz_cad TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_controle_atlz_cad TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_controle_atlz_cad TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_controle_atlz_cad TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_controle_atlz_cad TO role_users;
 
 
 --
@@ -83728,8 +83728,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_controle_atlz_cad TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_doacoes FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_doacoes FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_doacoes TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_doacoes TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_doacoes TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_doacoes TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_doacoes TO role_users;
 
 
 --
@@ -83739,8 +83739,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_doacoes TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_economia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_economia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_economia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_economia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_economia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_economia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_economia TO role_users;
 
 
 --
@@ -83750,8 +83750,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_economia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_elo_anormalidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_elo_anormalidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_elo_anormalidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_elo_anormalidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_elo_anormalidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_elo_anormalidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_elo_anormalidade TO role_users;
 
 
 --
@@ -83761,8 +83761,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_elo_anormalidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_imagem FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_imagem FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_imagem TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_imagem TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_imagem TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_imagem TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_imagem TO role_users;
 
 
 --
@@ -83772,7 +83772,7 @@ GRANT SELECT ON SEQUENCE seq_imovel_imagem TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_inscr_alterada FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_inscr_alterada FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_inscr_alterada TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_inscr_alterada TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_inscr_alterada TO role_aplic;
 
 
 --
@@ -83782,8 +83782,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_inscr_alterada TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_imovel_perfil FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_perfil FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_perfil TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_perfil TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_perfil TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_perfil TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_perfil TO role_users;
 
 
 --
@@ -83793,8 +83793,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_perfil TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_programa_especial FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_programa_especial FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_programa_especial TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_programa_especial TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_programa_especial TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_programa_especial TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_programa_especial TO role_users;
 
 
 --
@@ -83804,8 +83804,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_programa_especial TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_situacao TO role_users;
 
 
 --
@@ -83815,8 +83815,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_situacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_situacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_situacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_situacao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_situacao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_situacao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_situacao_tipo TO role_users;
 
 
 --
@@ -83826,8 +83826,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_situacao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_subcatg_atlz_cad FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_subcatg_atlz_cad FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_subcatg_atlz_cad TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_subcatg_atlz_cad TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_subcatg_atlz_cad TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_subcatg_atlz_cad TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_subcatg_atlz_cad TO role_users;
 
 
 --
@@ -83837,8 +83837,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_subcatg_atlz_cad TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_cobertura FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_cobertura FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_tipo_cobertura TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_cobertura TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_tipo_cobertura TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_cobertura TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_tipo_cobertura TO role_users;
 
 
 --
@@ -83848,8 +83848,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_tipo_cobertura TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_construcao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_construcao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_tipo_construcao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_construcao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_tipo_construcao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_construcao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_tipo_construcao TO role_users;
 
 
 --
@@ -83859,8 +83859,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_tipo_construcao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_habitacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_habitacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_tipo_habitacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_habitacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_tipo_habitacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_habitacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_tipo_habitacao TO role_users;
 
 
 --
@@ -83870,8 +83870,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_tipo_habitacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_ocupante FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_ocupante FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_tipo_ocupante TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_ocupante TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_ocupante TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante TO role_users;
 
 
 --
@@ -83881,8 +83881,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_ocupante_quantidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_ocupante_quantidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade TO role_users;
 
 
 --
@@ -83892,8 +83892,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_atualizacao_cadastral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_atualizacao_cadastral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_atualizacao_cadastral TO role_users;
 
 
 --
@@ -83903,8 +83903,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_tipo_ocupante_quantidade_atualizacao_cadastr
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_propriedade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_tipo_propriedade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_tipo_propriedade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_propriedade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_tipo_propriedade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_tipo_propriedade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_tipo_propriedade TO role_users;
 
 
 --
@@ -83914,8 +83914,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_tipo_propriedade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_localidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_localidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_localidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_localidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_localidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_localidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_localidade TO role_users;
 
 
 --
@@ -83925,8 +83925,8 @@ GRANT SELECT ON SEQUENCE seq_localidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_localidade_classe FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_localidade_classe FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_localidade_classe TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_localidade_classe TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_localidade_classe TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_localidade_classe TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_localidade_classe TO role_users;
 
 
 --
@@ -83936,8 +83936,8 @@ GRANT SELECT ON SEQUENCE seq_localidade_classe TO pg_users;
 REVOKE ALL ON SEQUENCE seq_localidade_dados_censit FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_localidade_dados_censit FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_localidade_dados_censit TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_localidade_dados_censit TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_localidade_dados_censit TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_localidade_dados_censit TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_localidade_dados_censit TO role_users;
 
 
 --
@@ -83947,8 +83947,8 @@ GRANT SELECT ON SEQUENCE seq_localidade_dados_censit TO pg_users;
 REVOKE ALL ON SEQUENCE seq_localidade_porte FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_localidade_porte FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_localidade_porte TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_localidade_porte TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_localidade_porte TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_localidade_porte TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_localidade_porte TO role_users;
 
 
 --
@@ -83958,8 +83958,8 @@ GRANT SELECT ON SEQUENCE seq_localidade_porte TO pg_users;
 REVOKE ALL ON SEQUENCE seq_logradouro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_logradouro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_logradouro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_logradouro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_logradouro TO role_users;
 
 
 --
@@ -83969,8 +83969,8 @@ GRANT SELECT ON SEQUENCE seq_logradouro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_logradouro_bairro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_logradouro_bairro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_logradouro_bairro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro_bairro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_logradouro_bairro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro_bairro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_logradouro_bairro TO role_users;
 
 
 --
@@ -83980,8 +83980,8 @@ GRANT SELECT ON SEQUENCE seq_logradouro_bairro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_logradouro_cep FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_logradouro_cep FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_logradouro_cep TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro_cep TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_logradouro_cep TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro_cep TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_logradouro_cep TO role_users;
 
 
 --
@@ -83991,8 +83991,8 @@ GRANT SELECT ON SEQUENCE seq_logradouro_cep TO pg_users;
 REVOKE ALL ON SEQUENCE seq_logradouro_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_logradouro_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_logradouro_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_logradouro_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_logradouro_tipo TO role_users;
 
 
 --
@@ -84002,8 +84002,8 @@ GRANT SELECT ON SEQUENCE seq_logradouro_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_logradouro_titulo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_logradouro_titulo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_logradouro_titulo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro_titulo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_logradouro_titulo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_logradouro_titulo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_logradouro_titulo TO role_users;
 
 
 --
@@ -84013,7 +84013,7 @@ GRANT SELECT ON SEQUENCE seq_logradouro_titulo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_loja_atendimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_loja_atendimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_loja_atendimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_loja_atendimento TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_loja_atendimento TO role_aplic;
 
 
 --
@@ -84023,8 +84023,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_loja_atendimento TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_microrregiao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_microrregiao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_microrregiao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_microrregiao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_microrregiao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_microrregiao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_microrregiao TO role_users;
 
 
 --
@@ -84034,7 +84034,7 @@ GRANT SELECT ON SEQUENCE seq_microrregiao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_motivo_retirada_cobranca FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_motivo_retirada_cobranca FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_motivo_retirada_cobranca TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_retirada_cobranca TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_retirada_cobranca TO role_aplic;
 
 
 --
@@ -84044,7 +84044,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_retirada_cobranca TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_msg_ret_receita_federal FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_msg_ret_receita_federal FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_msg_ret_receita_federal TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_msg_ret_receita_federal TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_msg_ret_receita_federal TO role_aplic;
 
 
 --
@@ -84054,8 +84054,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_msg_ret_receita_federal TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_municipio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_municipio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_municipio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_municipio TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_municipio TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_municipio TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_municipio TO role_users;
 
 
 --
@@ -84065,8 +84065,8 @@ GRANT SELECT ON SEQUENCE seq_municipio TO pg_users;
 REVOKE ALL ON SEQUENCE seq_municipio_dados_censit FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_municipio_dados_censit FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_municipio_dados_censit TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_municipio_dados_censit TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_municipio_dados_censit TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_municipio_dados_censit TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_municipio_dados_censit TO role_users;
 
 
 --
@@ -84076,8 +84076,8 @@ GRANT SELECT ON SEQUENCE seq_municipio_dados_censit TO pg_users;
 REVOKE ALL ON SEQUENCE seq_municipio_feriado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_municipio_feriado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_municipio_feriado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_municipio_feriado TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_municipio_feriado TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_municipio_feriado TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_municipio_feriado TO role_users;
 
 
 --
@@ -84087,8 +84087,8 @@ GRANT SELECT ON SEQUENCE seq_municipio_feriado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_nacional_feriado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_nacional_feriado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_nacional_feriado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_nacional_feriado TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_nacional_feriado TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_nacional_feriado TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_nacional_feriado TO role_users;
 
 
 --
@@ -84098,7 +84098,7 @@ GRANT SELECT ON SEQUENCE seq_nacional_feriado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_nivel_pressao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_nivel_pressao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_nivel_pressao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_nivel_pressao TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_nivel_pressao TO role_aplic;
 
 
 --
@@ -84108,8 +84108,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_nivel_pressao TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_orgao_expedidor_rg FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_orgao_expedidor_rg FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_orgao_expedidor_rg TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_orgao_expedidor_rg TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_orgao_expedidor_rg TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_orgao_expedidor_rg TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_orgao_expedidor_rg TO role_users;
 
 
 --
@@ -84119,7 +84119,7 @@ GRANT SELECT ON SEQUENCE seq_orgao_expedidor_rg TO pg_users;
 REVOKE ALL ON SEQUENCE seq_param_tab_atualiz_cadast FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_param_tab_atualiz_cadast FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_param_tab_atualiz_cadast TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_param_tab_atualiz_cadast TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_param_tab_atualiz_cadast TO role_aplic;
 
 
 --
@@ -84129,8 +84129,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_param_tab_atualiz_cadast TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_pavimento_calcada FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pavimento_calcada FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pavimento_calcada TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pavimento_calcada TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_pavimento_calcada TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pavimento_calcada TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_pavimento_calcada TO role_users;
 
 
 --
@@ -84140,8 +84140,8 @@ GRANT SELECT ON SEQUENCE seq_pavimento_calcada TO pg_users;
 REVOKE ALL ON SEQUENCE seq_pavimento_rua FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pavimento_rua FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pavimento_rua TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pavimento_rua TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_pavimento_rua TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pavimento_rua TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_pavimento_rua TO role_users;
 
 
 --
@@ -84151,8 +84151,8 @@ GRANT SELECT ON SEQUENCE seq_pavimento_rua TO pg_users;
 REVOKE ALL ON SEQUENCE seq_pessoa_sexo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_pessoa_sexo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_pessoa_sexo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_pessoa_sexo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_pessoa_sexo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_pessoa_sexo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_pessoa_sexo TO role_users;
 
 
 --
@@ -84162,8 +84162,8 @@ GRANT SELECT ON SEQUENCE seq_pessoa_sexo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_piscina_volume_faixa FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_piscina_volume_faixa FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_piscina_volume_faixa TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_piscina_volume_faixa TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_piscina_volume_faixa TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_piscina_volume_faixa TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_piscina_volume_faixa TO role_users;
 
 
 --
@@ -84173,8 +84173,8 @@ GRANT SELECT ON SEQUENCE seq_piscina_volume_faixa TO pg_users;
 REVOKE ALL ON SEQUENCE seq_poco_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_poco_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_poco_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_poco_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_poco_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_poco_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_poco_tipo TO role_users;
 
 
 --
@@ -84184,8 +84184,8 @@ GRANT SELECT ON SEQUENCE seq_poco_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_profissao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_profissao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_profissao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_profissao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_profissao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_profissao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_profissao TO role_users;
 
 
 --
@@ -84195,8 +84195,8 @@ GRANT SELECT ON SEQUENCE seq_profissao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_projeto FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_projeto FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_projeto TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_projeto TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_projeto TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_projeto TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_projeto TO role_users;
 
 
 --
@@ -84206,8 +84206,8 @@ GRANT SELECT ON SEQUENCE seq_projeto TO pg_users;
 REVOKE ALL ON SEQUENCE seq_quadra FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_quadra FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_quadra TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_quadra TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_quadra TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_quadra TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_quadra TO role_users;
 
 
 --
@@ -84217,8 +84217,8 @@ GRANT SELECT ON SEQUENCE seq_quadra TO pg_users;
 REVOKE ALL ON SEQUENCE seq_quadra_face FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_quadra_face FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_quadra_face TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_quadra_face TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_quadra_face TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_quadra_face TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_quadra_face TO role_users;
 
 
 --
@@ -84228,8 +84228,8 @@ GRANT SELECT ON SEQUENCE seq_quadra_face TO pg_users;
 REVOKE ALL ON SEQUENCE seq_quadra_perfil FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_quadra_perfil FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_quadra_perfil TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_quadra_perfil TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_quadra_perfil TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_quadra_perfil TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_quadra_perfil TO role_users;
 
 
 --
@@ -84239,8 +84239,8 @@ GRANT SELECT ON SEQUENCE seq_quadra_perfil TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ramo_atividade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ramo_atividade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ramo_atividade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ramo_atividade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ramo_atividade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ramo_atividade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ramo_atividade TO role_users;
 
 
 --
@@ -84250,8 +84250,8 @@ GRANT SELECT ON SEQUENCE seq_ramo_atividade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_regiao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_regiao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_regiao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_regiao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_regiao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_regiao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_regiao TO role_users;
 
 
 --
@@ -84261,8 +84261,8 @@ GRANT SELECT ON SEQUENCE seq_regiao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_regiao_desenvolvimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_regiao_desenvolvimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_regiao_desenvolvimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_regiao_desenvolvimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_regiao_desenvolvimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_regiao_desenvolvimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_regiao_desenvolvimento TO role_users;
 
 
 --
@@ -84272,8 +84272,8 @@ GRANT SELECT ON SEQUENCE seq_regiao_desenvolvimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_renda_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_renda_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_renda_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_renda_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_renda_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_renda_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_renda_tipo TO role_users;
 
 
 --
@@ -84283,8 +84283,8 @@ GRANT SELECT ON SEQUENCE seq_renda_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_reservatorio_volume_fx FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_reservatorio_volume_fx FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_reservatorio_volume_fx TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_reservatorio_volume_fx TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_reservatorio_volume_fx TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_reservatorio_volume_fx TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_reservatorio_volume_fx TO role_users;
 
 
 --
@@ -84294,8 +84294,8 @@ GRANT SELECT ON SEQUENCE seq_reservatorio_volume_fx TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_ligacoes_economia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_ligacoes_economia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_ligacoes_economia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_ligacoes_economia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_ligacoes_economia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_ligacoes_economia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_ligacoes_economia TO role_users;
 
 
 --
@@ -84305,8 +84305,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_ligacoes_economia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_setor_comercial FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_setor_comercial FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_setor_comercial TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_setor_comercial TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_setor_comercial TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_setor_comercial TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_setor_comercial TO role_users;
 
 
 --
@@ -84316,8 +84316,8 @@ GRANT SELECT ON SEQUENCE seq_setor_comercial TO pg_users;
 REVOKE ALL ON SEQUENCE seq_sistema_alteracao_hist FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sistema_alteracao_hist FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sistema_alteracao_hist TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_alteracao_hist TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_sistema_alteracao_hist TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_alteracao_hist TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_sistema_alteracao_hist TO role_users;
 
 
 --
@@ -84327,8 +84327,8 @@ GRANT SELECT ON SEQUENCE seq_sistema_alteracao_hist TO pg_users;
 REVOKE ALL ON SEQUENCE seq_sistema_parametros FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sistema_parametros FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sistema_parametros TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_parametros TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_sistema_parametros TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_parametros TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_sistema_parametros TO role_users;
 
 
 --
@@ -84338,8 +84338,8 @@ GRANT SELECT ON SEQUENCE seq_sistema_parametros TO pg_users;
 REVOKE ALL ON SEQUENCE seq_situacao_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_situacao_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_situacao_atlz_cadastral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_situacao_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_situacao_atlz_cadastral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_situacao_atlz_cadastral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_situacao_atlz_cadastral TO role_users;
 
 
 --
@@ -84349,8 +84349,8 @@ GRANT SELECT ON SEQUENCE seq_situacao_atlz_cadastral TO pg_users;
 REVOKE ALL ON SEQUENCE seq_subcategoria FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_subcategoria FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_subcategoria TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_subcategoria TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_subcategoria TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_subcategoria TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_subcategoria TO role_users;
 
 
 --
@@ -84360,7 +84360,7 @@ GRANT SELECT ON SEQUENCE seq_subcategoria TO pg_users;
 REVOKE ALL ON SEQUENCE seq_superintendencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_superintendencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_superintendencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_superintendencia TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_superintendencia TO role_aplic;
 
 
 --
@@ -84370,8 +84370,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_superintendencia TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_tar_social_cartao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tar_social_cartao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tar_social_cartao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_cartao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tar_social_cartao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_cartao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tar_social_cartao_tipo TO role_users;
 
 
 --
@@ -84381,8 +84381,8 @@ GRANT SELECT ON SEQUENCE seq_tar_social_cartao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tar_social_comando_carta FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tar_social_comando_carta FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tar_social_comando_carta TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_comando_carta TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_comando_carta TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_comando_carta TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_comando_carta TO role_users;
 
 
 --
@@ -84392,8 +84392,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_comando_carta TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tar_social_dado_economia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tar_social_dado_economia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tar_social_dado_economia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_dado_economia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tar_social_dado_economia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_dado_economia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tar_social_dado_economia TO role_users;
 
 
 --
@@ -84403,8 +84403,8 @@ GRANT SELECT ON SEQUENCE seq_tar_social_dado_economia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tar_social_excl_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tar_social_excl_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tar_social_excl_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_excl_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tar_social_excl_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_excl_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tar_social_excl_motivo TO role_users;
 
 
 --
@@ -84414,8 +84414,8 @@ GRANT SELECT ON SEQUENCE seq_tar_social_excl_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tar_social_motivo_carta FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tar_social_motivo_carta FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tar_social_motivo_carta TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_motivo_carta TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_motivo_carta TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_motivo_carta TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_motivo_carta TO role_users;
 
 
 --
@@ -84425,8 +84425,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_motivo_carta TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tar_social_rev_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tar_social_rev_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tar_social_rev_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_rev_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tar_social_rev_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tar_social_rev_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tar_social_rev_motivo TO role_users;
 
 
 --
@@ -84436,8 +84436,8 @@ GRANT SELECT ON SEQUENCE seq_tar_social_rev_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unid_repav_custo_pav_cal FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unid_repav_custo_pav_cal FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unid_repav_custo_pav_cal TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_cal TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_cal TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_cal TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_cal TO role_users;
 
 
 --
@@ -84447,8 +84447,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_cal TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unid_repav_custo_pav_rua FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unid_repav_custo_pav_rua FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unid_repav_custo_pav_rua TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_rua TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_rua TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_rua TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_rua TO role_users;
 
 
 --
@@ -84458,8 +84458,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_unid_repav_custo_pav_rua TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_federacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_federacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_federacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_federacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_federacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_federacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_federacao TO role_users;
 
 
 --
@@ -84469,8 +84469,8 @@ GRANT SELECT ON SEQUENCE seq_unidade_federacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_negocio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_negocio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_negocio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_negocio TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_negocio TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_negocio TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_negocio TO role_users;
 
 
 --
@@ -84480,7 +84480,7 @@ GRANT SELECT ON SEQUENCE seq_unidade_negocio TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_org_municipio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_org_municipio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_org_municipio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_org_municipio TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_org_municipio TO role_aplic;
 
 
 --
@@ -84490,8 +84490,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_org_municipio TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_unidade_organizacional FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_organizacional FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_organizacional TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_organizacional TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_organizacional TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_organizacional TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_organizacional TO role_users;
 
 
 --
@@ -84501,8 +84501,8 @@ GRANT SELECT ON SEQUENCE seq_unidade_organizacional TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_tipo TO role_users;
 
 
 --
@@ -84512,7 +84512,7 @@ GRANT SELECT ON SEQUENCE seq_unidade_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_versao_mobile FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_versao_mobile FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_versao_mobile TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_versao_mobile TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_versao_mobile TO role_aplic;
 
 
 --
@@ -84522,8 +84522,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_versao_mobile TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_zeis FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_zeis FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_zeis TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_zeis TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_zeis TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_zeis TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_zeis TO role_users;
 
 
 --
@@ -84533,8 +84533,8 @@ GRANT SELECT ON SEQUENCE seq_zeis TO pg_users;
 REVOKE ALL ON SEQUENCE sequence_imagem_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_imagem_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_imagem_atlz_cadastral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_imagem_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_imagem_atlz_cadastral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_imagem_atlz_cadastral TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_imagem_atlz_cadastral TO role_users;
 
 
 --
@@ -84544,8 +84544,8 @@ GRANT SELECT ON SEQUENCE sequence_imagem_atlz_cadastral TO pg_users;
 REVOKE ALL ON SEQUENCE sequence_imovel_ramo_ativ_atlz_cad FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_imovel_ramo_ativ_atlz_cad FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_imovel_ramo_ativ_atlz_cad TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_imovel_ramo_ativ_atlz_cad TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_imovel_ramo_ativ_atlz_cad TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_imovel_ramo_ativ_atlz_cad TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_imovel_ramo_ativ_atlz_cad TO role_users;
 
 
 --
@@ -84555,8 +84555,8 @@ GRANT SELECT ON SEQUENCE sequence_imovel_ramo_ativ_atlz_cad TO pg_users;
 REVOKE ALL ON TABLE setor_comercial FROM PUBLIC;
 REVOKE ALL ON TABLE setor_comercial FROM gsan_admin;
 GRANT ALL ON TABLE setor_comercial TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE setor_comercial TO pg_aplic;
-GRANT SELECT ON TABLE setor_comercial TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE setor_comercial TO role_aplic;
+GRANT SELECT ON TABLE setor_comercial TO role_users;
 
 
 --
@@ -84566,8 +84566,8 @@ GRANT SELECT ON TABLE setor_comercial TO pg_users;
 REVOKE ALL ON TABLE sistema_alteracao_hist FROM PUBLIC;
 REVOKE ALL ON TABLE sistema_alteracao_hist FROM gsan_admin;
 GRANT ALL ON TABLE sistema_alteracao_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_alteracao_hist TO pg_aplic;
-GRANT SELECT ON TABLE sistema_alteracao_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_alteracao_hist TO role_aplic;
+GRANT SELECT ON TABLE sistema_alteracao_hist TO role_users;
 
 
 --
@@ -84577,8 +84577,8 @@ GRANT SELECT ON TABLE sistema_alteracao_hist TO pg_users;
 REVOKE ALL ON TABLE sistema_parametros FROM PUBLIC;
 REVOKE ALL ON TABLE sistema_parametros FROM gsan_admin;
 GRANT ALL ON TABLE sistema_parametros TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_parametros TO pg_aplic;
-GRANT SELECT ON TABLE sistema_parametros TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_parametros TO role_aplic;
+GRANT SELECT ON TABLE sistema_parametros TO role_users;
 
 
 --
@@ -84588,8 +84588,8 @@ GRANT SELECT ON TABLE sistema_parametros TO pg_users;
 REVOKE ALL ON TABLE situacao_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON TABLE situacao_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON TABLE situacao_atlz_cadastral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE situacao_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON TABLE situacao_atlz_cadastral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE situacao_atlz_cadastral TO role_aplic;
+GRANT SELECT ON TABLE situacao_atlz_cadastral TO role_users;
 
 
 --
@@ -84599,8 +84599,8 @@ GRANT SELECT ON TABLE situacao_atlz_cadastral TO pg_users;
 REVOKE ALL ON TABLE subcategoria FROM PUBLIC;
 REVOKE ALL ON TABLE subcategoria FROM gsan_admin;
 GRANT ALL ON TABLE subcategoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE subcategoria TO pg_aplic;
-GRANT SELECT ON TABLE subcategoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE subcategoria TO role_aplic;
+GRANT SELECT ON TABLE subcategoria TO role_users;
 
 
 --
@@ -84610,8 +84610,8 @@ GRANT SELECT ON TABLE subcategoria TO pg_users;
 REVOKE ALL ON TABLE superintendencia FROM PUBLIC;
 REVOKE ALL ON TABLE superintendencia FROM gsan_admin;
 GRANT ALL ON TABLE superintendencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE superintendencia TO pg_aplic;
-GRANT SELECT ON TABLE superintendencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE superintendencia TO role_aplic;
+GRANT SELECT ON TABLE superintendencia TO role_users;
 
 
 --
@@ -84621,7 +84621,7 @@ GRANT SELECT ON TABLE superintendencia TO pg_users;
 REVOKE ALL ON TABLE tar_social_carta FROM PUBLIC;
 REVOKE ALL ON TABLE tar_social_carta FROM gsan_admin;
 GRANT ALL ON TABLE tar_social_carta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_carta TO pg_aplic;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_carta TO role_aplic;
 
 
 --
@@ -84631,7 +84631,7 @@ GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_carta TO pg_aplic;
 REVOKE ALL ON TABLE tar_social_carta_debito FROM PUBLIC;
 REVOKE ALL ON TABLE tar_social_carta_debito FROM gsan_admin;
 GRANT ALL ON TABLE tar_social_carta_debito TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_carta_debito TO pg_aplic;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_carta_debito TO role_aplic;
 
 
 --
@@ -84641,8 +84641,8 @@ GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_carta_debito TO pg_aplic;
 REVOKE ALL ON TABLE tar_social_cartao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE tar_social_cartao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE tar_social_cartao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_cartao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE tar_social_cartao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_cartao_tipo TO role_aplic;
+GRANT SELECT ON TABLE tar_social_cartao_tipo TO role_users;
 
 
 --
@@ -84652,8 +84652,8 @@ GRANT SELECT ON TABLE tar_social_cartao_tipo TO pg_users;
 REVOKE ALL ON TABLE tar_social_comando_carta FROM PUBLIC;
 REVOKE ALL ON TABLE tar_social_comando_carta FROM gsan_admin;
 GRANT ALL ON TABLE tar_social_comando_carta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_comando_carta TO pg_aplic;
-GRANT SELECT ON TABLE tar_social_comando_carta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_comando_carta TO role_aplic;
+GRANT SELECT ON TABLE tar_social_comando_carta TO role_users;
 
 
 --
@@ -84663,8 +84663,8 @@ GRANT SELECT ON TABLE tar_social_comando_carta TO pg_users;
 REVOKE ALL ON TABLE tar_social_dado_economia FROM PUBLIC;
 REVOKE ALL ON TABLE tar_social_dado_economia FROM gsan_admin;
 GRANT ALL ON TABLE tar_social_dado_economia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_dado_economia TO pg_aplic;
-GRANT SELECT ON TABLE tar_social_dado_economia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_dado_economia TO role_aplic;
+GRANT SELECT ON TABLE tar_social_dado_economia TO role_users;
 
 
 --
@@ -84674,8 +84674,8 @@ GRANT SELECT ON TABLE tar_social_dado_economia TO pg_users;
 REVOKE ALL ON TABLE tar_social_excl_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE tar_social_excl_motivo FROM gsan_admin;
 GRANT ALL ON TABLE tar_social_excl_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_excl_motivo TO pg_aplic;
-GRANT SELECT ON TABLE tar_social_excl_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_excl_motivo TO role_aplic;
+GRANT SELECT ON TABLE tar_social_excl_motivo TO role_users;
 
 
 --
@@ -84685,8 +84685,8 @@ GRANT SELECT ON TABLE tar_social_excl_motivo TO pg_users;
 REVOKE ALL ON TABLE tar_social_motivo_carta FROM PUBLIC;
 REVOKE ALL ON TABLE tar_social_motivo_carta FROM gsan_admin;
 GRANT ALL ON TABLE tar_social_motivo_carta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_motivo_carta TO pg_aplic;
-GRANT SELECT ON TABLE tar_social_motivo_carta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_motivo_carta TO role_aplic;
+GRANT SELECT ON TABLE tar_social_motivo_carta TO role_users;
 
 
 --
@@ -84696,8 +84696,8 @@ GRANT SELECT ON TABLE tar_social_motivo_carta TO pg_users;
 REVOKE ALL ON TABLE tar_social_rev_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE tar_social_rev_motivo FROM gsan_admin;
 GRANT ALL ON TABLE tar_social_rev_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_rev_motivo TO pg_aplic;
-GRANT SELECT ON TABLE tar_social_rev_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tar_social_rev_motivo TO role_aplic;
+GRANT SELECT ON TABLE tar_social_rev_motivo TO role_users;
 
 
 --
@@ -84707,8 +84707,8 @@ GRANT SELECT ON TABLE tar_social_rev_motivo TO pg_users;
 REVOKE ALL ON TABLE unid_repav_custo_pav_cal FROM PUBLIC;
 REVOKE ALL ON TABLE unid_repav_custo_pav_cal FROM gsan_admin;
 GRANT ALL ON TABLE unid_repav_custo_pav_cal TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unid_repav_custo_pav_cal TO pg_aplic;
-GRANT SELECT ON TABLE unid_repav_custo_pav_cal TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unid_repav_custo_pav_cal TO role_aplic;
+GRANT SELECT ON TABLE unid_repav_custo_pav_cal TO role_users;
 
 
 --
@@ -84718,8 +84718,8 @@ GRANT SELECT ON TABLE unid_repav_custo_pav_cal TO pg_users;
 REVOKE ALL ON TABLE unid_repav_custo_pav_rua FROM PUBLIC;
 REVOKE ALL ON TABLE unid_repav_custo_pav_rua FROM gsan_admin;
 GRANT ALL ON TABLE unid_repav_custo_pav_rua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unid_repav_custo_pav_rua TO pg_aplic;
-GRANT SELECT ON TABLE unid_repav_custo_pav_rua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unid_repav_custo_pav_rua TO role_aplic;
+GRANT SELECT ON TABLE unid_repav_custo_pav_rua TO role_users;
 
 
 --
@@ -84729,8 +84729,8 @@ GRANT SELECT ON TABLE unid_repav_custo_pav_rua TO pg_users;
 REVOKE ALL ON TABLE unidade_federacao FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_federacao FROM gsan_admin;
 GRANT ALL ON TABLE unidade_federacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_federacao TO pg_aplic;
-GRANT SELECT ON TABLE unidade_federacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_federacao TO role_aplic;
+GRANT SELECT ON TABLE unidade_federacao TO role_users;
 
 
 --
@@ -84740,8 +84740,8 @@ GRANT SELECT ON TABLE unidade_federacao TO pg_users;
 REVOKE ALL ON TABLE unidade_negocio FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_negocio FROM gsan_admin;
 GRANT ALL ON TABLE unidade_negocio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_negocio TO pg_aplic;
-GRANT SELECT ON TABLE unidade_negocio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_negocio TO role_aplic;
+GRANT SELECT ON TABLE unidade_negocio TO role_users;
 
 
 --
@@ -84751,8 +84751,8 @@ GRANT SELECT ON TABLE unidade_negocio TO pg_users;
 REVOKE ALL ON TABLE unidade_org_municipio FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_org_municipio FROM gsan_admin;
 GRANT ALL ON TABLE unidade_org_municipio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_org_municipio TO pg_aplic;
-GRANT SELECT ON TABLE unidade_org_municipio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_org_municipio TO role_aplic;
+GRANT SELECT ON TABLE unidade_org_municipio TO role_users;
 
 
 --
@@ -84762,8 +84762,8 @@ GRANT SELECT ON TABLE unidade_org_municipio TO pg_users;
 REVOKE ALL ON TABLE unidade_organizacional FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_organizacional FROM gsan_admin;
 GRANT ALL ON TABLE unidade_organizacional TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_organizacional TO pg_aplic;
-GRANT SELECT ON TABLE unidade_organizacional TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_organizacional TO role_aplic;
+GRANT SELECT ON TABLE unidade_organizacional TO role_users;
 
 
 --
@@ -84773,8 +84773,8 @@ GRANT SELECT ON TABLE unidade_organizacional TO pg_users;
 REVOKE ALL ON TABLE unidade_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_tipo FROM gsan_admin;
 GRANT ALL ON TABLE unidade_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_tipo TO pg_aplic;
-GRANT SELECT ON TABLE unidade_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_tipo TO role_aplic;
+GRANT SELECT ON TABLE unidade_tipo TO role_users;
 
 
 --
@@ -84784,8 +84784,8 @@ GRANT SELECT ON TABLE unidade_tipo TO pg_users;
 REVOKE ALL ON TABLE versao_mobile FROM PUBLIC;
 REVOKE ALL ON TABLE versao_mobile FROM gsan_admin;
 GRANT ALL ON TABLE versao_mobile TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE versao_mobile TO pg_aplic;
-GRANT SELECT ON TABLE versao_mobile TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE versao_mobile TO role_aplic;
+GRANT SELECT ON TABLE versao_mobile TO role_users;
 
 
 --
@@ -84795,8 +84795,8 @@ GRANT SELECT ON TABLE versao_mobile TO pg_users;
 REVOKE ALL ON TABLE vw_imovel_principal_categoria FROM PUBLIC;
 REVOKE ALL ON TABLE vw_imovel_principal_categoria FROM gsan_admin;
 GRANT ALL ON TABLE vw_imovel_principal_categoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_imovel_principal_categoria TO pg_aplic;
-GRANT SELECT ON TABLE vw_imovel_principal_categoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vw_imovel_principal_categoria TO role_aplic;
+GRANT SELECT ON TABLE vw_imovel_principal_categoria TO role_users;
 
 
 --
@@ -84806,8 +84806,8 @@ GRANT SELECT ON TABLE vw_imovel_principal_categoria TO pg_users;
 REVOKE ALL ON TABLE zeis FROM PUBLIC;
 REVOKE ALL ON TABLE zeis FROM gsan_admin;
 GRANT ALL ON TABLE zeis TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE zeis TO pg_aplic;
-GRANT SELECT ON TABLE zeis TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE zeis TO role_aplic;
+GRANT SELECT ON TABLE zeis TO role_users;
 
 
 SET search_path = cobranca, pg_catalog;
@@ -84819,8 +84819,8 @@ SET search_path = cobranca, pg_catalog;
 REVOKE ALL ON TABLE bol_med_ac_pen_just FROM PUBLIC;
 REVOKE ALL ON TABLE bol_med_ac_pen_just FROM gsan_admin;
 GRANT ALL ON TABLE bol_med_ac_pen_just TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE bol_med_ac_pen_just TO pg_aplic;
-GRANT SELECT ON TABLE bol_med_ac_pen_just TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE bol_med_ac_pen_just TO role_aplic;
+GRANT SELECT ON TABLE bol_med_ac_pen_just TO role_users;
 
 
 --
@@ -84830,8 +84830,8 @@ GRANT SELECT ON TABLE bol_med_ac_pen_just TO pg_users;
 REVOKE ALL ON TABLE ciclo_meta FROM PUBLIC;
 REVOKE ALL ON TABLE ciclo_meta FROM gsan_admin;
 GRANT ALL ON TABLE ciclo_meta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ciclo_meta TO pg_aplic;
-GRANT SELECT ON TABLE ciclo_meta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ciclo_meta TO role_aplic;
+GRANT SELECT ON TABLE ciclo_meta TO role_users;
 
 
 --
@@ -84841,8 +84841,8 @@ GRANT SELECT ON TABLE ciclo_meta TO pg_users;
 REVOKE ALL ON TABLE ciclo_meta_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE ciclo_meta_grupo FROM gsan_admin;
 GRANT ALL ON TABLE ciclo_meta_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ciclo_meta_grupo TO pg_aplic;
-GRANT SELECT ON TABLE ciclo_meta_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ciclo_meta_grupo TO role_aplic;
+GRANT SELECT ON TABLE ciclo_meta_grupo TO role_users;
 
 
 --
@@ -84852,8 +84852,8 @@ GRANT SELECT ON TABLE ciclo_meta_grupo TO pg_users;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta FROM PUBLIC;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta FROM gsan_admin;
 GRANT ALL ON TABLE cmd_empr_cobr_conta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta TO pg_aplic;
-GRANT SELECT ON TABLE cmd_empr_cobr_conta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta TO role_aplic;
+GRANT SELECT ON TABLE cmd_empr_cobr_conta TO role_users;
 
 
 --
@@ -84863,8 +84863,8 @@ GRANT SELECT ON TABLE cmd_empr_cobr_conta TO pg_users;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_ext FROM PUBLIC;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_ext FROM gsan_admin;
 GRANT ALL ON TABLE cmd_empr_cobr_conta_ext TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_ext TO pg_aplic;
-GRANT SELECT ON TABLE cmd_empr_cobr_conta_ext TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_ext TO role_aplic;
+GRANT SELECT ON TABLE cmd_empr_cobr_conta_ext TO role_users;
 
 
 --
@@ -84874,8 +84874,8 @@ GRANT SELECT ON TABLE cmd_empr_cobr_conta_ext TO pg_users;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_ger FROM PUBLIC;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_ger FROM gsan_admin;
 GRANT ALL ON TABLE cmd_empr_cobr_conta_ger TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_ger TO pg_aplic;
-GRANT SELECT ON TABLE cmd_empr_cobr_conta_ger TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_ger TO role_aplic;
+GRANT SELECT ON TABLE cmd_empr_cobr_conta_ger TO role_users;
 
 
 --
@@ -84885,8 +84885,8 @@ GRANT SELECT ON TABLE cmd_empr_cobr_conta_ger TO pg_users;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_last FROM PUBLIC;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_last FROM gsan_admin;
 GRANT ALL ON TABLE cmd_empr_cobr_conta_last TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_last TO pg_aplic;
-GRANT SELECT ON TABLE cmd_empr_cobr_conta_last TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_last TO role_aplic;
+GRANT SELECT ON TABLE cmd_empr_cobr_conta_last TO role_users;
 
 
 --
@@ -84896,8 +84896,8 @@ GRANT SELECT ON TABLE cmd_empr_cobr_conta_last TO pg_users;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_per FROM PUBLIC;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_per FROM gsan_admin;
 GRANT ALL ON TABLE cmd_empr_cobr_conta_per TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_per TO pg_aplic;
-GRANT SELECT ON TABLE cmd_empr_cobr_conta_per TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_per TO role_aplic;
+GRANT SELECT ON TABLE cmd_empr_cobr_conta_per TO role_users;
 
 
 --
@@ -84907,8 +84907,8 @@ GRANT SELECT ON TABLE cmd_empr_cobr_conta_per TO pg_users;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_stcm FROM PUBLIC;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_stcm FROM gsan_admin;
 GRANT ALL ON TABLE cmd_empr_cobr_conta_stcm TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_stcm TO pg_aplic;
-GRANT SELECT ON TABLE cmd_empr_cobr_conta_stcm TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_stcm TO role_aplic;
+GRANT SELECT ON TABLE cmd_empr_cobr_conta_stcm TO role_users;
 
 
 --
@@ -84918,8 +84918,8 @@ GRANT SELECT ON TABLE cmd_empr_cobr_conta_stcm TO pg_users;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_uneg FROM PUBLIC;
 REVOKE ALL ON TABLE cmd_empr_cobr_conta_uneg FROM gsan_admin;
 GRANT ALL ON TABLE cmd_empr_cobr_conta_uneg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_uneg TO pg_aplic;
-GRANT SELECT ON TABLE cmd_empr_cobr_conta_uneg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cmd_empr_cobr_conta_uneg TO role_aplic;
+GRANT SELECT ON TABLE cmd_empr_cobr_conta_uneg TO role_users;
 
 
 --
@@ -84929,8 +84929,8 @@ GRANT SELECT ON TABLE cmd_empr_cobr_conta_uneg TO pg_users;
 REVOKE ALL ON TABLE cob_ac_os_nao_aceitas FROM PUBLIC;
 REVOKE ALL ON TABLE cob_ac_os_nao_aceitas FROM gsan_admin;
 GRANT ALL ON TABLE cob_ac_os_nao_aceitas TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cob_ac_os_nao_aceitas TO pg_aplic;
-GRANT SELECT ON TABLE cob_ac_os_nao_aceitas TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cob_ac_os_nao_aceitas TO role_aplic;
+GRANT SELECT ON TABLE cob_ac_os_nao_aceitas TO role_users;
 
 
 --
@@ -84940,8 +84940,8 @@ GRANT SELECT ON TABLE cob_ac_os_nao_aceitas TO pg_users;
 REVOKE ALL ON TABLE cob_acao_atv_cmd_fis_sit FROM PUBLIC;
 REVOKE ALL ON TABLE cob_acao_atv_cmd_fis_sit FROM gsan_admin;
 GRANT ALL ON TABLE cob_acao_atv_cmd_fis_sit TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cob_acao_atv_cmd_fis_sit TO pg_aplic;
-GRANT SELECT ON TABLE cob_acao_atv_cmd_fis_sit TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cob_acao_atv_cmd_fis_sit TO role_aplic;
+GRANT SELECT ON TABLE cob_acao_atv_cmd_fis_sit TO role_users;
 
 
 --
@@ -84951,8 +84951,8 @@ GRANT SELECT ON TABLE cob_acao_atv_cmd_fis_sit TO pg_users;
 REVOKE ALL ON TABLE cobr_boletim_contrato FROM PUBLIC;
 REVOKE ALL ON TABLE cobr_boletim_contrato FROM gsan_admin;
 GRANT ALL ON TABLE cobr_boletim_contrato TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_contrato TO pg_aplic;
-GRANT SELECT ON TABLE cobr_boletim_contrato TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_contrato TO role_aplic;
+GRANT SELECT ON TABLE cobr_boletim_contrato TO role_users;
 
 
 --
@@ -84962,8 +84962,8 @@ GRANT SELECT ON TABLE cobr_boletim_contrato TO pg_users;
 REVOKE ALL ON TABLE cobr_boletim_desc FROM PUBLIC;
 REVOKE ALL ON TABLE cobr_boletim_desc FROM gsan_admin;
 GRANT ALL ON TABLE cobr_boletim_desc TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_desc TO pg_aplic;
-GRANT SELECT ON TABLE cobr_boletim_desc TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_desc TO role_aplic;
+GRANT SELECT ON TABLE cobr_boletim_desc TO role_users;
 
 
 --
@@ -84973,8 +84973,8 @@ GRANT SELECT ON TABLE cobr_boletim_desc TO pg_users;
 REVOKE ALL ON TABLE cobr_boletim_exec FROM PUBLIC;
 REVOKE ALL ON TABLE cobr_boletim_exec FROM gsan_admin;
 GRANT ALL ON TABLE cobr_boletim_exec TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_exec TO pg_aplic;
-GRANT SELECT ON TABLE cobr_boletim_exec TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_exec TO role_aplic;
+GRANT SELECT ON TABLE cobr_boletim_exec TO role_users;
 
 
 --
@@ -84984,8 +84984,8 @@ GRANT SELECT ON TABLE cobr_boletim_exec TO pg_users;
 REVOKE ALL ON TABLE cobr_boletim_medicao FROM PUBLIC;
 REVOKE ALL ON TABLE cobr_boletim_medicao FROM gsan_admin;
 GRANT ALL ON TABLE cobr_boletim_medicao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_medicao TO pg_aplic;
-GRANT SELECT ON TABLE cobr_boletim_medicao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_medicao TO role_aplic;
+GRANT SELECT ON TABLE cobr_boletim_medicao TO role_users;
 
 
 --
@@ -84995,8 +84995,8 @@ GRANT SELECT ON TABLE cobr_boletim_medicao TO pg_users;
 REVOKE ALL ON TABLE cobr_boletim_sucesso FROM PUBLIC;
 REVOKE ALL ON TABLE cobr_boletim_sucesso FROM gsan_admin;
 GRANT ALL ON TABLE cobr_boletim_sucesso TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_sucesso TO pg_aplic;
-GRANT SELECT ON TABLE cobr_boletim_sucesso TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobr_boletim_sucesso TO role_aplic;
+GRANT SELECT ON TABLE cobr_boletim_sucesso TO role_users;
 
 
 --
@@ -85006,8 +85006,8 @@ GRANT SELECT ON TABLE cobr_boletim_sucesso TO pg_users;
 REVOKE ALL ON TABLE cobranca_acao FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_acao FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_acao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_acao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao TO role_aplic;
+GRANT SELECT ON TABLE cobranca_acao TO role_users;
 
 
 --
@@ -85017,8 +85017,8 @@ GRANT SELECT ON TABLE cobranca_acao TO pg_users;
 REVOKE ALL ON TABLE cobranca_acao_ativ_cmd FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_acao_ativ_cmd FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_acao_ativ_cmd TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao_ativ_cmd TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_acao_ativ_cmd TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao_ativ_cmd TO role_aplic;
+GRANT SELECT ON TABLE cobranca_acao_ativ_cmd TO role_users;
 
 
 --
@@ -85028,8 +85028,8 @@ GRANT SELECT ON TABLE cobranca_acao_ativ_cmd TO pg_users;
 REVOKE ALL ON TABLE cobranca_acao_ativ_crg FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_acao_ativ_crg FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_acao_ativ_crg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao_ativ_crg TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_acao_ativ_crg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao_ativ_crg TO role_aplic;
+GRANT SELECT ON TABLE cobranca_acao_ativ_crg TO role_users;
 
 
 --
@@ -85039,8 +85039,8 @@ GRANT SELECT ON TABLE cobranca_acao_ativ_crg TO pg_users;
 REVOKE ALL ON TABLE cobranca_acao_cronograma FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_acao_cronograma FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_acao_cronograma TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao_cronograma TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_acao_cronograma TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao_cronograma TO role_aplic;
+GRANT SELECT ON TABLE cobranca_acao_cronograma TO role_users;
 
 
 --
@@ -85050,8 +85050,8 @@ GRANT SELECT ON TABLE cobranca_acao_cronograma TO pg_users;
 REVOKE ALL ON TABLE cobranca_acao_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_acao_situacao FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_acao_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao_situacao TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_acao_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_acao_situacao TO role_aplic;
+GRANT SELECT ON TABLE cobranca_acao_situacao TO role_users;
 
 
 --
@@ -85061,8 +85061,8 @@ GRANT SELECT ON TABLE cobranca_acao_situacao TO pg_users;
 REVOKE ALL ON TABLE cobranca_ativ_cmd_rota FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_ativ_cmd_rota FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_ativ_cmd_rota TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_ativ_cmd_rota TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_ativ_cmd_rota TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_ativ_cmd_rota TO role_aplic;
+GRANT SELECT ON TABLE cobranca_ativ_cmd_rota TO role_users;
 
 
 --
@@ -85072,8 +85072,8 @@ GRANT SELECT ON TABLE cobranca_ativ_cmd_rota TO pg_users;
 REVOKE ALL ON TABLE cobranca_atividade FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_atividade FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_atividade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_atividade TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_atividade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_atividade TO role_aplic;
+GRANT SELECT ON TABLE cobranca_atividade TO role_users;
 
 
 --
@@ -85083,8 +85083,8 @@ GRANT SELECT ON TABLE cobranca_atividade TO pg_users;
 REVOKE ALL ON TABLE cobranca_criterio FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_criterio FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_criterio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_criterio TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_criterio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_criterio TO role_aplic;
+GRANT SELECT ON TABLE cobranca_criterio TO role_users;
 
 
 --
@@ -85094,8 +85094,8 @@ GRANT SELECT ON TABLE cobranca_criterio TO pg_users;
 REVOKE ALL ON TABLE cobranca_criterio_linha FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_criterio_linha FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_criterio_linha TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_criterio_linha TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_criterio_linha TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_criterio_linha TO role_aplic;
+GRANT SELECT ON TABLE cobranca_criterio_linha TO role_users;
 
 
 --
@@ -85105,8 +85105,8 @@ GRANT SELECT ON TABLE cobranca_criterio_linha TO pg_users;
 REVOKE ALL ON TABLE cobranca_debito_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_debito_situacao FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_debito_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_debito_situacao TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_debito_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_debito_situacao TO role_aplic;
+GRANT SELECT ON TABLE cobranca_debito_situacao TO role_users;
 
 
 --
@@ -85116,8 +85116,8 @@ GRANT SELECT ON TABLE cobranca_debito_situacao TO pg_users;
 REVOKE ALL ON TABLE cobranca_doc_item_hist FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_doc_item_hist FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_doc_item_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_doc_item_hist TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_doc_item_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_doc_item_hist TO role_aplic;
+GRANT SELECT ON TABLE cobranca_doc_item_hist TO role_users;
 
 
 --
@@ -85127,8 +85127,8 @@ GRANT SELECT ON TABLE cobranca_doc_item_hist TO pg_users;
 REVOKE ALL ON TABLE cobranca_documento FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_documento FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_documento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_documento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento TO role_aplic;
+GRANT SELECT ON TABLE cobranca_documento TO role_users;
 
 
 --
@@ -85138,8 +85138,8 @@ GRANT SELECT ON TABLE cobranca_documento TO pg_users;
 REVOKE ALL ON TABLE cobranca_documento_fisc FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_documento_fisc FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_documento_fisc TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento_fisc TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_documento_fisc TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento_fisc TO role_aplic;
+GRANT SELECT ON TABLE cobranca_documento_fisc TO role_users;
 
 
 --
@@ -85149,8 +85149,8 @@ GRANT SELECT ON TABLE cobranca_documento_fisc TO pg_users;
 REVOKE ALL ON TABLE cobranca_documento_hist FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_documento_hist FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_documento_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento_hist TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_documento_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento_hist TO role_aplic;
+GRANT SELECT ON TABLE cobranca_documento_hist TO role_users;
 
 
 --
@@ -85160,8 +85160,8 @@ GRANT SELECT ON TABLE cobranca_documento_hist TO pg_users;
 REVOKE ALL ON TABLE cobranca_documento_impr FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_documento_impr FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_documento_impr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento_impr TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_documento_impr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento_impr TO role_aplic;
+GRANT SELECT ON TABLE cobranca_documento_impr TO role_users;
 
 
 --
@@ -85171,8 +85171,8 @@ GRANT SELECT ON TABLE cobranca_documento_impr TO pg_users;
 REVOKE ALL ON TABLE cobranca_documento_item FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_documento_item FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_documento_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento_item TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_documento_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_documento_item TO role_aplic;
+GRANT SELECT ON TABLE cobranca_documento_item TO role_users;
 
 
 --
@@ -85182,8 +85182,8 @@ GRANT SELECT ON TABLE cobranca_documento_item TO pg_users;
 REVOKE ALL ON TABLE cobranca_forma FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_forma FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_forma TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_forma TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_forma TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_forma TO role_aplic;
+GRANT SELECT ON TABLE cobranca_forma TO role_users;
 
 
 --
@@ -85193,8 +85193,8 @@ GRANT SELECT ON TABLE cobranca_forma TO pg_users;
 REVOKE ALL ON TABLE cobranca_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_grupo FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_grupo TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_grupo TO role_aplic;
+GRANT SELECT ON TABLE cobranca_grupo TO role_users;
 
 
 --
@@ -85204,8 +85204,8 @@ GRANT SELECT ON TABLE cobranca_grupo TO pg_users;
 REVOKE ALL ON TABLE cobranca_grupo_crg_mes FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_grupo_crg_mes FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_grupo_crg_mes TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_grupo_crg_mes TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_grupo_crg_mes TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_grupo_crg_mes TO role_aplic;
+GRANT SELECT ON TABLE cobranca_grupo_crg_mes TO role_users;
 
 
 --
@@ -85215,8 +85215,8 @@ GRANT SELECT ON TABLE cobranca_grupo_crg_mes TO pg_users;
 REVOKE ALL ON TABLE cobranca_sit_comando FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_sit_comando FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_sit_comando TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_sit_comando TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_sit_comando TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_sit_comando TO role_aplic;
+GRANT SELECT ON TABLE cobranca_sit_comando TO role_users;
 
 
 --
@@ -85226,8 +85226,8 @@ GRANT SELECT ON TABLE cobranca_sit_comando TO pg_users;
 REVOKE ALL ON TABLE cobranca_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_situacao FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_situacao TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_situacao TO role_aplic;
+GRANT SELECT ON TABLE cobranca_situacao TO role_users;
 
 
 --
@@ -85237,8 +85237,8 @@ GRANT SELECT ON TABLE cobranca_situacao TO pg_users;
 REVOKE ALL ON TABLE cobranca_situacao_hist FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_situacao_hist FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_situacao_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_situacao_hist TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_situacao_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_situacao_hist TO role_aplic;
+GRANT SELECT ON TABLE cobranca_situacao_hist TO role_users;
 
 
 --
@@ -85248,8 +85248,8 @@ GRANT SELECT ON TABLE cobranca_situacao_hist TO pg_users;
 REVOKE ALL ON TABLE cobranca_situacao_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_situacao_motivo FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_situacao_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_situacao_motivo TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_situacao_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_situacao_motivo TO role_aplic;
+GRANT SELECT ON TABLE cobranca_situacao_motivo TO role_users;
 
 
 --
@@ -85259,8 +85259,8 @@ GRANT SELECT ON TABLE cobranca_situacao_motivo TO pg_users;
 REVOKE ALL ON TABLE cobranca_situacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE cobranca_situacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE cobranca_situacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_situacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE cobranca_situacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cobranca_situacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE cobranca_situacao_tipo TO role_users;
 
 
 --
@@ -85270,8 +85270,8 @@ GRANT SELECT ON TABLE cobranca_situacao_tipo TO pg_users;
 REVOKE ALL ON TABLE contrato_parcel FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_parcel FROM gsan_admin;
 GRANT ALL ON TABLE contrato_parcel TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel TO pg_aplic;
-GRANT SELECT ON TABLE contrato_parcel TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel TO role_aplic;
+GRANT SELECT ON TABLE contrato_parcel TO role_users;
 
 
 --
@@ -85281,8 +85281,8 @@ GRANT SELECT ON TABLE contrato_parcel TO pg_users;
 REVOKE ALL ON TABLE contrato_parcel_cliente FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_parcel_cliente FROM gsan_admin;
 GRANT ALL ON TABLE contrato_parcel_cliente TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_cliente TO pg_aplic;
-GRANT SELECT ON TABLE contrato_parcel_cliente TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_cliente TO role_aplic;
+GRANT SELECT ON TABLE contrato_parcel_cliente TO role_users;
 
 
 --
@@ -85292,8 +85292,8 @@ GRANT SELECT ON TABLE contrato_parcel_cliente TO pg_users;
 REVOKE ALL ON TABLE contrato_parcel_item FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_parcel_item FROM gsan_admin;
 GRANT ALL ON TABLE contrato_parcel_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_item TO pg_aplic;
-GRANT SELECT ON TABLE contrato_parcel_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_item TO role_aplic;
+GRANT SELECT ON TABLE contrato_parcel_item TO role_users;
 
 
 --
@@ -85303,8 +85303,8 @@ GRANT SELECT ON TABLE contrato_parcel_item TO pg_users;
 REVOKE ALL ON TABLE contrato_parcel_pre_item FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_parcel_pre_item FROM gsan_admin;
 GRANT ALL ON TABLE contrato_parcel_pre_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_pre_item TO pg_aplic;
-GRANT SELECT ON TABLE contrato_parcel_pre_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_pre_item TO role_aplic;
+GRANT SELECT ON TABLE contrato_parcel_pre_item TO role_users;
 
 
 --
@@ -85314,8 +85314,8 @@ GRANT SELECT ON TABLE contrato_parcel_pre_item TO pg_users;
 REVOKE ALL ON TABLE contrato_parcel_prest FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_parcel_prest FROM gsan_admin;
 GRANT ALL ON TABLE contrato_parcel_prest TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_prest TO pg_aplic;
-GRANT SELECT ON TABLE contrato_parcel_prest TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_prest TO role_aplic;
+GRANT SELECT ON TABLE contrato_parcel_prest TO role_users;
 
 
 --
@@ -85325,8 +85325,8 @@ GRANT SELECT ON TABLE contrato_parcel_prest TO pg_users;
 REVOKE ALL ON TABLE contrato_parcel_rd FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_parcel_rd FROM gsan_admin;
 GRANT ALL ON TABLE contrato_parcel_rd TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_rd TO pg_aplic;
-GRANT SELECT ON TABLE contrato_parcel_rd TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_rd TO role_aplic;
+GRANT SELECT ON TABLE contrato_parcel_rd TO role_users;
 
 
 --
@@ -85336,8 +85336,8 @@ GRANT SELECT ON TABLE contrato_parcel_rd TO pg_users;
 REVOKE ALL ON TABLE contrato_parcel_rd_qtpre FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_parcel_rd_qtpre FROM gsan_admin;
 GRANT ALL ON TABLE contrato_parcel_rd_qtpre TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_rd_qtpre TO pg_aplic;
-GRANT SELECT ON TABLE contrato_parcel_rd_qtpre TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_rd_qtpre TO role_aplic;
+GRANT SELECT ON TABLE contrato_parcel_rd_qtpre TO role_users;
 
 
 --
@@ -85347,8 +85347,8 @@ GRANT SELECT ON TABLE contrato_parcel_rd_qtpre TO pg_users;
 REVOKE ALL ON TABLE contrato_parcel_rel_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_parcel_rel_tipo FROM gsan_admin;
 GRANT ALL ON TABLE contrato_parcel_rel_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_rel_tipo TO pg_aplic;
-GRANT SELECT ON TABLE contrato_parcel_rel_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_parcel_rel_tipo TO role_aplic;
+GRANT SELECT ON TABLE contrato_parcel_rel_tipo TO role_users;
 
 
 --
@@ -85358,8 +85358,8 @@ GRANT SELECT ON TABLE contrato_parcel_rel_tipo TO pg_users;
 REVOKE ALL ON TABLE crit_situacao_lig_agua FROM PUBLIC;
 REVOKE ALL ON TABLE crit_situacao_lig_agua FROM gsan_admin;
 GRANT ALL ON TABLE crit_situacao_lig_agua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE crit_situacao_lig_agua TO pg_aplic;
-GRANT SELECT ON TABLE crit_situacao_lig_agua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE crit_situacao_lig_agua TO role_aplic;
+GRANT SELECT ON TABLE crit_situacao_lig_agua TO role_users;
 
 
 --
@@ -85369,8 +85369,8 @@ GRANT SELECT ON TABLE crit_situacao_lig_agua TO pg_users;
 REVOKE ALL ON TABLE crit_situacao_lig_esgoto FROM PUBLIC;
 REVOKE ALL ON TABLE crit_situacao_lig_esgoto FROM gsan_admin;
 GRANT ALL ON TABLE crit_situacao_lig_esgoto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE crit_situacao_lig_esgoto TO pg_aplic;
-GRANT SELECT ON TABLE crit_situacao_lig_esgoto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE crit_situacao_lig_esgoto TO role_aplic;
+GRANT SELECT ON TABLE crit_situacao_lig_esgoto TO role_users;
 
 
 --
@@ -85380,8 +85380,8 @@ GRANT SELECT ON TABLE crit_situacao_lig_esgoto TO pg_users;
 REVOKE ALL ON TABLE criterio_situacao_cobr FROM PUBLIC;
 REVOKE ALL ON TABLE criterio_situacao_cobr FROM gsan_admin;
 GRANT ALL ON TABLE criterio_situacao_cobr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE criterio_situacao_cobr TO pg_aplic;
-GRANT SELECT ON TABLE criterio_situacao_cobr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE criterio_situacao_cobr TO role_aplic;
+GRANT SELECT ON TABLE criterio_situacao_cobr TO role_users;
 
 
 --
@@ -85391,8 +85391,8 @@ GRANT SELECT ON TABLE criterio_situacao_cobr TO pg_users;
 REVOKE ALL ON TABLE debitos_gsan_judiciais FROM PUBLIC;
 REVOKE ALL ON TABLE debitos_gsan_judiciais FROM gsan_admin;
 GRANT ALL ON TABLE debitos_gsan_judiciais TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debitos_gsan_judiciais TO pg_aplic;
-GRANT SELECT ON TABLE debitos_gsan_judiciais TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debitos_gsan_judiciais TO role_aplic;
+GRANT SELECT ON TABLE debitos_gsan_judiciais TO role_users;
 
 
 --
@@ -85402,8 +85402,8 @@ GRANT SELECT ON TABLE debitos_gsan_judiciais TO pg_users;
 REVOKE ALL ON TABLE docs_a_rec_fx_dias_vcdos FROM PUBLIC;
 REVOKE ALL ON TABLE docs_a_rec_fx_dias_vcdos FROM gsan_admin;
 GRANT ALL ON TABLE docs_a_rec_fx_dias_vcdos TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE docs_a_rec_fx_dias_vcdos TO pg_aplic;
-GRANT SELECT ON TABLE docs_a_rec_fx_dias_vcdos TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE docs_a_rec_fx_dias_vcdos TO role_aplic;
+GRANT SELECT ON TABLE docs_a_rec_fx_dias_vcdos TO role_users;
 
 
 --
@@ -85413,8 +85413,8 @@ GRANT SELECT ON TABLE docs_a_rec_fx_dias_vcdos TO pg_users;
 REVOKE ALL ON TABLE documento_emissao_forma FROM PUBLIC;
 REVOKE ALL ON TABLE documento_emissao_forma FROM gsan_admin;
 GRANT ALL ON TABLE documento_emissao_forma TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE documento_emissao_forma TO pg_aplic;
-GRANT SELECT ON TABLE documento_emissao_forma TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE documento_emissao_forma TO role_aplic;
+GRANT SELECT ON TABLE documento_emissao_forma TO role_users;
 
 
 --
@@ -85424,8 +85424,8 @@ GRANT SELECT ON TABLE documento_emissao_forma TO pg_users;
 REVOKE ALL ON TABLE documento_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE documento_tipo FROM gsan_admin;
 GRANT ALL ON TABLE documento_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE documento_tipo TO pg_aplic;
-GRANT SELECT ON TABLE documento_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE documento_tipo TO role_aplic;
+GRANT SELECT ON TABLE documento_tipo TO role_users;
 
 
 --
@@ -85435,8 +85435,8 @@ GRANT SELECT ON TABLE documento_tipo TO pg_users;
 REVOKE ALL ON TABLE empr_cobr_conta_bol_med FROM PUBLIC;
 REVOKE ALL ON TABLE empr_cobr_conta_bol_med FROM gsan_admin;
 GRANT ALL ON TABLE empr_cobr_conta_bol_med TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_cobr_conta_bol_med TO pg_aplic;
-GRANT SELECT ON TABLE empr_cobr_conta_bol_med TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_cobr_conta_bol_med TO role_aplic;
+GRANT SELECT ON TABLE empr_cobr_conta_bol_med TO role_users;
 
 
 --
@@ -85446,8 +85446,8 @@ GRANT SELECT ON TABLE empr_cobr_conta_bol_med TO pg_users;
 REVOKE ALL ON TABLE empr_cobr_conta_pagto FROM PUBLIC;
 REVOKE ALL ON TABLE empr_cobr_conta_pagto FROM gsan_admin;
 GRANT ALL ON TABLE empr_cobr_conta_pagto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_cobr_conta_pagto TO pg_aplic;
-GRANT SELECT ON TABLE empr_cobr_conta_pagto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_cobr_conta_pagto TO role_aplic;
+GRANT SELECT ON TABLE empr_cobr_conta_pagto TO role_users;
 
 
 --
@@ -85457,8 +85457,8 @@ GRANT SELECT ON TABLE empr_cobr_conta_pagto TO pg_users;
 REVOKE ALL ON TABLE empr_conta_cobr_canc FROM PUBLIC;
 REVOKE ALL ON TABLE empr_conta_cobr_canc FROM gsan_admin;
 GRANT ALL ON TABLE empr_conta_cobr_canc TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_conta_cobr_canc TO pg_aplic;
-GRANT SELECT ON TABLE empr_conta_cobr_canc TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_conta_cobr_canc TO role_aplic;
+GRANT SELECT ON TABLE empr_conta_cobr_canc TO role_users;
 
 
 --
@@ -85468,8 +85468,8 @@ GRANT SELECT ON TABLE empr_conta_cobr_canc TO pg_users;
 REVOKE ALL ON TABLE empr_conta_cobr_pena FROM PUBLIC;
 REVOKE ALL ON TABLE empr_conta_cobr_pena FROM gsan_admin;
 GRANT ALL ON TABLE empr_conta_cobr_pena TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_conta_cobr_pena TO pg_aplic;
-GRANT SELECT ON TABLE empr_conta_cobr_pena TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empr_conta_cobr_pena TO role_aplic;
+GRANT SELECT ON TABLE empr_conta_cobr_pena TO role_users;
 
 
 --
@@ -85479,8 +85479,8 @@ GRANT SELECT ON TABLE empr_conta_cobr_pena TO pg_users;
 REVOKE ALL ON TABLE empresa_cobranca_conta FROM PUBLIC;
 REVOKE ALL ON TABLE empresa_cobranca_conta FROM gsan_admin;
 GRANT ALL ON TABLE empresa_cobranca_conta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empresa_cobranca_conta TO pg_aplic;
-GRANT SELECT ON TABLE empresa_cobranca_conta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE empresa_cobranca_conta TO role_aplic;
+GRANT SELECT ON TABLE empresa_cobranca_conta TO role_users;
 
 
 --
@@ -85490,8 +85490,8 @@ GRANT SELECT ON TABLE empresa_cobranca_conta TO pg_users;
 REVOKE ALL ON TABLE imovel_nao_gerado FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_nao_gerado FROM gsan_admin;
 GRANT ALL ON TABLE imovel_nao_gerado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_nao_gerado TO pg_aplic;
-GRANT SELECT ON TABLE imovel_nao_gerado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_nao_gerado TO role_aplic;
+GRANT SELECT ON TABLE imovel_nao_gerado TO role_users;
 
 
 --
@@ -85501,8 +85501,8 @@ GRANT SELECT ON TABLE imovel_nao_gerado TO pg_users;
 REVOKE ALL ON TABLE imovel_retirada_comando FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_retirada_comando FROM gsan_admin;
 GRANT ALL ON TABLE imovel_retirada_comando TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_retirada_comando TO pg_aplic;
-GRANT SELECT ON TABLE imovel_retirada_comando TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_retirada_comando TO role_aplic;
+GRANT SELECT ON TABLE imovel_retirada_comando TO role_users;
 
 
 --
@@ -85512,8 +85512,8 @@ GRANT SELECT ON TABLE imovel_retirada_comando TO pg_users;
 REVOKE ALL ON TABLE indices_acresc_impont FROM PUBLIC;
 REVOKE ALL ON TABLE indices_acresc_impont FROM gsan_admin;
 GRANT ALL ON TABLE indices_acresc_impont TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE indices_acresc_impont TO pg_aplic;
-GRANT SELECT ON TABLE indices_acresc_impont TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE indices_acresc_impont TO role_aplic;
+GRANT SELECT ON TABLE indices_acresc_impont TO role_users;
 
 
 --
@@ -85523,8 +85523,8 @@ GRANT SELECT ON TABLE indices_acresc_impont TO pg_users;
 REVOKE ALL ON TABLE motivo_nao_aceit_enc_os FROM PUBLIC;
 REVOKE ALL ON TABLE motivo_nao_aceit_enc_os FROM gsan_admin;
 GRANT ALL ON TABLE motivo_nao_aceit_enc_os TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_nao_aceit_enc_os TO pg_aplic;
-GRANT SELECT ON TABLE motivo_nao_aceit_enc_os TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_nao_aceit_enc_os TO role_aplic;
+GRANT SELECT ON TABLE motivo_nao_aceit_enc_os TO role_users;
 
 
 --
@@ -85534,8 +85534,8 @@ GRANT SELECT ON TABLE motivo_nao_aceit_enc_os TO pg_users;
 REVOKE ALL ON TABLE motivo_nao_ger_doc_cobr FROM PUBLIC;
 REVOKE ALL ON TABLE motivo_nao_ger_doc_cobr FROM gsan_admin;
 GRANT ALL ON TABLE motivo_nao_ger_doc_cobr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_nao_ger_doc_cobr TO pg_aplic;
-GRANT SELECT ON TABLE motivo_nao_ger_doc_cobr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_nao_ger_doc_cobr TO role_aplic;
+GRANT SELECT ON TABLE motivo_nao_ger_doc_cobr TO role_users;
 
 
 --
@@ -85545,8 +85545,8 @@ GRANT SELECT ON TABLE motivo_nao_ger_doc_cobr TO pg_users;
 REVOKE ALL ON TABLE negatd_exclusao_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE negatd_exclusao_motivo FROM gsan_admin;
 GRANT ALL ON TABLE negatd_exclusao_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_exclusao_motivo TO pg_aplic;
-GRANT SELECT ON TABLE negatd_exclusao_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_exclusao_motivo TO role_aplic;
+GRANT SELECT ON TABLE negatd_exclusao_motivo TO role_users;
 
 
 --
@@ -85556,8 +85556,8 @@ GRANT SELECT ON TABLE negatd_exclusao_motivo TO pg_users;
 REVOKE ALL ON TABLE negatd_mov_reg_item FROM PUBLIC;
 REVOKE ALL ON TABLE negatd_mov_reg_item FROM gsan_admin;
 GRANT ALL ON TABLE negatd_mov_reg_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_mov_reg_item TO pg_aplic;
-GRANT SELECT ON TABLE negatd_mov_reg_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_mov_reg_item TO role_aplic;
+GRANT SELECT ON TABLE negatd_mov_reg_item TO role_users;
 
 
 --
@@ -85567,8 +85567,8 @@ GRANT SELECT ON TABLE negatd_mov_reg_item TO pg_users;
 REVOKE ALL ON TABLE negatd_mov_reg_parcel FROM PUBLIC;
 REVOKE ALL ON TABLE negatd_mov_reg_parcel FROM gsan_admin;
 GRANT ALL ON TABLE negatd_mov_reg_parcel TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_mov_reg_parcel TO pg_aplic;
-GRANT SELECT ON TABLE negatd_mov_reg_parcel TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_mov_reg_parcel TO role_aplic;
+GRANT SELECT ON TABLE negatd_mov_reg_parcel TO role_users;
 
 
 --
@@ -85578,8 +85578,8 @@ GRANT SELECT ON TABLE negatd_mov_reg_parcel TO pg_users;
 REVOKE ALL ON TABLE negatd_mov_reg_ret_mot FROM PUBLIC;
 REVOKE ALL ON TABLE negatd_mov_reg_ret_mot FROM gsan_admin;
 GRANT ALL ON TABLE negatd_mov_reg_ret_mot TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_mov_reg_ret_mot TO pg_aplic;
-GRANT SELECT ON TABLE negatd_mov_reg_ret_mot TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_mov_reg_ret_mot TO role_aplic;
+GRANT SELECT ON TABLE negatd_mov_reg_ret_mot TO role_users;
 
 
 --
@@ -85589,8 +85589,8 @@ GRANT SELECT ON TABLE negatd_mov_reg_ret_mot TO pg_users;
 REVOKE ALL ON TABLE negatd_movimento_reg FROM PUBLIC;
 REVOKE ALL ON TABLE negatd_movimento_reg FROM gsan_admin;
 GRANT ALL ON TABLE negatd_movimento_reg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_movimento_reg TO pg_aplic;
-GRANT SELECT ON TABLE negatd_movimento_reg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_movimento_reg TO role_aplic;
+GRANT SELECT ON TABLE negatd_movimento_reg TO role_users;
 
 
 --
@@ -85600,8 +85600,8 @@ GRANT SELECT ON TABLE negatd_movimento_reg TO pg_users;
 REVOKE ALL ON TABLE negatd_registro_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE negatd_registro_tipo FROM gsan_admin;
 GRANT ALL ON TABLE negatd_registro_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_registro_tipo TO pg_aplic;
-GRANT SELECT ON TABLE negatd_registro_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_registro_tipo TO role_aplic;
+GRANT SELECT ON TABLE negatd_registro_tipo TO role_users;
 
 
 --
@@ -85611,8 +85611,8 @@ GRANT SELECT ON TABLE negatd_registro_tipo TO pg_users;
 REVOKE ALL ON TABLE negatd_result_simulacao FROM PUBLIC;
 REVOKE ALL ON TABLE negatd_result_simulacao FROM gsan_admin;
 GRANT ALL ON TABLE negatd_result_simulacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_result_simulacao TO pg_aplic;
-GRANT SELECT ON TABLE negatd_result_simulacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_result_simulacao TO role_aplic;
+GRANT SELECT ON TABLE negatd_result_simulacao TO role_users;
 
 
 --
@@ -85622,8 +85622,8 @@ GRANT SELECT ON TABLE negatd_result_simulacao TO pg_users;
 REVOKE ALL ON TABLE negatd_retorno_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE negatd_retorno_motivo FROM gsan_admin;
 GRANT ALL ON TABLE negatd_retorno_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_retorno_motivo TO pg_aplic;
-GRANT SELECT ON TABLE negatd_retorno_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatd_retorno_motivo TO role_aplic;
+GRANT SELECT ON TABLE negatd_retorno_motivo TO role_users;
 
 
 --
@@ -85633,8 +85633,8 @@ GRANT SELECT ON TABLE negatd_retorno_motivo TO pg_users;
 REVOKE ALL ON TABLE negativ_crit_cobr_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE negativ_crit_cobr_grupo FROM gsan_admin;
 GRANT ALL ON TABLE negativ_crit_cobr_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_cobr_grupo TO pg_aplic;
-GRANT SELECT ON TABLE negativ_crit_cobr_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_cobr_grupo TO role_aplic;
+GRANT SELECT ON TABLE negativ_crit_cobr_grupo TO role_users;
 
 
 --
@@ -85644,8 +85644,8 @@ GRANT SELECT ON TABLE negativ_crit_cobr_grupo TO pg_users;
 REVOKE ALL ON TABLE negativ_crit_elo FROM PUBLIC;
 REVOKE ALL ON TABLE negativ_crit_elo FROM gsan_admin;
 GRANT ALL ON TABLE negativ_crit_elo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_elo TO pg_aplic;
-GRANT SELECT ON TABLE negativ_crit_elo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_elo TO role_aplic;
+GRANT SELECT ON TABLE negativ_crit_elo TO role_users;
 
 
 --
@@ -85655,8 +85655,8 @@ GRANT SELECT ON TABLE negativ_crit_elo TO pg_users;
 REVOKE ALL ON TABLE negativ_crit_ger_reg FROM PUBLIC;
 REVOKE ALL ON TABLE negativ_crit_ger_reg FROM gsan_admin;
 GRANT ALL ON TABLE negativ_crit_ger_reg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_ger_reg TO pg_aplic;
-GRANT SELECT ON TABLE negativ_crit_ger_reg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_ger_reg TO role_aplic;
+GRANT SELECT ON TABLE negativ_crit_ger_reg TO role_users;
 
 
 --
@@ -85666,8 +85666,8 @@ GRANT SELECT ON TABLE negativ_crit_ger_reg TO pg_users;
 REVOKE ALL ON TABLE negativ_crit_neg_ret_mot FROM PUBLIC;
 REVOKE ALL ON TABLE negativ_crit_neg_ret_mot FROM gsan_admin;
 GRANT ALL ON TABLE negativ_crit_neg_ret_mot TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_neg_ret_mot TO pg_aplic;
-GRANT SELECT ON TABLE negativ_crit_neg_ret_mot TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_neg_ret_mot TO role_aplic;
+GRANT SELECT ON TABLE negativ_crit_neg_ret_mot TO role_users;
 
 
 --
@@ -85677,8 +85677,8 @@ GRANT SELECT ON TABLE negativ_crit_neg_ret_mot TO pg_users;
 REVOKE ALL ON TABLE negativ_crit_sit_cob FROM PUBLIC;
 REVOKE ALL ON TABLE negativ_crit_sit_cob FROM gsan_admin;
 GRANT ALL ON TABLE negativ_crit_sit_cob TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_sit_cob TO pg_aplic;
-GRANT SELECT ON TABLE negativ_crit_sit_cob TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_sit_cob TO role_aplic;
+GRANT SELECT ON TABLE negativ_crit_sit_cob TO role_users;
 
 
 --
@@ -85688,8 +85688,8 @@ GRANT SELECT ON TABLE negativ_crit_sit_cob TO pg_users;
 REVOKE ALL ON TABLE negativ_crit_sit_esp_cob FROM PUBLIC;
 REVOKE ALL ON TABLE negativ_crit_sit_esp_cob FROM gsan_admin;
 GRANT ALL ON TABLE negativ_crit_sit_esp_cob TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_sit_esp_cob TO pg_aplic;
-GRANT SELECT ON TABLE negativ_crit_sit_esp_cob TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_sit_esp_cob TO role_aplic;
+GRANT SELECT ON TABLE negativ_crit_sit_esp_cob TO role_users;
 
 
 --
@@ -85699,8 +85699,8 @@ GRANT SELECT ON TABLE negativ_crit_sit_esp_cob TO pg_users;
 REVOKE ALL ON TABLE negativ_crit_und_neg FROM PUBLIC;
 REVOKE ALL ON TABLE negativ_crit_und_neg FROM gsan_admin;
 GRANT ALL ON TABLE negativ_crit_und_neg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_und_neg TO pg_aplic;
-GRANT SELECT ON TABLE negativ_crit_und_neg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativ_crit_und_neg TO role_aplic;
+GRANT SELECT ON TABLE negativ_crit_und_neg TO role_users;
 
 
 --
@@ -85710,8 +85710,8 @@ GRANT SELECT ON TABLE negativ_crit_und_neg TO pg_users;
 REVOKE ALL ON TABLE negativacao_comando FROM PUBLIC;
 REVOKE ALL ON TABLE negativacao_comando FROM gsan_admin;
 GRANT ALL ON TABLE negativacao_comando TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativacao_comando TO pg_aplic;
-GRANT SELECT ON TABLE negativacao_comando TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativacao_comando TO role_aplic;
+GRANT SELECT ON TABLE negativacao_comando TO role_users;
 
 
 --
@@ -85721,8 +85721,8 @@ GRANT SELECT ON TABLE negativacao_comando TO pg_users;
 REVOKE ALL ON TABLE negativacao_comando_imov FROM PUBLIC;
 REVOKE ALL ON TABLE negativacao_comando_imov FROM gsan_admin;
 GRANT ALL ON TABLE negativacao_comando_imov TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativacao_comando_imov TO pg_aplic;
-GRANT SELECT ON TABLE negativacao_comando_imov TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativacao_comando_imov TO role_aplic;
+GRANT SELECT ON TABLE negativacao_comando_imov TO role_users;
 
 
 --
@@ -85732,8 +85732,8 @@ GRANT SELECT ON TABLE negativacao_comando_imov TO pg_users;
 REVOKE ALL ON TABLE negativacao_criterio FROM PUBLIC;
 REVOKE ALL ON TABLE negativacao_criterio FROM gsan_admin;
 GRANT ALL ON TABLE negativacao_criterio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativacao_criterio TO pg_aplic;
-GRANT SELECT ON TABLE negativacao_criterio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativacao_criterio TO role_aplic;
+GRANT SELECT ON TABLE negativacao_criterio TO role_users;
 
 
 --
@@ -85743,8 +85743,8 @@ GRANT SELECT ON TABLE negativacao_criterio TO pg_users;
 REVOKE ALL ON TABLE negativacao_imoveis FROM PUBLIC;
 REVOKE ALL ON TABLE negativacao_imoveis FROM gsan_admin;
 GRANT ALL ON TABLE negativacao_imoveis TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativacao_imoveis TO pg_aplic;
-GRANT SELECT ON TABLE negativacao_imoveis TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativacao_imoveis TO role_aplic;
+GRANT SELECT ON TABLE negativacao_imoveis TO role_users;
 
 
 --
@@ -85754,8 +85754,8 @@ GRANT SELECT ON TABLE negativacao_imoveis TO pg_users;
 REVOKE ALL ON TABLE negativador FROM PUBLIC;
 REVOKE ALL ON TABLE negativador FROM gsan_admin;
 GRANT ALL ON TABLE negativador TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativador TO pg_aplic;
-GRANT SELECT ON TABLE negativador TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativador TO role_aplic;
+GRANT SELECT ON TABLE negativador TO role_users;
 
 
 --
@@ -85765,8 +85765,8 @@ GRANT SELECT ON TABLE negativador TO pg_users;
 REVOKE ALL ON TABLE negativador_contrato FROM PUBLIC;
 REVOKE ALL ON TABLE negativador_contrato FROM gsan_admin;
 GRANT ALL ON TABLE negativador_contrato TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativador_contrato TO pg_aplic;
-GRANT SELECT ON TABLE negativador_contrato TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativador_contrato TO role_aplic;
+GRANT SELECT ON TABLE negativador_contrato TO role_users;
 
 
 --
@@ -85776,8 +85776,8 @@ GRANT SELECT ON TABLE negativador_contrato TO pg_users;
 REVOKE ALL ON TABLE negativador_movimento FROM PUBLIC;
 REVOKE ALL ON TABLE negativador_movimento FROM gsan_admin;
 GRANT ALL ON TABLE negativador_movimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativador_movimento TO pg_aplic;
-GRANT SELECT ON TABLE negativador_movimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negativador_movimento TO role_aplic;
+GRANT SELECT ON TABLE negativador_movimento TO role_users;
 
 
 --
@@ -85787,8 +85787,8 @@ GRANT SELECT ON TABLE negativador_movimento TO pg_users;
 REVOKE ALL ON TABLE negatv_crit_cliente_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE negatv_crit_cliente_tipo FROM gsan_admin;
 GRANT ALL ON TABLE negatv_crit_cliente_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_cliente_tipo TO pg_aplic;
-GRANT SELECT ON TABLE negatv_crit_cliente_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_cliente_tipo TO role_aplic;
+GRANT SELECT ON TABLE negatv_crit_cliente_tipo TO role_users;
 
 
 --
@@ -85798,8 +85798,8 @@ GRANT SELECT ON TABLE negatv_crit_cliente_tipo TO pg_users;
 REVOKE ALL ON TABLE negatv_crit_cpf_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE negatv_crit_cpf_tipo FROM gsan_admin;
 GRANT ALL ON TABLE negatv_crit_cpf_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_cpf_tipo TO pg_aplic;
-GRANT SELECT ON TABLE negatv_crit_cpf_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_cpf_tipo TO role_aplic;
+GRANT SELECT ON TABLE negatv_crit_cpf_tipo TO role_users;
 
 
 --
@@ -85809,8 +85809,8 @@ GRANT SELECT ON TABLE negatv_crit_cpf_tipo TO pg_users;
 REVOKE ALL ON TABLE negatv_crit_imv_perfil FROM PUBLIC;
 REVOKE ALL ON TABLE negatv_crit_imv_perfil FROM gsan_admin;
 GRANT ALL ON TABLE negatv_crit_imv_perfil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_imv_perfil TO pg_aplic;
-GRANT SELECT ON TABLE negatv_crit_imv_perfil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_imv_perfil TO role_aplic;
+GRANT SELECT ON TABLE negatv_crit_imv_perfil TO role_users;
 
 
 --
@@ -85820,8 +85820,8 @@ GRANT SELECT ON TABLE negatv_crit_imv_perfil TO pg_users;
 REVOKE ALL ON TABLE negatv_crit_lig_agua FROM PUBLIC;
 REVOKE ALL ON TABLE negatv_crit_lig_agua FROM gsan_admin;
 GRANT ALL ON TABLE negatv_crit_lig_agua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_lig_agua TO pg_aplic;
-GRANT SELECT ON TABLE negatv_crit_lig_agua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_lig_agua TO role_aplic;
+GRANT SELECT ON TABLE negatv_crit_lig_agua TO role_users;
 
 
 --
@@ -85831,8 +85831,8 @@ GRANT SELECT ON TABLE negatv_crit_lig_agua TO pg_users;
 REVOKE ALL ON TABLE negatv_crit_lig_esgoto FROM PUBLIC;
 REVOKE ALL ON TABLE negatv_crit_lig_esgoto FROM gsan_admin;
 GRANT ALL ON TABLE negatv_crit_lig_esgoto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_lig_esgoto TO pg_aplic;
-GRANT SELECT ON TABLE negatv_crit_lig_esgoto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_lig_esgoto TO role_aplic;
+GRANT SELECT ON TABLE negatv_crit_lig_esgoto TO role_users;
 
 
 --
@@ -85842,8 +85842,8 @@ GRANT SELECT ON TABLE negatv_crit_lig_esgoto TO pg_users;
 REVOKE ALL ON TABLE negatv_crit_subcategoria FROM PUBLIC;
 REVOKE ALL ON TABLE negatv_crit_subcategoria FROM gsan_admin;
 GRANT ALL ON TABLE negatv_crit_subcategoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_subcategoria TO pg_aplic;
-GRANT SELECT ON TABLE negatv_crit_subcategoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE negatv_crit_subcategoria TO role_aplic;
+GRANT SELECT ON TABLE negatv_crit_subcategoria TO role_users;
 
 
 --
@@ -85853,8 +85853,8 @@ GRANT SELECT ON TABLE negatv_crit_subcategoria TO pg_users;
 REVOKE ALL ON TABLE parc_descto_inativ_vista FROM PUBLIC;
 REVOKE ALL ON TABLE parc_descto_inativ_vista FROM gsan_admin;
 GRANT ALL ON TABLE parc_descto_inativ_vista TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parc_descto_inativ_vista TO pg_aplic;
-GRANT SELECT ON TABLE parc_descto_inativ_vista TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parc_descto_inativ_vista TO role_aplic;
+GRANT SELECT ON TABLE parc_descto_inativ_vista TO role_users;
 
 
 --
@@ -85864,8 +85864,8 @@ GRANT SELECT ON TABLE parc_descto_inativ_vista TO pg_users;
 REVOKE ALL ON TABLE parcel_desconto_antiguid FROM PUBLIC;
 REVOKE ALL ON TABLE parcel_desconto_antiguid FROM gsan_admin;
 GRANT ALL ON TABLE parcel_desconto_antiguid TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_desconto_antiguid TO pg_aplic;
-GRANT SELECT ON TABLE parcel_desconto_antiguid TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_desconto_antiguid TO role_aplic;
+GRANT SELECT ON TABLE parcel_desconto_antiguid TO role_users;
 
 
 --
@@ -85875,8 +85875,8 @@ GRANT SELECT ON TABLE parcel_desconto_antiguid TO pg_users;
 REVOKE ALL ON TABLE parcel_desconto_inativid FROM PUBLIC;
 REVOKE ALL ON TABLE parcel_desconto_inativid FROM gsan_admin;
 GRANT ALL ON TABLE parcel_desconto_inativid TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_desconto_inativid TO pg_aplic;
-GRANT SELECT ON TABLE parcel_desconto_inativid TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_desconto_inativid TO role_aplic;
+GRANT SELECT ON TABLE parcel_desconto_inativid TO role_users;
 
 
 --
@@ -85886,8 +85886,8 @@ GRANT SELECT ON TABLE parcel_desconto_inativid TO pg_users;
 REVOKE ALL ON TABLE parcel_motivo_desfazer FROM PUBLIC;
 REVOKE ALL ON TABLE parcel_motivo_desfazer FROM gsan_admin;
 GRANT ALL ON TABLE parcel_motivo_desfazer TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_motivo_desfazer TO pg_aplic;
-GRANT SELECT ON TABLE parcel_motivo_desfazer TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_motivo_desfazer TO role_aplic;
+GRANT SELECT ON TABLE parcel_motivo_desfazer TO role_users;
 
 
 --
@@ -85897,8 +85897,8 @@ GRANT SELECT ON TABLE parcel_motivo_desfazer TO pg_users;
 REVOKE ALL ON TABLE parcel_pagto_cartao_cred FROM PUBLIC;
 REVOKE ALL ON TABLE parcel_pagto_cartao_cred FROM gsan_admin;
 GRANT ALL ON TABLE parcel_pagto_cartao_cred TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_pagto_cartao_cred TO pg_aplic;
-GRANT SELECT ON TABLE parcel_pagto_cartao_cred TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_pagto_cartao_cred TO role_aplic;
+GRANT SELECT ON TABLE parcel_pagto_cartao_cred TO role_users;
 
 
 --
@@ -85908,8 +85908,8 @@ GRANT SELECT ON TABLE parcel_pagto_cartao_cred TO pg_users;
 REVOKE ALL ON TABLE parcel_qtde_prest_sitlig FROM PUBLIC;
 REVOKE ALL ON TABLE parcel_qtde_prest_sitlig FROM gsan_admin;
 GRANT ALL ON TABLE parcel_qtde_prest_sitlig TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_qtde_prest_sitlig TO pg_aplic;
-GRANT SELECT ON TABLE parcel_qtde_prest_sitlig TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_qtde_prest_sitlig TO role_aplic;
+GRANT SELECT ON TABLE parcel_qtde_prest_sitlig TO role_users;
 
 
 --
@@ -85919,8 +85919,8 @@ GRANT SELECT ON TABLE parcel_qtde_prest_sitlig TO pg_users;
 REVOKE ALL ON TABLE parcel_qtde_prestacao FROM PUBLIC;
 REVOKE ALL ON TABLE parcel_qtde_prestacao FROM gsan_admin;
 GRANT ALL ON TABLE parcel_qtde_prestacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_qtde_prestacao TO pg_aplic;
-GRANT SELECT ON TABLE parcel_qtde_prestacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_qtde_prestacao TO role_aplic;
+GRANT SELECT ON TABLE parcel_qtde_prestacao TO role_users;
 
 
 --
@@ -85930,8 +85930,8 @@ GRANT SELECT ON TABLE parcel_qtde_prestacao TO pg_users;
 REVOKE ALL ON TABLE parcel_qtde_reparcel FROM PUBLIC;
 REVOKE ALL ON TABLE parcel_qtde_reparcel FROM gsan_admin;
 GRANT ALL ON TABLE parcel_qtde_reparcel TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_qtde_reparcel TO pg_aplic;
-GRANT SELECT ON TABLE parcel_qtde_reparcel TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcel_qtde_reparcel TO role_aplic;
+GRANT SELECT ON TABLE parcel_qtde_reparcel TO role_users;
 
 
 --
@@ -85941,8 +85941,8 @@ GRANT SELECT ON TABLE parcel_qtde_reparcel TO pg_users;
 REVOKE ALL ON TABLE parcelamento FROM PUBLIC;
 REVOKE ALL ON TABLE parcelamento FROM gsan_admin;
 GRANT ALL ON TABLE parcelamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento TO pg_aplic;
-GRANT SELECT ON TABLE parcelamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento TO role_aplic;
+GRANT SELECT ON TABLE parcelamento TO role_users;
 
 
 --
@@ -85952,8 +85952,8 @@ GRANT SELECT ON TABLE parcelamento TO pg_users;
 REVOKE ALL ON TABLE parcelamento_faixa_valor FROM PUBLIC;
 REVOKE ALL ON TABLE parcelamento_faixa_valor FROM gsan_admin;
 GRANT ALL ON TABLE parcelamento_faixa_valor TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_faixa_valor TO pg_aplic;
-GRANT SELECT ON TABLE parcelamento_faixa_valor TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_faixa_valor TO role_aplic;
+GRANT SELECT ON TABLE parcelamento_faixa_valor TO role_users;
 
 
 --
@@ -85963,8 +85963,8 @@ GRANT SELECT ON TABLE parcelamento_faixa_valor TO pg_users;
 REVOKE ALL ON TABLE parcelamento_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE parcelamento_grupo FROM gsan_admin;
 GRANT ALL ON TABLE parcelamento_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_grupo TO pg_aplic;
-GRANT SELECT ON TABLE parcelamento_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_grupo TO role_aplic;
+GRANT SELECT ON TABLE parcelamento_grupo TO role_users;
 
 
 --
@@ -85974,8 +85974,8 @@ GRANT SELECT ON TABLE parcelamento_grupo TO pg_users;
 REVOKE ALL ON TABLE parcelamento_item FROM PUBLIC;
 REVOKE ALL ON TABLE parcelamento_item FROM gsan_admin;
 GRANT ALL ON TABLE parcelamento_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_item TO pg_aplic;
-GRANT SELECT ON TABLE parcelamento_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_item TO role_aplic;
+GRANT SELECT ON TABLE parcelamento_item TO role_users;
 
 
 --
@@ -85985,8 +85985,8 @@ GRANT SELECT ON TABLE parcelamento_item TO pg_users;
 REVOKE ALL ON TABLE parcelamento_perfil FROM PUBLIC;
 REVOKE ALL ON TABLE parcelamento_perfil FROM gsan_admin;
 GRANT ALL ON TABLE parcelamento_perfil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_perfil TO pg_aplic;
-GRANT SELECT ON TABLE parcelamento_perfil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_perfil TO role_aplic;
+GRANT SELECT ON TABLE parcelamento_perfil TO role_users;
 
 
 --
@@ -85996,8 +85996,8 @@ GRANT SELECT ON TABLE parcelamento_perfil TO pg_users;
 REVOKE ALL ON TABLE parcelamento_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE parcelamento_situacao FROM gsan_admin;
 GRANT ALL ON TABLE parcelamento_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_situacao TO pg_aplic;
-GRANT SELECT ON TABLE parcelamento_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_situacao TO role_aplic;
+GRANT SELECT ON TABLE parcelamento_situacao TO role_users;
 
 
 --
@@ -86007,8 +86007,8 @@ GRANT SELECT ON TABLE parcelamento_situacao TO pg_users;
 REVOKE ALL ON TABLE parcelamento_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE parcelamento_tipo FROM gsan_admin;
 GRANT ALL ON TABLE parcelamento_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_tipo TO pg_aplic;
-GRANT SELECT ON TABLE parcelamento_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE parcelamento_tipo TO role_aplic;
+GRANT SELECT ON TABLE parcelamento_tipo TO role_users;
 
 
 --
@@ -86018,8 +86018,8 @@ GRANT SELECT ON TABLE parcelamento_tipo TO pg_users;
 REVOKE ALL ON TABLE prescricao FROM PUBLIC;
 REVOKE ALL ON TABLE prescricao FROM gsan_admin;
 GRANT ALL ON TABLE prescricao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE prescricao TO pg_aplic;
-GRANT SELECT ON TABLE prescricao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE prescricao TO role_aplic;
+GRANT SELECT ON TABLE prescricao TO role_users;
 
 
 --
@@ -86029,8 +86029,8 @@ GRANT SELECT ON TABLE prescricao TO pg_users;
 REVOKE ALL ON TABLE resolucao_diretoria FROM PUBLIC;
 REVOKE ALL ON TABLE resolucao_diretoria FROM gsan_admin;
 GRANT ALL ON TABLE resolucao_diretoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resolucao_diretoria TO pg_aplic;
-GRANT SELECT ON TABLE resolucao_diretoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resolucao_diretoria TO role_aplic;
+GRANT SELECT ON TABLE resolucao_diretoria TO role_users;
 
 
 --
@@ -86040,8 +86040,8 @@ GRANT SELECT ON TABLE resolucao_diretoria TO pg_users;
 REVOKE ALL ON TABLE resumo_cob_sit_especial FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_cob_sit_especial FROM gsan_admin;
 GRANT ALL ON TABLE resumo_cob_sit_especial TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_cob_sit_especial TO pg_aplic;
-GRANT SELECT ON TABLE resumo_cob_sit_especial TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_cob_sit_especial TO role_aplic;
+GRANT SELECT ON TABLE resumo_cob_sit_especial TO role_users;
 
 
 --
@@ -86051,8 +86051,8 @@ GRANT SELECT ON TABLE resumo_cob_sit_especial TO pg_users;
 REVOKE ALL ON TABLE resumo_cobr_acao_event FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_cobr_acao_event FROM gsan_admin;
 GRANT ALL ON TABLE resumo_cobr_acao_event TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_cobr_acao_event TO pg_aplic;
-GRANT SELECT ON TABLE resumo_cobr_acao_event TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_cobr_acao_event TO role_aplic;
+GRANT SELECT ON TABLE resumo_cobr_acao_event TO role_users;
 
 
 --
@@ -86062,8 +86062,8 @@ GRANT SELECT ON TABLE resumo_cobr_acao_event TO pg_users;
 REVOKE ALL ON TABLE resumo_cobranca_acao FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_cobranca_acao FROM gsan_admin;
 GRANT ALL ON TABLE resumo_cobranca_acao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_cobranca_acao TO pg_aplic;
-GRANT SELECT ON TABLE resumo_cobranca_acao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_cobranca_acao TO role_aplic;
+GRANT SELECT ON TABLE resumo_cobranca_acao TO role_users;
 
 
 --
@@ -86073,8 +86073,8 @@ GRANT SELECT ON TABLE resumo_cobranca_acao TO pg_users;
 REVOKE ALL ON TABLE resumo_negativacao FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_negativacao FROM gsan_admin;
 GRANT ALL ON TABLE resumo_negativacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_negativacao TO pg_aplic;
-GRANT SELECT ON TABLE resumo_negativacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_negativacao TO role_aplic;
+GRANT SELECT ON TABLE resumo_negativacao TO role_users;
 
 
 --
@@ -86084,8 +86084,8 @@ GRANT SELECT ON TABLE resumo_negativacao TO pg_users;
 REVOKE ALL ON TABLE resumo_pendencia FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_pendencia FROM gsan_admin;
 GRANT ALL ON TABLE resumo_pendencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_pendencia TO pg_aplic;
-GRANT SELECT ON TABLE resumo_pendencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_pendencia TO role_aplic;
+GRANT SELECT ON TABLE resumo_pendencia TO role_users;
 
 
 --
@@ -86095,8 +86095,8 @@ GRANT SELECT ON TABLE resumo_pendencia TO pg_users;
 REVOKE ALL ON TABLE rota_acao_criterio FROM PUBLIC;
 REVOKE ALL ON TABLE rota_acao_criterio FROM gsan_admin;
 GRANT ALL ON TABLE rota_acao_criterio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rota_acao_criterio TO pg_aplic;
-GRANT SELECT ON TABLE rota_acao_criterio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rota_acao_criterio TO role_aplic;
+GRANT SELECT ON TABLE rota_acao_criterio TO role_users;
 
 
 --
@@ -86106,7 +86106,7 @@ GRANT SELECT ON TABLE rota_acao_criterio TO pg_users;
 REVOKE ALL ON SEQUENCE seq_bol_med_ac_pen_just FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_bol_med_ac_pen_just FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_bol_med_ac_pen_just TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_bol_med_ac_pen_just TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_bol_med_ac_pen_just TO role_aplic;
 
 
 --
@@ -86116,8 +86116,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_bol_med_ac_pen_just TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_ciclo_meta FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ciclo_meta FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ciclo_meta TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ciclo_meta TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ciclo_meta TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ciclo_meta TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ciclo_meta TO role_users;
 
 
 --
@@ -86127,8 +86127,8 @@ GRANT SELECT ON SEQUENCE seq_ciclo_meta TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ciclo_meta_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ciclo_meta_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ciclo_meta_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ciclo_meta_grupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ciclo_meta_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ciclo_meta_grupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ciclo_meta_grupo TO role_users;
 
 
 --
@@ -86138,8 +86138,8 @@ GRANT SELECT ON SEQUENCE seq_ciclo_meta_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cmd_empr_cobr_conta FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cmd_empr_cobr_conta FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cmd_empr_cobr_conta TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cmd_empr_cobr_conta TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cmd_empr_cobr_conta TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cmd_empr_cobr_conta TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cmd_empr_cobr_conta TO role_users;
 
 
 --
@@ -86149,8 +86149,8 @@ GRANT SELECT ON SEQUENCE seq_cmd_empr_cobr_conta TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cmd_empr_cobr_conta_ext FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cmd_empr_cobr_conta_ext FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cmd_empr_cobr_conta_ext TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cmd_empr_cobr_conta_ext TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cmd_empr_cobr_conta_ext TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cmd_empr_cobr_conta_ext TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cmd_empr_cobr_conta_ext TO role_users;
 
 
 --
@@ -86160,7 +86160,7 @@ GRANT SELECT ON SEQUENCE seq_cmd_empr_cobr_conta_ext TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cob_acao_atv_cmd_fis_sit FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cob_acao_atv_cmd_fis_sit FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cob_acao_atv_cmd_fis_sit TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cob_acao_atv_cmd_fis_sit TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cob_acao_atv_cmd_fis_sit TO role_aplic;
 
 
 --
@@ -86170,7 +86170,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_cob_acao_atv_cmd_fis_sit TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_cobr_boletim_contrato FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobr_boletim_contrato FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobr_boletim_contrato TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobr_boletim_contrato TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobr_boletim_contrato TO role_aplic;
 
 
 --
@@ -86180,8 +86180,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_cobr_boletim_contrato TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_cobr_boletim_medicao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobr_boletim_medicao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobr_boletim_medicao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobr_boletim_medicao TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobr_boletim_medicao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobr_boletim_medicao TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobr_boletim_medicao TO role_users;
 
 
 --
@@ -86191,8 +86191,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_cobr_boletim_medicao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_acao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_acao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_acao TO role_users;
 
 
 --
@@ -86202,8 +86202,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_acao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao_ativ_cmd FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao_ativ_cmd FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_acao_ativ_cmd TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao_ativ_cmd TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_acao_ativ_cmd TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao_ativ_cmd TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_acao_ativ_cmd TO role_users;
 
 
 --
@@ -86213,8 +86213,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_acao_ativ_cmd TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao_ativ_crg FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao_ativ_crg FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_acao_ativ_crg TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao_ativ_crg TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_acao_ativ_crg TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao_ativ_crg TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_acao_ativ_crg TO role_users;
 
 
 --
@@ -86224,8 +86224,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_acao_ativ_crg TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao_cronograma FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao_cronograma FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_acao_cronograma TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao_cronograma TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_acao_cronograma TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao_cronograma TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_acao_cronograma TO role_users;
 
 
 --
@@ -86235,8 +86235,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_acao_cronograma TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_acao_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_acao_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_acao_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_acao_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_acao_situacao TO role_users;
 
 
 --
@@ -86246,8 +86246,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_acao_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_atividade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_atividade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_atividade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_atividade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_atividade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_atividade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_atividade TO role_users;
 
 
 --
@@ -86257,8 +86257,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_atividade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_criterio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_criterio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_criterio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_criterio TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_criterio TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_criterio TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_criterio TO role_users;
 
 
 --
@@ -86268,8 +86268,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_criterio TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_criterio_linha FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_criterio_linha FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_criterio_linha TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_criterio_linha TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_criterio_linha TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_criterio_linha TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_criterio_linha TO role_users;
 
 
 --
@@ -86279,8 +86279,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_criterio_linha TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_debito_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_debito_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_debito_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_debito_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_debito_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_debito_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_debito_situacao TO role_users;
 
 
 --
@@ -86290,8 +86290,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_debito_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_documento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_documento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_documento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_documento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_documento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_documento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_documento TO role_users;
 
 
 --
@@ -86301,7 +86301,7 @@ GRANT SELECT ON SEQUENCE seq_cobranca_documento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_documento_fisc FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_documento_fisc FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_documento_fisc TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_documento_fisc TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_documento_fisc TO role_aplic;
 
 
 --
@@ -86311,8 +86311,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_documento_fisc TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_cobranca_documento_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_documento_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_documento_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_documento_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_documento_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_documento_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_documento_item TO role_users;
 
 
 --
@@ -86322,8 +86322,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_documento_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_forma FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_forma FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_forma TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_forma TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_forma TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_forma TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_forma TO role_users;
 
 
 --
@@ -86333,8 +86333,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_forma TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_grupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_grupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_grupo TO role_users;
 
 
 --
@@ -86344,8 +86344,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_grupo_crg_mes FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_grupo_crg_mes FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_grupo_crg_mes TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_grupo_crg_mes TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_grupo_crg_mes TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_grupo_crg_mes TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_grupo_crg_mes TO role_users;
 
 
 --
@@ -86355,8 +86355,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_grupo_crg_mes TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_sit_comando FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_sit_comando FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_sit_comando TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_sit_comando TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_sit_comando TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_sit_comando TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_sit_comando TO role_users;
 
 
 --
@@ -86366,8 +86366,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_sit_comando TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_situacao TO role_users;
 
 
 --
@@ -86377,8 +86377,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_situacao_hist FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_situacao_hist FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_situacao_hist TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_situacao_hist TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_situacao_hist TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_situacao_hist TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_situacao_hist TO role_users;
 
 
 --
@@ -86388,8 +86388,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_situacao_hist TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_situacao_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_situacao_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_situacao_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_situacao_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_situacao_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_situacao_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_situacao_motivo TO role_users;
 
 
 --
@@ -86399,8 +86399,8 @@ GRANT SELECT ON SEQUENCE seq_cobranca_situacao_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_cobranca_situacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cobranca_situacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cobranca_situacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_situacao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cobranca_situacao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cobranca_situacao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cobranca_situacao_tipo TO role_users;
 
 
 --
@@ -86410,7 +86410,7 @@ GRANT SELECT ON SEQUENCE seq_cobranca_situacao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_parcel TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel TO role_aplic;
 
 
 --
@@ -86420,7 +86420,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_cliente FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_cliente FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_parcel_cliente TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_cliente TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_cliente TO role_aplic;
 
 
 --
@@ -86430,7 +86430,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_cliente TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_parcel_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_item TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_item TO role_aplic;
 
 
 --
@@ -86440,7 +86440,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_item TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_pre_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_pre_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_parcel_pre_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_pre_item TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_pre_item TO role_aplic;
 
 
 --
@@ -86450,7 +86450,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_pre_item TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_prest FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_prest FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_parcel_prest TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_prest TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_prest TO role_aplic;
 
 
 --
@@ -86460,8 +86460,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_prest TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_rd FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_rd FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_parcel_rd TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd TO role_users;
 
 
 --
@@ -86471,8 +86471,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_rd_qtpre FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_rd_qtpre FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_parcel_rd_qtpre TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd_qtpre TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd_qtpre TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd_qtpre TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd_qtpre TO role_users;
 
 
 --
@@ -86482,7 +86482,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rd_qtpre TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_rel_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_parcel_rel_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_parcel_rel_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rel_tipo TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rel_tipo TO role_aplic;
 
 
 --
@@ -86492,7 +86492,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_parcel_rel_tipo TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_debitos_gsan_judiciais FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debitos_gsan_judiciais FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debitos_gsan_judiciais TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debitos_gsan_judiciais TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debitos_gsan_judiciais TO role_aplic;
 
 
 --
@@ -86502,8 +86502,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_debitos_gsan_judiciais TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_docs_a_rec_fx_dias_vcdos FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_docs_a_rec_fx_dias_vcdos FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_docs_a_rec_fx_dias_vcdos TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_docs_a_rec_fx_dias_vcdos TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_docs_a_rec_fx_dias_vcdos TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_docs_a_rec_fx_dias_vcdos TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_docs_a_rec_fx_dias_vcdos TO role_users;
 
 
 --
@@ -86513,8 +86513,8 @@ GRANT SELECT ON SEQUENCE seq_docs_a_rec_fx_dias_vcdos TO pg_users;
 REVOKE ALL ON SEQUENCE seq_documento_emissao_forma FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_documento_emissao_forma FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_documento_emissao_forma TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_documento_emissao_forma TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_documento_emissao_forma TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_documento_emissao_forma TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_documento_emissao_forma TO role_users;
 
 
 --
@@ -86524,8 +86524,8 @@ GRANT SELECT ON SEQUENCE seq_documento_emissao_forma TO pg_users;
 REVOKE ALL ON SEQUENCE seq_documento_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_documento_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_documento_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_documento_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_documento_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_documento_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_documento_tipo TO role_users;
 
 
 --
@@ -86535,7 +86535,7 @@ GRANT SELECT ON SEQUENCE seq_documento_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_empr_cobr_conta_bol_med FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empr_cobr_conta_bol_med FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empr_cobr_conta_bol_med TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empr_cobr_conta_bol_med TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empr_cobr_conta_bol_med TO role_aplic;
 
 
 --
@@ -86545,8 +86545,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_empr_cobr_conta_bol_med TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_empr_cobr_conta_pagto FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empr_cobr_conta_pagto FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empr_cobr_conta_pagto TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empr_cobr_conta_pagto TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_empr_cobr_conta_pagto TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empr_cobr_conta_pagto TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_empr_cobr_conta_pagto TO role_users;
 
 
 --
@@ -86556,7 +86556,7 @@ GRANT SELECT ON SEQUENCE seq_empr_cobr_conta_pagto TO pg_users;
 REVOKE ALL ON SEQUENCE seq_empr_conta_cobr_canc FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empr_conta_cobr_canc FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empr_conta_cobr_canc TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empr_conta_cobr_canc TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empr_conta_cobr_canc TO role_aplic;
 
 
 --
@@ -86566,7 +86566,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_empr_conta_cobr_canc TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_empr_conta_cobr_pena FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empr_conta_cobr_pena FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empr_conta_cobr_pena TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empr_conta_cobr_pena TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empr_conta_cobr_pena TO role_aplic;
 
 
 --
@@ -86576,8 +86576,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_empr_conta_cobr_pena TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_empresa_cobranca_conta FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_empresa_cobranca_conta FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_empresa_cobranca_conta TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_empresa_cobranca_conta TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_empresa_cobranca_conta TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_empresa_cobranca_conta TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_empresa_cobranca_conta TO role_users;
 
 
 --
@@ -86587,8 +86587,8 @@ GRANT SELECT ON SEQUENCE seq_empresa_cobranca_conta TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_nao_gerado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_nao_gerado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_nao_gerado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_nao_gerado TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_nao_gerado TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_nao_gerado TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_nao_gerado TO role_users;
 
 
 --
@@ -86598,8 +86598,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_nao_gerado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_indices_acresc_impont FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_indices_acresc_impont FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_indices_acresc_impont TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_indices_acresc_impont TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_indices_acresc_impont TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_indices_acresc_impont TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_indices_acresc_impont TO role_users;
 
 
 --
@@ -86609,7 +86609,7 @@ GRANT SELECT ON SEQUENCE seq_indices_acresc_impont TO pg_users;
 REVOKE ALL ON SEQUENCE seq_motivo_nao_aceit_enc_os FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_motivo_nao_aceit_enc_os FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_motivo_nao_aceit_enc_os TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_nao_aceit_enc_os TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_nao_aceit_enc_os TO role_aplic;
 
 
 --
@@ -86619,8 +86619,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_nao_aceit_enc_os TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_motivo_nao_ger_doc_cobr FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_motivo_nao_ger_doc_cobr FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_motivo_nao_ger_doc_cobr TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_nao_ger_doc_cobr TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_motivo_nao_ger_doc_cobr TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_nao_ger_doc_cobr TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_motivo_nao_ger_doc_cobr TO role_users;
 
 
 --
@@ -86630,8 +86630,8 @@ GRANT SELECT ON SEQUENCE seq_motivo_nao_ger_doc_cobr TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatd_exclusao_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatd_exclusao_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatd_exclusao_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_exclusao_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatd_exclusao_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_exclusao_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatd_exclusao_motivo TO role_users;
 
 
 --
@@ -86641,8 +86641,8 @@ GRANT SELECT ON SEQUENCE seq_negatd_exclusao_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatd_mov_reg_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatd_mov_reg_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatd_mov_reg_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_mov_reg_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_mov_reg_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_item TO role_users;
 
 
 --
@@ -86652,8 +86652,8 @@ GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatd_mov_reg_parcel FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatd_mov_reg_parcel FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatd_mov_reg_parcel TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_mov_reg_parcel TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_parcel TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_mov_reg_parcel TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_parcel TO role_users;
 
 
 --
@@ -86663,8 +86663,8 @@ GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_parcel TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatd_mov_reg_ret_mot FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatd_mov_reg_ret_mot FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatd_mov_reg_ret_mot TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_mov_reg_ret_mot TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_ret_mot TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_mov_reg_ret_mot TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_ret_mot TO role_users;
 
 
 --
@@ -86674,8 +86674,8 @@ GRANT SELECT ON SEQUENCE seq_negatd_mov_reg_ret_mot TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatd_movimento_reg FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatd_movimento_reg FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatd_movimento_reg TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_movimento_reg TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatd_movimento_reg TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_movimento_reg TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatd_movimento_reg TO role_users;
 
 
 --
@@ -86685,8 +86685,8 @@ GRANT SELECT ON SEQUENCE seq_negatd_movimento_reg TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatd_registro_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatd_registro_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatd_registro_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_registro_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatd_registro_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_registro_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatd_registro_tipo TO role_users;
 
 
 --
@@ -86696,8 +86696,8 @@ GRANT SELECT ON SEQUENCE seq_negatd_registro_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatd_result_simulacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatd_result_simulacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatd_result_simulacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_result_simulacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatd_result_simulacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_result_simulacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatd_result_simulacao TO role_users;
 
 
 --
@@ -86707,8 +86707,8 @@ GRANT SELECT ON SEQUENCE seq_negatd_result_simulacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatd_retorno_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatd_retorno_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatd_retorno_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_retorno_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatd_retorno_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatd_retorno_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatd_retorno_motivo TO role_users;
 
 
 --
@@ -86718,7 +86718,7 @@ GRANT SELECT ON SEQUENCE seq_negatd_retorno_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negativ_crit_neg_ret_mot FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativ_crit_neg_ret_mot FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativ_crit_neg_ret_mot TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_neg_ret_mot TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_neg_ret_mot TO role_aplic;
 
 
 --
@@ -86728,8 +86728,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_neg_ret_mot TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_negativ_crit_sit_cob FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativ_crit_sit_cob FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativ_crit_sit_cob TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_cob TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_cob TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_cob TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_cob TO role_users;
 
 
 --
@@ -86739,8 +86739,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_cob TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negativ_crit_sit_esp_cob FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativ_crit_sit_esp_cob FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativ_crit_sit_esp_cob TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_esp_cob TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_esp_cob TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_esp_cob TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_esp_cob TO role_users;
 
 
 --
@@ -86750,8 +86750,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_negativ_crit_sit_esp_cob TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negativacao_comando FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativacao_comando FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativacao_comando TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_comando TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negativacao_comando TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_comando TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negativacao_comando TO role_users;
 
 
 --
@@ -86761,7 +86761,7 @@ GRANT SELECT ON SEQUENCE seq_negativacao_comando TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negativacao_comando_imov FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativacao_comando_imov FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativacao_comando_imov TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_comando_imov TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_comando_imov TO role_aplic;
 
 
 --
@@ -86771,8 +86771,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_comando_imov TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_negativacao_criterio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativacao_criterio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativacao_criterio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_criterio TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negativacao_criterio TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_criterio TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negativacao_criterio TO role_users;
 
 
 --
@@ -86782,8 +86782,8 @@ GRANT SELECT ON SEQUENCE seq_negativacao_criterio TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negativacao_imoveis FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativacao_imoveis FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativacao_imoveis TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_imoveis TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negativacao_imoveis TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativacao_imoveis TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negativacao_imoveis TO role_users;
 
 
 --
@@ -86793,8 +86793,8 @@ GRANT SELECT ON SEQUENCE seq_negativacao_imoveis TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negativador FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativador FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativador TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativador TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negativador TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativador TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negativador TO role_users;
 
 
 --
@@ -86804,8 +86804,8 @@ GRANT SELECT ON SEQUENCE seq_negativador TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negativador_contrato FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativador_contrato FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativador_contrato TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativador_contrato TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negativador_contrato TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativador_contrato TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negativador_contrato TO role_users;
 
 
 --
@@ -86815,8 +86815,8 @@ GRANT SELECT ON SEQUENCE seq_negativador_contrato TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negativador_movimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negativador_movimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negativador_movimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negativador_movimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negativador_movimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negativador_movimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negativador_movimento TO role_users;
 
 
 --
@@ -86826,8 +86826,8 @@ GRANT SELECT ON SEQUENCE seq_negativador_movimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_negatv_crit_cpf_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_negatv_crit_cpf_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_negatv_crit_cpf_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_negatv_crit_cpf_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_negatv_crit_cpf_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_negatv_crit_cpf_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_negatv_crit_cpf_tipo TO role_users;
 
 
 --
@@ -86837,7 +86837,7 @@ GRANT SELECT ON SEQUENCE seq_negatv_crit_cpf_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parc_descto_inativ_vista FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parc_descto_inativ_vista FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parc_descto_inativ_vista TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parc_descto_inativ_vista TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parc_descto_inativ_vista TO role_aplic;
 
 
 --
@@ -86847,8 +86847,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_parc_descto_inativ_vista TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_parcel_desconto_antiguid FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcel_desconto_antiguid FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcel_desconto_antiguid TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_desconto_antiguid TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcel_desconto_antiguid TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_desconto_antiguid TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcel_desconto_antiguid TO role_users;
 
 
 --
@@ -86858,8 +86858,8 @@ GRANT SELECT ON SEQUENCE seq_parcel_desconto_antiguid TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcel_desconto_inativid FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcel_desconto_inativid FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcel_desconto_inativid TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_desconto_inativid TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcel_desconto_inativid TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_desconto_inativid TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcel_desconto_inativid TO role_users;
 
 
 --
@@ -86869,8 +86869,8 @@ GRANT SELECT ON SEQUENCE seq_parcel_desconto_inativid TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcel_motivo_desfazer FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcel_motivo_desfazer FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcel_motivo_desfazer TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_motivo_desfazer TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcel_motivo_desfazer TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_motivo_desfazer TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcel_motivo_desfazer TO role_users;
 
 
 --
@@ -86880,8 +86880,8 @@ GRANT SELECT ON SEQUENCE seq_parcel_motivo_desfazer TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcel_pagto_cartao_cred FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcel_pagto_cartao_cred FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcel_pagto_cartao_cred TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_pagto_cartao_cred TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcel_pagto_cartao_cred TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_pagto_cartao_cred TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcel_pagto_cartao_cred TO role_users;
 
 
 --
@@ -86891,7 +86891,7 @@ GRANT SELECT ON SEQUENCE seq_parcel_pagto_cartao_cred TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcel_qtde_prest_sitlig FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcel_qtde_prest_sitlig FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcel_qtde_prest_sitlig TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_qtde_prest_sitlig TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_qtde_prest_sitlig TO role_aplic;
 
 
 --
@@ -86901,8 +86901,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_qtde_prest_sitlig TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_parcel_qtde_prestacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcel_qtde_prestacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcel_qtde_prestacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_qtde_prestacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcel_qtde_prestacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_qtde_prestacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcel_qtde_prestacao TO role_users;
 
 
 --
@@ -86912,8 +86912,8 @@ GRANT SELECT ON SEQUENCE seq_parcel_qtde_prestacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcel_qtde_reparcel FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcel_qtde_reparcel FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcel_qtde_reparcel TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_qtde_reparcel TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcel_qtde_reparcel TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcel_qtde_reparcel TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcel_qtde_reparcel TO role_users;
 
 
 --
@@ -86923,8 +86923,8 @@ GRANT SELECT ON SEQUENCE seq_parcel_qtde_reparcel TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcelamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcelamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcelamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcelamento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcelamento TO role_users;
 
 
 --
@@ -86934,8 +86934,8 @@ GRANT SELECT ON SEQUENCE seq_parcelamento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcelamento_faixa_valor FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcelamento_faixa_valor FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcelamento_faixa_valor TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_faixa_valor TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcelamento_faixa_valor TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_faixa_valor TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcelamento_faixa_valor TO role_users;
 
 
 --
@@ -86945,8 +86945,8 @@ GRANT SELECT ON SEQUENCE seq_parcelamento_faixa_valor TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcelamento_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcelamento_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcelamento_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_grupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcelamento_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_grupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcelamento_grupo TO role_users;
 
 
 --
@@ -86956,8 +86956,8 @@ GRANT SELECT ON SEQUENCE seq_parcelamento_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcelamento_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcelamento_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcelamento_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcelamento_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcelamento_item TO role_users;
 
 
 --
@@ -86967,8 +86967,8 @@ GRANT SELECT ON SEQUENCE seq_parcelamento_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcelamento_perfil FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcelamento_perfil FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcelamento_perfil TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_perfil TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcelamento_perfil TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_perfil TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcelamento_perfil TO role_users;
 
 
 --
@@ -86978,8 +86978,8 @@ GRANT SELECT ON SEQUENCE seq_parcelamento_perfil TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcelamento_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcelamento_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcelamento_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcelamento_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcelamento_situacao TO role_users;
 
 
 --
@@ -86989,8 +86989,8 @@ GRANT SELECT ON SEQUENCE seq_parcelamento_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_parcelamento_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_parcelamento_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_parcelamento_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_parcelamento_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_parcelamento_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_parcelamento_tipo TO role_users;
 
 
 --
@@ -87000,7 +87000,7 @@ GRANT SELECT ON SEQUENCE seq_parcelamento_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_prescricao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_prescricao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_prescricao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_prescricao TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_prescricao TO role_aplic;
 
 
 --
@@ -87010,8 +87010,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_prescricao TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_resolucao_diretoria FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resolucao_diretoria FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resolucao_diretoria TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resolucao_diretoria TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resolucao_diretoria TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resolucao_diretoria TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resolucao_diretoria TO role_users;
 
 
 --
@@ -87021,8 +87021,8 @@ GRANT SELECT ON SEQUENCE seq_resolucao_diretoria TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_cob_sit_especial FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_cob_sit_especial FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_cob_sit_especial TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_cob_sit_especial TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_cob_sit_especial TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_cob_sit_especial TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_cob_sit_especial TO role_users;
 
 
 --
@@ -87032,8 +87032,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_cob_sit_especial TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_cobr_acao_event FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_cobr_acao_event FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_cobr_acao_event TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_cobr_acao_event TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_cobr_acao_event TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_cobr_acao_event TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_cobr_acao_event TO role_users;
 
 
 --
@@ -87043,8 +87043,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_cobr_acao_event TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_cobranca_acao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_cobranca_acao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_cobranca_acao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_cobranca_acao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_cobranca_acao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_cobranca_acao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_cobranca_acao TO role_users;
 
 
 --
@@ -87054,8 +87054,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_cobranca_acao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_negativacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_negativacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_negativacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_negativacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_negativacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_negativacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_negativacao TO role_users;
 
 
 --
@@ -87065,8 +87065,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_negativacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_pendencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_pendencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_pendencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_pendencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_pendencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_pendencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_pendencia TO role_users;
 
 
 --
@@ -87076,8 +87076,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_pendencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_neg_testemunha FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_neg_testemunha FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_neg_testemunha TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_neg_testemunha TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_neg_testemunha TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_neg_testemunha TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_neg_testemunha TO role_users;
 
 
 --
@@ -87087,8 +87087,8 @@ GRANT SELECT ON SEQUENCE seq_unidade_neg_testemunha TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_org_testemunha FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_org_testemunha FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_org_testemunha TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_org_testemunha TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_org_testemunha TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_org_testemunha TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_org_testemunha TO role_users;
 
 
 --
@@ -87098,8 +87098,8 @@ GRANT SELECT ON SEQUENCE seq_unidade_org_testemunha TO pg_users;
 REVOKE ALL ON TABLE unidade_neg_testemunha FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_neg_testemunha FROM gsan_admin;
 GRANT ALL ON TABLE unidade_neg_testemunha TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_neg_testemunha TO pg_aplic;
-GRANT SELECT ON TABLE unidade_neg_testemunha TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_neg_testemunha TO role_aplic;
+GRANT SELECT ON TABLE unidade_neg_testemunha TO role_users;
 
 
 --
@@ -87109,8 +87109,8 @@ GRANT SELECT ON TABLE unidade_neg_testemunha TO pg_users;
 REVOKE ALL ON TABLE unidade_org_testemunha FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_org_testemunha FROM gsan_admin;
 GRANT ALL ON TABLE unidade_org_testemunha TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_org_testemunha TO pg_aplic;
-GRANT SELECT ON TABLE unidade_org_testemunha TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_org_testemunha TO role_aplic;
+GRANT SELECT ON TABLE unidade_org_testemunha TO role_users;
 
 
 SET search_path = faturamento, pg_catalog;
@@ -87122,8 +87122,8 @@ SET search_path = faturamento, pg_catalog;
 REVOKE ALL ON TABLE auto_infracao_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE auto_infracao_situacao FROM gsan_admin;
 GRANT ALL ON TABLE auto_infracao_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE auto_infracao_situacao TO pg_aplic;
-GRANT SELECT ON TABLE auto_infracao_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE auto_infracao_situacao TO role_aplic;
+GRANT SELECT ON TABLE auto_infracao_situacao TO role_users;
 
 
 --
@@ -87133,8 +87133,8 @@ GRANT SELECT ON TABLE auto_infracao_situacao TO pg_users;
 REVOKE ALL ON TABLE autos_infr_deb_a_cobrar FROM PUBLIC;
 REVOKE ALL ON TABLE autos_infr_deb_a_cobrar FROM gsan_admin;
 GRANT ALL ON TABLE autos_infr_deb_a_cobrar TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE autos_infr_deb_a_cobrar TO pg_aplic;
-GRANT SELECT ON TABLE autos_infr_deb_a_cobrar TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE autos_infr_deb_a_cobrar TO role_aplic;
+GRANT SELECT ON TABLE autos_infr_deb_a_cobrar TO role_users;
 
 
 --
@@ -87144,8 +87144,8 @@ GRANT SELECT ON TABLE autos_infr_deb_a_cobrar TO pg_users;
 REVOKE ALL ON TABLE autos_infracao FROM PUBLIC;
 REVOKE ALL ON TABLE autos_infracao FROM gsan_admin;
 GRANT ALL ON TABLE autos_infracao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE autos_infracao TO pg_aplic;
-GRANT SELECT ON TABLE autos_infracao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE autos_infracao TO role_aplic;
+GRANT SELECT ON TABLE autos_infracao TO role_users;
 
 
 --
@@ -87155,8 +87155,8 @@ GRANT SELECT ON TABLE autos_infracao TO pg_users;
 REVOKE ALL ON TABLE consumo_faixa_categoria FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_faixa_categoria FROM gsan_admin;
 GRANT ALL ON TABLE consumo_faixa_categoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_faixa_categoria TO pg_aplic;
-GRANT SELECT ON TABLE consumo_faixa_categoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_faixa_categoria TO role_aplic;
+GRANT SELECT ON TABLE consumo_faixa_categoria TO role_users;
 
 
 --
@@ -87166,8 +87166,8 @@ GRANT SELECT ON TABLE consumo_faixa_categoria TO pg_users;
 REVOKE ALL ON TABLE consumo_faixa_ligacao FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_faixa_ligacao FROM gsan_admin;
 GRANT ALL ON TABLE consumo_faixa_ligacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_faixa_ligacao TO pg_aplic;
-GRANT SELECT ON TABLE consumo_faixa_ligacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_faixa_ligacao TO role_aplic;
+GRANT SELECT ON TABLE consumo_faixa_ligacao TO role_users;
 
 
 --
@@ -87177,8 +87177,8 @@ GRANT SELECT ON TABLE consumo_faixa_ligacao TO pg_users;
 REVOKE ALL ON TABLE consumo_tarifa FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_tarifa FROM gsan_admin;
 GRANT ALL ON TABLE consumo_tarifa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tarifa TO pg_aplic;
-GRANT SELECT ON TABLE consumo_tarifa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tarifa TO role_aplic;
+GRANT SELECT ON TABLE consumo_tarifa TO role_users;
 
 
 --
@@ -87188,8 +87188,8 @@ GRANT SELECT ON TABLE consumo_tarifa TO pg_users;
 REVOKE ALL ON TABLE consumo_tarifa_categoria FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_tarifa_categoria FROM gsan_admin;
 GRANT ALL ON TABLE consumo_tarifa_categoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tarifa_categoria TO pg_aplic;
-GRANT SELECT ON TABLE consumo_tarifa_categoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tarifa_categoria TO role_aplic;
+GRANT SELECT ON TABLE consumo_tarifa_categoria TO role_users;
 
 
 --
@@ -87199,8 +87199,8 @@ GRANT SELECT ON TABLE consumo_tarifa_categoria TO pg_users;
 REVOKE ALL ON TABLE consumo_tarifa_faixa FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_tarifa_faixa FROM gsan_admin;
 GRANT ALL ON TABLE consumo_tarifa_faixa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tarifa_faixa TO pg_aplic;
-GRANT SELECT ON TABLE consumo_tarifa_faixa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tarifa_faixa TO role_aplic;
+GRANT SELECT ON TABLE consumo_tarifa_faixa TO role_users;
 
 
 --
@@ -87210,8 +87210,8 @@ GRANT SELECT ON TABLE consumo_tarifa_faixa TO pg_users;
 REVOKE ALL ON TABLE consumo_tarifa_vigencia FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_tarifa_vigencia FROM gsan_admin;
 GRANT ALL ON TABLE consumo_tarifa_vigencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tarifa_vigencia TO pg_aplic;
-GRANT SELECT ON TABLE consumo_tarifa_vigencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tarifa_vigencia TO role_aplic;
+GRANT SELECT ON TABLE consumo_tarifa_vigencia TO role_users;
 
 
 --
@@ -87221,8 +87221,8 @@ GRANT SELECT ON TABLE consumo_tarifa_vigencia TO pg_users;
 REVOKE ALL ON TABLE conta FROM PUBLIC;
 REVOKE ALL ON TABLE conta FROM gsan_admin;
 GRANT ALL ON TABLE conta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta TO pg_aplic;
-GRANT SELECT ON TABLE conta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta TO role_aplic;
+GRANT SELECT ON TABLE conta TO role_users;
 
 
 --
@@ -87232,8 +87232,8 @@ GRANT SELECT ON TABLE conta TO pg_users;
 REVOKE ALL ON TABLE conta_categoria FROM PUBLIC;
 REVOKE ALL ON TABLE conta_categoria FROM gsan_admin;
 GRANT ALL ON TABLE conta_categoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_categoria TO pg_aplic;
-GRANT SELECT ON TABLE conta_categoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_categoria TO role_aplic;
+GRANT SELECT ON TABLE conta_categoria TO role_users;
 
 
 --
@@ -87243,8 +87243,8 @@ GRANT SELECT ON TABLE conta_categoria TO pg_users;
 REVOKE ALL ON TABLE conta_catg_cons_fx FROM PUBLIC;
 REVOKE ALL ON TABLE conta_catg_cons_fx FROM gsan_admin;
 GRANT ALL ON TABLE conta_catg_cons_fx TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_catg_cons_fx TO pg_aplic;
-GRANT SELECT ON TABLE conta_catg_cons_fx TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_catg_cons_fx TO role_aplic;
+GRANT SELECT ON TABLE conta_catg_cons_fx TO role_users;
 
 
 --
@@ -87254,8 +87254,8 @@ GRANT SELECT ON TABLE conta_catg_cons_fx TO pg_users;
 REVOKE ALL ON TABLE conta_catg_cons_fx_hist FROM PUBLIC;
 REVOKE ALL ON TABLE conta_catg_cons_fx_hist FROM gsan_admin;
 GRANT ALL ON TABLE conta_catg_cons_fx_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_catg_cons_fx_hist TO pg_aplic;
-GRANT SELECT ON TABLE conta_catg_cons_fx_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_catg_cons_fx_hist TO role_aplic;
+GRANT SELECT ON TABLE conta_catg_cons_fx_hist TO role_users;
 
 
 --
@@ -87265,8 +87265,8 @@ GRANT SELECT ON TABLE conta_catg_cons_fx_hist TO pg_users;
 REVOKE ALL ON TABLE conta_catg_hist FROM PUBLIC;
 REVOKE ALL ON TABLE conta_catg_hist FROM gsan_admin;
 GRANT ALL ON TABLE conta_catg_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_catg_hist TO pg_aplic;
-GRANT SELECT ON TABLE conta_catg_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_catg_hist TO role_aplic;
+GRANT SELECT ON TABLE conta_catg_hist TO role_users;
 
 
 --
@@ -87276,8 +87276,8 @@ GRANT SELECT ON TABLE conta_catg_hist TO pg_users;
 REVOKE ALL ON TABLE conta_geral FROM PUBLIC;
 REVOKE ALL ON TABLE conta_geral FROM gsan_admin;
 GRANT ALL ON TABLE conta_geral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_geral TO pg_aplic;
-GRANT SELECT ON TABLE conta_geral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_geral TO role_aplic;
+GRANT SELECT ON TABLE conta_geral TO role_users;
 
 
 --
@@ -87287,8 +87287,8 @@ GRANT SELECT ON TABLE conta_geral TO pg_users;
 REVOKE ALL ON TABLE conta_historico FROM PUBLIC;
 REVOKE ALL ON TABLE conta_historico FROM gsan_admin;
 GRANT ALL ON TABLE conta_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_historico TO pg_aplic;
-GRANT SELECT ON TABLE conta_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_historico TO role_aplic;
+GRANT SELECT ON TABLE conta_historico TO role_users;
 
 
 --
@@ -87298,8 +87298,8 @@ GRANT SELECT ON TABLE conta_historico TO pg_users;
 REVOKE ALL ON TABLE conta_impostos_deduzidos FROM PUBLIC;
 REVOKE ALL ON TABLE conta_impostos_deduzidos FROM gsan_admin;
 GRANT ALL ON TABLE conta_impostos_deduzidos TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_impostos_deduzidos TO pg_aplic;
-GRANT SELECT ON TABLE conta_impostos_deduzidos TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_impostos_deduzidos TO role_aplic;
+GRANT SELECT ON TABLE conta_impostos_deduzidos TO role_users;
 
 
 --
@@ -87309,8 +87309,8 @@ GRANT SELECT ON TABLE conta_impostos_deduzidos TO pg_users;
 REVOKE ALL ON TABLE conta_impostos_dedz_hist FROM PUBLIC;
 REVOKE ALL ON TABLE conta_impostos_dedz_hist FROM gsan_admin;
 GRANT ALL ON TABLE conta_impostos_dedz_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_impostos_dedz_hist TO pg_aplic;
-GRANT SELECT ON TABLE conta_impostos_dedz_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_impostos_dedz_hist TO role_aplic;
+GRANT SELECT ON TABLE conta_impostos_dedz_hist TO role_users;
 
 
 --
@@ -87320,8 +87320,8 @@ GRANT SELECT ON TABLE conta_impostos_dedz_hist TO pg_users;
 REVOKE ALL ON TABLE conta_impressao FROM PUBLIC;
 REVOKE ALL ON TABLE conta_impressao FROM gsan_admin;
 GRANT ALL ON TABLE conta_impressao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_impressao TO pg_aplic;
-GRANT SELECT ON TABLE conta_impressao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_impressao TO role_aplic;
+GRANT SELECT ON TABLE conta_impressao TO role_users;
 
 
 --
@@ -87331,8 +87331,8 @@ GRANT SELECT ON TABLE conta_impressao TO pg_users;
 REVOKE ALL ON TABLE conta_impressao_termica_qtde FROM PUBLIC;
 REVOKE ALL ON TABLE conta_impressao_termica_qtde FROM gsan_admin;
 GRANT ALL ON TABLE conta_impressao_termica_qtde TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_impressao_termica_qtde TO pg_aplic;
-GRANT SELECT ON TABLE conta_impressao_termica_qtde TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_impressao_termica_qtde TO role_aplic;
+GRANT SELECT ON TABLE conta_impressao_termica_qtde TO role_users;
 
 
 --
@@ -87342,8 +87342,8 @@ GRANT SELECT ON TABLE conta_impressao_termica_qtde TO pg_users;
 REVOKE ALL ON TABLE conta_mensagem FROM PUBLIC;
 REVOKE ALL ON TABLE conta_mensagem FROM gsan_admin;
 GRANT ALL ON TABLE conta_mensagem TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_mensagem TO pg_aplic;
-GRANT SELECT ON TABLE conta_mensagem TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_mensagem TO role_aplic;
+GRANT SELECT ON TABLE conta_mensagem TO role_users;
 
 
 --
@@ -87353,8 +87353,8 @@ GRANT SELECT ON TABLE conta_mensagem TO pg_users;
 REVOKE ALL ON TABLE conta_mot_cancelamento FROM PUBLIC;
 REVOKE ALL ON TABLE conta_mot_cancelamento FROM gsan_admin;
 GRANT ALL ON TABLE conta_mot_cancelamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_mot_cancelamento TO pg_aplic;
-GRANT SELECT ON TABLE conta_mot_cancelamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_mot_cancelamento TO role_aplic;
+GRANT SELECT ON TABLE conta_mot_cancelamento TO role_users;
 
 
 --
@@ -87364,8 +87364,8 @@ GRANT SELECT ON TABLE conta_mot_cancelamento TO pg_users;
 REVOKE ALL ON TABLE conta_mot_retific_coluna FROM PUBLIC;
 REVOKE ALL ON TABLE conta_mot_retific_coluna FROM gsan_admin;
 GRANT ALL ON TABLE conta_mot_retific_coluna TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_mot_retific_coluna TO pg_aplic;
-GRANT SELECT ON TABLE conta_mot_retific_coluna TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_mot_retific_coluna TO role_aplic;
+GRANT SELECT ON TABLE conta_mot_retific_coluna TO role_users;
 
 
 --
@@ -87375,8 +87375,8 @@ GRANT SELECT ON TABLE conta_mot_retific_coluna TO pg_users;
 REVOKE ALL ON TABLE conta_motivo_inclusao FROM PUBLIC;
 REVOKE ALL ON TABLE conta_motivo_inclusao FROM gsan_admin;
 GRANT ALL ON TABLE conta_motivo_inclusao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_motivo_inclusao TO pg_aplic;
-GRANT SELECT ON TABLE conta_motivo_inclusao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_motivo_inclusao TO role_aplic;
+GRANT SELECT ON TABLE conta_motivo_inclusao TO role_users;
 
 
 --
@@ -87386,8 +87386,8 @@ GRANT SELECT ON TABLE conta_motivo_inclusao TO pg_users;
 REVOKE ALL ON TABLE conta_motivo_retificacao FROM PUBLIC;
 REVOKE ALL ON TABLE conta_motivo_retificacao FROM gsan_admin;
 GRANT ALL ON TABLE conta_motivo_retificacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_motivo_retificacao TO pg_aplic;
-GRANT SELECT ON TABLE conta_motivo_retificacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_motivo_retificacao TO role_aplic;
+GRANT SELECT ON TABLE conta_motivo_retificacao TO role_users;
 
 
 --
@@ -87397,8 +87397,8 @@ GRANT SELECT ON TABLE conta_motivo_retificacao TO pg_users;
 REVOKE ALL ON TABLE conta_motivo_revisao FROM PUBLIC;
 REVOKE ALL ON TABLE conta_motivo_revisao FROM gsan_admin;
 GRANT ALL ON TABLE conta_motivo_revisao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_motivo_revisao TO pg_aplic;
-GRANT SELECT ON TABLE conta_motivo_revisao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_motivo_revisao TO role_aplic;
+GRANT SELECT ON TABLE conta_motivo_revisao TO role_users;
 
 
 --
@@ -87408,8 +87408,8 @@ GRANT SELECT ON TABLE conta_motivo_revisao TO pg_users;
 REVOKE ALL ON TABLE conta_revisao_fx_valor FROM PUBLIC;
 REVOKE ALL ON TABLE conta_revisao_fx_valor FROM gsan_admin;
 GRANT ALL ON TABLE conta_revisao_fx_valor TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_revisao_fx_valor TO pg_aplic;
-GRANT SELECT ON TABLE conta_revisao_fx_valor TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_revisao_fx_valor TO role_aplic;
+GRANT SELECT ON TABLE conta_revisao_fx_valor TO role_users;
 
 
 --
@@ -87419,8 +87419,8 @@ GRANT SELECT ON TABLE conta_revisao_fx_valor TO pg_users;
 REVOKE ALL ON TABLE conta_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE conta_tipo FROM gsan_admin;
 GRANT ALL ON TABLE conta_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_tipo TO pg_aplic;
-GRANT SELECT ON TABLE conta_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_tipo TO role_aplic;
+GRANT SELECT ON TABLE conta_tipo TO role_users;
 
 
 --
@@ -87430,8 +87430,8 @@ GRANT SELECT ON TABLE conta_tipo TO pg_users;
 REVOKE ALL ON TABLE contrato_demanda_fx_cons FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_demanda_fx_cons FROM gsan_admin;
 GRANT ALL ON TABLE contrato_demanda_fx_cons TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda_fx_cons TO pg_aplic;
-GRANT SELECT ON TABLE contrato_demanda_fx_cons TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda_fx_cons TO role_aplic;
+GRANT SELECT ON TABLE contrato_demanda_fx_cons TO role_users;
 
 
 --
@@ -87441,8 +87441,8 @@ GRANT SELECT ON TABLE contrato_demanda_fx_cons TO pg_users;
 REVOKE ALL ON TABLE contrato_demanda_imovel FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_demanda_imovel FROM gsan_admin;
 GRANT ALL ON TABLE contrato_demanda_imovel TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda_imovel TO pg_aplic;
-GRANT SELECT ON TABLE contrato_demanda_imovel TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda_imovel TO role_aplic;
+GRANT SELECT ON TABLE contrato_demanda_imovel TO role_users;
 
 
 --
@@ -87452,8 +87452,8 @@ GRANT SELECT ON TABLE contrato_demanda_imovel TO pg_users;
 REVOKE ALL ON TABLE contrato_demanda_mot_enc FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_demanda_mot_enc FROM gsan_admin;
 GRANT ALL ON TABLE contrato_demanda_mot_enc TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda_mot_enc TO pg_aplic;
-GRANT SELECT ON TABLE contrato_demanda_mot_enc TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda_mot_enc TO role_aplic;
+GRANT SELECT ON TABLE contrato_demanda_mot_enc TO role_users;
 
 
 --
@@ -87463,8 +87463,8 @@ GRANT SELECT ON TABLE contrato_demanda_mot_enc TO pg_users;
 REVOKE ALL ON TABLE contrato_demanda_situac FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_demanda_situac FROM gsan_admin;
 GRANT ALL ON TABLE contrato_demanda_situac TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda_situac TO pg_aplic;
-GRANT SELECT ON TABLE contrato_demanda_situac TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_demanda_situac TO role_aplic;
+GRANT SELECT ON TABLE contrato_demanda_situac TO role_users;
 
 
 --
@@ -87474,8 +87474,8 @@ GRANT SELECT ON TABLE contrato_demanda_situac TO pg_users;
 REVOKE ALL ON TABLE cred_a_realiz_catg FROM PUBLIC;
 REVOKE ALL ON TABLE cred_a_realiz_catg FROM gsan_admin;
 GRANT ALL ON TABLE cred_a_realiz_catg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_a_realiz_catg TO pg_aplic;
-GRANT SELECT ON TABLE cred_a_realiz_catg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_a_realiz_catg TO role_aplic;
+GRANT SELECT ON TABLE cred_a_realiz_catg TO role_users;
 
 
 --
@@ -87485,8 +87485,8 @@ GRANT SELECT ON TABLE cred_a_realiz_catg TO pg_users;
 REVOKE ALL ON TABLE cred_a_realiz_catg_hist FROM PUBLIC;
 REVOKE ALL ON TABLE cred_a_realiz_catg_hist FROM gsan_admin;
 GRANT ALL ON TABLE cred_a_realiz_catg_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_a_realiz_catg_hist TO pg_aplic;
-GRANT SELECT ON TABLE cred_a_realiz_catg_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_a_realiz_catg_hist TO role_aplic;
+GRANT SELECT ON TABLE cred_a_realiz_catg_hist TO role_users;
 
 
 --
@@ -87496,8 +87496,8 @@ GRANT SELECT ON TABLE cred_a_realiz_catg_hist TO pg_users;
 REVOKE ALL ON TABLE cred_a_realiz_hist FROM PUBLIC;
 REVOKE ALL ON TABLE cred_a_realiz_hist FROM gsan_admin;
 GRANT ALL ON TABLE cred_a_realiz_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_a_realiz_hist TO pg_aplic;
-GRANT SELECT ON TABLE cred_a_realiz_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_a_realiz_hist TO role_aplic;
+GRANT SELECT ON TABLE cred_a_realiz_hist TO role_users;
 
 
 --
@@ -87507,8 +87507,8 @@ GRANT SELECT ON TABLE cred_a_realiz_hist TO pg_users;
 REVOKE ALL ON TABLE cred_realizado_catg FROM PUBLIC;
 REVOKE ALL ON TABLE cred_realizado_catg FROM gsan_admin;
 GRANT ALL ON TABLE cred_realizado_catg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_realizado_catg TO pg_aplic;
-GRANT SELECT ON TABLE cred_realizado_catg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_realizado_catg TO role_aplic;
+GRANT SELECT ON TABLE cred_realizado_catg TO role_users;
 
 
 --
@@ -87518,8 +87518,8 @@ GRANT SELECT ON TABLE cred_realizado_catg TO pg_users;
 REVOKE ALL ON TABLE cred_realizado_catg_hist FROM PUBLIC;
 REVOKE ALL ON TABLE cred_realizado_catg_hist FROM gsan_admin;
 GRANT ALL ON TABLE cred_realizado_catg_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_realizado_catg_hist TO pg_aplic;
-GRANT SELECT ON TABLE cred_realizado_catg_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_realizado_catg_hist TO role_aplic;
+GRANT SELECT ON TABLE cred_realizado_catg_hist TO role_users;
 
 
 --
@@ -87529,8 +87529,8 @@ GRANT SELECT ON TABLE cred_realizado_catg_hist TO pg_users;
 REVOKE ALL ON TABLE cred_realizado_hist FROM PUBLIC;
 REVOKE ALL ON TABLE cred_realizado_hist FROM gsan_admin;
 GRANT ALL ON TABLE cred_realizado_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_realizado_hist TO pg_aplic;
-GRANT SELECT ON TABLE cred_realizado_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE cred_realizado_hist TO role_aplic;
+GRANT SELECT ON TABLE cred_realizado_hist TO role_users;
 
 
 --
@@ -87540,8 +87540,8 @@ GRANT SELECT ON TABLE cred_realizado_hist TO pg_users;
 REVOKE ALL ON TABLE credito_a_realizar FROM PUBLIC;
 REVOKE ALL ON TABLE credito_a_realizar FROM gsan_admin;
 GRANT ALL ON TABLE credito_a_realizar TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_a_realizar TO pg_aplic;
-GRANT SELECT ON TABLE credito_a_realizar TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_a_realizar TO role_aplic;
+GRANT SELECT ON TABLE credito_a_realizar TO role_users;
 
 
 --
@@ -87551,8 +87551,8 @@ GRANT SELECT ON TABLE credito_a_realizar TO pg_users;
 REVOKE ALL ON TABLE credito_a_realizar_geral FROM PUBLIC;
 REVOKE ALL ON TABLE credito_a_realizar_geral FROM gsan_admin;
 GRANT ALL ON TABLE credito_a_realizar_geral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_a_realizar_geral TO pg_aplic;
-GRANT SELECT ON TABLE credito_a_realizar_geral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_a_realizar_geral TO role_aplic;
+GRANT SELECT ON TABLE credito_a_realizar_geral TO role_users;
 
 
 --
@@ -87562,8 +87562,8 @@ GRANT SELECT ON TABLE credito_a_realizar_geral TO pg_users;
 REVOKE ALL ON TABLE credito_origem FROM PUBLIC;
 REVOKE ALL ON TABLE credito_origem FROM gsan_admin;
 GRANT ALL ON TABLE credito_origem TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_origem TO pg_aplic;
-GRANT SELECT ON TABLE credito_origem TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_origem TO role_aplic;
+GRANT SELECT ON TABLE credito_origem TO role_users;
 
 
 --
@@ -87573,8 +87573,8 @@ GRANT SELECT ON TABLE credito_origem TO pg_users;
 REVOKE ALL ON TABLE credito_realizado FROM PUBLIC;
 REVOKE ALL ON TABLE credito_realizado FROM gsan_admin;
 GRANT ALL ON TABLE credito_realizado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_realizado TO pg_aplic;
-GRANT SELECT ON TABLE credito_realizado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_realizado TO role_aplic;
+GRANT SELECT ON TABLE credito_realizado TO role_users;
 
 
 --
@@ -87584,8 +87584,8 @@ GRANT SELECT ON TABLE credito_realizado TO pg_users;
 REVOKE ALL ON TABLE credito_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE credito_tipo FROM gsan_admin;
 GRANT ALL ON TABLE credito_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_tipo TO pg_aplic;
-GRANT SELECT ON TABLE credito_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE credito_tipo TO role_aplic;
+GRANT SELECT ON TABLE credito_tipo TO role_users;
 
 
 --
@@ -87595,8 +87595,8 @@ GRANT SELECT ON TABLE credito_tipo TO pg_users;
 REVOKE ALL ON TABLE deb_a_cobrar_catg FROM PUBLIC;
 REVOKE ALL ON TABLE deb_a_cobrar_catg FROM gsan_admin;
 GRANT ALL ON TABLE deb_a_cobrar_catg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deb_a_cobrar_catg TO pg_aplic;
-GRANT SELECT ON TABLE deb_a_cobrar_catg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deb_a_cobrar_catg TO role_aplic;
+GRANT SELECT ON TABLE deb_a_cobrar_catg TO role_users;
 
 
 --
@@ -87606,8 +87606,8 @@ GRANT SELECT ON TABLE deb_a_cobrar_catg TO pg_users;
 REVOKE ALL ON TABLE deb_a_cobrar_catg_hist FROM PUBLIC;
 REVOKE ALL ON TABLE deb_a_cobrar_catg_hist FROM gsan_admin;
 GRANT ALL ON TABLE deb_a_cobrar_catg_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deb_a_cobrar_catg_hist TO pg_aplic;
-GRANT SELECT ON TABLE deb_a_cobrar_catg_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deb_a_cobrar_catg_hist TO role_aplic;
+GRANT SELECT ON TABLE deb_a_cobrar_catg_hist TO role_users;
 
 
 --
@@ -87617,8 +87617,8 @@ GRANT SELECT ON TABLE deb_a_cobrar_catg_hist TO pg_users;
 REVOKE ALL ON TABLE deb_a_cobrar_hist FROM PUBLIC;
 REVOKE ALL ON TABLE deb_a_cobrar_hist FROM gsan_admin;
 GRANT ALL ON TABLE deb_a_cobrar_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deb_a_cobrar_hist TO pg_aplic;
-GRANT SELECT ON TABLE deb_a_cobrar_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deb_a_cobrar_hist TO role_aplic;
+GRANT SELECT ON TABLE deb_a_cobrar_hist TO role_users;
 
 
 --
@@ -87628,8 +87628,8 @@ GRANT SELECT ON TABLE deb_a_cobrar_hist TO pg_users;
 REVOKE ALL ON TABLE deb_cobrado_catg_hist FROM PUBLIC;
 REVOKE ALL ON TABLE deb_cobrado_catg_hist FROM gsan_admin;
 GRANT ALL ON TABLE deb_cobrado_catg_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deb_cobrado_catg_hist TO pg_aplic;
-GRANT SELECT ON TABLE deb_cobrado_catg_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deb_cobrado_catg_hist TO role_aplic;
+GRANT SELECT ON TABLE deb_cobrado_catg_hist TO role_users;
 
 
 --
@@ -87639,8 +87639,8 @@ GRANT SELECT ON TABLE deb_cobrado_catg_hist TO pg_users;
 REVOKE ALL ON TABLE debito_a_cobrar FROM PUBLIC;
 REVOKE ALL ON TABLE debito_a_cobrar FROM gsan_admin;
 GRANT ALL ON TABLE debito_a_cobrar TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_a_cobrar TO pg_aplic;
-GRANT SELECT ON TABLE debito_a_cobrar TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_a_cobrar TO role_aplic;
+GRANT SELECT ON TABLE debito_a_cobrar TO role_users;
 
 
 --
@@ -87650,8 +87650,8 @@ GRANT SELECT ON TABLE debito_a_cobrar TO pg_users;
 REVOKE ALL ON TABLE debito_a_cobrar_geral FROM PUBLIC;
 REVOKE ALL ON TABLE debito_a_cobrar_geral FROM gsan_admin;
 GRANT ALL ON TABLE debito_a_cobrar_geral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_a_cobrar_geral TO pg_aplic;
-GRANT SELECT ON TABLE debito_a_cobrar_geral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_a_cobrar_geral TO role_aplic;
+GRANT SELECT ON TABLE debito_a_cobrar_geral TO role_users;
 
 
 --
@@ -87661,8 +87661,8 @@ GRANT SELECT ON TABLE debito_a_cobrar_geral TO pg_users;
 REVOKE ALL ON TABLE debito_cobrado FROM PUBLIC;
 REVOKE ALL ON TABLE debito_cobrado FROM gsan_admin;
 GRANT ALL ON TABLE debito_cobrado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_cobrado TO pg_aplic;
-GRANT SELECT ON TABLE debito_cobrado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_cobrado TO role_aplic;
+GRANT SELECT ON TABLE debito_cobrado TO role_users;
 
 
 --
@@ -87672,8 +87672,8 @@ GRANT SELECT ON TABLE debito_cobrado TO pg_users;
 REVOKE ALL ON TABLE debito_cobrado_categoria FROM PUBLIC;
 REVOKE ALL ON TABLE debito_cobrado_categoria FROM gsan_admin;
 GRANT ALL ON TABLE debito_cobrado_categoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_cobrado_categoria TO pg_aplic;
-GRANT SELECT ON TABLE debito_cobrado_categoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_cobrado_categoria TO role_aplic;
+GRANT SELECT ON TABLE debito_cobrado_categoria TO role_users;
 
 
 --
@@ -87683,8 +87683,8 @@ GRANT SELECT ON TABLE debito_cobrado_categoria TO pg_users;
 REVOKE ALL ON TABLE debito_cobrado_historico FROM PUBLIC;
 REVOKE ALL ON TABLE debito_cobrado_historico FROM gsan_admin;
 GRANT ALL ON TABLE debito_cobrado_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_cobrado_historico TO pg_aplic;
-GRANT SELECT ON TABLE debito_cobrado_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_cobrado_historico TO role_aplic;
+GRANT SELECT ON TABLE debito_cobrado_historico TO role_users;
 
 
 --
@@ -87694,8 +87694,8 @@ GRANT SELECT ON TABLE debito_cobrado_historico TO pg_users;
 REVOKE ALL ON TABLE debito_credito_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE debito_credito_situacao FROM gsan_admin;
 GRANT ALL ON TABLE debito_credito_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_credito_situacao TO pg_aplic;
-GRANT SELECT ON TABLE debito_credito_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_credito_situacao TO role_aplic;
+GRANT SELECT ON TABLE debito_credito_situacao TO role_users;
 
 
 --
@@ -87705,8 +87705,8 @@ GRANT SELECT ON TABLE debito_credito_situacao TO pg_users;
 REVOKE ALL ON TABLE debito_faixa_valores FROM PUBLIC;
 REVOKE ALL ON TABLE debito_faixa_valores FROM gsan_admin;
 GRANT ALL ON TABLE debito_faixa_valores TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_faixa_valores TO pg_aplic;
-GRANT SELECT ON TABLE debito_faixa_valores TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_faixa_valores TO role_aplic;
+GRANT SELECT ON TABLE debito_faixa_valores TO role_users;
 
 
 --
@@ -87716,8 +87716,8 @@ GRANT SELECT ON TABLE debito_faixa_valores TO pg_users;
 REVOKE ALL ON TABLE debito_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE debito_tipo FROM gsan_admin;
 GRANT ALL ON TABLE debito_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_tipo TO pg_aplic;
-GRANT SELECT ON TABLE debito_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_tipo TO role_aplic;
+GRANT SELECT ON TABLE debito_tipo TO role_users;
 
 
 --
@@ -87727,8 +87727,8 @@ GRANT SELECT ON TABLE debito_tipo TO pg_users;
 REVOKE ALL ON TABLE debito_tipo_vigencia FROM PUBLIC;
 REVOKE ALL ON TABLE debito_tipo_vigencia FROM gsan_admin;
 GRANT ALL ON TABLE debito_tipo_vigencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_tipo_vigencia TO pg_aplic;
-GRANT SELECT ON TABLE debito_tipo_vigencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE debito_tipo_vigencia TO role_aplic;
+GRANT SELECT ON TABLE debito_tipo_vigencia TO role_users;
 
 
 --
@@ -87738,8 +87738,8 @@ GRANT SELECT ON TABLE debito_tipo_vigencia TO pg_users;
 REVOKE ALL ON TABLE documento_nao_entregue FROM PUBLIC;
 REVOKE ALL ON TABLE documento_nao_entregue FROM gsan_admin;
 GRANT ALL ON TABLE documento_nao_entregue TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE documento_nao_entregue TO pg_aplic;
-GRANT SELECT ON TABLE documento_nao_entregue TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE documento_nao_entregue TO role_aplic;
+GRANT SELECT ON TABLE documento_nao_entregue TO role_users;
 
 
 --
@@ -87749,8 +87749,8 @@ GRANT SELECT ON TABLE documento_nao_entregue TO pg_users;
 REVOKE ALL ON TABLE extrato_quitacao FROM PUBLIC;
 REVOKE ALL ON TABLE extrato_quitacao FROM gsan_admin;
 GRANT ALL ON TABLE extrato_quitacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE extrato_quitacao TO pg_aplic;
-GRANT SELECT ON TABLE extrato_quitacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE extrato_quitacao TO role_aplic;
+GRANT SELECT ON TABLE extrato_quitacao TO role_users;
 
 
 --
@@ -87760,8 +87760,8 @@ GRANT SELECT ON TABLE extrato_quitacao TO pg_users;
 REVOKE ALL ON TABLE extrato_quitacao_item FROM PUBLIC;
 REVOKE ALL ON TABLE extrato_quitacao_item FROM gsan_admin;
 GRANT ALL ON TABLE extrato_quitacao_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE extrato_quitacao_item TO pg_aplic;
-GRANT SELECT ON TABLE extrato_quitacao_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE extrato_quitacao_item TO role_aplic;
+GRANT SELECT ON TABLE extrato_quitacao_item TO role_users;
 
 
 --
@@ -87771,8 +87771,8 @@ GRANT SELECT ON TABLE extrato_quitacao_item TO pg_users;
 REVOKE ALL ON TABLE fatur_ativ_cron_rota FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_ativ_cron_rota FROM gsan_admin;
 GRANT ALL ON TABLE fatur_ativ_cron_rota TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_ativ_cron_rota TO pg_aplic;
-GRANT SELECT ON TABLE fatur_ativ_cron_rota TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_ativ_cron_rota TO role_aplic;
+GRANT SELECT ON TABLE fatur_ativ_cron_rota TO role_users;
 
 
 --
@@ -87782,8 +87782,8 @@ GRANT SELECT ON TABLE fatur_ativ_cron_rota TO pg_users;
 REVOKE ALL ON TABLE fatur_ativ_cronograma FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_ativ_cronograma FROM gsan_admin;
 GRANT ALL ON TABLE fatur_ativ_cronograma TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_ativ_cronograma TO pg_aplic;
-GRANT SELECT ON TABLE fatur_ativ_cronograma TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_ativ_cronograma TO role_aplic;
+GRANT SELECT ON TABLE fatur_ativ_cronograma TO role_users;
 
 
 --
@@ -87793,8 +87793,8 @@ GRANT SELECT ON TABLE fatur_ativ_cronograma TO pg_users;
 REVOKE ALL ON TABLE fatur_contb_parametros FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_contb_parametros FROM gsan_admin;
 GRANT ALL ON TABLE fatur_contb_parametros TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_contb_parametros TO pg_aplic;
-GRANT SELECT ON TABLE fatur_contb_parametros TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_contb_parametros TO role_aplic;
+GRANT SELECT ON TABLE fatur_contb_parametros TO role_users;
 
 
 --
@@ -87804,8 +87804,8 @@ GRANT SELECT ON TABLE fatur_contb_parametros TO pg_users;
 REVOKE ALL ON TABLE fatur_grupo_crg_mensal FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_grupo_crg_mensal FROM gsan_admin;
 GRANT ALL ON TABLE fatur_grupo_crg_mensal TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_grupo_crg_mensal TO pg_aplic;
-GRANT SELECT ON TABLE fatur_grupo_crg_mensal TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_grupo_crg_mensal TO role_aplic;
+GRANT SELECT ON TABLE fatur_grupo_crg_mensal TO role_users;
 
 
 --
@@ -87815,8 +87815,8 @@ GRANT SELECT ON TABLE fatur_grupo_crg_mensal TO pg_users;
 REVOKE ALL ON TABLE fatur_imediato_ajuste FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_imediato_ajuste FROM gsan_admin;
 GRANT ALL ON TABLE fatur_imediato_ajuste TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_imediato_ajuste TO pg_aplic;
-GRANT SELECT ON TABLE fatur_imediato_ajuste TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_imediato_ajuste TO role_aplic;
+GRANT SELECT ON TABLE fatur_imediato_ajuste TO role_users;
 
 
 --
@@ -87826,8 +87826,8 @@ GRANT SELECT ON TABLE fatur_imediato_ajuste TO pg_users;
 REVOKE ALL ON TABLE fatur_situacao_comando FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_situacao_comando FROM gsan_admin;
 GRANT ALL ON TABLE fatur_situacao_comando TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_situacao_comando TO pg_aplic;
-GRANT SELECT ON TABLE fatur_situacao_comando TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_situacao_comando TO role_aplic;
+GRANT SELECT ON TABLE fatur_situacao_comando TO role_users;
 
 
 --
@@ -87837,8 +87837,8 @@ GRANT SELECT ON TABLE fatur_situacao_comando TO pg_users;
 REVOKE ALL ON TABLE fatur_situacao_hist FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_situacao_hist FROM gsan_admin;
 GRANT ALL ON TABLE fatur_situacao_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_situacao_hist TO pg_aplic;
-GRANT SELECT ON TABLE fatur_situacao_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_situacao_hist TO role_aplic;
+GRANT SELECT ON TABLE fatur_situacao_hist TO role_users;
 
 
 --
@@ -87848,8 +87848,8 @@ GRANT SELECT ON TABLE fatur_situacao_hist TO pg_users;
 REVOKE ALL ON TABLE fatur_situacao_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_situacao_motivo FROM gsan_admin;
 GRANT ALL ON TABLE fatur_situacao_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_situacao_motivo TO pg_aplic;
-GRANT SELECT ON TABLE fatur_situacao_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_situacao_motivo TO role_aplic;
+GRANT SELECT ON TABLE fatur_situacao_motivo TO role_users;
 
 
 --
@@ -87859,8 +87859,8 @@ GRANT SELECT ON TABLE fatur_situacao_motivo TO pg_users;
 REVOKE ALL ON TABLE fatur_situacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE fatur_situacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE fatur_situacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_situacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE fatur_situacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatur_situacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE fatur_situacao_tipo TO role_users;
 
 
 --
@@ -87870,8 +87870,8 @@ GRANT SELECT ON TABLE fatur_situacao_tipo TO pg_users;
 REVOKE ALL ON TABLE fatura FROM PUBLIC;
 REVOKE ALL ON TABLE fatura FROM gsan_admin;
 GRANT ALL ON TABLE fatura TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatura TO pg_aplic;
-GRANT SELECT ON TABLE fatura TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatura TO role_aplic;
+GRANT SELECT ON TABLE fatura TO role_users;
 
 
 --
@@ -87881,8 +87881,8 @@ GRANT SELECT ON TABLE fatura TO pg_users;
 REVOKE ALL ON TABLE fatura_item FROM PUBLIC;
 REVOKE ALL ON TABLE fatura_item FROM gsan_admin;
 GRANT ALL ON TABLE fatura_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatura_item TO pg_aplic;
-GRANT SELECT ON TABLE fatura_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatura_item TO role_aplic;
+GRANT SELECT ON TABLE fatura_item TO role_users;
 
 
 --
@@ -87892,8 +87892,8 @@ GRANT SELECT ON TABLE fatura_item TO pg_users;
 REVOKE ALL ON TABLE fatura_item_historico FROM PUBLIC;
 REVOKE ALL ON TABLE fatura_item_historico FROM gsan_admin;
 GRANT ALL ON TABLE fatura_item_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatura_item_historico TO pg_aplic;
-GRANT SELECT ON TABLE fatura_item_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fatura_item_historico TO role_aplic;
+GRANT SELECT ON TABLE fatura_item_historico TO role_users;
 
 
 --
@@ -87903,8 +87903,8 @@ GRANT SELECT ON TABLE fatura_item_historico TO pg_users;
 REVOKE ALL ON TABLE faturamento_atividade FROM PUBLIC;
 REVOKE ALL ON TABLE faturamento_atividade FROM gsan_admin;
 GRANT ALL ON TABLE faturamento_atividade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_atividade TO pg_aplic;
-GRANT SELECT ON TABLE faturamento_atividade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_atividade TO role_aplic;
+GRANT SELECT ON TABLE faturamento_atividade TO role_users;
 
 
 --
@@ -87914,8 +87914,8 @@ GRANT SELECT ON TABLE faturamento_atividade TO pg_users;
 REVOKE ALL ON TABLE faturamento_dados FROM PUBLIC;
 REVOKE ALL ON TABLE faturamento_dados FROM gsan_admin;
 GRANT ALL ON TABLE faturamento_dados TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_dados TO pg_aplic;
-GRANT SELECT ON TABLE faturamento_dados TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_dados TO role_aplic;
+GRANT SELECT ON TABLE faturamento_dados TO role_users;
 
 
 --
@@ -87925,8 +87925,8 @@ GRANT SELECT ON TABLE faturamento_dados TO pg_users;
 REVOKE ALL ON TABLE faturamento_grp_can_aux FROM PUBLIC;
 REVOKE ALL ON TABLE faturamento_grp_can_aux FROM gsan_admin;
 GRANT ALL ON TABLE faturamento_grp_can_aux TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_grp_can_aux TO pg_aplic;
-GRANT SELECT ON TABLE faturamento_grp_can_aux TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_grp_can_aux TO role_aplic;
+GRANT SELECT ON TABLE faturamento_grp_can_aux TO role_users;
 
 
 --
@@ -87936,8 +87936,8 @@ GRANT SELECT ON TABLE faturamento_grp_can_aux TO pg_users;
 REVOKE ALL ON TABLE faturamento_grp_can_hist FROM PUBLIC;
 REVOKE ALL ON TABLE faturamento_grp_can_hist FROM gsan_admin;
 GRANT ALL ON TABLE faturamento_grp_can_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_grp_can_hist TO pg_aplic;
-GRANT SELECT ON TABLE faturamento_grp_can_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_grp_can_hist TO role_aplic;
+GRANT SELECT ON TABLE faturamento_grp_can_hist TO role_users;
 
 
 --
@@ -87947,8 +87947,8 @@ GRANT SELECT ON TABLE faturamento_grp_can_hist TO pg_users;
 REVOKE ALL ON TABLE faturamento_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE faturamento_grupo FROM gsan_admin;
 GRANT ALL ON TABLE faturamento_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_grupo TO pg_aplic;
-GRANT SELECT ON TABLE faturamento_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_grupo TO role_aplic;
+GRANT SELECT ON TABLE faturamento_grupo TO role_users;
 
 
 --
@@ -87958,8 +87958,8 @@ GRANT SELECT ON TABLE faturamento_grupo TO pg_users;
 REVOKE ALL ON TABLE faturamento_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE faturamento_tipo FROM gsan_admin;
 GRANT ALL ON TABLE faturamento_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_tipo TO pg_aplic;
-GRANT SELECT ON TABLE faturamento_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faturamento_tipo TO role_aplic;
+GRANT SELECT ON TABLE faturamento_tipo TO role_users;
 
 
 --
@@ -87969,8 +87969,8 @@ GRANT SELECT ON TABLE faturamento_tipo TO pg_users;
 REVOKE ALL ON TABLE guia_pagamento FROM PUBLIC;
 REVOKE ALL ON TABLE guia_pagamento FROM gsan_admin;
 GRANT ALL ON TABLE guia_pagamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento TO pg_aplic;
-GRANT SELECT ON TABLE guia_pagamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento TO role_aplic;
+GRANT SELECT ON TABLE guia_pagamento TO role_users;
 
 
 --
@@ -87980,8 +87980,8 @@ GRANT SELECT ON TABLE guia_pagamento TO pg_users;
 REVOKE ALL ON TABLE guia_pagamento_categoria FROM PUBLIC;
 REVOKE ALL ON TABLE guia_pagamento_categoria FROM gsan_admin;
 GRANT ALL ON TABLE guia_pagamento_categoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento_categoria TO pg_aplic;
-GRANT SELECT ON TABLE guia_pagamento_categoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento_categoria TO role_aplic;
+GRANT SELECT ON TABLE guia_pagamento_categoria TO role_users;
 
 
 --
@@ -87991,8 +87991,8 @@ GRANT SELECT ON TABLE guia_pagamento_categoria TO pg_users;
 REVOKE ALL ON TABLE guia_pagamento_geral FROM PUBLIC;
 REVOKE ALL ON TABLE guia_pagamento_geral FROM gsan_admin;
 GRANT ALL ON TABLE guia_pagamento_geral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento_geral TO pg_aplic;
-GRANT SELECT ON TABLE guia_pagamento_geral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento_geral TO role_aplic;
+GRANT SELECT ON TABLE guia_pagamento_geral TO role_users;
 
 
 --
@@ -88002,8 +88002,8 @@ GRANT SELECT ON TABLE guia_pagamento_geral TO pg_users;
 REVOKE ALL ON TABLE guia_pagamento_historico FROM PUBLIC;
 REVOKE ALL ON TABLE guia_pagamento_historico FROM gsan_admin;
 GRANT ALL ON TABLE guia_pagamento_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento_historico TO pg_aplic;
-GRANT SELECT ON TABLE guia_pagamento_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento_historico TO role_aplic;
+GRANT SELECT ON TABLE guia_pagamento_historico TO role_users;
 
 
 --
@@ -88013,8 +88013,8 @@ GRANT SELECT ON TABLE guia_pagamento_historico TO pg_users;
 REVOKE ALL ON TABLE guia_pagamento_item FROM PUBLIC;
 REVOKE ALL ON TABLE guia_pagamento_item FROM gsan_admin;
 GRANT ALL ON TABLE guia_pagamento_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento_item TO pg_aplic;
-GRANT SELECT ON TABLE guia_pagamento_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagamento_item TO role_aplic;
+GRANT SELECT ON TABLE guia_pagamento_item TO role_users;
 
 
 --
@@ -88024,8 +88024,8 @@ GRANT SELECT ON TABLE guia_pagamento_item TO pg_users;
 REVOKE ALL ON TABLE guia_pagto_catg_hist FROM PUBLIC;
 REVOKE ALL ON TABLE guia_pagto_catg_hist FROM gsan_admin;
 GRANT ALL ON TABLE guia_pagto_catg_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagto_catg_hist TO pg_aplic;
-GRANT SELECT ON TABLE guia_pagto_catg_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagto_catg_hist TO role_aplic;
+GRANT SELECT ON TABLE guia_pagto_catg_hist TO role_users;
 
 
 --
@@ -88035,8 +88035,8 @@ GRANT SELECT ON TABLE guia_pagto_catg_hist TO pg_users;
 REVOKE ALL ON TABLE guia_pagto_parcel_cartao FROM PUBLIC;
 REVOKE ALL ON TABLE guia_pagto_parcel_cartao FROM gsan_admin;
 GRANT ALL ON TABLE guia_pagto_parcel_cartao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagto_parcel_cartao TO pg_aplic;
-GRANT SELECT ON TABLE guia_pagto_parcel_cartao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE guia_pagto_parcel_cartao TO role_aplic;
+GRANT SELECT ON TABLE guia_pagto_parcel_cartao TO role_users;
 
 
 --
@@ -88046,8 +88046,8 @@ GRANT SELECT ON TABLE guia_pagto_parcel_cartao TO pg_users;
 REVOKE ALL ON TABLE histo_agua_econ_sqdra FROM PUBLIC;
 REVOKE ALL ON TABLE histo_agua_econ_sqdra FROM gsan_admin;
 GRANT ALL ON TABLE histo_agua_econ_sqdra TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histo_agua_econ_sqdra TO pg_aplic;
-GRANT SELECT ON TABLE histo_agua_econ_sqdra TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histo_agua_econ_sqdra TO role_aplic;
+GRANT SELECT ON TABLE histo_agua_econ_sqdra TO role_users;
 
 
 --
@@ -88057,8 +88057,8 @@ GRANT SELECT ON TABLE histo_agua_econ_sqdra TO pg_users;
 REVOKE ALL ON TABLE histo_agua_ligacao_sqdra FROM PUBLIC;
 REVOKE ALL ON TABLE histo_agua_ligacao_sqdra FROM gsan_admin;
 GRANT ALL ON TABLE histo_agua_ligacao_sqdra TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histo_agua_ligacao_sqdra TO pg_aplic;
-GRANT SELECT ON TABLE histo_agua_ligacao_sqdra TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histo_agua_ligacao_sqdra TO role_aplic;
+GRANT SELECT ON TABLE histo_agua_ligacao_sqdra TO role_users;
 
 
 --
@@ -88068,8 +88068,8 @@ GRANT SELECT ON TABLE histo_agua_ligacao_sqdra TO pg_users;
 REVOKE ALL ON TABLE histo_esgt_econ_sqdra FROM PUBLIC;
 REVOKE ALL ON TABLE histo_esgt_econ_sqdra FROM gsan_admin;
 GRANT ALL ON TABLE histo_esgt_econ_sqdra TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histo_esgt_econ_sqdra TO pg_aplic;
-GRANT SELECT ON TABLE histo_esgt_econ_sqdra TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histo_esgt_econ_sqdra TO role_aplic;
+GRANT SELECT ON TABLE histo_esgt_econ_sqdra TO role_users;
 
 
 --
@@ -88079,8 +88079,8 @@ GRANT SELECT ON TABLE histo_esgt_econ_sqdra TO pg_users;
 REVOKE ALL ON TABLE histo_esgt_ligacao_sqdra FROM PUBLIC;
 REVOKE ALL ON TABLE histo_esgt_ligacao_sqdra FROM gsan_admin;
 GRANT ALL ON TABLE histo_esgt_ligacao_sqdra TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histo_esgt_ligacao_sqdra TO pg_aplic;
-GRANT SELECT ON TABLE histo_esgt_ligacao_sqdra TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histo_esgt_ligacao_sqdra TO role_aplic;
+GRANT SELECT ON TABLE histo_esgt_ligacao_sqdra TO role_users;
 
 
 --
@@ -88090,8 +88090,8 @@ GRANT SELECT ON TABLE histo_esgt_ligacao_sqdra TO pg_users;
 REVOKE ALL ON TABLE histograma_agua_economia FROM PUBLIC;
 REVOKE ALL ON TABLE histograma_agua_economia FROM gsan_admin;
 GRANT ALL ON TABLE histograma_agua_economia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histograma_agua_economia TO pg_aplic;
-GRANT SELECT ON TABLE histograma_agua_economia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histograma_agua_economia TO role_aplic;
+GRANT SELECT ON TABLE histograma_agua_economia TO role_users;
 
 
 --
@@ -88101,8 +88101,8 @@ GRANT SELECT ON TABLE histograma_agua_economia TO pg_users;
 REVOKE ALL ON TABLE histograma_agua_ligacao FROM PUBLIC;
 REVOKE ALL ON TABLE histograma_agua_ligacao FROM gsan_admin;
 GRANT ALL ON TABLE histograma_agua_ligacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histograma_agua_ligacao TO pg_aplic;
-GRANT SELECT ON TABLE histograma_agua_ligacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histograma_agua_ligacao TO role_aplic;
+GRANT SELECT ON TABLE histograma_agua_ligacao TO role_users;
 
 
 --
@@ -88112,8 +88112,8 @@ GRANT SELECT ON TABLE histograma_agua_ligacao TO pg_users;
 REVOKE ALL ON TABLE histograma_esg_economia FROM PUBLIC;
 REVOKE ALL ON TABLE histograma_esg_economia FROM gsan_admin;
 GRANT ALL ON TABLE histograma_esg_economia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histograma_esg_economia TO pg_aplic;
-GRANT SELECT ON TABLE histograma_esg_economia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histograma_esg_economia TO role_aplic;
+GRANT SELECT ON TABLE histograma_esg_economia TO role_users;
 
 
 --
@@ -88123,8 +88123,8 @@ GRANT SELECT ON TABLE histograma_esg_economia TO pg_users;
 REVOKE ALL ON TABLE histograma_esg_ligacao FROM PUBLIC;
 REVOKE ALL ON TABLE histograma_esg_ligacao FROM gsan_admin;
 GRANT ALL ON TABLE histograma_esg_ligacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histograma_esg_ligacao TO pg_aplic;
-GRANT SELECT ON TABLE histograma_esg_ligacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE histograma_esg_ligacao TO role_aplic;
+GRANT SELECT ON TABLE histograma_esg_ligacao TO role_users;
 
 
 --
@@ -88134,8 +88134,8 @@ GRANT SELECT ON TABLE histograma_esg_ligacao TO pg_users;
 REVOKE ALL ON TABLE imovel_antecipacao FROM PUBLIC;
 REVOKE ALL ON TABLE imovel_antecipacao FROM gsan_admin;
 GRANT ALL ON TABLE imovel_antecipacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_antecipacao TO pg_aplic;
-GRANT SELECT ON TABLE imovel_antecipacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imovel_antecipacao TO role_aplic;
+GRANT SELECT ON TABLE imovel_antecipacao TO role_users;
 
 
 --
@@ -88145,8 +88145,8 @@ GRANT SELECT ON TABLE imovel_antecipacao TO pg_users;
 REVOKE ALL ON TABLE imposto_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE imposto_tipo FROM gsan_admin;
 GRANT ALL ON TABLE imposto_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imposto_tipo TO pg_aplic;
-GRANT SELECT ON TABLE imposto_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imposto_tipo TO role_aplic;
+GRANT SELECT ON TABLE imposto_tipo TO role_users;
 
 
 --
@@ -88156,8 +88156,8 @@ GRANT SELECT ON TABLE imposto_tipo TO pg_users;
 REVOKE ALL ON TABLE imposto_tipo_aliquota FROM PUBLIC;
 REVOKE ALL ON TABLE imposto_tipo_aliquota FROM gsan_admin;
 GRANT ALL ON TABLE imposto_tipo_aliquota TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imposto_tipo_aliquota TO pg_aplic;
-GRANT SELECT ON TABLE imposto_tipo_aliquota TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE imposto_tipo_aliquota TO role_aplic;
+GRANT SELECT ON TABLE imposto_tipo_aliquota TO role_users;
 
 
 --
@@ -88167,8 +88167,8 @@ GRANT SELECT ON TABLE imposto_tipo_aliquota TO pg_users;
 REVOKE ALL ON TABLE mot_interferencia_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE mot_interferencia_tipo FROM gsan_admin;
 GRANT ALL ON TABLE mot_interferencia_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mot_interferencia_tipo TO pg_aplic;
-GRANT SELECT ON TABLE mot_interferencia_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mot_interferencia_tipo TO role_aplic;
+GRANT SELECT ON TABLE mot_interferencia_tipo TO role_users;
 
 
 --
@@ -88178,8 +88178,8 @@ GRANT SELECT ON TABLE mot_interferencia_tipo TO pg_users;
 REVOKE ALL ON TABLE motivo_nao_entrega_doc FROM PUBLIC;
 REVOKE ALL ON TABLE motivo_nao_entrega_doc FROM gsan_admin;
 GRANT ALL ON TABLE motivo_nao_entrega_doc TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_nao_entrega_doc TO pg_aplic;
-GRANT SELECT ON TABLE motivo_nao_entrega_doc TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE motivo_nao_entrega_doc TO role_aplic;
+GRANT SELECT ON TABLE motivo_nao_entrega_doc TO role_users;
 
 
 --
@@ -88189,8 +88189,8 @@ GRANT SELECT ON TABLE motivo_nao_entrega_doc TO pg_users;
 REVOKE ALL ON TABLE mov_conta_catg_cons_fx FROM PUBLIC;
 REVOKE ALL ON TABLE mov_conta_catg_cons_fx FROM gsan_admin;
 GRANT ALL ON TABLE mov_conta_catg_cons_fx TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_conta_catg_cons_fx TO pg_aplic;
-GRANT SELECT ON TABLE mov_conta_catg_cons_fx TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_conta_catg_cons_fx TO role_aplic;
+GRANT SELECT ON TABLE mov_conta_catg_cons_fx TO role_users;
 
 
 --
@@ -88200,8 +88200,8 @@ GRANT SELECT ON TABLE mov_conta_catg_cons_fx TO pg_users;
 REVOKE ALL ON TABLE mov_conta_imposto_dedz FROM PUBLIC;
 REVOKE ALL ON TABLE mov_conta_imposto_dedz FROM gsan_admin;
 GRANT ALL ON TABLE mov_conta_imposto_dedz TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_conta_imposto_dedz TO pg_aplic;
-GRANT SELECT ON TABLE mov_conta_imposto_dedz TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_conta_imposto_dedz TO role_aplic;
+GRANT SELECT ON TABLE mov_conta_imposto_dedz TO role_users;
 
 
 --
@@ -88211,8 +88211,8 @@ GRANT SELECT ON TABLE mov_conta_imposto_dedz TO pg_users;
 REVOKE ALL ON TABLE mov_conta_prefat_catg FROM PUBLIC;
 REVOKE ALL ON TABLE mov_conta_prefat_catg FROM gsan_admin;
 GRANT ALL ON TABLE mov_conta_prefat_catg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_conta_prefat_catg TO pg_aplic;
-GRANT SELECT ON TABLE mov_conta_prefat_catg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_conta_prefat_catg TO role_aplic;
+GRANT SELECT ON TABLE mov_conta_prefat_catg TO role_users;
 
 
 --
@@ -88222,8 +88222,8 @@ GRANT SELECT ON TABLE mov_conta_prefat_catg TO pg_users;
 REVOKE ALL ON TABLE mov_conta_prefaturada FROM PUBLIC;
 REVOKE ALL ON TABLE mov_conta_prefaturada FROM gsan_admin;
 GRANT ALL ON TABLE mov_conta_prefaturada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_conta_prefaturada TO pg_aplic;
-GRANT SELECT ON TABLE mov_conta_prefaturada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_conta_prefaturada TO role_aplic;
+GRANT SELECT ON TABLE mov_conta_prefaturada TO role_users;
 
 
 --
@@ -88233,8 +88233,8 @@ GRANT SELECT ON TABLE mov_conta_prefaturada TO pg_users;
 REVOKE ALL ON TABLE qualidade_agua FROM PUBLIC;
 REVOKE ALL ON TABLE qualidade_agua FROM gsan_admin;
 GRANT ALL ON TABLE qualidade_agua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qualidade_agua TO pg_aplic;
-GRANT SELECT ON TABLE qualidade_agua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qualidade_agua TO role_aplic;
+GRANT SELECT ON TABLE qualidade_agua TO role_users;
 
 
 --
@@ -88244,8 +88244,8 @@ GRANT SELECT ON TABLE qualidade_agua TO pg_users;
 REVOKE ALL ON TABLE qualidade_agua_padrao FROM PUBLIC;
 REVOKE ALL ON TABLE qualidade_agua_padrao FROM gsan_admin;
 GRANT ALL ON TABLE qualidade_agua_padrao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qualidade_agua_padrao TO pg_aplic;
-GRANT SELECT ON TABLE qualidade_agua_padrao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qualidade_agua_padrao TO role_aplic;
+GRANT SELECT ON TABLE qualidade_agua_padrao TO role_users;
 
 
 --
@@ -88255,8 +88255,8 @@ GRANT SELECT ON TABLE qualidade_agua_padrao TO pg_users;
 REVOKE ALL ON TABLE receitas_a_faturar_resumo FROM PUBLIC;
 REVOKE ALL ON TABLE receitas_a_faturar_resumo FROM gsan_admin;
 GRANT ALL ON TABLE receitas_a_faturar_resumo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE receitas_a_faturar_resumo TO pg_aplic;
-GRANT SELECT ON TABLE receitas_a_faturar_resumo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE receitas_a_faturar_resumo TO role_aplic;
+GRANT SELECT ON TABLE receitas_a_faturar_resumo TO role_users;
 
 
 --
@@ -88266,8 +88266,8 @@ GRANT SELECT ON TABLE receitas_a_faturar_resumo TO pg_users;
 REVOKE ALL ON TABLE refaturamento FROM PUBLIC;
 REVOKE ALL ON TABLE refaturamento FROM gsan_admin;
 GRANT ALL ON TABLE refaturamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE refaturamento TO pg_aplic;
-GRANT SELECT ON TABLE refaturamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE refaturamento TO role_aplic;
+GRANT SELECT ON TABLE refaturamento TO role_users;
 
 
 --
@@ -88277,8 +88277,8 @@ GRANT SELECT ON TABLE refaturamento TO pg_users;
 REVOKE ALL ON TABLE res_fatu_simulacao_cred FROM PUBLIC;
 REVOKE ALL ON TABLE res_fatu_simulacao_cred FROM gsan_admin;
 GRANT ALL ON TABLE res_fatu_simulacao_cred TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE res_fatu_simulacao_cred TO pg_aplic;
-GRANT SELECT ON TABLE res_fatu_simulacao_cred TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE res_fatu_simulacao_cred TO role_aplic;
+GRANT SELECT ON TABLE res_fatu_simulacao_cred TO role_users;
 
 
 --
@@ -88288,8 +88288,8 @@ GRANT SELECT ON TABLE res_fatu_simulacao_cred TO pg_users;
 REVOKE ALL ON TABLE res_fatu_simulacao_debi FROM PUBLIC;
 REVOKE ALL ON TABLE res_fatu_simulacao_debi FROM gsan_admin;
 GRANT ALL ON TABLE res_fatu_simulacao_debi TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE res_fatu_simulacao_debi TO pg_aplic;
-GRANT SELECT ON TABLE res_fatu_simulacao_debi TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE res_fatu_simulacao_debi TO role_aplic;
+GRANT SELECT ON TABLE res_fatu_simulacao_debi TO role_users;
 
 
 --
@@ -88299,8 +88299,8 @@ GRANT SELECT ON TABLE res_fatu_simulacao_debi TO pg_users;
 REVOKE ALL ON TABLE res_fatur_sit_especial FROM PUBLIC;
 REVOKE ALL ON TABLE res_fatur_sit_especial FROM gsan_admin;
 GRANT ALL ON TABLE res_fatur_sit_especial TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE res_fatur_sit_especial TO pg_aplic;
-GRANT SELECT ON TABLE res_fatur_sit_especial TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE res_fatur_sit_especial TO role_aplic;
+GRANT SELECT ON TABLE res_fatur_sit_especial TO role_users;
 
 
 --
@@ -88310,8 +88310,8 @@ GRANT SELECT ON TABLE res_fatur_sit_especial TO pg_users;
 REVOKE ALL ON TABLE resumo_fatur_simulacao FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_fatur_simulacao FROM gsan_admin;
 GRANT ALL ON TABLE resumo_fatur_simulacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_fatur_simulacao TO pg_aplic;
-GRANT SELECT ON TABLE resumo_fatur_simulacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_fatur_simulacao TO role_aplic;
+GRANT SELECT ON TABLE resumo_fatur_simulacao TO role_users;
 
 
 --
@@ -88321,8 +88321,8 @@ GRANT SELECT ON TABLE resumo_fatur_simulacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_auto_infracao_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_auto_infracao_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_auto_infracao_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_auto_infracao_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_auto_infracao_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_auto_infracao_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_auto_infracao_situacao TO role_users;
 
 
 --
@@ -88332,8 +88332,8 @@ GRANT SELECT ON SEQUENCE seq_auto_infracao_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_autos_infr_deb_a_cobrar FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_autos_infr_deb_a_cobrar FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_autos_infr_deb_a_cobrar TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_autos_infr_deb_a_cobrar TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_autos_infr_deb_a_cobrar TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_autos_infr_deb_a_cobrar TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_autos_infr_deb_a_cobrar TO role_users;
 
 
 --
@@ -88343,8 +88343,8 @@ GRANT SELECT ON SEQUENCE seq_autos_infr_deb_a_cobrar TO pg_users;
 REVOKE ALL ON SEQUENCE seq_autos_infracao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_autos_infracao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_autos_infracao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_autos_infracao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_autos_infracao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_autos_infracao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_autos_infracao TO role_users;
 
 
 --
@@ -88354,8 +88354,8 @@ GRANT SELECT ON SEQUENCE seq_autos_infracao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_faixa_categoria FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_faixa_categoria FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_faixa_categoria TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_faixa_categoria TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_faixa_categoria TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_faixa_categoria TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_faixa_categoria TO role_users;
 
 
 --
@@ -88365,8 +88365,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_faixa_categoria TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_faixa_ligacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_faixa_ligacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_faixa_ligacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_faixa_ligacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_faixa_ligacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_faixa_ligacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_faixa_ligacao TO role_users;
 
 
 --
@@ -88376,8 +88376,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_faixa_ligacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_tarifa FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_tarifa FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_tarifa TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tarifa TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_tarifa TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tarifa TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_tarifa TO role_users;
 
 
 --
@@ -88387,8 +88387,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_tarifa TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_tarifa_categoria FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_tarifa_categoria FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_tarifa_categoria TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tarifa_categoria TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_tarifa_categoria TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tarifa_categoria TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_tarifa_categoria TO role_users;
 
 
 --
@@ -88398,8 +88398,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_tarifa_categoria TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_tarifa_faixa FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_tarifa_faixa FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_tarifa_faixa TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tarifa_faixa TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_tarifa_faixa TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tarifa_faixa TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_tarifa_faixa TO role_users;
 
 
 --
@@ -88409,8 +88409,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_tarifa_faixa TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_tarifa_vigencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_tarifa_vigencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_tarifa_vigencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tarifa_vigencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_tarifa_vigencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tarifa_vigencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_tarifa_vigencia TO role_users;
 
 
 --
@@ -88420,8 +88420,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_tarifa_vigencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_catg_cons_fx FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_catg_cons_fx FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_catg_cons_fx TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_catg_cons_fx TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_catg_cons_fx TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_catg_cons_fx TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_catg_cons_fx TO role_users;
 
 
 --
@@ -88431,8 +88431,8 @@ GRANT SELECT ON SEQUENCE seq_conta_catg_cons_fx TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_geral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_geral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_geral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_geral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_geral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_geral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_geral TO role_users;
 
 
 --
@@ -88442,8 +88442,8 @@ GRANT SELECT ON SEQUENCE seq_conta_geral TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_impostos_deduzidos FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_impostos_deduzidos FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_impostos_deduzidos TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_impostos_deduzidos TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_impostos_deduzidos TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_impostos_deduzidos TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_impostos_deduzidos TO role_users;
 
 
 --
@@ -88453,8 +88453,8 @@ GRANT SELECT ON SEQUENCE seq_conta_impostos_deduzidos TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_impostos_dedz_hist FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_impostos_dedz_hist FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_impostos_dedz_hist TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_impostos_dedz_hist TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_impostos_dedz_hist TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_impostos_dedz_hist TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_impostos_dedz_hist TO role_users;
 
 
 --
@@ -88464,8 +88464,8 @@ GRANT SELECT ON SEQUENCE seq_conta_impostos_dedz_hist TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_impressao_termica_qtde FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_impressao_termica_qtde FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_impressao_termica_qtde TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_impressao_termica_qtde TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_impressao_termica_qtde TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_impressao_termica_qtde TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_impressao_termica_qtde TO role_users;
 
 
 --
@@ -88475,8 +88475,8 @@ GRANT SELECT ON SEQUENCE seq_conta_impressao_termica_qtde TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_mensagem FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_mensagem FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_mensagem TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_mensagem TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_mensagem TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_mensagem TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_mensagem TO role_users;
 
 
 --
@@ -88486,8 +88486,8 @@ GRANT SELECT ON SEQUENCE seq_conta_mensagem TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_mot_cancelamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_mot_cancelamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_mot_cancelamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_mot_cancelamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_mot_cancelamento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_mot_cancelamento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_mot_cancelamento TO role_users;
 
 
 --
@@ -88497,8 +88497,8 @@ GRANT SELECT ON SEQUENCE seq_conta_mot_cancelamento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_motivo_inclusao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_motivo_inclusao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_motivo_inclusao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_motivo_inclusao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_motivo_inclusao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_motivo_inclusao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_motivo_inclusao TO role_users;
 
 
 --
@@ -88508,8 +88508,8 @@ GRANT SELECT ON SEQUENCE seq_conta_motivo_inclusao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_motivo_retificacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_motivo_retificacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_motivo_retificacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_motivo_retificacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_motivo_retificacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_motivo_retificacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_motivo_retificacao TO role_users;
 
 
 --
@@ -88519,8 +88519,8 @@ GRANT SELECT ON SEQUENCE seq_conta_motivo_retificacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_motivo_revisao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_motivo_revisao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_motivo_revisao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_motivo_revisao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_motivo_revisao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_motivo_revisao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_motivo_revisao TO role_users;
 
 
 --
@@ -88530,8 +88530,8 @@ GRANT SELECT ON SEQUENCE seq_conta_motivo_revisao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_numero_boleto FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_numero_boleto FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_numero_boleto TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_numero_boleto TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_numero_boleto TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_numero_boleto TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_numero_boleto TO role_users;
 
 
 --
@@ -88541,8 +88541,8 @@ GRANT SELECT ON SEQUENCE seq_conta_numero_boleto TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_revisao_fx_valor FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_revisao_fx_valor FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_revisao_fx_valor TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_revisao_fx_valor TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_revisao_fx_valor TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_revisao_fx_valor TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_revisao_fx_valor TO role_users;
 
 
 --
@@ -88552,8 +88552,8 @@ GRANT SELECT ON SEQUENCE seq_conta_revisao_fx_valor TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_tipo TO role_users;
 
 
 --
@@ -88563,7 +88563,7 @@ GRANT SELECT ON SEQUENCE seq_conta_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda_fx_cons FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda_fx_cons FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_demanda_fx_cons TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_fx_cons TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_fx_cons TO role_aplic;
 
 
 --
@@ -88573,7 +88573,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_fx_cons TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda_imovel FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda_imovel FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_demanda_imovel TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_imovel TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_imovel TO role_aplic;
 
 
 --
@@ -88583,7 +88583,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_imovel TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda_mot_enc FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda_mot_enc FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_demanda_mot_enc TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_mot_enc TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_mot_enc TO role_aplic;
 
 
 --
@@ -88593,7 +88593,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_mot_enc TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda_situac FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_demanda_situac FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_demanda_situac TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_situac TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_situac TO role_aplic;
 
 
 --
@@ -88603,8 +88603,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_demanda_situac TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_cred_realizado_hist FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_cred_realizado_hist FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_cred_realizado_hist TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_cred_realizado_hist TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_cred_realizado_hist TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_cred_realizado_hist TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_cred_realizado_hist TO role_users;
 
 
 --
@@ -88614,8 +88614,8 @@ GRANT SELECT ON SEQUENCE seq_cred_realizado_hist TO pg_users;
 REVOKE ALL ON SEQUENCE seq_credito_a_realizar_geral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_credito_a_realizar_geral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_credito_a_realizar_geral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_credito_a_realizar_geral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_credito_a_realizar_geral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_credito_a_realizar_geral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_credito_a_realizar_geral TO role_users;
 
 
 --
@@ -88625,8 +88625,8 @@ GRANT SELECT ON SEQUENCE seq_credito_a_realizar_geral TO pg_users;
 REVOKE ALL ON SEQUENCE seq_credito_origem FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_credito_origem FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_credito_origem TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_credito_origem TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_credito_origem TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_credito_origem TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_credito_origem TO role_users;
 
 
 --
@@ -88636,8 +88636,8 @@ GRANT SELECT ON SEQUENCE seq_credito_origem TO pg_users;
 REVOKE ALL ON SEQUENCE seq_credito_realizado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_credito_realizado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_credito_realizado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_credito_realizado TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_credito_realizado TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_credito_realizado TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_credito_realizado TO role_users;
 
 
 --
@@ -88647,8 +88647,8 @@ GRANT SELECT ON SEQUENCE seq_credito_realizado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_credito_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_credito_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_credito_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_credito_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_credito_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_credito_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_credito_tipo TO role_users;
 
 
 --
@@ -88658,8 +88658,8 @@ GRANT SELECT ON SEQUENCE seq_credito_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_a_cobrar_geral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_a_cobrar_geral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_a_cobrar_geral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_a_cobrar_geral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_a_cobrar_geral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_a_cobrar_geral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_a_cobrar_geral TO role_users;
 
 
 --
@@ -88669,8 +88669,8 @@ GRANT SELECT ON SEQUENCE seq_debito_a_cobrar_geral TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_cobrado FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_cobrado FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_cobrado TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_cobrado TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_cobrado TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_cobrado TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_cobrado TO role_users;
 
 
 --
@@ -88680,8 +88680,8 @@ GRANT SELECT ON SEQUENCE seq_debito_cobrado TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_cobrado_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_cobrado_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_cobrado_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_cobrado_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_cobrado_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_cobrado_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_cobrado_historico TO role_users;
 
 
 --
@@ -88691,8 +88691,8 @@ GRANT SELECT ON SEQUENCE seq_debito_cobrado_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_credito_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_credito_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_credito_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_credito_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_credito_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_credito_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_credito_situacao TO role_users;
 
 
 --
@@ -88702,8 +88702,8 @@ GRANT SELECT ON SEQUENCE seq_debito_credito_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_faixa_valores FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_faixa_valores FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_faixa_valores TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_faixa_valores TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_faixa_valores TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_faixa_valores TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_faixa_valores TO role_users;
 
 
 --
@@ -88713,8 +88713,8 @@ GRANT SELECT ON SEQUENCE seq_debito_faixa_valores TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_debito_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_debito_tipo TO role_users;
 
 
 --
@@ -88724,8 +88724,8 @@ GRANT SELECT ON SEQUENCE seq_debito_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_debito_tipo_vigencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_debito_tipo_vigencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_debito_tipo_vigencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_tipo_vigencia TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_debito_tipo_vigencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_tipo_vigencia TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_debito_tipo_vigencia TO role_users;
 
 
 --
@@ -88735,8 +88735,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_debito_tipo_vigencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_documento_nao_entregue FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_documento_nao_entregue FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_documento_nao_entregue TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_documento_nao_entregue TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_documento_nao_entregue TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_documento_nao_entregue TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_documento_nao_entregue TO role_users;
 
 
 --
@@ -88746,8 +88746,8 @@ GRANT SELECT ON SEQUENCE seq_documento_nao_entregue TO pg_users;
 REVOKE ALL ON SEQUENCE seq_extrato_quitacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_extrato_quitacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_extrato_quitacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao TO role_users;
 
 
 --
@@ -88757,8 +88757,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_extrato_quitacao_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_extrato_quitacao_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_extrato_quitacao_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao_item TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao_item TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao_item TO role_users;
 
 
 --
@@ -88768,8 +88768,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_extrato_quitacao_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatur_ativ_cronograma FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatur_ativ_cronograma FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatur_ativ_cronograma TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_ativ_cronograma TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatur_ativ_cronograma TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_ativ_cronograma TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatur_ativ_cronograma TO role_users;
 
 
 --
@@ -88779,8 +88779,8 @@ GRANT SELECT ON SEQUENCE seq_fatur_ativ_cronograma TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatur_contb_parametros FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatur_contb_parametros FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatur_contb_parametros TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_contb_parametros TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatur_contb_parametros TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_contb_parametros TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatur_contb_parametros TO role_users;
 
 
 --
@@ -88790,8 +88790,8 @@ GRANT SELECT ON SEQUENCE seq_fatur_contb_parametros TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatur_grupo_crg_mensal FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatur_grupo_crg_mensal FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatur_grupo_crg_mensal TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_grupo_crg_mensal TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatur_grupo_crg_mensal TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_grupo_crg_mensal TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatur_grupo_crg_mensal TO role_users;
 
 
 --
@@ -88801,8 +88801,8 @@ GRANT SELECT ON SEQUENCE seq_fatur_grupo_crg_mensal TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatur_imediato_ajuste FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatur_imediato_ajuste FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatur_imediato_ajuste TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_imediato_ajuste TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatur_imediato_ajuste TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_imediato_ajuste TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatur_imediato_ajuste TO role_users;
 
 
 --
@@ -88812,8 +88812,8 @@ GRANT SELECT ON SEQUENCE seq_fatur_imediato_ajuste TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatur_situacao_comando FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatur_situacao_comando FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatur_situacao_comando TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_situacao_comando TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatur_situacao_comando TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_situacao_comando TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatur_situacao_comando TO role_users;
 
 
 --
@@ -88823,8 +88823,8 @@ GRANT SELECT ON SEQUENCE seq_fatur_situacao_comando TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatur_situacao_hist FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatur_situacao_hist FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatur_situacao_hist TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_situacao_hist TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatur_situacao_hist TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_situacao_hist TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatur_situacao_hist TO role_users;
 
 
 --
@@ -88834,8 +88834,8 @@ GRANT SELECT ON SEQUENCE seq_fatur_situacao_hist TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatur_situacao_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatur_situacao_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatur_situacao_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_situacao_motivo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatur_situacao_motivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_situacao_motivo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatur_situacao_motivo TO role_users;
 
 
 --
@@ -88845,8 +88845,8 @@ GRANT SELECT ON SEQUENCE seq_fatur_situacao_motivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatur_situacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatur_situacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatur_situacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_situacao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatur_situacao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatur_situacao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatur_situacao_tipo TO role_users;
 
 
 --
@@ -88856,8 +88856,8 @@ GRANT SELECT ON SEQUENCE seq_fatur_situacao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatura FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatura FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatura TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatura TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatura TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatura TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatura TO role_users;
 
 
 --
@@ -88867,8 +88867,8 @@ GRANT SELECT ON SEQUENCE seq_fatura TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatura_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatura_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatura_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatura_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatura_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatura_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatura_item TO role_users;
 
 
 --
@@ -88878,8 +88878,8 @@ GRANT SELECT ON SEQUENCE seq_fatura_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fatura_item_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fatura_item_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fatura_item_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fatura_item_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fatura_item_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fatura_item_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fatura_item_historico TO role_users;
 
 
 --
@@ -88889,8 +88889,8 @@ GRANT SELECT ON SEQUENCE seq_fatura_item_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_faturamento_atividade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_faturamento_atividade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_faturamento_atividade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_atividade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_faturamento_atividade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_atividade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_faturamento_atividade TO role_users;
 
 
 --
@@ -88900,8 +88900,8 @@ GRANT SELECT ON SEQUENCE seq_faturamento_atividade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_faturamento_dados FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_faturamento_dados FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_faturamento_dados TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_dados TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_faturamento_dados TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_dados TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_faturamento_dados TO role_users;
 
 
 --
@@ -88911,7 +88911,7 @@ GRANT SELECT ON SEQUENCE seq_faturamento_dados TO pg_users;
 REVOKE ALL ON SEQUENCE seq_faturamento_grp_can_aux FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_faturamento_grp_can_aux FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_faturamento_grp_can_aux TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_grp_can_aux TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_grp_can_aux TO role_aplic;
 
 
 --
@@ -88921,7 +88921,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_grp_can_aux TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_faturamento_grp_can_hist FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_faturamento_grp_can_hist FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_faturamento_grp_can_hist TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_grp_can_hist TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_grp_can_hist TO role_aplic;
 
 
 --
@@ -88931,8 +88931,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_grp_can_hist TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_faturamento_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_faturamento_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_faturamento_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_grupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_faturamento_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_grupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_faturamento_grupo TO role_users;
 
 
 --
@@ -88942,8 +88942,8 @@ GRANT SELECT ON SEQUENCE seq_faturamento_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_faturamento_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_faturamento_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_faturamento_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_faturamento_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_faturamento_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_faturamento_tipo TO role_users;
 
 
 --
@@ -88953,8 +88953,8 @@ GRANT SELECT ON SEQUENCE seq_faturamento_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_guia_pagamento_geral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_guia_pagamento_geral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_guia_pagamento_geral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_guia_pagamento_geral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_guia_pagamento_geral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_guia_pagamento_geral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_guia_pagamento_geral TO role_users;
 
 
 --
@@ -88964,7 +88964,7 @@ GRANT SELECT ON SEQUENCE seq_guia_pagamento_geral TO pg_users;
 REVOKE ALL ON SEQUENCE seq_histo_agua_econ_sqdra FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_histo_agua_econ_sqdra FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_histo_agua_econ_sqdra TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_histo_agua_econ_sqdra TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_histo_agua_econ_sqdra TO role_aplic;
 
 
 --
@@ -88974,7 +88974,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_histo_agua_econ_sqdra TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_histo_agua_ligacao_sqdra FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_histo_agua_ligacao_sqdra FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_histo_agua_ligacao_sqdra TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_histo_agua_ligacao_sqdra TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_histo_agua_ligacao_sqdra TO role_aplic;
 
 
 --
@@ -88984,7 +88984,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_histo_agua_ligacao_sqdra TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_histo_esgt_econ_sqdra FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_histo_esgt_econ_sqdra FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_histo_esgt_econ_sqdra TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_histo_esgt_econ_sqdra TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_histo_esgt_econ_sqdra TO role_aplic;
 
 
 --
@@ -88994,7 +88994,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_histo_esgt_econ_sqdra TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_histo_esgt_ligacao_sqdra FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_histo_esgt_ligacao_sqdra FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_histo_esgt_ligacao_sqdra TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_histo_esgt_ligacao_sqdra TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_histo_esgt_ligacao_sqdra TO role_aplic;
 
 
 --
@@ -89004,8 +89004,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_histo_esgt_ligacao_sqdra TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_histograma_agua_economia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_histograma_agua_economia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_histograma_agua_economia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_histograma_agua_economia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_histograma_agua_economia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_histograma_agua_economia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_histograma_agua_economia TO role_users;
 
 
 --
@@ -89015,8 +89015,8 @@ GRANT SELECT ON SEQUENCE seq_histograma_agua_economia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_histograma_agua_ligacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_histograma_agua_ligacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_histograma_agua_ligacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_histograma_agua_ligacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_histograma_agua_ligacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_histograma_agua_ligacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_histograma_agua_ligacao TO role_users;
 
 
 --
@@ -89026,8 +89026,8 @@ GRANT SELECT ON SEQUENCE seq_histograma_agua_ligacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_histograma_esg_economia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_histograma_esg_economia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_histograma_esg_economia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_histograma_esg_economia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_histograma_esg_economia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_histograma_esg_economia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_histograma_esg_economia TO role_users;
 
 
 --
@@ -89037,8 +89037,8 @@ GRANT SELECT ON SEQUENCE seq_histograma_esg_economia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_histograma_esg_ligacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_histograma_esg_ligacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_histograma_esg_ligacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_histograma_esg_ligacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_histograma_esg_ligacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_histograma_esg_ligacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_histograma_esg_ligacao TO role_users;
 
 
 --
@@ -89048,8 +89048,8 @@ GRANT SELECT ON SEQUENCE seq_histograma_esg_ligacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imovel_antecipacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imovel_antecipacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imovel_antecipacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_antecipacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imovel_antecipacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imovel_antecipacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imovel_antecipacao TO role_users;
 
 
 --
@@ -89059,8 +89059,8 @@ GRANT SELECT ON SEQUENCE seq_imovel_antecipacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imposto_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imposto_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imposto_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imposto_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imposto_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imposto_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imposto_tipo TO role_users;
 
 
 --
@@ -89070,8 +89070,8 @@ GRANT SELECT ON SEQUENCE seq_imposto_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_imposto_tipo_aliquota FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_imposto_tipo_aliquota FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_imposto_tipo_aliquota TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_imposto_tipo_aliquota TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_imposto_tipo_aliquota TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_imposto_tipo_aliquota TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_imposto_tipo_aliquota TO role_users;
 
 
 --
@@ -89081,8 +89081,8 @@ GRANT SELECT ON SEQUENCE seq_imposto_tipo_aliquota TO pg_users;
 REVOKE ALL ON SEQUENCE seq_mot_interferencia_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_mot_interferencia_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_mot_interferencia_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_mot_interferencia_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_mot_interferencia_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_mot_interferencia_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_mot_interferencia_tipo TO role_users;
 
 
 --
@@ -89092,8 +89092,8 @@ GRANT SELECT ON SEQUENCE seq_mot_interferencia_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_motivo_nao_entrega_doc FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_motivo_nao_entrega_doc FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_motivo_nao_entrega_doc TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_nao_entrega_doc TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_motivo_nao_entrega_doc TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_motivo_nao_entrega_doc TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_motivo_nao_entrega_doc TO role_users;
 
 
 --
@@ -89103,8 +89103,8 @@ GRANT SELECT ON SEQUENCE seq_motivo_nao_entrega_doc TO pg_users;
 REVOKE ALL ON SEQUENCE seq_mov_conta_catg_cons_fx FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_mov_conta_catg_cons_fx FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_mov_conta_catg_cons_fx TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_mov_conta_catg_cons_fx TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_mov_conta_catg_cons_fx TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_mov_conta_catg_cons_fx TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_mov_conta_catg_cons_fx TO role_users;
 
 
 --
@@ -89114,8 +89114,8 @@ GRANT SELECT ON SEQUENCE seq_mov_conta_catg_cons_fx TO pg_users;
 REVOKE ALL ON SEQUENCE seq_mov_conta_imposto_dedz FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_mov_conta_imposto_dedz FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_mov_conta_imposto_dedz TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_mov_conta_imposto_dedz TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_mov_conta_imposto_dedz TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_mov_conta_imposto_dedz TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_mov_conta_imposto_dedz TO role_users;
 
 
 --
@@ -89125,8 +89125,8 @@ GRANT SELECT ON SEQUENCE seq_mov_conta_imposto_dedz TO pg_users;
 REVOKE ALL ON SEQUENCE seq_mov_conta_prefaturada FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_mov_conta_prefaturada FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_mov_conta_prefaturada TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_mov_conta_prefaturada TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_mov_conta_prefaturada TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_mov_conta_prefaturada TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_mov_conta_prefaturada TO role_users;
 
 
 --
@@ -89136,8 +89136,8 @@ GRANT SELECT ON SEQUENCE seq_mov_conta_prefaturada TO pg_users;
 REVOKE ALL ON SEQUENCE seq_qualidade_agua FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_qualidade_agua FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_qualidade_agua TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_qualidade_agua TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_qualidade_agua TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_qualidade_agua TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_qualidade_agua TO role_users;
 
 
 --
@@ -89147,8 +89147,8 @@ GRANT SELECT ON SEQUENCE seq_qualidade_agua TO pg_users;
 REVOKE ALL ON SEQUENCE seq_qualidade_agua_padrao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_qualidade_agua_padrao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_qualidade_agua_padrao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_qualidade_agua_padrao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_qualidade_agua_padrao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_qualidade_agua_padrao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_qualidade_agua_padrao TO role_users;
 
 
 --
@@ -89158,8 +89158,8 @@ GRANT SELECT ON SEQUENCE seq_qualidade_agua_padrao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_receitas_a_faturar_resumo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_receitas_a_faturar_resumo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_receitas_a_faturar_resumo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_receitas_a_faturar_resumo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_receitas_a_faturar_resumo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_receitas_a_faturar_resumo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_receitas_a_faturar_resumo TO role_users;
 
 
 --
@@ -89169,8 +89169,8 @@ GRANT SELECT ON SEQUENCE seq_receitas_a_faturar_resumo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_refaturamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_refaturamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_refaturamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_refaturamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_refaturamento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_refaturamento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_refaturamento TO role_users;
 
 
 --
@@ -89180,7 +89180,7 @@ GRANT SELECT ON SEQUENCE seq_refaturamento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_res_fatu_simulacao_cred FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_res_fatu_simulacao_cred FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_res_fatu_simulacao_cred TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_res_fatu_simulacao_cred TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_res_fatu_simulacao_cred TO role_aplic;
 
 
 --
@@ -89190,8 +89190,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_res_fatu_simulacao_cred TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_res_fatur_sit_especial FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_res_fatur_sit_especial FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_res_fatur_sit_especial TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_res_fatur_sit_especial TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_res_fatur_sit_especial TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_res_fatur_sit_especial TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_res_fatur_sit_especial TO role_users;
 
 
 --
@@ -89201,8 +89201,8 @@ GRANT SELECT ON SEQUENCE seq_res_fatur_sit_especial TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_fatur_simulacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_fatur_simulacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_fatur_simulacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_fatur_simulacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_fatur_simulacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_fatur_simulacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_fatur_simulacao TO role_users;
 
 
 --
@@ -89212,8 +89212,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_fatur_simulacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tarifa_tipo_calculo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tarifa_tipo_calculo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tarifa_tipo_calculo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tarifa_tipo_calculo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tarifa_tipo_calculo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tarifa_tipo_calculo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tarifa_tipo_calculo TO role_users;
 
 
 --
@@ -89223,8 +89223,8 @@ GRANT SELECT ON SEQUENCE seq_tarifa_tipo_calculo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_vencimento_alternativo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_vencimento_alternativo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_vencimento_alternativo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_vencimento_alternativo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_vencimento_alternativo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_vencimento_alternativo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_vencimento_alternativo TO role_users;
 
 
 --
@@ -89234,8 +89234,8 @@ GRANT SELECT ON SEQUENCE seq_vencimento_alternativo TO pg_users;
 REVOKE ALL ON TABLE tarifa_tipo_calculo FROM PUBLIC;
 REVOKE ALL ON TABLE tarifa_tipo_calculo FROM gsan_admin;
 GRANT ALL ON TABLE tarifa_tipo_calculo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tarifa_tipo_calculo TO pg_aplic;
-GRANT SELECT ON TABLE tarifa_tipo_calculo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tarifa_tipo_calculo TO role_aplic;
+GRANT SELECT ON TABLE tarifa_tipo_calculo TO role_users;
 
 
 --
@@ -89245,8 +89245,8 @@ GRANT SELECT ON TABLE tarifa_tipo_calculo TO pg_users;
 REVOKE ALL ON TABLE vencimento_alternativo FROM PUBLIC;
 REVOKE ALL ON TABLE vencimento_alternativo FROM gsan_admin;
 GRANT ALL ON TABLE vencimento_alternativo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vencimento_alternativo TO pg_aplic;
-GRANT SELECT ON TABLE vencimento_alternativo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vencimento_alternativo TO role_aplic;
+GRANT SELECT ON TABLE vencimento_alternativo TO role_users;
 
 
 SET search_path = financeiro, pg_catalog;
@@ -89258,8 +89258,8 @@ SET search_path = financeiro, pg_catalog;
 REVOKE ALL ON TABLE conta_contabil FROM PUBLIC;
 REVOKE ALL ON TABLE conta_contabil FROM gsan_admin;
 GRANT ALL ON TABLE conta_contabil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_contabil TO pg_aplic;
-GRANT SELECT ON TABLE conta_contabil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_contabil TO role_aplic;
+GRANT SELECT ON TABLE conta_contabil TO role_users;
 
 
 --
@@ -89269,8 +89269,8 @@ GRANT SELECT ON TABLE conta_contabil TO pg_users;
 REVOKE ALL ON TABLE contas_a_rec_contb_param FROM PUBLIC;
 REVOKE ALL ON TABLE contas_a_rec_contb_param FROM gsan_admin;
 GRANT ALL ON TABLE contas_a_rec_contb_param TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contas_a_rec_contb_param TO pg_aplic;
-GRANT SELECT ON TABLE contas_a_rec_contb_param TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contas_a_rec_contb_param TO role_aplic;
+GRANT SELECT ON TABLE contas_a_rec_contb_param TO role_users;
 
 
 --
@@ -89280,8 +89280,8 @@ GRANT SELECT ON TABLE contas_a_rec_contb_param TO pg_users;
 REVOKE ALL ON TABLE contas_a_receber_contb FROM PUBLIC;
 REVOKE ALL ON TABLE contas_a_receber_contb FROM gsan_admin;
 GRANT ALL ON TABLE contas_a_receber_contb TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contas_a_receber_contb TO pg_aplic;
-GRANT SELECT ON TABLE contas_a_receber_contb TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contas_a_receber_contb TO role_aplic;
+GRANT SELECT ON TABLE contas_a_receber_contb TO role_users;
 
 
 --
@@ -89291,8 +89291,8 @@ GRANT SELECT ON TABLE contas_a_receber_contb TO pg_users;
 REVOKE ALL ON TABLE deved_duvid_contb_param FROM PUBLIC;
 REVOKE ALL ON TABLE deved_duvid_contb_param FROM gsan_admin;
 GRANT ALL ON TABLE deved_duvid_contb_param TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deved_duvid_contb_param TO pg_aplic;
-GRANT SELECT ON TABLE deved_duvid_contb_param TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE deved_duvid_contb_param TO role_aplic;
+GRANT SELECT ON TABLE deved_duvid_contb_param TO role_users;
 
 
 --
@@ -89302,8 +89302,8 @@ GRANT SELECT ON TABLE deved_duvid_contb_param TO pg_users;
 REVOKE ALL ON TABLE doc_receber_faixa_resumo FROM PUBLIC;
 REVOKE ALL ON TABLE doc_receber_faixa_resumo FROM gsan_admin;
 GRANT ALL ON TABLE doc_receber_faixa_resumo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE doc_receber_faixa_resumo TO pg_aplic;
-GRANT SELECT ON TABLE doc_receber_faixa_resumo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE doc_receber_faixa_resumo TO role_aplic;
+GRANT SELECT ON TABLE doc_receber_faixa_resumo TO role_users;
 
 
 --
@@ -89313,8 +89313,8 @@ GRANT SELECT ON TABLE doc_receber_faixa_resumo TO pg_users;
 REVOKE ALL ON TABLE docs_a_rec_resumo FROM PUBLIC;
 REVOKE ALL ON TABLE docs_a_rec_resumo FROM gsan_admin;
 GRANT ALL ON TABLE docs_a_rec_resumo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE docs_a_rec_resumo TO pg_aplic;
-GRANT SELECT ON TABLE docs_a_rec_resumo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE docs_a_rec_resumo TO role_aplic;
+GRANT SELECT ON TABLE docs_a_rec_resumo TO role_users;
 
 
 --
@@ -89324,8 +89324,8 @@ GRANT SELECT ON TABLE docs_a_rec_resumo TO pg_users;
 REVOKE ALL ON TABLE faixa_docs_a_receber FROM PUBLIC;
 REVOKE ALL ON TABLE faixa_docs_a_receber FROM gsan_admin;
 GRANT ALL ON TABLE faixa_docs_a_receber TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faixa_docs_a_receber TO pg_aplic;
-GRANT SELECT ON TABLE faixa_docs_a_receber TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE faixa_docs_a_receber TO role_aplic;
+GRANT SELECT ON TABLE faixa_docs_a_receber TO role_users;
 
 
 --
@@ -89335,8 +89335,8 @@ GRANT SELECT ON TABLE faixa_docs_a_receber TO pg_users;
 REVOKE ALL ON TABLE financiamento_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE financiamento_tipo FROM gsan_admin;
 GRANT ALL ON TABLE financiamento_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE financiamento_tipo TO pg_aplic;
-GRANT SELECT ON TABLE financiamento_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE financiamento_tipo TO role_aplic;
+GRANT SELECT ON TABLE financiamento_tipo TO role_users;
 
 
 --
@@ -89346,8 +89346,8 @@ GRANT SELECT ON TABLE financiamento_tipo TO pg_users;
 REVOKE ALL ON TABLE lancamento_contabil FROM PUBLIC;
 REVOKE ALL ON TABLE lancamento_contabil FROM gsan_admin;
 GRANT ALL ON TABLE lancamento_contabil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_contabil TO pg_aplic;
-GRANT SELECT ON TABLE lancamento_contabil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_contabil TO role_aplic;
+GRANT SELECT ON TABLE lancamento_contabil TO role_users;
 
 
 --
@@ -89357,8 +89357,8 @@ GRANT SELECT ON TABLE lancamento_contabil TO pg_users;
 REVOKE ALL ON TABLE lancamento_contabil_item FROM PUBLIC;
 REVOKE ALL ON TABLE lancamento_contabil_item FROM gsan_admin;
 GRANT ALL ON TABLE lancamento_contabil_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_contabil_item TO pg_aplic;
-GRANT SELECT ON TABLE lancamento_contabil_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_contabil_item TO role_aplic;
+GRANT SELECT ON TABLE lancamento_contabil_item TO role_users;
 
 
 --
@@ -89368,8 +89368,8 @@ GRANT SELECT ON TABLE lancamento_contabil_item TO pg_users;
 REVOKE ALL ON TABLE lancamento_item FROM PUBLIC;
 REVOKE ALL ON TABLE lancamento_item FROM gsan_admin;
 GRANT ALL ON TABLE lancamento_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_item TO pg_aplic;
-GRANT SELECT ON TABLE lancamento_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_item TO role_aplic;
+GRANT SELECT ON TABLE lancamento_item TO role_users;
 
 
 --
@@ -89379,8 +89379,8 @@ GRANT SELECT ON TABLE lancamento_item TO pg_users;
 REVOKE ALL ON TABLE lancamento_item_contabil FROM PUBLIC;
 REVOKE ALL ON TABLE lancamento_item_contabil FROM gsan_admin;
 GRANT ALL ON TABLE lancamento_item_contabil TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_item_contabil TO pg_aplic;
-GRANT SELECT ON TABLE lancamento_item_contabil TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_item_contabil TO role_aplic;
+GRANT SELECT ON TABLE lancamento_item_contabil TO role_users;
 
 
 --
@@ -89390,8 +89390,8 @@ GRANT SELECT ON TABLE lancamento_item_contabil TO pg_users;
 REVOKE ALL ON TABLE lancamento_origem FROM PUBLIC;
 REVOKE ALL ON TABLE lancamento_origem FROM gsan_admin;
 GRANT ALL ON TABLE lancamento_origem TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_origem TO pg_aplic;
-GRANT SELECT ON TABLE lancamento_origem TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_origem TO role_aplic;
+GRANT SELECT ON TABLE lancamento_origem TO role_users;
 
 
 --
@@ -89401,8 +89401,8 @@ GRANT SELECT ON TABLE lancamento_origem TO pg_users;
 REVOKE ALL ON TABLE lancamento_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE lancamento_tipo FROM gsan_admin;
 GRANT ALL ON TABLE lancamento_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_tipo TO pg_aplic;
-GRANT SELECT ON TABLE lancamento_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_tipo TO role_aplic;
+GRANT SELECT ON TABLE lancamento_tipo TO role_users;
 
 
 --
@@ -89412,8 +89412,8 @@ GRANT SELECT ON TABLE lancamento_tipo TO pg_users;
 REVOKE ALL ON TABLE lancamento_tipo_item FROM PUBLIC;
 REVOKE ALL ON TABLE lancamento_tipo_item FROM gsan_admin;
 GRANT ALL ON TABLE lancamento_tipo_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_tipo_item TO pg_aplic;
-GRANT SELECT ON TABLE lancamento_tipo_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE lancamento_tipo_item TO role_aplic;
+GRANT SELECT ON TABLE lancamento_tipo_item TO role_users;
 
 
 --
@@ -89423,8 +89423,8 @@ GRANT SELECT ON TABLE lancamento_tipo_item TO pg_users;
 REVOKE ALL ON TABLE param_deved_duvid FROM PUBLIC;
 REVOKE ALL ON TABLE param_deved_duvid FROM gsan_admin;
 GRANT ALL ON TABLE param_deved_duvid TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_deved_duvid TO pg_aplic;
-GRANT SELECT ON TABLE param_deved_duvid TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_deved_duvid TO role_aplic;
+GRANT SELECT ON TABLE param_deved_duvid TO role_users;
 
 
 --
@@ -89434,8 +89434,8 @@ GRANT SELECT ON TABLE param_deved_duvid TO pg_users;
 REVOKE ALL ON TABLE param_deved_duvid_item FROM PUBLIC;
 REVOKE ALL ON TABLE param_deved_duvid_item FROM gsan_admin;
 GRANT ALL ON TABLE param_deved_duvid_item TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_deved_duvid_item TO pg_aplic;
-GRANT SELECT ON TABLE param_deved_duvid_item TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_deved_duvid_item TO role_aplic;
+GRANT SELECT ON TABLE param_deved_duvid_item TO role_users;
 
 
 --
@@ -89445,8 +89445,8 @@ GRANT SELECT ON TABLE param_deved_duvid_item TO pg_users;
 REVOKE ALL ON TABLE param_perdas_orgaopublic FROM PUBLIC;
 REVOKE ALL ON TABLE param_perdas_orgaopublic FROM gsan_admin;
 GRANT ALL ON TABLE param_perdas_orgaopublic TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_perdas_orgaopublic TO pg_aplic;
-GRANT SELECT ON TABLE param_perdas_orgaopublic TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_perdas_orgaopublic TO role_aplic;
+GRANT SELECT ON TABLE param_perdas_orgaopublic TO role_users;
 
 
 --
@@ -89456,8 +89456,8 @@ GRANT SELECT ON TABLE param_perdas_orgaopublic TO pg_users;
 REVOKE ALL ON TABLE param_perdas_societarias FROM PUBLIC;
 REVOKE ALL ON TABLE param_perdas_societarias FROM gsan_admin;
 GRANT ALL ON TABLE param_perdas_societarias TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_perdas_societarias TO pg_aplic;
-GRANT SELECT ON TABLE param_perdas_societarias TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE param_perdas_societarias TO role_aplic;
+GRANT SELECT ON TABLE param_perdas_societarias TO role_users;
 
 
 --
@@ -89467,8 +89467,8 @@ GRANT SELECT ON TABLE param_perdas_societarias TO pg_users;
 REVOKE ALL ON TABLE perdas_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE perdas_tipo FROM gsan_admin;
 GRANT ALL ON TABLE perdas_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE perdas_tipo TO pg_aplic;
-GRANT SELECT ON TABLE perdas_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE perdas_tipo TO role_aplic;
+GRANT SELECT ON TABLE perdas_tipo TO role_users;
 
 
 --
@@ -89478,8 +89478,8 @@ GRANT SELECT ON TABLE perdas_tipo TO pg_users;
 REVOKE ALL ON TABLE resumo_deved_duvid FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_deved_duvid FROM gsan_admin;
 GRANT ALL ON TABLE resumo_deved_duvid TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_deved_duvid TO pg_aplic;
-GRANT SELECT ON TABLE resumo_deved_duvid TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_deved_duvid TO role_aplic;
+GRANT SELECT ON TABLE resumo_deved_duvid TO role_users;
 
 
 --
@@ -89489,8 +89489,8 @@ GRANT SELECT ON TABLE resumo_deved_duvid TO pg_users;
 REVOKE ALL ON TABLE resumo_faturamento FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_faturamento FROM gsan_admin;
 GRANT ALL ON TABLE resumo_faturamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_faturamento TO pg_aplic;
-GRANT SELECT ON TABLE resumo_faturamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_faturamento TO role_aplic;
+GRANT SELECT ON TABLE resumo_faturamento TO role_users;
 
 
 --
@@ -89500,8 +89500,8 @@ GRANT SELECT ON TABLE resumo_faturamento TO pg_users;
 REVOKE ALL ON TABLE resumo_receita FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_receita FROM gsan_admin;
 GRANT ALL ON TABLE resumo_receita TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_receita TO pg_aplic;
-GRANT SELECT ON TABLE resumo_receita TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_receita TO role_aplic;
+GRANT SELECT ON TABLE resumo_receita TO role_users;
 
 
 --
@@ -89511,8 +89511,8 @@ GRANT SELECT ON TABLE resumo_receita TO pg_users;
 REVOKE ALL ON SEQUENCE seq_conta_contabil FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_conta_contabil FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_conta_contabil TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_conta_contabil TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_conta_contabil TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_conta_contabil TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_conta_contabil TO role_users;
 
 
 --
@@ -89522,8 +89522,8 @@ GRANT SELECT ON SEQUENCE seq_conta_contabil TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contas_a_rec_contb_param FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contas_a_rec_contb_param FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contas_a_rec_contb_param TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contas_a_rec_contb_param TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_contas_a_rec_contb_param TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contas_a_rec_contb_param TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_contas_a_rec_contb_param TO role_users;
 
 
 --
@@ -89533,8 +89533,8 @@ GRANT SELECT ON SEQUENCE seq_contas_a_rec_contb_param TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contas_a_receber_contb FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contas_a_receber_contb FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contas_a_receber_contb TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contas_a_receber_contb TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_contas_a_receber_contb TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contas_a_receber_contb TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_contas_a_receber_contb TO role_users;
 
 
 --
@@ -89544,8 +89544,8 @@ GRANT SELECT ON SEQUENCE seq_contas_a_receber_contb TO pg_users;
 REVOKE ALL ON SEQUENCE seq_deved_duvid_contb_param FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_deved_duvid_contb_param FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_deved_duvid_contb_param TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_deved_duvid_contb_param TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_deved_duvid_contb_param TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_deved_duvid_contb_param TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_deved_duvid_contb_param TO role_users;
 
 
 --
@@ -89555,8 +89555,8 @@ GRANT SELECT ON SEQUENCE seq_deved_duvid_contb_param TO pg_users;
 REVOKE ALL ON SEQUENCE seq_doc_receber_faixa_resumo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_doc_receber_faixa_resumo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_doc_receber_faixa_resumo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_doc_receber_faixa_resumo TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_doc_receber_faixa_resumo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_doc_receber_faixa_resumo TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_doc_receber_faixa_resumo TO role_users;
 
 
 --
@@ -89566,8 +89566,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_doc_receber_faixa_resumo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_docs_a_rec_resumo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_docs_a_rec_resumo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_docs_a_rec_resumo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_docs_a_rec_resumo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_docs_a_rec_resumo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_docs_a_rec_resumo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_docs_a_rec_resumo TO role_users;
 
 
 --
@@ -89577,8 +89577,8 @@ GRANT SELECT ON SEQUENCE seq_docs_a_rec_resumo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_faixa_docs_a_receber FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_faixa_docs_a_receber FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_faixa_docs_a_receber TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_faixa_docs_a_receber TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_faixa_docs_a_receber TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_faixa_docs_a_receber TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_faixa_docs_a_receber TO role_users;
 
 
 --
@@ -89588,8 +89588,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_faixa_docs_a_receber TO pg_users;
 REVOKE ALL ON SEQUENCE seq_financiamento_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_financiamento_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_financiamento_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_financiamento_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_financiamento_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_financiamento_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_financiamento_tipo TO role_users;
 
 
 --
@@ -89599,8 +89599,8 @@ GRANT SELECT ON SEQUENCE seq_financiamento_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lancamento_contabil FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lancamento_contabil FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lancamento_contabil TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_contabil TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lancamento_contabil TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_contabil TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lancamento_contabil TO role_users;
 
 
 --
@@ -89610,8 +89610,8 @@ GRANT SELECT ON SEQUENCE seq_lancamento_contabil TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lancamento_contabil_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lancamento_contabil_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lancamento_contabil_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_contabil_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lancamento_contabil_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_contabil_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lancamento_contabil_item TO role_users;
 
 
 --
@@ -89621,8 +89621,8 @@ GRANT SELECT ON SEQUENCE seq_lancamento_contabil_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lancamento_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lancamento_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lancamento_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lancamento_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lancamento_item TO role_users;
 
 
 --
@@ -89632,8 +89632,8 @@ GRANT SELECT ON SEQUENCE seq_lancamento_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lancamento_item_contabil FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lancamento_item_contabil FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lancamento_item_contabil TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_item_contabil TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lancamento_item_contabil TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_item_contabil TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lancamento_item_contabil TO role_users;
 
 
 --
@@ -89643,8 +89643,8 @@ GRANT SELECT ON SEQUENCE seq_lancamento_item_contabil TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lancamento_origem FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lancamento_origem FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lancamento_origem TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_origem TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lancamento_origem TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_origem TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lancamento_origem TO role_users;
 
 
 --
@@ -89654,8 +89654,8 @@ GRANT SELECT ON SEQUENCE seq_lancamento_origem TO pg_users;
 REVOKE ALL ON SEQUENCE seq_lancamento_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_lancamento_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_lancamento_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_lancamento_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_lancamento_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_lancamento_tipo TO role_users;
 
 
 --
@@ -89665,8 +89665,8 @@ GRANT SELECT ON SEQUENCE seq_lancamento_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_param_deved_duvid FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_param_deved_duvid FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_param_deved_duvid TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_param_deved_duvid TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_param_deved_duvid TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_param_deved_duvid TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_param_deved_duvid TO role_users;
 
 
 --
@@ -89676,8 +89676,8 @@ GRANT SELECT ON SEQUENCE seq_param_deved_duvid TO pg_users;
 REVOKE ALL ON SEQUENCE seq_param_deved_duvid_item FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_param_deved_duvid_item FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_param_deved_duvid_item TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_param_deved_duvid_item TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_param_deved_duvid_item TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_param_deved_duvid_item TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_param_deved_duvid_item TO role_users;
 
 
 --
@@ -89687,7 +89687,7 @@ GRANT SELECT ON SEQUENCE seq_param_deved_duvid_item TO pg_users;
 REVOKE ALL ON SEQUENCE seq_param_perdas_orgaopublic FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_param_perdas_orgaopublic FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_param_perdas_orgaopublic TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_param_perdas_orgaopublic TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_param_perdas_orgaopublic TO role_aplic;
 
 
 --
@@ -89697,7 +89697,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_param_perdas_orgaopublic TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_param_perdas_societarias FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_param_perdas_societarias FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_param_perdas_societarias TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_param_perdas_societarias TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_param_perdas_societarias TO role_aplic;
 
 
 --
@@ -89707,7 +89707,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_param_perdas_societarias TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_perdas_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_perdas_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_perdas_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_perdas_tipo TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_perdas_tipo TO role_aplic;
 
 
 --
@@ -89717,8 +89717,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_perdas_tipo TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_resumo_deved_duvid FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_deved_duvid FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_deved_duvid TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_deved_duvid TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_deved_duvid TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_deved_duvid TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_deved_duvid TO role_users;
 
 
 --
@@ -89728,8 +89728,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_deved_duvid TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_faturamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_faturamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_faturamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_faturamento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_faturamento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_faturamento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_faturamento TO role_users;
 
 
 --
@@ -89739,8 +89739,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_faturamento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_receita FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_receita FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_receita TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_receita TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_receita TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_receita TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_receita TO role_users;
 
 
 --
@@ -89750,8 +89750,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_receita TO pg_users;
 REVOKE ALL ON SEQUENCE seq_valor_vol_cons_nao_fatur FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_valor_vol_cons_nao_fatur FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_valor_vol_cons_nao_fatur TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_valor_vol_cons_nao_fatur TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_valor_vol_cons_nao_fatur TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_valor_vol_cons_nao_fatur TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_valor_vol_cons_nao_fatur TO role_users;
 
 
 --
@@ -89761,7 +89761,7 @@ GRANT SELECT ON SEQUENCE seq_valor_vol_cons_nao_fatur TO pg_users;
 REVOKE ALL ON SEQUENCE seq_vol_cons_nao_fatur_param FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_vol_cons_nao_fatur_param FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_vol_cons_nao_fatur_param TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_vol_cons_nao_fatur_param TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_vol_cons_nao_fatur_param TO role_aplic;
 
 
 --
@@ -89771,8 +89771,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_vol_cons_nao_fatur_param TO pg_aplic;
 REVOKE ALL ON TABLE valor_vol_cons_nao_fatur FROM PUBLIC;
 REVOKE ALL ON TABLE valor_vol_cons_nao_fatur FROM gsan_admin;
 GRANT ALL ON TABLE valor_vol_cons_nao_fatur TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE valor_vol_cons_nao_fatur TO pg_aplic;
-GRANT SELECT ON TABLE valor_vol_cons_nao_fatur TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE valor_vol_cons_nao_fatur TO role_aplic;
+GRANT SELECT ON TABLE valor_vol_cons_nao_fatur TO role_users;
 
 
 --
@@ -89782,8 +89782,8 @@ GRANT SELECT ON TABLE valor_vol_cons_nao_fatur TO pg_users;
 REVOKE ALL ON TABLE vol_cons_nao_fatur_param FROM PUBLIC;
 REVOKE ALL ON TABLE vol_cons_nao_fatur_param FROM gsan_admin;
 GRANT ALL ON TABLE vol_cons_nao_fatur_param TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vol_cons_nao_fatur_param TO pg_aplic;
-GRANT SELECT ON TABLE vol_cons_nao_fatur_param TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE vol_cons_nao_fatur_param TO role_aplic;
+GRANT SELECT ON TABLE vol_cons_nao_fatur_param TO role_users;
 
 
 SET search_path = integracao, pg_catalog;
@@ -89795,8 +89795,8 @@ SET search_path = integracao, pg_catalog;
 REVOKE ALL ON TABLE gsan_dados_comerciais FROM PUBLIC;
 REVOKE ALL ON TABLE gsan_dados_comerciais FROM gsan_admin;
 GRANT ALL ON TABLE gsan_dados_comerciais TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE gsan_dados_comerciais TO pg_aplic;
-GRANT SELECT ON TABLE gsan_dados_comerciais TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE gsan_dados_comerciais TO role_aplic;
+GRANT SELECT ON TABLE gsan_dados_comerciais TO role_users;
 
 
 --
@@ -89806,8 +89806,8 @@ GRANT SELECT ON TABLE gsan_dados_comerciais TO pg_users;
 REVOKE ALL ON SEQUENCE seq_gsan_dados_comerciais FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_gsan_dados_comerciais FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_gsan_dados_comerciais TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_gsan_dados_comerciais TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_gsan_dados_comerciais TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_gsan_dados_comerciais TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_gsan_dados_comerciais TO role_users;
 
 
 --
@@ -89817,7 +89817,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_gsan_dados_comerciais TO pg_users;
 REVOKE ALL ON SEQUENCE seq_serv_terceiro_acomp_serv FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_serv_terceiro_acomp_serv FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_serv_terceiro_acomp_serv TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_serv_terceiro_acomp_serv TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_serv_terceiro_acomp_serv TO role_aplic;
 
 
 --
@@ -89827,8 +89827,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_serv_terceiro_acomp_serv TO pg_aplic;
 REVOKE ALL ON TABLE serv_terceiro_acomp_serv FROM PUBLIC;
 REVOKE ALL ON TABLE serv_terceiro_acomp_serv FROM gsan_admin;
 GRANT ALL ON TABLE serv_terceiro_acomp_serv TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE serv_terceiro_acomp_serv TO pg_aplic;
-GRANT SELECT ON TABLE serv_terceiro_acomp_serv TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE serv_terceiro_acomp_serv TO role_aplic;
+GRANT SELECT ON TABLE serv_terceiro_acomp_serv TO role_users;
 
 
 SET search_path = micromedicao, pg_catalog;
@@ -89840,8 +89840,8 @@ SET search_path = micromedicao, pg_catalog;
 REVOKE ALL ON TABLE arq_txt_roteiro_emp_div FROM PUBLIC;
 REVOKE ALL ON TABLE arq_txt_roteiro_emp_div FROM gsan_admin;
 GRANT ALL ON TABLE arq_txt_roteiro_emp_div TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_roteiro_emp_div TO pg_aplic;
-GRANT SELECT ON TABLE arq_txt_roteiro_emp_div TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arq_txt_roteiro_emp_div TO role_aplic;
+GRANT SELECT ON TABLE arq_txt_roteiro_emp_div TO role_users;
 
 
 --
@@ -89851,8 +89851,8 @@ GRANT SELECT ON TABLE arq_txt_roteiro_emp_div TO pg_users;
 REVOKE ALL ON TABLE arquivo_texto_retorno_is FROM PUBLIC;
 REVOKE ALL ON TABLE arquivo_texto_retorno_is FROM gsan_admin;
 GRANT ALL ON TABLE arquivo_texto_retorno_is TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arquivo_texto_retorno_is TO pg_aplic;
-GRANT SELECT ON TABLE arquivo_texto_retorno_is TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arquivo_texto_retorno_is TO role_aplic;
+GRANT SELECT ON TABLE arquivo_texto_retorno_is TO role_users;
 
 
 --
@@ -89862,8 +89862,8 @@ GRANT SELECT ON TABLE arquivo_texto_retorno_is TO pg_users;
 REVOKE ALL ON TABLE arquivo_texto_rot_empr FROM PUBLIC;
 REVOKE ALL ON TABLE arquivo_texto_rot_empr FROM gsan_admin;
 GRANT ALL ON TABLE arquivo_texto_rot_empr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arquivo_texto_rot_empr TO pg_aplic;
-GRANT SELECT ON TABLE arquivo_texto_rot_empr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE arquivo_texto_rot_empr TO role_aplic;
+GRANT SELECT ON TABLE arquivo_texto_rot_empr TO role_users;
 
 
 --
@@ -89873,8 +89873,8 @@ GRANT SELECT ON TABLE arquivo_texto_rot_empr TO pg_users;
 REVOKE ALL ON TABLE consumo_anorm_acao FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_anorm_acao FROM gsan_admin;
 GRANT ALL ON TABLE consumo_anorm_acao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_anorm_acao TO pg_aplic;
-GRANT SELECT ON TABLE consumo_anorm_acao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_anorm_acao TO role_aplic;
+GRANT SELECT ON TABLE consumo_anorm_acao TO role_users;
 
 
 --
@@ -89884,8 +89884,8 @@ GRANT SELECT ON TABLE consumo_anorm_acao TO pg_users;
 REVOKE ALL ON TABLE consumo_anormalidade FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_anormalidade FROM gsan_admin;
 GRANT ALL ON TABLE consumo_anormalidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_anormalidade TO pg_aplic;
-GRANT SELECT ON TABLE consumo_anormalidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_anormalidade TO role_aplic;
+GRANT SELECT ON TABLE consumo_anormalidade TO role_users;
 
 
 --
@@ -89895,8 +89895,8 @@ GRANT SELECT ON TABLE consumo_anormalidade TO pg_users;
 REVOKE ALL ON TABLE consumo_hist_anterior FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_hist_anterior FROM gsan_admin;
 GRANT ALL ON TABLE consumo_hist_anterior TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_hist_anterior TO pg_aplic;
-GRANT SELECT ON TABLE consumo_hist_anterior TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_hist_anterior TO role_aplic;
+GRANT SELECT ON TABLE consumo_hist_anterior TO role_users;
 
 
 --
@@ -89906,8 +89906,8 @@ GRANT SELECT ON TABLE consumo_hist_anterior TO pg_users;
 REVOKE ALL ON TABLE consumo_historico FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_historico FROM gsan_admin;
 GRANT ALL ON TABLE consumo_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_historico TO pg_aplic;
-GRANT SELECT ON TABLE consumo_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_historico TO role_aplic;
+GRANT SELECT ON TABLE consumo_historico TO role_users;
 
 
 --
@@ -89917,8 +89917,8 @@ GRANT SELECT ON TABLE consumo_historico TO pg_users;
 REVOKE ALL ON TABLE consumo_minimo_area FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_minimo_area FROM gsan_admin;
 GRANT ALL ON TABLE consumo_minimo_area TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_minimo_area TO pg_aplic;
-GRANT SELECT ON TABLE consumo_minimo_area TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_minimo_area TO role_aplic;
+GRANT SELECT ON TABLE consumo_minimo_area TO role_users;
 
 
 --
@@ -89928,8 +89928,8 @@ GRANT SELECT ON TABLE consumo_minimo_area TO pg_users;
 REVOKE ALL ON TABLE consumo_minimo_parametro FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_minimo_parametro FROM gsan_admin;
 GRANT ALL ON TABLE consumo_minimo_parametro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_minimo_parametro TO pg_aplic;
-GRANT SELECT ON TABLE consumo_minimo_parametro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_minimo_parametro TO role_aplic;
+GRANT SELECT ON TABLE consumo_minimo_parametro TO role_users;
 
 
 --
@@ -89939,8 +89939,8 @@ GRANT SELECT ON TABLE consumo_minimo_parametro TO pg_users;
 REVOKE ALL ON TABLE consumo_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE consumo_tipo FROM gsan_admin;
 GRANT ALL ON TABLE consumo_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tipo TO pg_aplic;
-GRANT SELECT ON TABLE consumo_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consumo_tipo TO role_aplic;
+GRANT SELECT ON TABLE consumo_tipo TO role_users;
 
 
 --
@@ -89950,8 +89950,8 @@ GRANT SELECT ON TABLE consumo_tipo TO pg_users;
 REVOKE ALL ON TABLE contrato_empresa_aditivo FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_empresa_aditivo FROM gsan_admin;
 GRANT ALL ON TABLE contrato_empresa_aditivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_empresa_aditivo TO pg_aplic;
-GRANT SELECT ON TABLE contrato_empresa_aditivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_empresa_aditivo TO role_aplic;
+GRANT SELECT ON TABLE contrato_empresa_aditivo TO role_users;
 
 
 --
@@ -89961,7 +89961,7 @@ GRANT SELECT ON TABLE contrato_empresa_aditivo TO pg_users;
 REVOKE ALL ON TABLE contrato_empresa_servico FROM PUBLIC;
 REVOKE ALL ON TABLE contrato_empresa_servico FROM gsan_admin;
 GRANT ALL ON TABLE contrato_empresa_servico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_empresa_servico TO pg_aplic;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_empresa_servico TO role_aplic;
 
 
 --
@@ -89971,8 +89971,8 @@ GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE contrato_empresa_servico TO pg_aplic;
 REVOKE ALL ON TABLE hidrometro FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro TO role_aplic;
+GRANT SELECT ON TABLE hidrometro TO role_users;
 
 
 --
@@ -89982,8 +89982,8 @@ GRANT SELECT ON TABLE hidrometro TO pg_users;
 REVOKE ALL ON TABLE hidrometro_capacidade FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_capacidade FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_capacidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_capacidade TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_capacidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_capacidade TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_capacidade TO role_users;
 
 
 --
@@ -89993,8 +89993,8 @@ GRANT SELECT ON TABLE hidrometro_capacidade TO pg_users;
 REVOKE ALL ON TABLE hidrometro_class_pressao FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_class_pressao FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_class_pressao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_class_pressao TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_class_pressao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_class_pressao TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_class_pressao TO role_users;
 
 
 --
@@ -90004,8 +90004,8 @@ GRANT SELECT ON TABLE hidrometro_class_pressao TO pg_users;
 REVOKE ALL ON TABLE hidrometro_classe_metrlg FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_classe_metrlg FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_classe_metrlg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_classe_metrlg TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_classe_metrlg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_classe_metrlg TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_classe_metrlg TO role_users;
 
 
 --
@@ -90015,8 +90015,8 @@ GRANT SELECT ON TABLE hidrometro_classe_metrlg TO pg_users;
 REVOKE ALL ON TABLE hidrometro_diametro FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_diametro FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_diametro TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_diametro TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_diametro TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_diametro TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_diametro TO role_users;
 
 
 --
@@ -90026,8 +90026,8 @@ GRANT SELECT ON TABLE hidrometro_diametro TO pg_users;
 REVOKE ALL ON TABLE hidrometro_fat_correcao FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_fat_correcao FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_fat_correcao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_fat_correcao TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_fat_correcao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_fat_correcao TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_fat_correcao TO role_users;
 
 
 --
@@ -90037,8 +90037,8 @@ GRANT SELECT ON TABLE hidrometro_fat_correcao TO pg_users;
 REVOKE ALL ON TABLE hidrometro_inst_hist FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_inst_hist FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_inst_hist TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_inst_hist TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_inst_hist TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_inst_hist TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_inst_hist TO role_users;
 
 
 --
@@ -90048,8 +90048,8 @@ GRANT SELECT ON TABLE hidrometro_inst_hist TO pg_users;
 REVOKE ALL ON TABLE hidrometro_local_armaz FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_local_armaz FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_local_armaz TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_local_armaz TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_local_armaz TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_local_armaz TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_local_armaz TO role_users;
 
 
 --
@@ -90059,8 +90059,8 @@ GRANT SELECT ON TABLE hidrometro_local_armaz TO pg_users;
 REVOKE ALL ON TABLE hidrometro_local_inst FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_local_inst FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_local_inst TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_local_inst TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_local_inst TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_local_inst TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_local_inst TO role_users;
 
 
 --
@@ -90070,8 +90070,8 @@ GRANT SELECT ON TABLE hidrometro_local_inst TO pg_users;
 REVOKE ALL ON TABLE hidrometro_marca FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_marca FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_marca TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_marca TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_marca TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_marca TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_marca TO role_users;
 
 
 --
@@ -90081,8 +90081,8 @@ GRANT SELECT ON TABLE hidrometro_marca TO pg_users;
 REVOKE ALL ON TABLE hidrometro_motivo_baixa FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_motivo_baixa FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_motivo_baixa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_motivo_baixa TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_motivo_baixa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_motivo_baixa TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_motivo_baixa TO role_users;
 
 
 --
@@ -90092,8 +90092,8 @@ GRANT SELECT ON TABLE hidrometro_motivo_baixa TO pg_users;
 REVOKE ALL ON TABLE hidrometro_motivo_movim FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_motivo_movim FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_motivo_movim TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_motivo_movim TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_motivo_movim TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_motivo_movim TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_motivo_movim TO role_users;
 
 
 --
@@ -90103,8 +90103,8 @@ GRANT SELECT ON TABLE hidrometro_motivo_movim TO pg_users;
 REVOKE ALL ON TABLE hidrometro_movimentacao FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_movimentacao FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_movimentacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_movimentacao TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_movimentacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_movimentacao TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_movimentacao TO role_users;
 
 
 --
@@ -90114,8 +90114,8 @@ GRANT SELECT ON TABLE hidrometro_movimentacao TO pg_users;
 REVOKE ALL ON TABLE hidrometro_movimentado FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_movimentado FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_movimentado TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_movimentado TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_movimentado TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_movimentado TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_movimentado TO role_users;
 
 
 --
@@ -90125,8 +90125,8 @@ GRANT SELECT ON TABLE hidrometro_movimentado TO pg_users;
 REVOKE ALL ON TABLE hidrometro_protecao FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_protecao FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_protecao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_protecao TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_protecao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_protecao TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_protecao TO role_users;
 
 
 --
@@ -90136,8 +90136,8 @@ GRANT SELECT ON TABLE hidrometro_protecao TO pg_users;
 REVOKE ALL ON TABLE hidrometro_relojoaria FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_relojoaria FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_relojoaria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_relojoaria TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_relojoaria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_relojoaria TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_relojoaria TO role_users;
 
 
 --
@@ -90147,8 +90147,8 @@ GRANT SELECT ON TABLE hidrometro_relojoaria TO pg_users;
 REVOKE ALL ON TABLE hidrometro_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_situacao FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_situacao TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_situacao TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_situacao TO role_users;
 
 
 --
@@ -90158,8 +90158,8 @@ GRANT SELECT ON TABLE hidrometro_situacao TO pg_users;
 REVOKE ALL ON TABLE hidrometro_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE hidrometro_tipo FROM gsan_admin;
 GRANT ALL ON TABLE hidrometro_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_tipo TO pg_aplic;
-GRANT SELECT ON TABLE hidrometro_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE hidrometro_tipo TO role_aplic;
+GRANT SELECT ON TABLE hidrometro_tipo TO role_users;
 
 
 --
@@ -90169,8 +90169,8 @@ GRANT SELECT ON TABLE hidrometro_tipo TO pg_users;
 REVOKE ALL ON TABLE item_servico FROM PUBLIC;
 REVOKE ALL ON TABLE item_servico FROM gsan_admin;
 GRANT ALL ON TABLE item_servico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE item_servico TO pg_aplic;
-GRANT SELECT ON TABLE item_servico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE item_servico TO role_aplic;
+GRANT SELECT ON TABLE item_servico TO role_users;
 
 
 --
@@ -90180,8 +90180,8 @@ GRANT SELECT ON TABLE item_servico TO pg_users;
 REVOKE ALL ON TABLE item_servico_contrato FROM PUBLIC;
 REVOKE ALL ON TABLE item_servico_contrato FROM gsan_admin;
 GRANT ALL ON TABLE item_servico_contrato TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE item_servico_contrato TO pg_aplic;
-GRANT SELECT ON TABLE item_servico_contrato TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE item_servico_contrato TO role_aplic;
+GRANT SELECT ON TABLE item_servico_contrato TO role_users;
 
 
 --
@@ -90191,8 +90191,8 @@ GRANT SELECT ON TABLE item_servico_contrato TO pg_users;
 REVOKE ALL ON TABLE leitura_anorm_consumo FROM PUBLIC;
 REVOKE ALL ON TABLE leitura_anorm_consumo FROM gsan_admin;
 GRANT ALL ON TABLE leitura_anorm_consumo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_anorm_consumo TO pg_aplic;
-GRANT SELECT ON TABLE leitura_anorm_consumo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_anorm_consumo TO role_aplic;
+GRANT SELECT ON TABLE leitura_anorm_consumo TO role_users;
 
 
 --
@@ -90202,8 +90202,8 @@ GRANT SELECT ON TABLE leitura_anorm_consumo TO pg_users;
 REVOKE ALL ON TABLE leitura_anorm_leitura FROM PUBLIC;
 REVOKE ALL ON TABLE leitura_anorm_leitura FROM gsan_admin;
 GRANT ALL ON TABLE leitura_anorm_leitura TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_anorm_leitura TO pg_aplic;
-GRANT SELECT ON TABLE leitura_anorm_leitura TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_anorm_leitura TO role_aplic;
+GRANT SELECT ON TABLE leitura_anorm_leitura TO role_users;
 
 
 --
@@ -90213,8 +90213,8 @@ GRANT SELECT ON TABLE leitura_anorm_leitura TO pg_users;
 REVOKE ALL ON TABLE leitura_anormalidade FROM PUBLIC;
 REVOKE ALL ON TABLE leitura_anormalidade FROM gsan_admin;
 GRANT ALL ON TABLE leitura_anormalidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_anormalidade TO pg_aplic;
-GRANT SELECT ON TABLE leitura_anormalidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_anormalidade TO role_aplic;
+GRANT SELECT ON TABLE leitura_anormalidade TO role_users;
 
 
 --
@@ -90224,8 +90224,8 @@ GRANT SELECT ON TABLE leitura_anormalidade TO pg_users;
 REVOKE ALL ON TABLE leitura_faixa_falsa FROM PUBLIC;
 REVOKE ALL ON TABLE leitura_faixa_falsa FROM gsan_admin;
 GRANT ALL ON TABLE leitura_faixa_falsa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_faixa_falsa TO pg_aplic;
-GRANT SELECT ON TABLE leitura_faixa_falsa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_faixa_falsa TO role_aplic;
+GRANT SELECT ON TABLE leitura_faixa_falsa TO role_users;
 
 
 --
@@ -90235,8 +90235,8 @@ GRANT SELECT ON TABLE leitura_faixa_falsa TO pg_users;
 REVOKE ALL ON TABLE leitura_fiscalizacao FROM PUBLIC;
 REVOKE ALL ON TABLE leitura_fiscalizacao FROM gsan_admin;
 GRANT ALL ON TABLE leitura_fiscalizacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_fiscalizacao TO pg_aplic;
-GRANT SELECT ON TABLE leitura_fiscalizacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_fiscalizacao TO role_aplic;
+GRANT SELECT ON TABLE leitura_fiscalizacao TO role_users;
 
 
 --
@@ -90246,8 +90246,8 @@ GRANT SELECT ON TABLE leitura_fiscalizacao TO pg_users;
 REVOKE ALL ON TABLE leitura_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE leitura_situacao FROM gsan_admin;
 GRANT ALL ON TABLE leitura_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_situacao TO pg_aplic;
-GRANT SELECT ON TABLE leitura_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_situacao TO role_aplic;
+GRANT SELECT ON TABLE leitura_situacao TO role_users;
 
 
 --
@@ -90257,8 +90257,8 @@ GRANT SELECT ON TABLE leitura_situacao TO pg_users;
 REVOKE ALL ON TABLE leitura_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE leitura_tipo FROM gsan_admin;
 GRANT ALL ON TABLE leitura_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_tipo TO pg_aplic;
-GRANT SELECT ON TABLE leitura_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leitura_tipo TO role_aplic;
+GRANT SELECT ON TABLE leitura_tipo TO role_users;
 
 
 --
@@ -90268,8 +90268,8 @@ GRANT SELECT ON TABLE leitura_tipo TO pg_users;
 REVOKE ALL ON TABLE leiturista FROM PUBLIC;
 REVOKE ALL ON TABLE leiturista FROM gsan_admin;
 GRANT ALL ON TABLE leiturista TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leiturista TO pg_aplic;
-GRANT SELECT ON TABLE leiturista TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE leiturista TO role_aplic;
+GRANT SELECT ON TABLE leiturista TO role_users;
 
 
 --
@@ -90279,8 +90279,8 @@ GRANT SELECT ON TABLE leiturista TO pg_users;
 REVOKE ALL ON TABLE ligacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE ligacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE ligacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE ligacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE ligacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE ligacao_tipo TO role_users;
 
 
 --
@@ -90290,8 +90290,8 @@ GRANT SELECT ON TABLE ligacao_tipo TO pg_users;
 REVOKE ALL ON TABLE medicao_hist_anterior FROM PUBLIC;
 REVOKE ALL ON TABLE medicao_hist_anterior FROM gsan_admin;
 GRANT ALL ON TABLE medicao_hist_anterior TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE medicao_hist_anterior TO pg_aplic;
-GRANT SELECT ON TABLE medicao_hist_anterior TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE medicao_hist_anterior TO role_aplic;
+GRANT SELECT ON TABLE medicao_hist_anterior TO role_users;
 
 
 --
@@ -90301,8 +90301,8 @@ GRANT SELECT ON TABLE medicao_hist_anterior TO pg_users;
 REVOKE ALL ON TABLE medicao_historico FROM PUBLIC;
 REVOKE ALL ON TABLE medicao_historico FROM gsan_admin;
 GRANT ALL ON TABLE medicao_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE medicao_historico TO pg_aplic;
-GRANT SELECT ON TABLE medicao_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE medicao_historico TO role_aplic;
+GRANT SELECT ON TABLE medicao_historico TO role_users;
 
 
 --
@@ -90312,8 +90312,8 @@ GRANT SELECT ON TABLE medicao_historico TO pg_users;
 REVOKE ALL ON TABLE medicao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE medicao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE medicao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE medicao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE medicao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE medicao_tipo TO role_aplic;
+GRANT SELECT ON TABLE medicao_tipo TO role_users;
 
 
 --
@@ -90323,8 +90323,8 @@ GRANT SELECT ON TABLE medicao_tipo TO pg_users;
 REVOKE ALL ON TABLE mov_arq_texto_retorno_is FROM PUBLIC;
 REVOKE ALL ON TABLE mov_arq_texto_retorno_is FROM gsan_admin;
 GRANT ALL ON TABLE mov_arq_texto_retorno_is TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_arq_texto_retorno_is TO pg_aplic;
-GRANT SELECT ON TABLE mov_arq_texto_retorno_is TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE mov_arq_texto_retorno_is TO role_aplic;
+GRANT SELECT ON TABLE mov_arq_texto_retorno_is TO role_users;
 
 
 --
@@ -90334,8 +90334,8 @@ GRANT SELECT ON TABLE mov_arq_texto_retorno_is TO pg_users;
 REVOKE ALL ON TABLE movimento_roteiro_empr FROM PUBLIC;
 REVOKE ALL ON TABLE movimento_roteiro_empr FROM gsan_admin;
 GRANT ALL ON TABLE movimento_roteiro_empr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE movimento_roteiro_empr TO pg_aplic;
-GRANT SELECT ON TABLE movimento_roteiro_empr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE movimento_roteiro_empr TO role_aplic;
+GRANT SELECT ON TABLE movimento_roteiro_empr TO role_users;
 
 
 --
@@ -90345,8 +90345,8 @@ GRANT SELECT ON TABLE movimento_roteiro_empr TO pg_users;
 REVOKE ALL ON TABLE rateio_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE rateio_tipo FROM gsan_admin;
 GRANT ALL ON TABLE rateio_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rateio_tipo TO pg_aplic;
-GRANT SELECT ON TABLE rateio_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rateio_tipo TO role_aplic;
+GRANT SELECT ON TABLE rateio_tipo TO role_users;
 
 
 --
@@ -90356,8 +90356,8 @@ GRANT SELECT ON TABLE rateio_tipo TO pg_users;
 REVOKE ALL ON TABLE releitura_mobile FROM PUBLIC;
 REVOKE ALL ON TABLE releitura_mobile FROM gsan_admin;
 GRANT ALL ON TABLE releitura_mobile TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE releitura_mobile TO pg_aplic;
-GRANT SELECT ON TABLE releitura_mobile TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE releitura_mobile TO role_aplic;
+GRANT SELECT ON TABLE releitura_mobile TO role_users;
 
 
 --
@@ -90367,8 +90367,8 @@ GRANT SELECT ON TABLE releitura_mobile TO pg_users;
 REVOKE ALL ON TABLE resumo_anorm_consumo FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_anorm_consumo FROM gsan_admin;
 GRANT ALL ON TABLE resumo_anorm_consumo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_anorm_consumo TO pg_aplic;
-GRANT SELECT ON TABLE resumo_anorm_consumo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_anorm_consumo TO role_aplic;
+GRANT SELECT ON TABLE resumo_anorm_consumo TO role_users;
 
 
 --
@@ -90378,8 +90378,8 @@ GRANT SELECT ON TABLE resumo_anorm_consumo TO pg_users;
 REVOKE ALL ON TABLE resumo_anorm_leitura FROM PUBLIC;
 REVOKE ALL ON TABLE resumo_anorm_leitura FROM gsan_admin;
 GRANT ALL ON TABLE resumo_anorm_leitura TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_anorm_leitura TO pg_aplic;
-GRANT SELECT ON TABLE resumo_anorm_leitura TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE resumo_anorm_leitura TO role_aplic;
+GRANT SELECT ON TABLE resumo_anorm_leitura TO role_users;
 
 
 --
@@ -90389,8 +90389,8 @@ GRANT SELECT ON TABLE resumo_anorm_leitura TO pg_users;
 REVOKE ALL ON TABLE rota FROM PUBLIC;
 REVOKE ALL ON TABLE rota FROM gsan_admin;
 GRANT ALL ON TABLE rota TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rota TO pg_aplic;
-GRANT SELECT ON TABLE rota TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rota TO role_aplic;
+GRANT SELECT ON TABLE rota TO role_users;
 
 
 --
@@ -90400,8 +90400,8 @@ GRANT SELECT ON TABLE rota TO pg_users;
 REVOKE ALL ON TABLE rota_atualizacao_seq FROM PUBLIC;
 REVOKE ALL ON TABLE rota_atualizacao_seq FROM gsan_admin;
 GRANT ALL ON TABLE rota_atualizacao_seq TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rota_atualizacao_seq TO pg_aplic;
-GRANT SELECT ON TABLE rota_atualizacao_seq TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rota_atualizacao_seq TO role_aplic;
+GRANT SELECT ON TABLE rota_atualizacao_seq TO role_users;
 
 
 --
@@ -90411,8 +90411,8 @@ GRANT SELECT ON TABLE rota_atualizacao_seq TO pg_users;
 REVOKE ALL ON TABLE roteiro_empresa FROM PUBLIC;
 REVOKE ALL ON TABLE roteiro_empresa FROM gsan_admin;
 GRANT ALL ON TABLE roteiro_empresa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE roteiro_empresa TO pg_aplic;
-GRANT SELECT ON TABLE roteiro_empresa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE roteiro_empresa TO role_aplic;
+GRANT SELECT ON TABLE roteiro_empresa TO role_users;
 
 
 --
@@ -90422,7 +90422,7 @@ GRANT SELECT ON TABLE roteiro_empresa TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arq_txt_roteiro_emp_div FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arq_txt_roteiro_emp_div FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arq_txt_roteiro_emp_div TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_roteiro_emp_div TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_roteiro_emp_div TO role_aplic;
 
 
 --
@@ -90432,8 +90432,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_arq_txt_roteiro_emp_div TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_arquivo_texto_retorno_is FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arquivo_texto_retorno_is FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arquivo_texto_retorno_is TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arquivo_texto_retorno_is TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arquivo_texto_retorno_is TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arquivo_texto_retorno_is TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arquivo_texto_retorno_is TO role_users;
 
 
 --
@@ -90443,8 +90443,8 @@ GRANT SELECT ON SEQUENCE seq_arquivo_texto_retorno_is TO pg_users;
 REVOKE ALL ON SEQUENCE seq_arquivo_texto_rot_empr FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_arquivo_texto_rot_empr FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_arquivo_texto_rot_empr TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_arquivo_texto_rot_empr TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_arquivo_texto_rot_empr TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_arquivo_texto_rot_empr TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_arquivo_texto_rot_empr TO role_users;
 
 
 --
@@ -90454,8 +90454,8 @@ GRANT SELECT ON SEQUENCE seq_arquivo_texto_rot_empr TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_anormalidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_anormalidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_anormalidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_anormalidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_anormalidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_anormalidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_anormalidade TO role_users;
 
 
 --
@@ -90465,8 +90465,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_anormalidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_historico TO role_users;
 
 
 --
@@ -90476,8 +90476,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_minimo_area FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_minimo_area FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_minimo_area TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_minimo_area TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_minimo_area TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_minimo_area TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_minimo_area TO role_users;
 
 
 --
@@ -90487,7 +90487,7 @@ GRANT SELECT ON SEQUENCE seq_consumo_minimo_area TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consumo_minimo_parametro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_minimo_parametro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_minimo_parametro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_minimo_parametro TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_minimo_parametro TO role_aplic;
 
 
 --
@@ -90497,8 +90497,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_minimo_parametro TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_consumo_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consumo_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consumo_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_consumo_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consumo_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_consumo_tipo TO role_users;
 
 
 --
@@ -90508,8 +90508,8 @@ GRANT SELECT ON SEQUENCE seq_consumo_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_empresa_aditivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_empresa_aditivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_empresa_aditivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_empresa_aditivo TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_empresa_aditivo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_empresa_aditivo TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_empresa_aditivo TO role_users;
 
 
 --
@@ -90519,7 +90519,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_empresa_aditivo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_contrato_empresa_servico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_contrato_empresa_servico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_contrato_empresa_servico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_empresa_servico TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_empresa_servico TO role_aplic;
 
 
 --
@@ -90529,8 +90529,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_contrato_empresa_servico TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_hidrometro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro TO role_users;
 
 
 --
@@ -90540,8 +90540,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_capacidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_capacidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_capacidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_capacidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_capacidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_capacidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_capacidade TO role_users;
 
 
 --
@@ -90551,7 +90551,7 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_capacidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_class_pressao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_class_pressao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_class_pressao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_class_pressao TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_class_pressao TO role_aplic;
 
 
 --
@@ -90561,8 +90561,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_class_pressao TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_hidrometro_classe_metrlg FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_classe_metrlg FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_classe_metrlg TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_classe_metrlg TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_classe_metrlg TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_classe_metrlg TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_classe_metrlg TO role_users;
 
 
 --
@@ -90572,8 +90572,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_classe_metrlg TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_diametro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_diametro FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_diametro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_diametro TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_diametro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_diametro TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_diametro TO role_users;
 
 
 --
@@ -90583,7 +90583,7 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_diametro TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_fat_correcao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_fat_correcao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_fat_correcao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_fat_correcao TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_fat_correcao TO role_aplic;
 
 
 --
@@ -90593,8 +90593,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_fat_correcao TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_hidrometro_inst_hist FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_inst_hist FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_inst_hist TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_inst_hist TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_inst_hist TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_inst_hist TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_inst_hist TO role_users;
 
 
 --
@@ -90604,8 +90604,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_inst_hist TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_local_armaz FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_local_armaz FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_local_armaz TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_local_armaz TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_local_armaz TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_local_armaz TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_local_armaz TO role_users;
 
 
 --
@@ -90615,8 +90615,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_local_armaz TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_local_inst FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_local_inst FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_local_inst TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_local_inst TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_local_inst TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_local_inst TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_local_inst TO role_users;
 
 
 --
@@ -90626,8 +90626,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_local_inst TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_marca FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_marca FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_marca TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_marca TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_marca TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_marca TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_marca TO role_users;
 
 
 --
@@ -90637,8 +90637,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_marca TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_motivo_baixa FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_motivo_baixa FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_motivo_baixa TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_motivo_baixa TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_motivo_baixa TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_motivo_baixa TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_motivo_baixa TO role_users;
 
 
 --
@@ -90648,8 +90648,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_motivo_baixa TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_motivo_movim FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_motivo_movim FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_motivo_movim TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_motivo_movim TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_motivo_movim TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_motivo_movim TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_motivo_movim TO role_users;
 
 
 --
@@ -90659,8 +90659,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_motivo_movim TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_movimentacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_movimentacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_movimentacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_movimentacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_movimentacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_movimentacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_movimentacao TO role_users;
 
 
 --
@@ -90670,8 +90670,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_movimentacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_protecao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_protecao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_protecao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_protecao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_protecao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_protecao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_protecao TO role_users;
 
 
 --
@@ -90681,8 +90681,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_protecao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_relojoaria FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_relojoaria FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_relojoaria TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_relojoaria TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_relojoaria TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_relojoaria TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_relojoaria TO role_users;
 
 
 --
@@ -90692,8 +90692,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_relojoaria TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_situacao TO role_users;
 
 
 --
@@ -90703,8 +90703,8 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_hidrometro_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_hidrometro_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_hidrometro_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_hidrometro_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_hidrometro_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_hidrometro_tipo TO role_users;
 
 
 --
@@ -90714,7 +90714,7 @@ GRANT SELECT ON SEQUENCE seq_hidrometro_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_item_servico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_item_servico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_item_servico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_item_servico TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_item_servico TO role_aplic;
 
 
 --
@@ -90724,7 +90724,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_item_servico TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_item_servico_contrato FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_item_servico_contrato FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_item_servico_contrato TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_item_servico_contrato TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_item_servico_contrato TO role_aplic;
 
 
 --
@@ -90734,8 +90734,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_item_servico_contrato TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_leitura_anorm_consumo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_leitura_anorm_consumo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_leitura_anorm_consumo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_anorm_consumo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_leitura_anorm_consumo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_anorm_consumo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_leitura_anorm_consumo TO role_users;
 
 
 --
@@ -90745,8 +90745,8 @@ GRANT SELECT ON SEQUENCE seq_leitura_anorm_consumo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_leitura_anorm_leitura FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_leitura_anorm_leitura FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_leitura_anorm_leitura TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_anorm_leitura TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_leitura_anorm_leitura TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_anorm_leitura TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_leitura_anorm_leitura TO role_users;
 
 
 --
@@ -90756,8 +90756,8 @@ GRANT SELECT ON SEQUENCE seq_leitura_anorm_leitura TO pg_users;
 REVOKE ALL ON SEQUENCE seq_leitura_anormalidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_leitura_anormalidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_leitura_anormalidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_anormalidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_leitura_anormalidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_anormalidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_leitura_anormalidade TO role_users;
 
 
 --
@@ -90767,8 +90767,8 @@ GRANT SELECT ON SEQUENCE seq_leitura_anormalidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_leitura_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_leitura_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_leitura_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_leitura_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_leitura_situacao TO role_users;
 
 
 --
@@ -90778,8 +90778,8 @@ GRANT SELECT ON SEQUENCE seq_leitura_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_leitura_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_leitura_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_leitura_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_leitura_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_leitura_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_leitura_tipo TO role_users;
 
 
 --
@@ -90789,8 +90789,8 @@ GRANT SELECT ON SEQUENCE seq_leitura_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_leiturista FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_leiturista FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_leiturista TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_leiturista TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_leiturista TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_leiturista TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_leiturista TO role_users;
 
 
 --
@@ -90800,8 +90800,8 @@ GRANT SELECT ON SEQUENCE seq_leiturista TO pg_users;
 REVOKE ALL ON SEQUENCE seq_ligacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_ligacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_ligacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_ligacao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_ligacao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_ligacao_tipo TO role_users;
 
 
 --
@@ -90811,8 +90811,8 @@ GRANT SELECT ON SEQUENCE seq_ligacao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_medicao_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_medicao_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_medicao_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_medicao_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_medicao_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_medicao_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_medicao_historico TO role_users;
 
 
 --
@@ -90822,8 +90822,8 @@ GRANT SELECT ON SEQUENCE seq_medicao_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_medicao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_medicao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_medicao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_medicao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_medicao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_medicao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_medicao_tipo TO role_users;
 
 
 --
@@ -90833,8 +90833,8 @@ GRANT SELECT ON SEQUENCE seq_medicao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_mov_arq_texto_retorno_is FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_mov_arq_texto_retorno_is FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_mov_arq_texto_retorno_is TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_mov_arq_texto_retorno_is TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_mov_arq_texto_retorno_is TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_mov_arq_texto_retorno_is TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_mov_arq_texto_retorno_is TO role_users;
 
 
 --
@@ -90844,8 +90844,8 @@ GRANT SELECT ON SEQUENCE seq_mov_arq_texto_retorno_is TO pg_users;
 REVOKE ALL ON SEQUENCE seq_movimento_roteiro_empr FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_movimento_roteiro_empr FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_movimento_roteiro_empr TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_movimento_roteiro_empr TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_movimento_roteiro_empr TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_movimento_roteiro_empr TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_movimento_roteiro_empr TO role_users;
 
 
 --
@@ -90855,8 +90855,8 @@ GRANT SELECT ON SEQUENCE seq_movimento_roteiro_empr TO pg_users;
 REVOKE ALL ON SEQUENCE seq_rateio_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_rateio_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_rateio_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_rateio_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_rateio_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_rateio_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_rateio_tipo TO role_users;
 
 
 --
@@ -90866,7 +90866,7 @@ GRANT SELECT ON SEQUENCE seq_rateio_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_releitura_mobile FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_releitura_mobile FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_releitura_mobile TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_releitura_mobile TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_releitura_mobile TO role_aplic;
 
 
 --
@@ -90876,8 +90876,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_releitura_mobile TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_resumo_anorm_consumo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_anorm_consumo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_anorm_consumo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_anorm_consumo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_anorm_consumo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_anorm_consumo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_anorm_consumo TO role_users;
 
 
 --
@@ -90887,8 +90887,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_anorm_consumo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_resumo_anorm_leitura FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_resumo_anorm_leitura FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_resumo_anorm_leitura TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_anorm_leitura TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_resumo_anorm_leitura TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_resumo_anorm_leitura TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_resumo_anorm_leitura TO role_users;
 
 
 --
@@ -90898,8 +90898,8 @@ GRANT SELECT ON SEQUENCE seq_resumo_anorm_leitura TO pg_users;
 REVOKE ALL ON SEQUENCE seq_rota FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_rota FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_rota TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_rota TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_rota TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_rota TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_rota TO role_users;
 
 
 --
@@ -90909,7 +90909,7 @@ GRANT SELECT ON SEQUENCE seq_rota TO pg_users;
 REVOKE ALL ON SEQUENCE seq_rota_atualizacao_seq FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_rota_atualizacao_seq FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_rota_atualizacao_seq TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_rota_atualizacao_seq TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_rota_atualizacao_seq TO role_aplic;
 
 
 --
@@ -90919,8 +90919,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_rota_atualizacao_seq TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_roteiro_empresa FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_roteiro_empresa FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_roteiro_empresa TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_roteiro_empresa TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_roteiro_empresa TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_roteiro_empresa TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_roteiro_empresa TO role_users;
 
 
 --
@@ -90930,8 +90930,8 @@ GRANT SELECT ON SEQUENCE seq_roteiro_empresa TO pg_users;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_celular FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_servico_tipo_celular FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_servico_tipo_celular TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_celular TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_servico_tipo_celular TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_servico_tipo_celular TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_servico_tipo_celular TO role_users;
 
 
 --
@@ -90941,8 +90941,8 @@ GRANT SELECT ON SEQUENCE seq_servico_tipo_celular TO pg_users;
 REVOKE ALL ON SEQUENCE seq_situacao_transm_leitura FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_situacao_transm_leitura FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_situacao_transm_leitura TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_situacao_transm_leitura TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_situacao_transm_leitura TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_situacao_transm_leitura TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_situacao_transm_leitura TO role_users;
 
 
 --
@@ -90952,7 +90952,7 @@ GRANT SELECT ON SEQUENCE seq_situacao_transm_leitura TO pg_users;
 REVOKE ALL ON SEQUENCE seq_telemetria_log FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_telemetria_log FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_telemetria_log TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_log TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_log TO role_aplic;
 
 
 --
@@ -90962,7 +90962,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_log TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_telemetria_mov FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_telemetria_mov FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_telemetria_mov TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_mov TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_mov TO role_aplic;
 
 
 --
@@ -90972,7 +90972,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_mov TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_telemetria_mov_reg FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_telemetria_mov_reg FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_telemetria_mov_reg TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_mov_reg TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_mov_reg TO role_aplic;
 
 
 --
@@ -90982,7 +90982,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_mov_reg TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_telemetria_ret_mot FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_telemetria_ret_mot FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_telemetria_ret_mot TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_ret_mot TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_ret_mot TO role_aplic;
 
 
 --
@@ -90992,8 +90992,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_telemetria_ret_mot TO pg_aplic;
 REVOKE ALL ON TABLE servico_tipo_celular FROM PUBLIC;
 REVOKE ALL ON TABLE servico_tipo_celular FROM gsan_admin;
 GRANT ALL ON TABLE servico_tipo_celular TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_celular TO pg_aplic;
-GRANT SELECT ON TABLE servico_tipo_celular TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE servico_tipo_celular TO role_aplic;
+GRANT SELECT ON TABLE servico_tipo_celular TO role_users;
 
 
 --
@@ -91003,8 +91003,8 @@ GRANT SELECT ON TABLE servico_tipo_celular TO pg_users;
 REVOKE ALL ON TABLE situacao_transm_leitura FROM PUBLIC;
 REVOKE ALL ON TABLE situacao_transm_leitura FROM gsan_admin;
 GRANT ALL ON TABLE situacao_transm_leitura TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE situacao_transm_leitura TO pg_aplic;
-GRANT SELECT ON TABLE situacao_transm_leitura TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE situacao_transm_leitura TO role_aplic;
+GRANT SELECT ON TABLE situacao_transm_leitura TO role_users;
 
 
 --
@@ -91014,8 +91014,8 @@ GRANT SELECT ON TABLE situacao_transm_leitura TO pg_users;
 REVOKE ALL ON TABLE telemetria_log FROM PUBLIC;
 REVOKE ALL ON TABLE telemetria_log FROM gsan_admin;
 GRANT ALL ON TABLE telemetria_log TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE telemetria_log TO pg_aplic;
-GRANT SELECT ON TABLE telemetria_log TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE telemetria_log TO role_aplic;
+GRANT SELECT ON TABLE telemetria_log TO role_users;
 
 
 --
@@ -91025,8 +91025,8 @@ GRANT SELECT ON TABLE telemetria_log TO pg_users;
 REVOKE ALL ON TABLE telemetria_mov FROM PUBLIC;
 REVOKE ALL ON TABLE telemetria_mov FROM gsan_admin;
 GRANT ALL ON TABLE telemetria_mov TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE telemetria_mov TO pg_aplic;
-GRANT SELECT ON TABLE telemetria_mov TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE telemetria_mov TO role_aplic;
+GRANT SELECT ON TABLE telemetria_mov TO role_users;
 
 
 --
@@ -91036,8 +91036,8 @@ GRANT SELECT ON TABLE telemetria_mov TO pg_users;
 REVOKE ALL ON TABLE telemetria_mov_reg FROM PUBLIC;
 REVOKE ALL ON TABLE telemetria_mov_reg FROM gsan_admin;
 GRANT ALL ON TABLE telemetria_mov_reg TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE telemetria_mov_reg TO pg_aplic;
-GRANT SELECT ON TABLE telemetria_mov_reg TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE telemetria_mov_reg TO role_aplic;
+GRANT SELECT ON TABLE telemetria_mov_reg TO role_users;
 
 
 --
@@ -91047,8 +91047,8 @@ GRANT SELECT ON TABLE telemetria_mov_reg TO pg_users;
 REVOKE ALL ON TABLE telemetria_ret_mot FROM PUBLIC;
 REVOKE ALL ON TABLE telemetria_ret_mot FROM gsan_admin;
 GRANT ALL ON TABLE telemetria_ret_mot TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE telemetria_ret_mot TO pg_aplic;
-GRANT SELECT ON TABLE telemetria_ret_mot TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE telemetria_ret_mot TO role_aplic;
+GRANT SELECT ON TABLE telemetria_ret_mot TO role_users;
 
 
 SET search_path = operacional, pg_catalog;
@@ -91060,8 +91060,8 @@ SET search_path = operacional, pg_catalog;
 REVOKE ALL ON TABLE abastecimento_progr FROM PUBLIC;
 REVOKE ALL ON TABLE abastecimento_progr FROM gsan_admin;
 GRANT ALL ON TABLE abastecimento_progr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE abastecimento_progr TO pg_aplic;
-GRANT SELECT ON TABLE abastecimento_progr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE abastecimento_progr TO role_aplic;
+GRANT SELECT ON TABLE abastecimento_progr TO role_users;
 
 
 --
@@ -91071,8 +91071,8 @@ GRANT SELECT ON TABLE abastecimento_progr TO pg_users;
 REVOKE ALL ON TABLE bacia FROM PUBLIC;
 REVOKE ALL ON TABLE bacia FROM gsan_admin;
 GRANT ALL ON TABLE bacia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE bacia TO pg_aplic;
-GRANT SELECT ON TABLE bacia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE bacia TO role_aplic;
+GRANT SELECT ON TABLE bacia TO role_users;
 
 
 --
@@ -91082,8 +91082,8 @@ GRANT SELECT ON TABLE bacia TO pg_users;
 REVOKE ALL ON TABLE distrito_operacional FROM PUBLIC;
 REVOKE ALL ON TABLE distrito_operacional FROM gsan_admin;
 GRANT ALL ON TABLE distrito_operacional TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE distrito_operacional TO pg_aplic;
-GRANT SELECT ON TABLE distrito_operacional TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE distrito_operacional TO role_aplic;
+GRANT SELECT ON TABLE distrito_operacional TO role_users;
 
 
 --
@@ -91093,8 +91093,8 @@ GRANT SELECT ON TABLE distrito_operacional TO pg_users;
 REVOKE ALL ON TABLE divisao_esgoto FROM PUBLIC;
 REVOKE ALL ON TABLE divisao_esgoto FROM gsan_admin;
 GRANT ALL ON TABLE divisao_esgoto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE divisao_esgoto TO pg_aplic;
-GRANT SELECT ON TABLE divisao_esgoto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE divisao_esgoto TO role_aplic;
+GRANT SELECT ON TABLE divisao_esgoto TO role_users;
 
 
 --
@@ -91104,8 +91104,8 @@ GRANT SELECT ON TABLE divisao_esgoto TO pg_users;
 REVOKE ALL ON TABLE fonte_captacao FROM PUBLIC;
 REVOKE ALL ON TABLE fonte_captacao FROM gsan_admin;
 GRANT ALL ON TABLE fonte_captacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fonte_captacao TO pg_aplic;
-GRANT SELECT ON TABLE fonte_captacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE fonte_captacao TO role_aplic;
+GRANT SELECT ON TABLE fonte_captacao TO role_users;
 
 
 --
@@ -91115,8 +91115,8 @@ GRANT SELECT ON TABLE fonte_captacao TO pg_users;
 REVOKE ALL ON TABLE manutencao_programacao FROM PUBLIC;
 REVOKE ALL ON TABLE manutencao_programacao FROM gsan_admin;
 GRANT ALL ON TABLE manutencao_programacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE manutencao_programacao TO pg_aplic;
-GRANT SELECT ON TABLE manutencao_programacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE manutencao_programacao TO role_aplic;
+GRANT SELECT ON TABLE manutencao_programacao TO role_users;
 
 
 --
@@ -91126,8 +91126,8 @@ GRANT SELECT ON TABLE manutencao_programacao TO pg_users;
 REVOKE ALL ON TABLE producao_agua FROM PUBLIC;
 REVOKE ALL ON TABLE producao_agua FROM gsan_admin;
 GRANT ALL ON TABLE producao_agua TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE producao_agua TO pg_aplic;
-GRANT SELECT ON TABLE producao_agua TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE producao_agua TO role_aplic;
+GRANT SELECT ON TABLE producao_agua TO role_users;
 
 
 --
@@ -91137,8 +91137,8 @@ GRANT SELECT ON TABLE producao_agua TO pg_users;
 REVOKE ALL ON SEQUENCE seq_abastecimento_progr FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_abastecimento_progr FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_abastecimento_progr TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_abastecimento_progr TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_abastecimento_progr TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_abastecimento_progr TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_abastecimento_progr TO role_users;
 
 
 --
@@ -91148,8 +91148,8 @@ GRANT SELECT ON SEQUENCE seq_abastecimento_progr TO pg_users;
 REVOKE ALL ON SEQUENCE seq_bacia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_bacia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_bacia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_bacia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_bacia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_bacia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_bacia TO role_users;
 
 
 --
@@ -91159,8 +91159,8 @@ GRANT SELECT ON SEQUENCE seq_bacia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_distrito_operacional FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_distrito_operacional FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_distrito_operacional TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_distrito_operacional TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_distrito_operacional TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_distrito_operacional TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_distrito_operacional TO role_users;
 
 
 --
@@ -91170,8 +91170,8 @@ GRANT SELECT ON SEQUENCE seq_distrito_operacional TO pg_users;
 REVOKE ALL ON SEQUENCE seq_divisao_esgoto FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_divisao_esgoto FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_divisao_esgoto TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_divisao_esgoto TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_divisao_esgoto TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_divisao_esgoto TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_divisao_esgoto TO role_users;
 
 
 --
@@ -91181,8 +91181,8 @@ GRANT SELECT ON SEQUENCE seq_divisao_esgoto TO pg_users;
 REVOKE ALL ON SEQUENCE seq_fonte_captacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_fonte_captacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_fonte_captacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_fonte_captacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_fonte_captacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_fonte_captacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_fonte_captacao TO role_users;
 
 
 --
@@ -91192,8 +91192,8 @@ GRANT SELECT ON SEQUENCE seq_fonte_captacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_manutencao_programacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_manutencao_programacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_manutencao_programacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_manutencao_programacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_manutencao_programacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_manutencao_programacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_manutencao_programacao TO role_users;
 
 
 --
@@ -91203,8 +91203,8 @@ GRANT SELECT ON SEQUENCE seq_manutencao_programacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_producao_agua FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_producao_agua FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_producao_agua TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_producao_agua TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_producao_agua TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_producao_agua TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_producao_agua TO role_users;
 
 
 --
@@ -91214,8 +91214,8 @@ GRANT SELECT ON SEQUENCE seq_producao_agua TO pg_users;
 REVOKE ALL ON SEQUENCE seq_setor_abastecimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_setor_abastecimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_setor_abastecimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_setor_abastecimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_setor_abastecimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_setor_abastecimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_setor_abastecimento TO role_users;
 
 
 --
@@ -91225,8 +91225,8 @@ GRANT SELECT ON SEQUENCE seq_setor_abastecimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_sistema_abastecimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sistema_abastecimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sistema_abastecimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_abastecimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_sistema_abastecimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_abastecimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_sistema_abastecimento TO role_users;
 
 
 --
@@ -91236,8 +91236,8 @@ GRANT SELECT ON SEQUENCE seq_sistema_abastecimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_sistema_esgoto FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sistema_esgoto FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sistema_esgoto TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_esgoto TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_sistema_esgoto TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_esgoto TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_sistema_esgoto TO role_users;
 
 
 --
@@ -91247,8 +91247,8 @@ GRANT SELECT ON SEQUENCE seq_sistema_esgoto TO pg_users;
 REVOKE ALL ON SEQUENCE seq_sistema_esgoto_trat_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sistema_esgoto_trat_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sistema_esgoto_trat_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_esgoto_trat_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_sistema_esgoto_trat_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sistema_esgoto_trat_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_sistema_esgoto_trat_tipo TO role_users;
 
 
 --
@@ -91258,8 +91258,8 @@ GRANT SELECT ON SEQUENCE seq_sistema_esgoto_trat_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tipo_captacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tipo_captacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tipo_captacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tipo_captacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tipo_captacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tipo_captacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tipo_captacao TO role_users;
 
 
 --
@@ -91269,8 +91269,8 @@ GRANT SELECT ON SEQUENCE seq_tipo_captacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_zona_abastecimento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_zona_abastecimento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_zona_abastecimento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_zona_abastecimento TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_zona_abastecimento TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_zona_abastecimento TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_zona_abastecimento TO role_users;
 
 
 --
@@ -91280,8 +91280,8 @@ GRANT SELECT ON SEQUENCE seq_zona_abastecimento TO pg_users;
 REVOKE ALL ON SEQUENCE seq_zona_pressao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_zona_pressao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_zona_pressao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_zona_pressao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_zona_pressao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_zona_pressao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_zona_pressao TO role_users;
 
 
 --
@@ -91291,8 +91291,8 @@ GRANT SELECT ON SEQUENCE seq_zona_pressao TO pg_users;
 REVOKE ALL ON TABLE setor_abastecimento FROM PUBLIC;
 REVOKE ALL ON TABLE setor_abastecimento FROM gsan_admin;
 GRANT ALL ON TABLE setor_abastecimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE setor_abastecimento TO pg_aplic;
-GRANT SELECT ON TABLE setor_abastecimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE setor_abastecimento TO role_aplic;
+GRANT SELECT ON TABLE setor_abastecimento TO role_users;
 
 
 --
@@ -91302,8 +91302,8 @@ GRANT SELECT ON TABLE setor_abastecimento TO pg_users;
 REVOKE ALL ON TABLE setor_fonte_captacao FROM PUBLIC;
 REVOKE ALL ON TABLE setor_fonte_captacao FROM gsan_admin;
 GRANT ALL ON TABLE setor_fonte_captacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE setor_fonte_captacao TO pg_aplic;
-GRANT SELECT ON TABLE setor_fonte_captacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE setor_fonte_captacao TO role_aplic;
+GRANT SELECT ON TABLE setor_fonte_captacao TO role_users;
 
 
 --
@@ -91313,8 +91313,8 @@ GRANT SELECT ON TABLE setor_fonte_captacao TO pg_users;
 REVOKE ALL ON TABLE sistema_abastecimento FROM PUBLIC;
 REVOKE ALL ON TABLE sistema_abastecimento FROM gsan_admin;
 GRANT ALL ON TABLE sistema_abastecimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_abastecimento TO pg_aplic;
-GRANT SELECT ON TABLE sistema_abastecimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_abastecimento TO role_aplic;
+GRANT SELECT ON TABLE sistema_abastecimento TO role_users;
 
 
 --
@@ -91324,8 +91324,8 @@ GRANT SELECT ON TABLE sistema_abastecimento TO pg_users;
 REVOKE ALL ON TABLE sistema_esgoto FROM PUBLIC;
 REVOKE ALL ON TABLE sistema_esgoto FROM gsan_admin;
 GRANT ALL ON TABLE sistema_esgoto TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_esgoto TO pg_aplic;
-GRANT SELECT ON TABLE sistema_esgoto TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_esgoto TO role_aplic;
+GRANT SELECT ON TABLE sistema_esgoto TO role_users;
 
 
 --
@@ -91335,8 +91335,8 @@ GRANT SELECT ON TABLE sistema_esgoto TO pg_users;
 REVOKE ALL ON TABLE sistema_esgoto_trat_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE sistema_esgoto_trat_tipo FROM gsan_admin;
 GRANT ALL ON TABLE sistema_esgoto_trat_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_esgoto_trat_tipo TO pg_aplic;
-GRANT SELECT ON TABLE sistema_esgoto_trat_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sistema_esgoto_trat_tipo TO role_aplic;
+GRANT SELECT ON TABLE sistema_esgoto_trat_tipo TO role_users;
 
 
 --
@@ -91346,8 +91346,8 @@ GRANT SELECT ON TABLE sistema_esgoto_trat_tipo TO pg_users;
 REVOKE ALL ON TABLE tipo_captacao FROM PUBLIC;
 REVOKE ALL ON TABLE tipo_captacao FROM gsan_admin;
 GRANT ALL ON TABLE tipo_captacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tipo_captacao TO pg_aplic;
-GRANT SELECT ON TABLE tipo_captacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tipo_captacao TO role_aplic;
+GRANT SELECT ON TABLE tipo_captacao TO role_users;
 
 
 --
@@ -91357,8 +91357,8 @@ GRANT SELECT ON TABLE tipo_captacao TO pg_users;
 REVOKE ALL ON TABLE zona_abastecimento FROM PUBLIC;
 REVOKE ALL ON TABLE zona_abastecimento FROM gsan_admin;
 GRANT ALL ON TABLE zona_abastecimento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE zona_abastecimento TO pg_aplic;
-GRANT SELECT ON TABLE zona_abastecimento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE zona_abastecimento TO role_aplic;
+GRANT SELECT ON TABLE zona_abastecimento TO role_users;
 
 
 --
@@ -91368,8 +91368,8 @@ GRANT SELECT ON TABLE zona_abastecimento TO pg_users;
 REVOKE ALL ON TABLE zona_pressao FROM PUBLIC;
 REVOKE ALL ON TABLE zona_pressao FROM gsan_admin;
 GRANT ALL ON TABLE zona_pressao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE zona_pressao TO pg_aplic;
-GRANT SELECT ON TABLE zona_pressao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE zona_pressao TO role_aplic;
+GRANT SELECT ON TABLE zona_pressao TO role_users;
 
 
 SET search_path = public, pg_catalog;
@@ -91381,8 +91381,8 @@ SET search_path = public, pg_catalog;
 REVOKE ALL ON TABLE conta_sicom_aberta FROM PUBLIC;
 REVOKE ALL ON TABLE conta_sicom_aberta FROM gsan_admin;
 GRANT ALL ON TABLE conta_sicom_aberta TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_sicom_aberta TO pg_aplic;
-GRANT SELECT ON TABLE conta_sicom_aberta TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE conta_sicom_aberta TO role_aplic;
+GRANT SELECT ON TABLE conta_sicom_aberta TO role_users;
 
 
 --
@@ -91392,8 +91392,8 @@ GRANT SELECT ON TABLE conta_sicom_aberta TO pg_users;
 REVOKE ALL ON TABLE logr FROM PUBLIC;
 REVOKE ALL ON TABLE logr FROM gsan_admin;
 GRANT ALL ON TABLE logr TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logr TO pg_aplic;
-GRANT SELECT ON TABLE logr TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE logr TO role_aplic;
+GRANT SELECT ON TABLE logr TO role_users;
 
 
 --
@@ -91403,8 +91403,8 @@ GRANT SELECT ON TABLE logr TO pg_users;
 REVOKE ALL ON TABLE pagamentos_cosanpa FROM PUBLIC;
 REVOKE ALL ON TABLE pagamentos_cosanpa FROM gsan_admin;
 GRANT ALL ON TABLE pagamentos_cosanpa TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamentos_cosanpa TO pg_aplic;
-GRANT SELECT ON TABLE pagamentos_cosanpa TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE pagamentos_cosanpa TO role_aplic;
+GRANT SELECT ON TABLE pagamentos_cosanpa TO role_users;
 
 
 --
@@ -91414,8 +91414,8 @@ GRANT SELECT ON TABLE pagamentos_cosanpa TO pg_users;
 REVOKE ALL ON TABLE rgat FROM PUBLIC;
 REVOKE ALL ON TABLE rgat FROM gsan_admin;
 GRANT ALL ON TABLE rgat TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rgat TO pg_aplic;
-GRANT SELECT ON TABLE rgat TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE rgat TO role_aplic;
+GRANT SELECT ON TABLE rgat TO role_users;
 
 
 SET search_path = quartz, pg_catalog;
@@ -91427,8 +91427,8 @@ SET search_path = quartz, pg_catalog;
 REVOKE ALL ON TABLE qrtz_blob_triggers FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_blob_triggers FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_blob_triggers TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_blob_triggers TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_blob_triggers TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_blob_triggers TO role_aplic;
+GRANT SELECT ON TABLE qrtz_blob_triggers TO role_users;
 
 
 --
@@ -91438,8 +91438,8 @@ GRANT SELECT ON TABLE qrtz_blob_triggers TO pg_users;
 REVOKE ALL ON TABLE qrtz_calendars FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_calendars FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_calendars TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_calendars TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_calendars TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_calendars TO role_aplic;
+GRANT SELECT ON TABLE qrtz_calendars TO role_users;
 
 
 --
@@ -91449,8 +91449,8 @@ GRANT SELECT ON TABLE qrtz_calendars TO pg_users;
 REVOKE ALL ON TABLE qrtz_cron_triggers FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_cron_triggers FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_cron_triggers TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_cron_triggers TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_cron_triggers TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_cron_triggers TO role_aplic;
+GRANT SELECT ON TABLE qrtz_cron_triggers TO role_users;
 
 
 --
@@ -91460,8 +91460,8 @@ GRANT SELECT ON TABLE qrtz_cron_triggers TO pg_users;
 REVOKE ALL ON TABLE qrtz_fired_triggers FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_fired_triggers FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_fired_triggers TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_fired_triggers TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_fired_triggers TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_fired_triggers TO role_aplic;
+GRANT SELECT ON TABLE qrtz_fired_triggers TO role_users;
 
 
 --
@@ -91471,8 +91471,8 @@ GRANT SELECT ON TABLE qrtz_fired_triggers TO pg_users;
 REVOKE ALL ON TABLE qrtz_job_details FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_job_details FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_job_details TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_job_details TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_job_details TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_job_details TO role_aplic;
+GRANT SELECT ON TABLE qrtz_job_details TO role_users;
 
 
 --
@@ -91482,8 +91482,8 @@ GRANT SELECT ON TABLE qrtz_job_details TO pg_users;
 REVOKE ALL ON TABLE qrtz_job_listeners FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_job_listeners FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_job_listeners TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_job_listeners TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_job_listeners TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_job_listeners TO role_aplic;
+GRANT SELECT ON TABLE qrtz_job_listeners TO role_users;
 
 
 --
@@ -91493,8 +91493,8 @@ GRANT SELECT ON TABLE qrtz_job_listeners TO pg_users;
 REVOKE ALL ON TABLE qrtz_locks FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_locks FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_locks TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_locks TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_locks TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_locks TO role_aplic;
+GRANT SELECT ON TABLE qrtz_locks TO role_users;
 
 
 --
@@ -91504,8 +91504,8 @@ GRANT SELECT ON TABLE qrtz_locks TO pg_users;
 REVOKE ALL ON TABLE qrtz_paused_trigger_grps FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_paused_trigger_grps FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_paused_trigger_grps TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_paused_trigger_grps TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_paused_trigger_grps TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_paused_trigger_grps TO role_aplic;
+GRANT SELECT ON TABLE qrtz_paused_trigger_grps TO role_users;
 
 
 --
@@ -91515,8 +91515,8 @@ GRANT SELECT ON TABLE qrtz_paused_trigger_grps TO pg_users;
 REVOKE ALL ON TABLE qrtz_scheduler_state FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_scheduler_state FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_scheduler_state TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_scheduler_state TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_scheduler_state TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_scheduler_state TO role_aplic;
+GRANT SELECT ON TABLE qrtz_scheduler_state TO role_users;
 
 
 --
@@ -91526,8 +91526,8 @@ GRANT SELECT ON TABLE qrtz_scheduler_state TO pg_users;
 REVOKE ALL ON TABLE qrtz_simple_triggers FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_simple_triggers FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_simple_triggers TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_simple_triggers TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_simple_triggers TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_simple_triggers TO role_aplic;
+GRANT SELECT ON TABLE qrtz_simple_triggers TO role_users;
 
 
 --
@@ -91537,8 +91537,8 @@ GRANT SELECT ON TABLE qrtz_simple_triggers TO pg_users;
 REVOKE ALL ON TABLE qrtz_trigger_listeners FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_trigger_listeners FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_trigger_listeners TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_trigger_listeners TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_trigger_listeners TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_trigger_listeners TO role_aplic;
+GRANT SELECT ON TABLE qrtz_trigger_listeners TO role_users;
 
 
 --
@@ -91548,8 +91548,8 @@ GRANT SELECT ON TABLE qrtz_trigger_listeners TO pg_users;
 REVOKE ALL ON TABLE qrtz_triggers FROM PUBLIC;
 REVOKE ALL ON TABLE qrtz_triggers FROM gsan_admin;
 GRANT ALL ON TABLE qrtz_triggers TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_triggers TO pg_aplic;
-GRANT SELECT ON TABLE qrtz_triggers TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE qrtz_triggers TO role_aplic;
+GRANT SELECT ON TABLE qrtz_triggers TO role_users;
 
 
 SET search_path = seguranca, pg_catalog;
@@ -91561,8 +91561,8 @@ SET search_path = seguranca, pg_catalog;
 REVOKE ALL ON TABLE alteracao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE alteracao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE alteracao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE alteracao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE alteracao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE alteracao_tipo TO role_aplic;
+GRANT SELECT ON TABLE alteracao_tipo TO role_users;
 
 
 --
@@ -91572,8 +91572,8 @@ GRANT SELECT ON TABLE alteracao_tipo TO pg_users;
 REVOKE ALL ON TABLE atributo FROM PUBLIC;
 REVOKE ALL ON TABLE atributo FROM gsan_admin;
 GRANT ALL ON TABLE atributo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atributo TO pg_aplic;
-GRANT SELECT ON TABLE atributo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atributo TO role_aplic;
+GRANT SELECT ON TABLE atributo TO role_users;
 
 
 --
@@ -91583,8 +91583,8 @@ GRANT SELECT ON TABLE atributo TO pg_users;
 REVOKE ALL ON TABLE atributo_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE atributo_grupo FROM gsan_admin;
 GRANT ALL ON TABLE atributo_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atributo_grupo TO pg_aplic;
-GRANT SELECT ON TABLE atributo_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE atributo_grupo TO role_aplic;
+GRANT SELECT ON TABLE atributo_grupo TO role_users;
 
 
 --
@@ -91594,8 +91594,8 @@ GRANT SELECT ON TABLE atributo_grupo TO pg_users;
 REVOKE ALL ON TABLE consulta_cdl FROM PUBLIC;
 REVOKE ALL ON TABLE consulta_cdl FROM gsan_admin;
 GRANT ALL ON TABLE consulta_cdl TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consulta_cdl TO pg_aplic;
-GRANT SELECT ON TABLE consulta_cdl TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consulta_cdl TO role_aplic;
+GRANT SELECT ON TABLE consulta_cdl TO role_users;
 
 
 --
@@ -91605,8 +91605,8 @@ GRANT SELECT ON TABLE consulta_cdl TO pg_users;
 REVOKE ALL ON TABLE consulta_receita_federal FROM PUBLIC;
 REVOKE ALL ON TABLE consulta_receita_federal FROM gsan_admin;
 GRANT ALL ON TABLE consulta_receita_federal TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consulta_receita_federal TO pg_aplic;
-GRANT SELECT ON TABLE consulta_receita_federal TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE consulta_receita_federal TO role_aplic;
+GRANT SELECT ON TABLE consulta_receita_federal TO role_users;
 
 
 --
@@ -91616,8 +91616,8 @@ GRANT SELECT ON TABLE consulta_receita_federal TO pg_users;
 REVOKE ALL ON TABLE func_contr_lib_pmep FROM PUBLIC;
 REVOKE ALL ON TABLE func_contr_lib_pmep FROM gsan_admin;
 GRANT ALL ON TABLE func_contr_lib_pmep TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE func_contr_lib_pmep TO pg_aplic;
-GRANT SELECT ON TABLE func_contr_lib_pmep TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE func_contr_lib_pmep TO role_aplic;
+GRANT SELECT ON TABLE func_contr_lib_pmep TO role_users;
 
 
 --
@@ -91627,8 +91627,8 @@ GRANT SELECT ON TABLE func_contr_lib_pmep TO pg_users;
 REVOKE ALL ON TABLE funcionalidade FROM PUBLIC;
 REVOKE ALL ON TABLE funcionalidade FROM gsan_admin;
 GRANT ALL ON TABLE funcionalidade TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade TO pg_aplic;
-GRANT SELECT ON TABLE funcionalidade TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade TO role_aplic;
+GRANT SELECT ON TABLE funcionalidade TO role_users;
 
 
 --
@@ -91638,8 +91638,8 @@ GRANT SELECT ON TABLE funcionalidade TO pg_users;
 REVOKE ALL ON TABLE funcionalidade_atributo FROM PUBLIC;
 REVOKE ALL ON TABLE funcionalidade_atributo FROM gsan_admin;
 GRANT ALL ON TABLE funcionalidade_atributo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_atributo TO pg_aplic;
-GRANT SELECT ON TABLE funcionalidade_atributo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_atributo TO role_aplic;
+GRANT SELECT ON TABLE funcionalidade_atributo TO role_users;
 
 
 --
@@ -91649,8 +91649,8 @@ GRANT SELECT ON TABLE funcionalidade_atributo TO pg_users;
 REVOKE ALL ON TABLE funcionalidade_categoria FROM PUBLIC;
 REVOKE ALL ON TABLE funcionalidade_categoria FROM gsan_admin;
 GRANT ALL ON TABLE funcionalidade_categoria TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_categoria TO pg_aplic;
-GRANT SELECT ON TABLE funcionalidade_categoria TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_categoria TO role_aplic;
+GRANT SELECT ON TABLE funcionalidade_categoria TO role_users;
 
 
 --
@@ -91660,8 +91660,8 @@ GRANT SELECT ON TABLE funcionalidade_categoria TO pg_users;
 REVOKE ALL ON TABLE funcionalidade_depend FROM PUBLIC;
 REVOKE ALL ON TABLE funcionalidade_depend FROM gsan_admin;
 GRANT ALL ON TABLE funcionalidade_depend TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_depend TO pg_aplic;
-GRANT SELECT ON TABLE funcionalidade_depend TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE funcionalidade_depend TO role_aplic;
+GRANT SELECT ON TABLE funcionalidade_depend TO role_users;
 
 
 --
@@ -91671,8 +91671,8 @@ GRANT SELECT ON TABLE funcionalidade_depend TO pg_users;
 REVOKE ALL ON TABLE grupo FROM PUBLIC;
 REVOKE ALL ON TABLE grupo FROM gsan_admin;
 GRANT ALL ON TABLE grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grupo TO pg_aplic;
-GRANT SELECT ON TABLE grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grupo TO role_aplic;
+GRANT SELECT ON TABLE grupo TO role_users;
 
 
 --
@@ -91682,8 +91682,8 @@ GRANT SELECT ON TABLE grupo TO pg_users;
 REVOKE ALL ON TABLE grupo_acesso FROM PUBLIC;
 REVOKE ALL ON TABLE grupo_acesso FROM gsan_admin;
 GRANT ALL ON TABLE grupo_acesso TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grupo_acesso TO pg_aplic;
-GRANT SELECT ON TABLE grupo_acesso TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grupo_acesso TO role_aplic;
+GRANT SELECT ON TABLE grupo_acesso TO role_users;
 
 
 --
@@ -91693,8 +91693,8 @@ GRANT SELECT ON TABLE grupo_acesso TO pg_users;
 REVOKE ALL ON TABLE grupo_func_operacao FROM PUBLIC;
 REVOKE ALL ON TABLE grupo_func_operacao FROM gsan_admin;
 GRANT ALL ON TABLE grupo_func_operacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grupo_func_operacao TO pg_aplic;
-GRANT SELECT ON TABLE grupo_func_operacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grupo_func_operacao TO role_aplic;
+GRANT SELECT ON TABLE grupo_func_operacao TO role_users;
 
 
 --
@@ -91704,8 +91704,8 @@ GRANT SELECT ON TABLE grupo_func_operacao TO pg_users;
 REVOKE ALL ON TABLE grupo_permissao_especial FROM PUBLIC;
 REVOKE ALL ON TABLE grupo_permissao_especial FROM gsan_admin;
 GRANT ALL ON TABLE grupo_permissao_especial TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grupo_permissao_especial TO pg_aplic;
-GRANT SELECT ON TABLE grupo_permissao_especial TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE grupo_permissao_especial TO role_aplic;
+GRANT SELECT ON TABLE grupo_permissao_especial TO role_users;
 
 
 --
@@ -91715,8 +91715,8 @@ GRANT SELECT ON TABLE grupo_permissao_especial TO pg_users;
 REVOKE ALL ON TABLE modulo FROM PUBLIC;
 REVOKE ALL ON TABLE modulo FROM gsan_admin;
 GRANT ALL ON TABLE modulo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE modulo TO pg_aplic;
-GRANT SELECT ON TABLE modulo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE modulo TO role_aplic;
+GRANT SELECT ON TABLE modulo TO role_users;
 
 
 --
@@ -91726,8 +91726,8 @@ GRANT SELECT ON TABLE modulo TO pg_users;
 REVOKE ALL ON TABLE operacao FROM PUBLIC;
 REVOKE ALL ON TABLE operacao FROM gsan_admin;
 GRANT ALL ON TABLE operacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao TO pg_aplic;
-GRANT SELECT ON TABLE operacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao TO role_aplic;
+GRANT SELECT ON TABLE operacao TO role_users;
 
 
 --
@@ -91737,8 +91737,8 @@ GRANT SELECT ON TABLE operacao TO pg_users;
 REVOKE ALL ON TABLE operacao_efetuada FROM PUBLIC;
 REVOKE ALL ON TABLE operacao_efetuada FROM gsan_admin;
 GRANT ALL ON TABLE operacao_efetuada TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao_efetuada TO pg_aplic;
-GRANT SELECT ON TABLE operacao_efetuada TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao_efetuada TO role_aplic;
+GRANT SELECT ON TABLE operacao_efetuada TO role_users;
 
 
 --
@@ -91748,8 +91748,8 @@ GRANT SELECT ON TABLE operacao_efetuada TO pg_users;
 REVOKE ALL ON TABLE operacao_ordem_exibicao FROM PUBLIC;
 REVOKE ALL ON TABLE operacao_ordem_exibicao FROM gsan_admin;
 GRANT ALL ON TABLE operacao_ordem_exibicao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao_ordem_exibicao TO pg_aplic;
-GRANT SELECT ON TABLE operacao_ordem_exibicao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao_ordem_exibicao TO role_aplic;
+GRANT SELECT ON TABLE operacao_ordem_exibicao TO role_users;
 
 
 --
@@ -91759,8 +91759,8 @@ GRANT SELECT ON TABLE operacao_ordem_exibicao TO pg_users;
 REVOKE ALL ON TABLE operacao_tabela FROM PUBLIC;
 REVOKE ALL ON TABLE operacao_tabela FROM gsan_admin;
 GRANT ALL ON TABLE operacao_tabela TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao_tabela TO pg_aplic;
-GRANT SELECT ON TABLE operacao_tabela TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao_tabela TO role_aplic;
+GRANT SELECT ON TABLE operacao_tabela TO role_users;
 
 
 --
@@ -91770,8 +91770,8 @@ GRANT SELECT ON TABLE operacao_tabela TO pg_users;
 REVOKE ALL ON TABLE operacao_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE operacao_tipo FROM gsan_admin;
 GRANT ALL ON TABLE operacao_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao_tipo TO pg_aplic;
-GRANT SELECT ON TABLE operacao_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE operacao_tipo TO role_aplic;
+GRANT SELECT ON TABLE operacao_tipo TO role_users;
 
 
 --
@@ -91781,7 +91781,7 @@ GRANT SELECT ON TABLE operacao_tipo TO pg_users;
 REVOKE ALL ON TABLE parametro FROM PUBLIC;
 REVOKE ALL ON TABLE parametro FROM gsan_admin;
 GRANT ALL ON TABLE parametro TO gsan_admin;
-GRANT SELECT ON TABLE parametro TO pg_users;
+GRANT SELECT ON TABLE parametro TO role_users;
 
 
 --
@@ -91791,8 +91791,8 @@ GRANT SELECT ON TABLE parametro TO pg_users;
 REVOKE ALL ON TABLE permissao_especial FROM PUBLIC;
 REVOKE ALL ON TABLE permissao_especial FROM gsan_admin;
 GRANT ALL ON TABLE permissao_especial TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE permissao_especial TO pg_aplic;
-GRANT SELECT ON TABLE permissao_especial TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE permissao_especial TO role_aplic;
+GRANT SELECT ON TABLE permissao_especial TO role_users;
 
 
 --
@@ -91802,8 +91802,8 @@ GRANT SELECT ON TABLE permissao_especial TO pg_users;
 REVOKE ALL ON TABLE senha_invalida FROM PUBLIC;
 REVOKE ALL ON TABLE senha_invalida FROM gsan_admin;
 GRANT ALL ON TABLE senha_invalida TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE senha_invalida TO pg_aplic;
-GRANT SELECT ON TABLE senha_invalida TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE senha_invalida TO role_aplic;
+GRANT SELECT ON TABLE senha_invalida TO role_users;
 
 
 --
@@ -91813,8 +91813,8 @@ GRANT SELECT ON TABLE senha_invalida TO pg_users;
 REVOKE ALL ON SEQUENCE seq_alteracao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_alteracao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_alteracao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_alteracao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_alteracao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_alteracao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_alteracao_tipo TO role_users;
 
 
 --
@@ -91824,8 +91824,8 @@ GRANT SELECT ON SEQUENCE seq_alteracao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atributo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atributo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atributo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atributo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atributo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atributo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atributo TO role_users;
 
 
 --
@@ -91835,8 +91835,8 @@ GRANT SELECT ON SEQUENCE seq_atributo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_atributo_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_atributo_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_atributo_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_atributo_grupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_atributo_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_atributo_grupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_atributo_grupo TO role_users;
 
 
 --
@@ -91846,7 +91846,7 @@ GRANT SELECT ON SEQUENCE seq_atributo_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_consulta_receita_federal FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_consulta_receita_federal FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_consulta_receita_federal TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_consulta_receita_federal TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_consulta_receita_federal TO role_aplic;
 
 
 --
@@ -91856,7 +91856,7 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_consulta_receita_federal TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_func_contr_lib_pmep FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_func_contr_lib_pmep FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_func_contr_lib_pmep TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_func_contr_lib_pmep TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_func_contr_lib_pmep TO role_aplic;
 
 
 --
@@ -91866,8 +91866,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_func_contr_lib_pmep TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_funcionalidade FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_funcionalidade FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_funcionalidade TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_funcionalidade TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_funcionalidade TO role_users;
 
 
 --
@@ -91877,8 +91877,8 @@ GRANT SELECT ON SEQUENCE seq_funcionalidade TO pg_users;
 REVOKE ALL ON SEQUENCE seq_funcionalidade_atributo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_funcionalidade_atributo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_funcionalidade_atributo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade_atributo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_funcionalidade_atributo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade_atributo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_funcionalidade_atributo TO role_users;
 
 
 --
@@ -91888,8 +91888,8 @@ GRANT SELECT ON SEQUENCE seq_funcionalidade_atributo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_funcionalidade_categoria FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_funcionalidade_categoria FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_funcionalidade_categoria TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade_categoria TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_funcionalidade_categoria TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_funcionalidade_categoria TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_funcionalidade_categoria TO role_users;
 
 
 --
@@ -91899,8 +91899,8 @@ GRANT SELECT ON SEQUENCE seq_funcionalidade_categoria TO pg_users;
 REVOKE ALL ON SEQUENCE seq_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_grupo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_grupo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_grupo TO role_users;
 
 
 --
@@ -91910,8 +91910,8 @@ GRANT SELECT ON SEQUENCE seq_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_modulo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_modulo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_modulo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_modulo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_modulo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_modulo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_modulo TO role_users;
 
 
 --
@@ -91921,8 +91921,8 @@ GRANT SELECT ON SEQUENCE seq_modulo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_operacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_operacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_operacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_operacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_operacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_operacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_operacao TO role_users;
 
 
 --
@@ -91932,8 +91932,8 @@ GRANT SELECT ON SEQUENCE seq_operacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_operacao_efetuada FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_operacao_efetuada FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_operacao_efetuada TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_operacao_efetuada TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_operacao_efetuada TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_operacao_efetuada TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_operacao_efetuada TO role_users;
 
 
 --
@@ -91943,8 +91943,8 @@ GRANT SELECT ON SEQUENCE seq_operacao_efetuada TO pg_users;
 REVOKE ALL ON SEQUENCE seq_operacao_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_operacao_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_operacao_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_operacao_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_operacao_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_operacao_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_operacao_tipo TO role_users;
 
 
 --
@@ -91954,8 +91954,8 @@ GRANT SELECT ON SEQUENCE seq_operacao_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_permissao_especial FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_permissao_especial FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_permissao_especial TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_permissao_especial TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_permissao_especial TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_permissao_especial TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_permissao_especial TO role_users;
 
 
 --
@@ -91965,8 +91965,8 @@ GRANT SELECT ON SEQUENCE seq_permissao_especial TO pg_users;
 REVOKE ALL ON SEQUENCE seq_senha_invalida FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_senha_invalida FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_senha_invalida TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_senha_invalida TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_senha_invalida TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_senha_invalida TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_senha_invalida TO role_users;
 
 
 --
@@ -91976,8 +91976,8 @@ GRANT SELECT ON SEQUENCE seq_senha_invalida TO pg_users;
 REVOKE ALL ON SEQUENCE seq_sol_acesso_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_sol_acesso_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_sol_acesso_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sol_acesso_situacao TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_sol_acesso_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sol_acesso_situacao TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_sol_acesso_situacao TO role_users;
 
 
 --
@@ -91987,8 +91987,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_sol_acesso_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_solicitacao_acesso FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_solicitacao_acesso FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_solicitacao_acesso TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso TO role_users;
 
 
 --
@@ -91998,8 +91998,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso TO pg_users;
 REVOKE ALL ON SEQUENCE seq_solicitacao_acesso_grupo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_solicitacao_acesso_grupo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_solicitacao_acesso_grupo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso_grupo TO pg_aplic;
-GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso_grupo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso_grupo TO role_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso_grupo TO role_users;
 
 
 --
@@ -92009,8 +92009,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_solicitacao_acesso_grupo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tab_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tab_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tab_atlz_cadastral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tab_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tab_atlz_cadastral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tab_atlz_cadastral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tab_atlz_cadastral TO role_users;
 
 
 --
@@ -92020,8 +92020,8 @@ GRANT SELECT ON SEQUENCE seq_tab_atlz_cadastral TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tab_col_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tab_col_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tab_col_atlz_cadastral TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tab_col_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tab_col_atlz_cadastral TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tab_col_atlz_cadastral TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tab_col_atlz_cadastral TO role_users;
 
 
 --
@@ -92031,8 +92031,8 @@ GRANT SELECT ON SEQUENCE seq_tab_col_atlz_cadastral TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tab_linha_col_alteracao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tab_linha_col_alteracao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tab_linha_col_alteracao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tab_linha_col_alteracao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tab_linha_col_alteracao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tab_linha_col_alteracao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tab_linha_col_alteracao TO role_users;
 
 
 --
@@ -92042,8 +92042,8 @@ GRANT SELECT ON SEQUENCE seq_tab_linha_col_alteracao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tabela FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tabela FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tabela TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tabela TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tabela TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tabela TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tabela TO role_users;
 
 
 --
@@ -92053,8 +92053,8 @@ GRANT SELECT ON SEQUENCE seq_tabela TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tabela_coluna FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tabela_coluna FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tabela_coluna TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tabela_coluna TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tabela_coluna TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tabela_coluna TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tabela_coluna TO role_users;
 
 
 --
@@ -92064,8 +92064,8 @@ GRANT SELECT ON SEQUENCE seq_tabela_coluna TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tabela_coluna_atributo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tabela_coluna_atributo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tabela_coluna_atributo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tabela_coluna_atributo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tabela_coluna_atributo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tabela_coluna_atributo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tabela_coluna_atributo TO role_users;
 
 
 --
@@ -92075,8 +92075,8 @@ GRANT SELECT ON SEQUENCE seq_tabela_coluna_atributo TO pg_users;
 REVOKE ALL ON SEQUENCE seq_tabela_linha_alteracao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_tabela_linha_alteracao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_tabela_linha_alteracao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_tabela_linha_alteracao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_tabela_linha_alteracao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_tabela_linha_alteracao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_tabela_linha_alteracao TO role_users;
 
 
 --
@@ -92086,8 +92086,8 @@ GRANT SELECT ON SEQUENCE seq_tabela_linha_alteracao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_unidade_nivel FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_unidade_nivel FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_unidade_nivel TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_nivel TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_unidade_nivel TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_unidade_nivel TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_unidade_nivel TO role_users;
 
 
 --
@@ -92097,7 +92097,7 @@ GRANT SELECT ON SEQUENCE seq_unidade_nivel TO pg_users;
 REVOKE ALL ON SEQUENCE seq_usu_afastamento_motivo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usu_afastamento_motivo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usu_afastamento_motivo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usu_afastamento_motivo TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usu_afastamento_motivo TO role_aplic;
 
 
 --
@@ -92107,8 +92107,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_usu_afastamento_motivo TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_usuario FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_usuario TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_usuario TO role_users;
 
 
 --
@@ -92118,8 +92118,8 @@ GRANT SELECT ON SEQUENCE seq_usuario TO pg_users;
 REVOKE ALL ON SEQUENCE seq_usuario_abrangencia FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_abrangencia FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_abrangencia TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_abrangencia TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_usuario_abrangencia TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_abrangencia TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_usuario_abrangencia TO role_users;
 
 
 --
@@ -92129,8 +92129,8 @@ GRANT SELECT ON SEQUENCE seq_usuario_abrangencia TO pg_users;
 REVOKE ALL ON SEQUENCE seq_usuario_acao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_acao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_acao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_acao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_usuario_acao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_acao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_usuario_acao TO role_users;
 
 
 --
@@ -92140,7 +92140,7 @@ GRANT SELECT ON SEQUENCE seq_usuario_acao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_usuario_afastamento FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_afastamento FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_afastamento TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_afastamento TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_afastamento TO role_aplic;
 
 
 --
@@ -92150,8 +92150,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_afastamento TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_usuario_alteracao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_alteracao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_alteracao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_alteracao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_usuario_alteracao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_alteracao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_usuario_alteracao TO role_users;
 
 
 --
@@ -92161,7 +92161,7 @@ GRANT SELECT ON SEQUENCE seq_usuario_alteracao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_usuario_banco FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_banco FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_banco TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_banco TO pg_aplic;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_banco TO role_aplic;
 
 
 --
@@ -92171,8 +92171,8 @@ GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_banco TO pg_aplic;
 REVOKE ALL ON SEQUENCE seq_usuario_periodo_bloqueio FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_periodo_bloqueio FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_periodo_bloqueio TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_periodo_bloqueio TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_usuario_periodo_bloqueio TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_periodo_bloqueio TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_usuario_periodo_bloqueio TO role_users;
 
 
 --
@@ -92182,8 +92182,8 @@ GRANT SELECT ON SEQUENCE seq_usuario_periodo_bloqueio TO pg_users;
 REVOKE ALL ON SEQUENCE seq_usuario_senha_historico FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_senha_historico FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_senha_historico TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_senha_historico TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_usuario_senha_historico TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_senha_historico TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_usuario_senha_historico TO role_users;
 
 
 --
@@ -92193,8 +92193,8 @@ GRANT SELECT ON SEQUENCE seq_usuario_senha_historico TO pg_users;
 REVOKE ALL ON SEQUENCE seq_usuario_situacao FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_situacao FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_situacao TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_situacao TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_usuario_situacao TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_situacao TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_usuario_situacao TO role_users;
 
 
 --
@@ -92204,8 +92204,8 @@ GRANT SELECT ON SEQUENCE seq_usuario_situacao TO pg_users;
 REVOKE ALL ON SEQUENCE seq_usuario_tipo FROM PUBLIC;
 REVOKE ALL ON SEQUENCE seq_usuario_tipo FROM gsan_admin;
 GRANT ALL ON SEQUENCE seq_usuario_tipo TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_tipo TO pg_aplic;
-GRANT SELECT ON SEQUENCE seq_usuario_tipo TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE seq_usuario_tipo TO role_aplic;
+GRANT SELECT ON SEQUENCE seq_usuario_tipo TO role_users;
 
 
 --
@@ -92215,8 +92215,8 @@ GRANT SELECT ON SEQUENCE seq_usuario_tipo TO pg_users;
 REVOKE ALL ON SEQUENCE sequence_empresa_contrato_cadastro FROM PUBLIC;
 REVOKE ALL ON SEQUENCE sequence_empresa_contrato_cadastro FROM gsan_admin;
 GRANT ALL ON SEQUENCE sequence_empresa_contrato_cadastro TO gsan_admin;
-GRANT SELECT,UPDATE ON SEQUENCE sequence_empresa_contrato_cadastro TO pg_aplic;
-GRANT SELECT ON SEQUENCE sequence_empresa_contrato_cadastro TO pg_users;
+GRANT SELECT,UPDATE ON SEQUENCE sequence_empresa_contrato_cadastro TO role_aplic;
+GRANT SELECT ON SEQUENCE sequence_empresa_contrato_cadastro TO role_users;
 
 
 --
@@ -92226,8 +92226,8 @@ GRANT SELECT ON SEQUENCE sequence_empresa_contrato_cadastro TO pg_users;
 REVOKE ALL ON TABLE sol_acesso_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE sol_acesso_situacao FROM gsan_admin;
 GRANT ALL ON TABLE sol_acesso_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sol_acesso_situacao TO pg_aplic;
-GRANT SELECT ON TABLE sol_acesso_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE sol_acesso_situacao TO role_aplic;
+GRANT SELECT ON TABLE sol_acesso_situacao TO role_users;
 
 
 --
@@ -92237,8 +92237,8 @@ GRANT SELECT ON TABLE sol_acesso_situacao TO pg_users;
 REVOKE ALL ON TABLE solicitacao_acesso FROM PUBLIC;
 REVOKE ALL ON TABLE solicitacao_acesso FROM gsan_admin;
 GRANT ALL ON TABLE solicitacao_acesso TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_acesso TO pg_aplic;
-GRANT SELECT ON TABLE solicitacao_acesso TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_acesso TO role_aplic;
+GRANT SELECT ON TABLE solicitacao_acesso TO role_users;
 
 
 --
@@ -92248,8 +92248,8 @@ GRANT SELECT ON TABLE solicitacao_acesso TO pg_users;
 REVOKE ALL ON TABLE solicitacao_acesso_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE solicitacao_acesso_grupo FROM gsan_admin;
 GRANT ALL ON TABLE solicitacao_acesso_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_acesso_grupo TO pg_aplic;
-GRANT SELECT ON TABLE solicitacao_acesso_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE solicitacao_acesso_grupo TO role_aplic;
+GRANT SELECT ON TABLE solicitacao_acesso_grupo TO role_users;
 
 
 --
@@ -92259,8 +92259,8 @@ GRANT SELECT ON TABLE solicitacao_acesso_grupo TO pg_users;
 REVOKE ALL ON TABLE tab_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON TABLE tab_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON TABLE tab_atlz_cadastral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tab_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON TABLE tab_atlz_cadastral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tab_atlz_cadastral TO role_aplic;
+GRANT SELECT ON TABLE tab_atlz_cadastral TO role_users;
 
 
 --
@@ -92270,8 +92270,8 @@ GRANT SELECT ON TABLE tab_atlz_cadastral TO pg_users;
 REVOKE ALL ON TABLE tab_atlz_cadastral_sit FROM PUBLIC;
 REVOKE ALL ON TABLE tab_atlz_cadastral_sit FROM gsan_admin;
 GRANT ALL ON TABLE tab_atlz_cadastral_sit TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tab_atlz_cadastral_sit TO pg_aplic;
-GRANT SELECT ON TABLE tab_atlz_cadastral_sit TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tab_atlz_cadastral_sit TO role_aplic;
+GRANT SELECT ON TABLE tab_atlz_cadastral_sit TO role_users;
 
 
 --
@@ -92281,8 +92281,8 @@ GRANT SELECT ON TABLE tab_atlz_cadastral_sit TO pg_users;
 REVOKE ALL ON TABLE tab_col_atlz_cadastral FROM PUBLIC;
 REVOKE ALL ON TABLE tab_col_atlz_cadastral FROM gsan_admin;
 GRANT ALL ON TABLE tab_col_atlz_cadastral TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tab_col_atlz_cadastral TO pg_aplic;
-GRANT SELECT ON TABLE tab_col_atlz_cadastral TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tab_col_atlz_cadastral TO role_aplic;
+GRANT SELECT ON TABLE tab_col_atlz_cadastral TO role_users;
 
 
 --
@@ -92292,8 +92292,8 @@ GRANT SELECT ON TABLE tab_col_atlz_cadastral TO pg_users;
 REVOKE ALL ON TABLE tab_linha_col_alteracao FROM PUBLIC;
 REVOKE ALL ON TABLE tab_linha_col_alteracao FROM gsan_admin;
 GRANT ALL ON TABLE tab_linha_col_alteracao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tab_linha_col_alteracao TO pg_aplic;
-GRANT SELECT ON TABLE tab_linha_col_alteracao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tab_linha_col_alteracao TO role_aplic;
+GRANT SELECT ON TABLE tab_linha_col_alteracao TO role_users;
 
 
 --
@@ -92303,8 +92303,8 @@ GRANT SELECT ON TABLE tab_linha_col_alteracao TO pg_users;
 REVOKE ALL ON TABLE tabela FROM PUBLIC;
 REVOKE ALL ON TABLE tabela FROM gsan_admin;
 GRANT ALL ON TABLE tabela TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela TO pg_aplic;
-GRANT SELECT ON TABLE tabela TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela TO role_aplic;
+GRANT SELECT ON TABLE tabela TO role_users;
 
 
 --
@@ -92314,8 +92314,8 @@ GRANT SELECT ON TABLE tabela TO pg_users;
 REVOKE ALL ON TABLE tabela_coluna FROM PUBLIC;
 REVOKE ALL ON TABLE tabela_coluna FROM gsan_admin;
 GRANT ALL ON TABLE tabela_coluna TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_coluna TO pg_aplic;
-GRANT SELECT ON TABLE tabela_coluna TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_coluna TO role_aplic;
+GRANT SELECT ON TABLE tabela_coluna TO role_users;
 
 
 --
@@ -92325,8 +92325,8 @@ GRANT SELECT ON TABLE tabela_coluna TO pg_users;
 REVOKE ALL ON TABLE tabela_coluna_atributo FROM PUBLIC;
 REVOKE ALL ON TABLE tabela_coluna_atributo FROM gsan_admin;
 GRANT ALL ON TABLE tabela_coluna_atributo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_coluna_atributo TO pg_aplic;
-GRANT SELECT ON TABLE tabela_coluna_atributo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_coluna_atributo TO role_aplic;
+GRANT SELECT ON TABLE tabela_coluna_atributo TO role_users;
 
 
 --
@@ -92336,8 +92336,8 @@ GRANT SELECT ON TABLE tabela_coluna_atributo TO pg_users;
 REVOKE ALL ON TABLE tabela_linha_alteracao FROM PUBLIC;
 REVOKE ALL ON TABLE tabela_linha_alteracao FROM gsan_admin;
 GRANT ALL ON TABLE tabela_linha_alteracao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_linha_alteracao TO pg_aplic;
-GRANT SELECT ON TABLE tabela_linha_alteracao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE tabela_linha_alteracao TO role_aplic;
+GRANT SELECT ON TABLE tabela_linha_alteracao TO role_users;
 
 
 --
@@ -92347,8 +92347,8 @@ GRANT SELECT ON TABLE tabela_linha_alteracao TO pg_users;
 REVOKE ALL ON TABLE unidade_nivel FROM PUBLIC;
 REVOKE ALL ON TABLE unidade_nivel FROM gsan_admin;
 GRANT ALL ON TABLE unidade_nivel TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_nivel TO pg_aplic;
-GRANT SELECT ON TABLE unidade_nivel TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE unidade_nivel TO role_aplic;
+GRANT SELECT ON TABLE unidade_nivel TO role_users;
 
 
 --
@@ -92358,8 +92358,8 @@ GRANT SELECT ON TABLE unidade_nivel TO pg_users;
 REVOKE ALL ON TABLE usu_afastamento_motivo FROM PUBLIC;
 REVOKE ALL ON TABLE usu_afastamento_motivo FROM gsan_admin;
 GRANT ALL ON TABLE usu_afastamento_motivo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usu_afastamento_motivo TO pg_aplic;
-GRANT SELECT ON TABLE usu_afastamento_motivo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usu_afastamento_motivo TO role_aplic;
+GRANT SELECT ON TABLE usu_afastamento_motivo TO role_users;
 
 
 --
@@ -92369,8 +92369,8 @@ GRANT SELECT ON TABLE usu_afastamento_motivo TO pg_users;
 REVOKE ALL ON TABLE usuario FROM PUBLIC;
 REVOKE ALL ON TABLE usuario FROM gsan_admin;
 GRANT ALL ON TABLE usuario TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario TO pg_aplic;
-GRANT SELECT ON TABLE usuario TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario TO role_aplic;
+GRANT SELECT ON TABLE usuario TO role_users;
 
 
 --
@@ -92380,8 +92380,8 @@ GRANT SELECT ON TABLE usuario TO pg_users;
 REVOKE ALL ON TABLE usuario_abrangencia FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_abrangencia FROM gsan_admin;
 GRANT ALL ON TABLE usuario_abrangencia TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_abrangencia TO pg_aplic;
-GRANT SELECT ON TABLE usuario_abrangencia TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_abrangencia TO role_aplic;
+GRANT SELECT ON TABLE usuario_abrangencia TO role_users;
 
 
 --
@@ -92391,8 +92391,8 @@ GRANT SELECT ON TABLE usuario_abrangencia TO pg_users;
 REVOKE ALL ON TABLE usuario_acao FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_acao FROM gsan_admin;
 GRANT ALL ON TABLE usuario_acao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_acao TO pg_aplic;
-GRANT SELECT ON TABLE usuario_acao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_acao TO role_aplic;
+GRANT SELECT ON TABLE usuario_acao TO role_users;
 
 
 --
@@ -92402,8 +92402,8 @@ GRANT SELECT ON TABLE usuario_acao TO pg_users;
 REVOKE ALL ON TABLE usuario_afastamento FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_afastamento FROM gsan_admin;
 GRANT ALL ON TABLE usuario_afastamento TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_afastamento TO pg_aplic;
-GRANT SELECT ON TABLE usuario_afastamento TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_afastamento TO role_aplic;
+GRANT SELECT ON TABLE usuario_afastamento TO role_users;
 
 
 --
@@ -92413,8 +92413,8 @@ GRANT SELECT ON TABLE usuario_afastamento TO pg_users;
 REVOKE ALL ON TABLE usuario_alteracao FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_alteracao FROM gsan_admin;
 GRANT ALL ON TABLE usuario_alteracao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_alteracao TO pg_aplic;
-GRANT SELECT ON TABLE usuario_alteracao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_alteracao TO role_aplic;
+GRANT SELECT ON TABLE usuario_alteracao TO role_users;
 
 
 --
@@ -92424,8 +92424,8 @@ GRANT SELECT ON TABLE usuario_alteracao TO pg_users;
 REVOKE ALL ON TABLE usuario_banco FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_banco FROM gsan_admin;
 GRANT ALL ON TABLE usuario_banco TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_banco TO pg_aplic;
-GRANT SELECT ON TABLE usuario_banco TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_banco TO role_aplic;
+GRANT SELECT ON TABLE usuario_banco TO role_users;
 
 
 --
@@ -92435,8 +92435,8 @@ GRANT SELECT ON TABLE usuario_banco TO pg_users;
 REVOKE ALL ON TABLE usuario_favoritos FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_favoritos FROM gsan_admin;
 GRANT ALL ON TABLE usuario_favoritos TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_favoritos TO pg_aplic;
-GRANT SELECT ON TABLE usuario_favoritos TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_favoritos TO role_aplic;
+GRANT SELECT ON TABLE usuario_favoritos TO role_users;
 
 
 --
@@ -92446,8 +92446,8 @@ GRANT SELECT ON TABLE usuario_favoritos TO pg_users;
 REVOKE ALL ON TABLE usuario_grupo FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_grupo FROM gsan_admin;
 GRANT ALL ON TABLE usuario_grupo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_grupo TO pg_aplic;
-GRANT SELECT ON TABLE usuario_grupo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_grupo TO role_aplic;
+GRANT SELECT ON TABLE usuario_grupo TO role_users;
 
 
 --
@@ -92457,8 +92457,8 @@ GRANT SELECT ON TABLE usuario_grupo TO pg_users;
 REVOKE ALL ON TABLE usuario_grupo_restricao FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_grupo_restricao FROM gsan_admin;
 GRANT ALL ON TABLE usuario_grupo_restricao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_grupo_restricao TO pg_aplic;
-GRANT SELECT ON TABLE usuario_grupo_restricao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_grupo_restricao TO role_aplic;
+GRANT SELECT ON TABLE usuario_grupo_restricao TO role_users;
 
 
 --
@@ -92468,8 +92468,8 @@ GRANT SELECT ON TABLE usuario_grupo_restricao TO pg_users;
 REVOKE ALL ON TABLE usuario_periodo_bloqueio FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_periodo_bloqueio FROM gsan_admin;
 GRANT ALL ON TABLE usuario_periodo_bloqueio TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_periodo_bloqueio TO pg_aplic;
-GRANT SELECT ON TABLE usuario_periodo_bloqueio TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_periodo_bloqueio TO role_aplic;
+GRANT SELECT ON TABLE usuario_periodo_bloqueio TO role_users;
 
 
 --
@@ -92479,8 +92479,8 @@ GRANT SELECT ON TABLE usuario_periodo_bloqueio TO pg_users;
 REVOKE ALL ON TABLE usuario_permissao_espec FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_permissao_espec FROM gsan_admin;
 GRANT ALL ON TABLE usuario_permissao_espec TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_permissao_espec TO pg_aplic;
-GRANT SELECT ON TABLE usuario_permissao_espec TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_permissao_espec TO role_aplic;
+GRANT SELECT ON TABLE usuario_permissao_espec TO role_users;
 
 
 --
@@ -92490,8 +92490,8 @@ GRANT SELECT ON TABLE usuario_permissao_espec TO pg_users;
 REVOKE ALL ON TABLE usuario_senha_historico FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_senha_historico FROM gsan_admin;
 GRANT ALL ON TABLE usuario_senha_historico TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_senha_historico TO pg_aplic;
-GRANT SELECT ON TABLE usuario_senha_historico TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_senha_historico TO role_aplic;
+GRANT SELECT ON TABLE usuario_senha_historico TO role_users;
 
 
 --
@@ -92501,8 +92501,8 @@ GRANT SELECT ON TABLE usuario_senha_historico TO pg_users;
 REVOKE ALL ON TABLE usuario_situacao FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_situacao FROM gsan_admin;
 GRANT ALL ON TABLE usuario_situacao TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_situacao TO pg_aplic;
-GRANT SELECT ON TABLE usuario_situacao TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_situacao TO role_aplic;
+GRANT SELECT ON TABLE usuario_situacao TO role_users;
 
 
 --
@@ -92512,8 +92512,8 @@ GRANT SELECT ON TABLE usuario_situacao TO pg_users;
 REVOKE ALL ON TABLE usuario_tipo FROM PUBLIC;
 REVOKE ALL ON TABLE usuario_tipo FROM gsan_admin;
 GRANT ALL ON TABLE usuario_tipo TO gsan_admin;
-GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_tipo TO pg_aplic;
-GRANT SELECT ON TABLE usuario_tipo TO pg_users;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE usuario_tipo TO role_aplic;
+GRANT SELECT ON TABLE usuario_tipo TO role_users;
 
 
 --

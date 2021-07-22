@@ -21,8 +21,8 @@ WITH (
 
 ALTER TABLE                                   cadastro.acoes_desempenho_performance OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            cadastro.acoes_desempenho_performance TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.acoes_desempenho_performance TO pg_aplic;
-GRANT SELECT ON TABLE                         cadastro.acoes_desempenho_performance TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.acoes_desempenho_performance TO role_aplic;
+GRANT SELECT ON TABLE                         cadastro.acoes_desempenho_performance TO role_users;
 
 
 CREATE SEQUENCE cadastro.seq_acoes_desempenho_performance
@@ -33,8 +33,8 @@ CREATE SEQUENCE cadastro.seq_acoes_desempenho_performance
   CACHE 1;
 ALTER TABLE                   cadastro.seq_acoes_desempenho_performance OWNER TO gsan_admin;
 GRANT ALL ON TABLE            cadastro.seq_acoes_desempenho_performance TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_acoes_desempenho_performance TO pg_aplic;
-GRANT SELECT ON TABLE         cadastro.seq_acoes_desempenho_performance TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_acoes_desempenho_performance TO role_aplic;
+GRANT SELECT ON TABLE         cadastro.seq_acoes_desempenho_performance TO role_users;
 
 
 

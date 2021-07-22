@@ -26,8 +26,8 @@ WITH (
 
 ALTER TABLE                                   cadastro.contrato_medicao_coeficiente_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            cadastro.contrato_medicao_coeficiente_historico TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_medicao_coeficiente_historico TO pg_aplic;
-GRANT SELECT ON TABLE                         cadastro.contrato_medicao_coeficiente_historico TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_medicao_coeficiente_historico TO role_aplic;
+GRANT SELECT ON TABLE                         cadastro.contrato_medicao_coeficiente_historico TO role_users;
 
 CREATE SEQUENCE cadastro.seq_contrato_medicao_coeficiente_historico
   INCREMENT 1
@@ -37,8 +37,8 @@ CREATE SEQUENCE cadastro.seq_contrato_medicao_coeficiente_historico
   CACHE 1;
 ALTER TABLE                   cadastro.seq_contrato_medicao_coeficiente_historico OWNER TO gsan_admin;
 GRANT ALL ON TABLE            cadastro.seq_contrato_medicao_coeficiente_historico TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_medicao_coeficiente_historico TO pg_aplic;
-GRANT SELECT ON TABLE         cadastro.seq_contrato_medicao_coeficiente_historico TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_medicao_coeficiente_historico TO role_aplic;
+GRANT SELECT ON TABLE         cadastro.seq_contrato_medicao_coeficiente_historico TO role_users;
 
 -- //@UNDO
 -- SQL to undo the change goes here.

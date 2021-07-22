@@ -81713,7 +81713,7 @@ ALTER TABLE consumoeta OWNER TO postgres;
 
 --
 -- TOC entry 1476 (class 1259 OID 401933)
--- Name: consumoeta_produto; Type: TABLE; Schema: operacao; Owner: pg_aplic; Tablespace: 
+-- Name: consumoeta_produto; Type: TABLE; Schema: operacao; Owner: role_aplic; Tablespace: 
 --
 
 CREATE TABLE consumoeta_produto (
@@ -81723,7 +81723,7 @@ CREATE TABLE consumoeta_produto (
 );
 
 
-ALTER TABLE consumoeta_produto OWNER TO pg_aplic;
+ALTER TABLE consumoeta_produto OWNER TO role_aplic;
 
 --
 -- TOC entry 1477 (class 1259 OID 401936)
@@ -97503,7 +97503,7 @@ ALTER TABLE ONLY consumoeta
 
 --
 -- TOC entry 11191 (class 2606 OID 769023)
--- Name: consumoeta_produto_pkey; Type: CONSTRAINT; Schema: operacao; Owner: pg_aplic; Tablespace: 
+-- Name: consumoeta_produto_pkey; Type: CONSTRAINT; Schema: operacao; Owner: role_aplic; Tablespace: 
 --
 
 ALTER TABLE ONLY consumoeta_produto
@@ -124933,7 +124933,7 @@ ALTER TABLE ONLY eeat_horas_intervalo
 
 --
 -- TOC entry 13688 (class 2606 OID 781932)
--- Name: fk7e0ab18678e4d1b7; Type: FK CONSTRAINT; Schema: operacao; Owner: pg_aplic
+-- Name: fk7e0ab18678e4d1b7; Type: FK CONSTRAINT; Schema: operacao; Owner: role_aplic
 --
 
 ALTER TABLE ONLY consumoeta_produto
@@ -124942,7 +124942,7 @@ ALTER TABLE ONLY consumoeta_produto
 
 --
 -- TOC entry 13689 (class 2606 OID 781937)
--- Name: fk7e0ab186e1c0efa; Type: FK CONSTRAINT; Schema: operacao; Owner: pg_aplic
+-- Name: fk7e0ab186e1c0efa; Type: FK CONSTRAINT; Schema: operacao; Owner: role_aplic
 --
 
 ALTER TABLE ONLY consumoeta_produto

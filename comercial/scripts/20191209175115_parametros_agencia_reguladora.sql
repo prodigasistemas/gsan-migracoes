@@ -4,8 +4,8 @@
 CREATE SEQUENCE faturamento.seq_faturamento_parametro INCREMENT 1 MINVALUE 1 MAXVALUE 9223372036854775807 START 3 CACHE 1;
 ALTER TABLE faturamento.seq_faturamento_parametro OWNER TO gsan_admin;
 GRANT SELECT, UPDATE ON SEQUENCE faturamento.seq_faturamento_parametro TO gsan_admin;
-GRANT SELECT, UPDATE ON SEQUENCE faturamento.seq_faturamento_parametro TO pg_aplic;
-GRANT SELECT ON SEQUENCE faturamento.seq_faturamento_parametro TO pg_users;
+GRANT SELECT, UPDATE ON SEQUENCE faturamento.seq_faturamento_parametro TO role_aplic;
+GRANT SELECT ON SEQUENCE faturamento.seq_faturamento_parametro TO role_users;
 
 INSERT INTO faturamento.parametro VALUES (nextval('faturamento.seq_faturamento_parametro'), 'AGENCIA_REGULADORA_NOME', 'AMAE');
 INSERT INTO faturamento.parametro VALUES (nextval('faturamento.seq_faturamento_parametro'), 'AGENCIA_REGULADORA_ALIQUOTA', '2');

@@ -21,8 +21,8 @@ WITH (
 
 ALTER TABLE                                   cadastro.contrato_medicao OWNER TO gsan_admin;
 GRANT ALL ON TABLE                            cadastro.contrato_medicao TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_medicao TO pg_aplic;
-GRANT SELECT ON TABLE                         cadastro.contrato_medicao TO pg_users;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE cadastro.contrato_medicao TO role_aplic;
+GRANT SELECT ON TABLE                         cadastro.contrato_medicao TO role_users;
 
 
 CREATE SEQUENCE cadastro.seq_contrato_medicao
@@ -33,8 +33,8 @@ CREATE SEQUENCE cadastro.seq_contrato_medicao
   CACHE 1;
 ALTER TABLE                   cadastro.seq_contrato_medicao OWNER TO gsan_admin;
 GRANT ALL ON TABLE            cadastro.seq_contrato_medicao TO gsan_admin;
-GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_medicao TO pg_aplic;
-GRANT SELECT ON TABLE         cadastro.seq_contrato_medicao TO pg_users;
+GRANT SELECT, UPDATE ON TABLE cadastro.seq_contrato_medicao TO role_aplic;
+GRANT SELECT ON TABLE         cadastro.seq_contrato_medicao TO role_users;
 
 
 
