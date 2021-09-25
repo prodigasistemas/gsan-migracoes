@@ -1,7 +1,7 @@
 -- // add columns numero nis e flag bolsa familia tabela cliente
 -- Migration SQL that makes the change goes here.
 
-ALTER TABLE cadastro.cliente ADD COLUMN clie_nnnis INTEGER;
+ALTER TABLE cadastro.cliente ADD COLUMN clie_nnnis character varying(11);
 ALTER TABLE cadastro.cliente ADD COLUMN clie_icbolsafamilia smallint default 2;
 
 -- //@UNDO
