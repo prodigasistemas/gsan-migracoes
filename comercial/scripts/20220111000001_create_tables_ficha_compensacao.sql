@@ -21,11 +21,12 @@ CREATE TABLE arrecadacao.ficha_compensacao
   fico_cott character varying(2),
   fico_iprp character varying(1),
   fico_nutc character varying(20),
+  imov_id integer NOT NULL,
+  clie_id integer NOT NULL,
 
   CONSTRAINT ficha_compensacao_pkey PRIMARY KEY (fico_id),
-  CONSTRAINT fk1_pagador FOREIGN KEY (paga_id)
-  REFERENCES arrecadacao.pagador (paga_id) MATCH SIMPLE
-      ON UPDATE RESTRICT ON DELETE RESTRICT
+  CONSTRAINT fk1_cliente FOREIGN KEY (clie_id)
+  REFERENCES cadastro.cliente (clie_id) MATCH SIMPLE   
 );
 
 ALTER TABLE arrecadacao.ficha_compensacao OWNER TO gsan_admin;
