@@ -7,26 +7,34 @@
   START 1
   CACHE 1;
 */
-CREATE TABLE arrecadacao.pagador
+CREATE TABLE arrecadacao.ficha_compensacao
 (
-  paga_id integer NOT NULL,
-  paga_tiin character varying(1),
-  paga_nuin character varying(14),
-  paga_nome character varying(300),
-  paga_ende character varying(300),
-  paga_cep character varying(8),
-  paga_cidade character varying(50),
-  paga_bairro character varying(50),
-  paga_uf character varying(2)
+  fico_id integer NOT NULL,
+  fico_idconv character varying(7),
+  fico_nuca character varying(2),
+  fico_nuvc character varying(2),
+  fico_como character varying(1),
+  fico_dtem character varying(10),
+  fico_dtve character varying(10),
+  fico_vlor character varying(100),
+  fico_coac character varying(1),
+  fico_cott character varying(2),
+  fico_iprp character varying(1),
+  fico_nutc character varying(20),
+
+  CONSTRAINT ficha_compensacao_pkey PRIMARY KEY (fico_id),
+  CONSTRAINT fk1_pagador FOREIGN KEY (paga_id)
+  REFERENCES arrecadacao.pagador (paga_id) MATCH SIMPLE
+      ON UPDATE RESTRICT ON DELETE RESTRICT
 );
 
-ALTER TABLE arrecadacao.pagador OWNER TO gsan_admin;
-GRANT ALL ON TABLE arrecadacao.pagador TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.pagador TO role_aplic;
-GRANT SELECT ON TABLE arrecadacao.pagador TO role_users;
+ALTER TABLE arrecadacao.ficha_compensacao OWNER TO gsan_admin;
+GRANT ALL ON TABLE arrecadacao.ficha_compensacao TO gsan_admin;
+GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.ficha_compensacao TO role_aplic;
+GRANT SELECT ON TABLE arrecadacao.ficha_compensacao TO role_users;
 
 
 -- //@UNDO
 -- SQL to undo the change goes here.
 --DROP SEQUENCE arrecadacao.seq_boleto_info;
-DROP TABLE arrecadacao.pagador;
+DROP TABLE arrecadacao.ficha_compensacao;
