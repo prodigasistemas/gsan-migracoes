@@ -29,12 +29,6 @@ CREATE TABLE arrecadacao.ficha_compensacao
   REFERENCES cadastro.cliente (clie_id) MATCH SIMPLE   
 );
 
-ALTER TABLE arrecadacao.ficha_compensacao OWNER TO gsan_admin;
-GRANT ALL ON TABLE arrecadacao.ficha_compensacao TO gsan_admin;
-GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE arrecadacao.ficha_compensacao TO role_aplic;
-GRANT SELECT ON TABLE arrecadacao.ficha_compensacao TO role_users;
-
-
 -- //@UNDO
 -- SQL to undo the change goes here.
 --DROP SEQUENCE arrecadacao.seq_boleto_info;
