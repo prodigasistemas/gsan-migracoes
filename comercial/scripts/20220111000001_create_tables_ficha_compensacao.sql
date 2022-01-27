@@ -1,13 +1,13 @@
 -- // criar tabela registros de ficha de compensacao bb
 -- Migration SQL that makes the change goes here.
-CREATE SEQUENCE arrecadacao.seq_ficha_compensacao
+CREATE SEQUENCE faturamento.seq_ficha_compensacao
   INCREMENT 1
   MINVALUE 1
   MAXVALUE 9223372036854775807
   START 1
   CACHE 1;
 
-CREATE TABLE arrecadacao.ficha_compensacao
+CREATE TABLE faturamento.ficha_compensacao
 (
   fico_id integer NOT NULL DEFAULT nextval('arrecadacao.seq_ficha_compensacao'),
   fico_idconv character varying(7),
@@ -36,5 +36,5 @@ CREATE TABLE arrecadacao.ficha_compensacao
 
 -- //@UNDO
 -- SQL to undo the change goes here.
---DROP SEQUENCE arrecadacao.seq_ficha_compensacao;
-DROP TABLE arrecadacao.ficha_compensacao;
+--DROP SEQUENCE faturamento.seq_ficha_compensacao;
+DROP TABLE faturamento.ficha_compensacao;
