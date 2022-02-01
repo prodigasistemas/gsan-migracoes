@@ -9,7 +9,7 @@ CREATE SEQUENCE faturamento.seq_ficha_compensacao
 
 CREATE TABLE faturamento.ficha_compensacao
 (
-  fico_id integer NOT NULL DEFAULT nextval('arrecadacao.seq_ficha_compensacao'),
+  fico_id integer NOT NULL DEFAULT nextval('faturamento.seq_ficha_compensacao'),
   fico_idconv character varying(7),
   fico_nuca character varying(2),
   fico_nuvc character varying(2),
