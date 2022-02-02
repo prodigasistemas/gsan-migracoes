@@ -24,6 +24,7 @@ CREATE TABLE faturamento.ficha_compensacao
   imov_id integer NOT NULL,
   clie_id integer NOT NULL,
   cnta_id integer NOT NULL,
+  fico_tmultimaalteracao timestamp without time zone DEFAULT now() NOT NULL,
 
   CONSTRAINT ficha_compensacao_pkey PRIMARY KEY (fico_id),
   CONSTRAINT fk1_cliente FOREIGN KEY (clie_id)
