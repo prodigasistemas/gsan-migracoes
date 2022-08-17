@@ -13,7 +13,7 @@ ALTER TABLE arrecadacao.seq_ficha_compensacao OWNER TO gsan_admin;
 
 CREATE TABLE arrecadacao.ficha_compensacao
 (
-  fico_id integer NOT NULL DEFAULT nextval('arrecadacao.seq_ficha_compensacao'::regclass),
+  fico_id integer NOT NULL DEFAULT nextval('arrecadacao.seq_ficha_compensacao'),
   fico_idconv character varying(7),
   fico_nuca character varying(2),
   fico_nuvc character varying(2),
