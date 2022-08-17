@@ -53,7 +53,7 @@ DROP TABLE faturamento.ficha_compensacao;
 
 DROP SEQUENCE faturamento.seq_ficha_compensacao;
 
-insert into seguranca.parametro (id, nome, valor) values (14, 'URL_ENTRADA_PARCELAMENTO', 'http://api.cosanpa.pa.gov.br/entrada_parcelamento/')
+insert into seguranca.parametro (id, nome, valor) values (14, 'URL_ENTRADA_PARCELAMENTO', 'http://api.cosanpa.pa.gov.br/entrada_parcelamento/');
 
 -- //@UNDO
 -- SQL to undo the change goes here.
