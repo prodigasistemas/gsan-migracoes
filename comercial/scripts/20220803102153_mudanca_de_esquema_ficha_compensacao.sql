@@ -1,4 +1,4 @@
-﻿-- // criar tabela registros de ficha de compensacao
+-- // criar tabela registros de ficha de compensacao
 -- Migration SQL that makes the change goes here.
 
 CREATE SEQUENCE arrecadacao.seq_ficha_compensacao
@@ -6,11 +6,8 @@ CREATE SEQUENCE arrecadacao.seq_ficha_compensacao
   MINVALUE 1
   MAXVALUE 9223372036854775807
   START 1
-  CACHE 1;
-  
+  CACHE 1; 
 ALTER TABLE arrecadacao.seq_ficha_compensacao OWNER TO gsan_admin;
-
-
 CREATE TABLE arrecadacao.ficha_compensacao
 (
   fico_id integer NOT NULL DEFAULT nextval('arrecadacao.seq_ficha_compensacao'),
@@ -47,20 +44,13 @@ CREATE TABLE arrecadacao.ficha_compensacao
 WITH (
   OIDS=FALSE
 );
-
 ALTER TABLE arrecadacao.ficha_compensacao OWNER TO gsan_admin;
-
-DROP TABLE faturamento.ficha_compensacao;
-
 DROP SEQUENCE faturamento.seq_ficha_compensacao;
-
+DROP TABLE faturamento.ficha_compensacao;
 INSERT INTO seguranca.parametro VALUES (14, 'URL_ENTRADA_PARCELAMENTO', 'http://api.cosanpa.pa.gov.br/entrada_parcelamento/');
 
 -- //@UNDO
 -- SQL to undo the change goes here.
---DROP SEQUENCE faturamento.seq_ficha_compensacao;
 
 DROP TABLE arrecadacao.ficha_compensacao;
-
 DROP SEQUENCE arrecadacao.seq_ficha_compensacao;
-
