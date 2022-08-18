@@ -45,8 +45,6 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE arrecadacao.ficha_compensacao OWNER TO gsan_admin;
-DROP SEQUENCE faturamento.seq_ficha_compensacao;
-DROP TABLE faturamento.ficha_compensacao;
 INSERT INTO seguranca.parametro VALUES (14, 'URL_ENTRADA_PARCELAMENTO', 'http://api.cosanpa.pa.gov.br/entrada_parcelamento/');
 
 -- //@UNDO
