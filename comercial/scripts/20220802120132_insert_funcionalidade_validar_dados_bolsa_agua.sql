@@ -10,3 +10,4 @@ VALUES(nextval('seguranca.seq_funcionalidade'), 8, 'Atualizar Dados Agua Para', 
 
 delete from seguranca.funcionalidade WHERE fncd_dsabreviado = 'AtuAguaPa';
 
+--
