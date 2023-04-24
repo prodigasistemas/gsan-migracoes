@@ -9,3 +9,4 @@
 -- SQL to undo the change goes here.
 
 DELETE FROM cadastro.cadastro_ocorrencia WHERE cocr_dscadastroocorrencia LIKE 'RECUSA NIS';
+--
