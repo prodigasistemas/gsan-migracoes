@@ -1,8 +1,8 @@
 -- // filtrar_recadastramento_agua_para
 -- Migration SQL that makes the change goes here.
 
-INSERT INTO seguranca.funcionalidade VALUES (nextval('seguranca.seq_funcionalidade'), 1, 'Filtrar Recadastramento Água Pará', now(), '/Gsan', 'filtrarRecadastramentoAguaPara.do', 2, 'FrReAgPa', 1, 2, 2, 10);
-INSERT INTO seguranca.operacao VALUES (nextval('seguranca.seq_operacao'), 16111, 'Filtrar Recadastramento Água Pará', 'FrReAgPa', 'filtrarRecadastramentoAguaPara.do', now(), NULL, NULL, 1, NULL, 2);
+INSERT INTO seguranca.funcionalidade VALUES (nextval('seguranca.seq_funcionalidade'), 1, 'Filtrar Recadastramento Água Pará', now(), '/Gsan/Cadastro', 'filtrarRecadastramentoAguaParaAction.do', 2, 'FrReAgPa', 1, 2, 2, 10);
+INSERT INTO seguranca.operacao VALUES (nextval('seguranca.seq_operacao'), 16111, 'Filtrar Recadastramento Água Pará', 'FrReAgPa', 'filtrarRecadastramentoAguaParaAction.do', now(), NULL, NULL, 1, NULL, 2);
 INSERT INTO seguranca.grupo_func_operacao VALUES (1, 15126, 16111, now());
 
 -- //@UNDO
